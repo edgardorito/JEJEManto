@@ -14,8 +14,8 @@
 		<tr>
 			<td align="center">
 				Copyright © 2014. UPCHIAPAS    Todos los derechos reservados.
-				<br> David | Orlando | Mauricio | Walter Ulises | Walter | Luis Fernando
-				<br> 28 De Enero de 2016
+				<br> Josseline | Edgardo | Javier | Ernesto
+				<br> 22 De Febrero de 2017
 			</td>
 		</tr>						
 	</table>

@@ -15,8 +15,8 @@
 			<td class="clsMenuBarItem"><a href="solicitarListarEstados.do">Estados</td>
             <td>|</td>
             <td class="clsMenuBarItem"><a href="solicitarListarRecomendaciones.do">Recomendaciones</td>
-            <td>|</td>
-            <td class="clsMenuBarItem"><a href="">Registro vehicular</td>
+             <td>|</td>
+            <td class="clsMenuBarItem"><a href="irRegistroVehicular.do">Registro vehicular</td>
             <td>|</td>
             <td class="clsMenuBarItem"><a href="">Clima</td>
             <td>|</td>
