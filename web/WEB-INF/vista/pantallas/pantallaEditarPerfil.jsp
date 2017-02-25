@@ -37,7 +37,8 @@
             </div>
             <div class="input-field col s12 m12 l6">
               <i class="material-icons prefix">book</i>
-              <input placeholder="C.P." id="icon_cp" type="number" class="validate">
+              <input style="float: left;" type="number" placeholder="C.P." id="icon_cp" class="validate">
+              <a style="position: absolute; right: 5%;" href=""><i class="material-icons prefix">search</i></a>
             </div>
             <div class="input-field col s12 m12 l6">
               <i class="material-icons prefix">collections_bookmark</i>
