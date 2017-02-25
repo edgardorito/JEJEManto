@@ -90,7 +90,7 @@
         <action path="/irLogin"
                 forward="/WEB-INF/vista/pantallas/plantilla01.jsp?c=pantallaLogin.jsp" />
        <action path="/irRegistroVehicular"
-                forward="/WEB-INF/vista/pantallas/RegistroVehicular.jsp" />
+                forward="/WEB-INF/vista/pantallas/componenteRV/RegistroVehicular.jsp" />
         <action path="/irEditarPerfil"
                 forward="/WEB-INF/vista/pantallas/pantallaEditarPerfil.jsp" />
         <action path="/procesarLogin"

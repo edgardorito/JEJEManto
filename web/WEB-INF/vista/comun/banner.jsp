@@ -1,11 +1,3 @@
-
-	<!-- IS: Encabezado de Pagina (Banner) -->
-	<!--<table class="barraBanner">
-		<tr>	<td><img  src="images/logo-upch.png"></td>
-				<td align="center" width="100%">Administrador de Roles V2</td>
-		</tr>
-
-	</table>-->
 	<nav class="nav-extended">
 	    <div class="nav-wrapper">
 	      <a href="#!" class="brand-logo">Administrador de roles</a>
@@ -29,10 +21,3 @@
 	 </nav>
 
 	    
-        
-       
-        
-          
-	<!-- FS: Encabezado de Pagina (Banner) -->					
-
-					
