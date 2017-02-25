@@ -1,23 +1,25 @@
-	<!-- Inicio Sección - Pie de Página -->
-	<!-- Inicio Seccion - Barra Menu Pie de Página -->
-	<table class="barraPie">
-		<tr>
-			<td align="center">
-				Acerca de | Ayuda | Hacer Recomendación | Reportar Problema|
-
-			</td>
-		</tr>
-	</table>
-	<!-- Fin Seccion - Barra Menu Pie de Página -->	
-	
-	<table class="barraDerechos">
-		<tr>
-			<td align="center">
-				Copyright © 2016. UPCHIAPAS    Todos los derechos reservados.
-				<br> Josseline | Edgardo | Javier | Ernesto
-				<br> 22 De Febrero de 2017
-			</td>
-		</tr>						
-	</table>
-	
-	<!-- Fin de Sección - Pie de página -->
+<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer> 
