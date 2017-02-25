@@ -91,6 +91,8 @@
                 forward="/WEB-INF/vista/pantallas/plantilla01.jsp?c=pantallaLogin.jsp" />
        <action path="/irRegistroVehicular"
                 forward="/WEB-INF/vista/pantallas/RegistroVehicular.jsp" />
+        <action path="/irEditarPerfil"
+                forward="/WEB-INF/vista/pantallas/pantallaEditarPerfil.jsp" />
         <action path="/procesarLogin"
             type="edu.uag.iidis.scec.control.MCULogin"
             parameter="solicitarLogin"
