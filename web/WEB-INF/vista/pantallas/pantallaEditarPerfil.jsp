@@ -61,7 +61,8 @@
             </button>
             </center>
         </form>
-        <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
+        
       </div>
+      <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
     </body>
 </html>
