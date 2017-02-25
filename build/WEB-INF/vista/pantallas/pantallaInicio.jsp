@@ -8,23 +8,13 @@
 
          <c:import url="/WEB-INF/vista/comun/importaciones.jsp" />
 
-        <link rel="stylesheet" type="text/css" href="css/plantilla.css">
+        
     </head>
 	
     <body>
         <c:import url="/WEB-INF/vista/comun/banner.jsp" />
-        <table class="marco" cellpadding="0">
-           
-            <tr height="590px">
-                <td align="center" valign="center" width="100%">
-                    <h3>Welcome </h3>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
-                </td>
-            </tr>
-        </table>
+       
+        <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
+                
     </body>
 </html>
