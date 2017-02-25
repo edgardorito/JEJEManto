@@ -118,7 +118,7 @@
     <property name="dist.home"       value="${basedir}/dist"/>
     <property name="test.out.dir"    value="${basedir}/testout"/>
 
-    <property name="catalina.home"    value="C:\Program Files\Apache Software Foundation\Apache Tomcat 8.0.27"/>
+    <property name="catalina.home"    value="C:\Apache Tomcat 8.0.27"/>
     <property name="manager.url"      value="http://127.0.0.1:8080/manager/text"/>
     <property name="manager.username" value="root"/>
     <property name="manager.password" value="root"/>
