@@ -13,7 +13,7 @@
 	<table class="barraDerechos">
 		<tr>
 			<td align="center">
-				Copyright © 2014. UPCHIAPAS    Todos los derechos reservados.
+				Copyright © 2016. UPCHIAPAS    Todos los derechos reservados.
 				<br> Josseline | Edgardo | Javier | Ernesto
 				<br> 22 De Febrero de 2017
 			</td>
