@@ -93,6 +93,8 @@
                 forward="/WEB-INF/vista/pantallas/componenteRV/RegistroVehicular.jsp" />
         <action path="/irEditarPerfil"
                 forward="/WEB-INF/vista/pantallas/pantallaEditarPerfil.jsp" />
+        <action path="/Clima"
+                forward="/WEB-INF/vista/pantallas/Clima/clima.jsp" />
         <action path="/procesarLogin"
             type="edu.uag.iidis.scec.control.MCULogin"
             parameter="solicitarLogin"

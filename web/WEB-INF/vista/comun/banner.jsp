@@ -5,7 +5,7 @@
 	      
 	      <ul class="side-nav" id="mobile-demo">
 	        <li><a href="irRegistroVehicular.do">Registro vehicular</a></li>
-	        <li>><a href="">Clima</a></li>
+	        <li><a href="Clima.do">Clima</a></li>
 	        <li><a href="">Calendario</a></li>
 	        <li><a href="irEditarPerfil.do">Editar perfil</a></li>
 	      </ul>
@@ -13,7 +13,8 @@
 	    <div class="nav-content">
 	      <ul class="right hide-on-med-and-down">
 	        <li><a href="irRegistroVehicular.do">Registro vehicular</a></li>
-	        <li><a href="">Clima</a></li>
+
+	        <li>><a href="Clima.do">Clima</a></li>
 	        <li><a href="">Calendario</a></li>
 	        <li><a href="irEditarPerfil.do">Editar perfil</a></li>
 	      </ul>

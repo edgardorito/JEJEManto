@@ -18,7 +18,7 @@
              <td>|</td>
             <td class="clsMenuBarItem"><a href="irRegistroVehicular.do">Registro vehicular</td>
             <td>|</td>
-            <td class="clsMenuBarItem"><a href="">Clima</td>
+            <td class="clsMenuBarItem"><a href="Clima.do">Clima</td>
             <td>|</td>
             <td class="clsMenuBarItem"><a href="">Calendario</td>
             <td>|</td>
