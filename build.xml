@@ -107,7 +107,7 @@
 
     <property name="app.name"        value="JEJE"/>
     <property name="app.version"     value="0.3"/>
-    <property name="app.path"        value="/${app.name}"/>
+    <property name="app.path"        value="/${app.name}v${app.version}"/>
 
     <property name="src.home"        value="${basedir}/src"/>
     <property name="web.home"        value="${basedir}/web"/>
@@ -166,6 +166,8 @@ location="${catalina.home}/lib/catalina-ant.jar" />
 <path id="tomcat.ant.classpath">
              <pathelement 
 location="${catalina.home}/lib/catalina-ant.jar" />
+<pathelement 
+location="${catalina.home}/lib/tomcat-util.jar" />
          </path>
 
     <taskdef name="install" classname="org.apache.catalina.ant.DeployTask"
