@@ -22,7 +22,7 @@
              <div class="col s12"></div>
              <div class="input-field col s12">
                <i class="material-icons prefix">alarm_on</i><br>
-               <input placeholder="Hora del evento" id="horaEvento" type="text" class="col s12 validate">
+               <input placeholder="Hora del evento" id="horaEvento" type="date" class="col s12 validate datepicker">
              </div>
              <div class="col s12"></div>
              <div class="input-field col s12">
