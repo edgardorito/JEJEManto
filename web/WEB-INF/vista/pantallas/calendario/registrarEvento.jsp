@@ -10,7 +10,28 @@
 
     <body>
        <c:import url="/WEB-INF/vista/comun/banner.jsp" />
-       <a class="waves-effect waves-light btn">button</a>
+
+       <div class="row">
+         <form class="col s12">
+           <div class="row">
+             <div class="col s12"></div>
+             <div class="input-field col s12">
+               <i class="material-icons prefix">account_circle</i><br>
+               <input placeholder="Nombre del evento" id="nombreEvento" type="text" class="col s12 validate">
+             </div>
+             <div class="col s12"></div>
+             <div class="input-field col s12">
+               <i class="material-icons prefix">alarm_on</i><br>
+               <input placeholder="Hora del evento" id="horaEvento" type="text" class="col s12 validate">
+             </div>
+             <div class="col s12"></div>
+             <div class="input-field col s12">
+               <i class="material-icons prefix">schedule</i><br>
+               <input placeholder="Fecha del evento" id="fechaEvento" type="text" class="col s12 validate">
+             </div>
+           </div>
+         </form>
+       </div>
 
        <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
     </body>

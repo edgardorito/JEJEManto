@@ -10,9 +10,17 @@
 
     <body>
        <c:import url="/WEB-INF/vista/comun/banner.jsp" />
-       
-       <a class="waves-effect waves-light btn">button</a>
-
+       <div class="row">
+         <form class="col s12">
+           <div class="row">
+             <div class="col s12"></div>
+             <div class="input-field col s12">
+               <i class="material-icons prefix">search</i><br>
+               <input placeholder="Buscar evento" id="nombreEvento" type="text" class="col s12 validate">
+             </div>
+           </div>
+         </form>
+       </div>
        <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
     </body>
 </html>
