@@ -23,6 +23,17 @@ create table Usuarios (
    primary key (idUsuario),
    unique (nombreUsuario)
 );
+CREATE TABLE `manto`.`vehiculos` (
+  `idVehiculo` INT NOT NULL,
+  `idUsuario` INT NOT NULL,
+  `tipo` VARCHAR(45) NOT NULL,
+  `modelo` VARCHAR(45) NOT NULL,
+  `marca` VARCHAR(45) NOT NULL,
+  `placa` VARCHAR(45) NOT NULL,
+  `color` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idVehiculo`)
+);
+
 create table UsuarioRol (
    idUsuario bigint not null,
    idRol bigint not null

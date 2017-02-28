@@ -14,55 +14,63 @@
     <body>
         <c:import url="/WEB-INF/vista/comun/banner.jsp" />
         
-        <div class="row">
-            <div class="input-field col s12">
-              <input id="nombreRV" type="text" class="validate">
-              <label for="nombreRV">Nombre</label>
+         
+        <main>
+          <form id="forma" action="procesarRegistroV.do" method="post">
+            <div class="row">
+                <div class="input-field col s6  l6 offset-l3">
+                  <input value="${formaNuevoVehiculo.curp}" id="curpRV" name="curp" type="text" class="validate">
+                  <label for="curpRV">Curp</label>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="input-field col s6  l6 offset-l3">
+                  <input value="${formaNuevoVehiculo.tipo}" id="tipoRV" name="tipo" type="text" class="validate">
+                  <label for="curpRV">Tipo</label>
+                </div>
+            </div> 
+  <!--          <div class="row">
+                <div class="input-field col s6  l6 offset-l3">
+                    <select>
+                        <option value="" disabled selected>Elige una opcion</option>
+                        <option value="Automovil">Automovil</option>
+                        <option value="Motocicleta">Motocicleta</option>
+                       
+                    </select>
+                    <label>Tipo</label>
+                </div>
+            </div>  -->
+            <div class="row">
+                <div class="input-field col s6  l6 offset-l3">
+                  <input value="${formaNuevoVehiculo.modelo}" id="modeloRV"  name="modelo" type="text" class="validate">
+                  <label for="modeloRV">Modelo</label>
+                </div>
+            </div>   
+             <div class="row">
+                <div class="input-field col s6  l6 offset-l3">
+                  <input value="${formaNuevoVehiculo.marca}" id="marcaRV" name="marca" type="text" class="validate">
+                  <label for="marcaRV">Marca</label>
+                </div>
+            </div> 
+             <div class="row">
+                <div class="input-field col s6  l6 offset-l3">
+                  <input value="${formaNuevoVehiculo.placa}" id="placaRV" name="placa" type="text" class="validate">
+                  <label for="colorRV">Placa</label>
+                </div>
+            </div> 
+             <div class="row">
+                <div class="input-field col s6  l6 offset-l3">
+                  <input value="${formaNuevoVehiculo.color}" id="colorRV" name="color" type="text" class="validate">
+                  <label for="colorRV">Color</label>
+                </div>
+            </div>   
+            <div class="row">
+              <input type="submit" 
+                           name="submit"
+                           value="Guardar"/>
             </div>
-        </div> 
-        <div class="row">
-            <div class="input-field col s12">
-              <input id="apellidosRV" type="text" class="validate">
-              <label for="apellidosRV">Apellidos</label>
-            </div>
-        </div>    
-        <div class="row">
-            <div class="input-field col s12">
-              <input id="curpRV" type="text" class="validate">
-              <label for="curpRV">Curp</label>
-            </div>
-        </div> 
-        <div class="row">
-            <div class="input-field col s12">
-              <input id="tipoRV" type="text" class="validate">
-              <label for="tipoRV">Tipo</label>
-            </div>
-        </div>  
-        <div class="row">
-            <div class="input-field col s12">
-              <input id="modeloRV" type="text" class="validate">
-              <label for="modeloRV">Modelo</label>
-            </div>
-        </div>   
-         <div class="row">
-            <div class="input-field col s12">
-              <input id="marcaRV" type="text" class="validate">
-              <label for="marcaRV">Marca</label>
-            </div>
-        </div> 
-         <div class="row">
-            <div class="input-field col s12">
-              <input id="placaRV" type="text" class="validate">
-              <label for="colorRV">Placa</label>
-            </div>
-        </div> 
-         <div class="row">
-            <div class="input-field col s12">
-              <input id="placaRV" type="text" class="validate">
-              <label for="colorRV">Color</label>
-            </div>
-        </div>   
-
+            </form>
+        </main>
         <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
                 
     </body>

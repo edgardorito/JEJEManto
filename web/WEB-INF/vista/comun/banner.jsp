@@ -11,7 +11,7 @@
 		        	    <a class="collapsible-header">Registro Vehicular<i class="material-icons">arrow_drop_down</i></a>
 		            	<div class="collapsible-body">
 			              	<ul>
-				                <li><a href="#!">Nuevo registro</a></li>
+				                <li><a href="registrarVehiculo.do">Registrar vehiculo</a></li>
 				                <li><a href="#!">Buscar registro</a></li>
 				                <li><a href="#!">Mostrar registros</a></li>
 			             	</ul>
@@ -29,7 +29,7 @@
 	      <ul class="right hide-on-med-and-down">
 	        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Registro Vehicular </a></li>
  			<ul id="dropdown1" class="dropdown-content">
-			  <li><a href="#!">Nuevo registro</a></li>
+			  <li><a href="registrarVehiculo.do">Registrar vehiculo</a></li>
 			  <li class="divider"></li>
 			  <li><a href="#!">Buscar registro</a></li>
 			  <li class="divider"></li>
