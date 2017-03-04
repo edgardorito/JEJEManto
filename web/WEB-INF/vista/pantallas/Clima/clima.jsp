@@ -18,12 +18,15 @@
         <!--Formulario de Ciudad-->
         <main>
         <div class="row">
-            <form class="col s12">
+            <form class="col s12" action="procesarRegistroClima.do" method="post">
               <div class="row">
                 <div class="input-field col s10">
-                  <i class="material-icons prefix">location_on</i>
-                  <input id="ciudad_buscador" type="text" class="validate">
-                  <label for="ciudad">ciudad</label>
+                <i class="material-icons prefix">location_on</i>
+                    
+                      <input value="${formaNuevoClima.ciudad}" name="ciudad" id="ciudad_buscador" type="text" class="validate">
+                      <label for="ciudad">ciudad</label>
+                      <input type="submit">
+                    
                 </div>
               </div>
               <a class="waves-effect waves-light btn-large"><i class="material-icons left">search</i>buscar</a>
