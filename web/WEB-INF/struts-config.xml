@@ -66,6 +66,12 @@
                    type="edu.uag.iidis.scec.vista.FormaListadoRecomendaciones">
         </form-bean>
     </form-beans>
+    <form-beans>
+         <form-bean name="formaNuevoPerfil"
+                   type="edu.uag.iidis.scec.vista.FormaNuevoPerfil">
+        </form-bean>
+     
+    </form-beans>
 
     <form-beans>
         <form-bean name="formaNuevoEstado"
@@ -271,10 +277,21 @@
                 name="formaNuevoEstado"
                 scope="request"
                 validate="true"
-                input="/WEB-INF/vista/pantallas/plantilla01.jsp?c=formaNuevoEstado.jsp" >
+                input="/WEB-INF/vista/pantallas/plantilla01.jsp?c=formaNuevoEstado.jsp">
             <forward name="cancelar" path="/solicitarListarRoles.do" redirect="true"/>
             <forward name="exito" path="/WEB-INF/vista/pantallas/pantallaBienvenida.jsp"/>
             <forward name="volver" path="solicitarRegistroEstado.do" redirect="true"/>
+       </action>
+       <action path="/procesarRegistroUsuario"
+                type="edu.uag.iidis.scec.control.MCUEditarPerfil"
+                parameter="procesarRegistroUsuario"
+                name="formaNuevoPerfil"
+                scope="request"
+                validate="true"
+              >
+          
+            <forward name="exito" path="/WEB-INF/vista/pantallas/pantallaBienvenida.jsp"/>
+          
        </action>
 
        <!--cambios-->
