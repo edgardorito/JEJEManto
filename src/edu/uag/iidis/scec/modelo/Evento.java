@@ -5,9 +5,9 @@ import java.util.*;
 
 class Evento  extends ClaseBase implements Serializable  {
 
-  private long id = "";
-  private String nombre = "";
-  private String fecha = "";
+  private long id;
+  private String nombre;
+  private String fecha;
 
   public Evento (){}
 
@@ -15,7 +15,7 @@ class Evento  extends ClaseBase implements Serializable  {
       this.id = id;
     }
 
-    public Estado(String nombre, String fecha){
+    public Evento(String nombre, String fecha){
       this.nombre=nombre;
       this.fecha=fecha;
     }
