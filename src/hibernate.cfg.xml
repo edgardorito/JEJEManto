@@ -17,7 +17,7 @@
         <!-- Propiedades para MySQL (remoto)  -->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/manto?autoReconnect=true</property>
+        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:1601/manto?autoReconnect=true</property>
         <property name="hibernate.connection.username">jeje</property>
         <property name="hibernate.connection.password">uno</property>
 		<!-- JDBC connection pool (use the built-in) -->
@@ -53,7 +53,11 @@
 		<mapping resource="edu/uag/iidis/scec/modelo/Lugar.hbm.xml"/>
         <mapping resource="edu/uag/iidis/scec/modelo/Recomendacion.hbm.xml"/>
         <mapping resource="edu/uag/iidis/scec/modelo/Evento.hbm.xml"/>
+
         <mapping resource="edu/uag/iidis/scec/modelo/Perfil.hbm.xml"/>
+
+        <mapping resource="edu/uag/iidis/scec/modelo/Clima.hbm.xml"/>
+
 
     </session-factory>
 

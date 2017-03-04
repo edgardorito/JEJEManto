@@ -27,6 +27,12 @@ create table UsuarioRol (
    idUsuario bigint not null,
    idRol bigint not null
 );
+
+CREATE TABLE `manto`.`clima` (
+  `idClima` INT NOT NULL AUTO_INCREMENT,
+  `Ciudad` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idClima`));
+
 alter table UsuarioRol add constraint FK4CA33E15F65AB4 foreign key (idRol) references Roles;
 alter table UsuarioRol add constraint FK4CA33E1BF549993 foreign key (idUsuario) references Usuarios;
 

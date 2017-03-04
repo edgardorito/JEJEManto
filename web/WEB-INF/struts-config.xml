@@ -74,6 +74,13 @@
     </form-beans>
 
     <form-beans>
+        <form-bean name="formaNuevoClima"
+                   type="edu.uag.iidis.scec.vista.FormaNuevoClima">
+        </form-bean>
+        
+    </form-beans>
+
+    <form-beans>
         <form-bean name="formaNuevoEstado"
                    type="edu.uag.iidis.scec.vista.FormaNuevoEstado">
         </form-bean>
@@ -225,6 +232,14 @@
                 scope="request"
                 validate="false">
             <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=formaNuevoEstado.jsp"/>
+        </action>
+        <action path="/procesarRegistroClima"
+                type="edu.uag.iidis.scec.control.MCURegistrarClima"
+                parameter="procesarRegistroClima"
+                name="formaNuevoClima"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/pantallaBienvenida.jsp"/>
         </action>
         <action path="/procesarRegistro"
                 type="edu.uag.iidis.scec.control.MCURegistrarUsuario"
