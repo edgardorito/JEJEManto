@@ -12,14 +12,15 @@
 		        	    <a class="collapsible-header">Registro Vehicular<i class="material-icons">arrow_drop_down</i></a>
 		            	<div class="collapsible-body">
 			              	<ul>
-				                <li><a href="#!">Nuevo registro</a></li>
+				                <li><a href="registrarVehiculo.do">Registrar vehiculo</a></li>
 				                <li><a href="#!">Buscar registro</a></li>
-				                <li><a href="#!">Mostrar registros</a></li>
+				                <li><a href="solicitarListarVehiculos.do">Mostrar registros</a></li>
 			             	</ul>
 			            </div>
 		          </li>
 		        </ul>
 		    </li>
+
 
 	        <!--Inicio clima-->
 	        <li class="no-padding">
@@ -52,7 +53,9 @@
 					 </li>
 
 
-					<li><a href="irEditarPerfil.do">Editar perfil</a></li>
+					<li><a href="irEditarPerfil.do">Registrar perfil</a></li>
+					<li><a href="solicitarListarPerfil.do">Perfiles</a></li>
+
 	      </ul>
 	    </div>
 
@@ -64,10 +67,10 @@
 						<li class="divider"></li>
 						<li><a href="#!">Buscar registro</a></li>
 						<li class="divider"></li>
-						<li><a href="#!">Mostrar registros</a></li>
+						<li><a href="solicitarListarVehiculos.do">Mostrar registros</a></li>
 					</ul>
+					<li><a href="solicitarListarPerfil.do">Perfiles</a></li>
 					<li><a href="Clima.do">Clima</a></li>
-
 					<li><a class="dropdown-button" href="#!" data-activates="dropdownCal">Calendario</a></li>
 					<ul id="dropdownCal" class="dropdown-content">
 						<li><a href="registrarEvento.do">Registar evento</a></li>

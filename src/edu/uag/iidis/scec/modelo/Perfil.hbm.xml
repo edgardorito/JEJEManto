@@ -1,0 +1,67 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">  
+
+<hibernate-mapping>
+    <class name="edu.uag.iidis.scec.modelo.Perfil"
+           table="editarperfil"
+           dynamic-update="false"
+           dynamic-insert="false">
+
+        <id name="id"
+            column="id"
+            type="java.lang.Long"
+            unsaved-value="null" >
+            <generator class="increment">
+            </generator>
+        </id>
+
+        <property name="usuario"
+			column="usuario"
+            type="java.lang.String"
+            not-null="true"
+            unique="true" />
+
+        <property name="contra"
+            column="contra"
+            type="java.lang.String"
+            not-null="true"/>
+
+        <property name="nombre"
+            column="nombre"
+            type="java.lang.String"
+            not-null="true" />
+
+        <property name="apellido"
+            column="apellido"
+            type="java.lang.String" 
+            not-null="true"/>
+
+        <property name="telefono"
+            column="telefono"
+            type="java.lang.String" 
+            not-null="true"/>
+
+        <property name="email"
+            column="email"
+            type="java.lang.String" 
+            not-null="true"/>
+
+        <property name="cp"
+            column="cp"
+            type="java.lang.String" 
+            not-null="true"/>
+
+        <property name="pais"
+            column="pais"
+            type="java.lang.String" />
+
+        <property name="ciudad"
+            column="ciudad"
+            type="java.lang.String" />
+
+        <property name="estado"
+            column="estado"
+            type="java.lang.String" />
+
+    </class>
+
+</hibernate-mapping>
