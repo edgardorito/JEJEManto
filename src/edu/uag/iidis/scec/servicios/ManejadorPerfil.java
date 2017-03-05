@@ -17,9 +17,9 @@ public class ManejadorPerfil {
   public ManejadorPerfil() {
         dao = new PerfilDAO();
     }
- /* 
+ 
 
-    public Collection listarEstados() {
+    public Collection listarPerfil() {
         Collection resultado;
 
         if (log.isDebugEnabled()) {
@@ -39,7 +39,7 @@ public class ManejadorPerfil {
         }
     }
 	
-	public Collection listarEstadoPorNombre(String nombre) {
+	public Collection listarPerfilPorUsuario(String usuario) {
         Collection resultado;
 
         if (log.isDebugEnabled()) {
@@ -48,7 +48,7 @@ public class ManejadorPerfil {
 
         try {
             HibernateUtil.beginTransaction();
-            resultado = dao.buscaEstado(nombre);
+            resultado = dao.buscaPerfil(usuario);
             log.debug("Consulta "+resultado);
 			HibernateUtil.commitTransaction();
             return resultado;         
@@ -60,7 +60,7 @@ public class ManejadorPerfil {
         }
     }
 	
-	
+	/*
     public void eliminarEstado(Long id) {
         if (log.isDebugEnabled()) {
             log.debug(">eliminarEstado(estado)");

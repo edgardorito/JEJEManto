@@ -72,6 +72,12 @@
         </form-bean>
      
     </form-beans>
+    <form-beans>
+         <form-bean name="formaListadoPerfil"
+                   type="edu.uag.iidis.scec.vista.FormaListadoPerfil">
+        </form-bean>
+     
+    </form-beans>
 
     <form-beans>
         <form-bean name="formaNuevoClima"
@@ -161,6 +167,16 @@
                 scope="request"
                 validate="false">
             <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=formaListadoEstados.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+
+        <action path="/solicitarListarPerfil"
+                type="edu.uag.iidis.scec.control.MCUListarPerfil"
+                parameter="solicitarListarPerfil"
+                name="formaListadoPerfil"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/formaListadoPerfil.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
 

@@ -69,6 +69,7 @@
             <button class="btn waves-effect waves-light" type="submit" name="action">Guardar
                 <i class="material-icons right">send</i>
             </button>
+            
             </center>
         </form>
         

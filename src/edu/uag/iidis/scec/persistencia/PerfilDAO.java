@@ -54,32 +54,32 @@ public class PerfilDAO {
         return estado;
     }
 
-
+*/
     public Collection buscarTodos()
             throws ExcepcionInfraestructura {
 
-        Collection estados;
+        Collection perfiles;
 
         if (log.isDebugEnabled()) {
             log.debug(">buscarTodos()");
         }
 
         try {
-            estados = HibernateUtil.getSession()
-                                    .createCriteria(Estado.class)
+            perfiles = HibernateUtil.getSession()
+                                    .createCriteria(Perfil.class)
                                     .list();
                                     
-              log.debug(">buscarTodos() ---- list " + estados);                                 
+              log.debug(">buscarTodos() ---- list " + perfiles);                                 
         } catch (HibernateException e) {
             if (log.isWarnEnabled()) {
                 log.warn("<HibernateException");
             }
             throw new ExcepcionInfraestructura(e);
         }
-        return estados;
+        return perfiles;
     }
 
-
+/*
     public Collection buscarPorEjemplo(Estado estado)
             throws ExcepcionInfraestructura {
 
@@ -194,19 +194,19 @@ public class PerfilDAO {
             throw new ExcepcionInfraestructura(ex);
         }
     }
-/*	
-	public Collection buscaEstado(String nombreEstado)
+
+	public Collection buscaPerfil(String usuario)
             throws ExcepcionInfraestructura {
 				
 		if (log.isDebugEnabled()) {
-            log.debug(">existeRol(nombreRol)");
+            log.debug(">existeUsuario(nombreUsuario)");
         }
 
         try {
-            String hql = "from Estado where nombre like '"+nombreEstado+"%'";
+            String hql = "from editarperfil where usuario like '"+usuario+"%'";
             
              if (log.isDebugEnabled()) {
-                 log.debug(hql + nombreEstado);
+                 log.debug(hql + usuario);
             }
         
             Query query = HibernateUtil.getSession()
@@ -237,5 +237,4 @@ public class PerfilDAO {
             throw new ExcepcionInfraestructura(ex);
         }
     }
-*/
 }
