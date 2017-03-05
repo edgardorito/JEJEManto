@@ -24,12 +24,12 @@
              <div class="input-field col s12">
                <i class="material-icons prefix">alarm_on</i><br>
                <!-- datepicker -->
-               <input placeholder="Fecha del evento" id="fechaEvento" type="text" class="col s12 validate "
+               <input placeholder="Fecha del evento" id="fechaEvento" type="date" class="col s12 validate datepicker"
                  name="fecha" value="${formaNuevoEvento.fecha}">
              </div>
+             <input type="submit" name="submit" value="Registrar" class="btn waves-effect waves-light"/>
              <div class="col s12"></div>
            </div>
-           <input type="submit" name="submit" value="Registrar"/>
          </form>
        </div>
 
