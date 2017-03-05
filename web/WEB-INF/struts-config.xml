@@ -120,6 +120,7 @@
     <!-- Definici�n de Global Forward -->
     <global-forwards>
         <forward name="irInicio" path="/irLogin.dd"/>
+        <forward name="irInicio" path="/irEditarPerfil.dd"/>
     </global-forwards>
 
     <!-- Definici�n de acciones -->
@@ -367,7 +368,7 @@
                 validate="true"
               >
 
-            <forward name="exito" path="/WEB-INF/vista/pantallas/pantallaBienvenida.jsp"/>
+            <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=pantallaLogin.jsp"/>
 
        </action>
 

@@ -53,8 +53,9 @@
 					 </li>
 
 
-					<li><a href="irEditarPerfil.do">Registrar perfil</a></li>
+					
 					<li><a href="solicitarListarPerfil.do">Perfiles</a></li>
+					<li><a href="irEditarPerfil.dd">Registrarse</a></li>
 
 	      </ul>
 	    </div>
@@ -78,7 +79,7 @@
 						<li><a href="solicitarListaEventos.do">Buscar evento</a></li>
 					</ul>
 
-					<li><a href="irEditarPerfil.do">Editar perfil</a></li>
+					<li><a href="irEditarPerfil.dd">Registrarse</a></li>
 				</ul>
 			</div>
 	 </nav>

@@ -15,7 +15,7 @@
     <body>
     <c:import url="/WEB-INF/vista/comun/banner.jsp" />
     <div class="row">
-        <form  id="forma" class="col s12" action="procesarRegistroUsuario.do" method="post">
+        <form  id="forma" class="col s12" action="procesarRegistroUsuario.dd" method="post">
           <div class="row">
           <div class="input-field col s12 m12 l6">
               <i class="material-icons prefix">account_box</i>
