@@ -45,7 +45,7 @@
 								 <div class="collapsible-body">
 									 <ul>
 										 <li><a href="registrarEvento.do">Registar evento</a></li>
-										 <li><a href="buscarPresentar.do">Buscar evento</a></li>
+										 <li><a href="solicitarListaEventos.do">Buscar evento</a></li>
 									 </ul>
 								 </div>
 							 </li>
@@ -75,7 +75,7 @@
 					<ul id="dropdownCal" class="dropdown-content">
 						<li><a href="registrarEvento.do">Registar evento</a></li>
 						<li class="divider"></li>
-						<li><a href="buscarPresentar.do">Buscar evento</a></li>
+						<li><a href="solicitarListaEventos.do">Buscar evento</a></li>
 					</ul>
 
 					<li><a href="irEditarPerfil.do">Editar perfil</a></li>

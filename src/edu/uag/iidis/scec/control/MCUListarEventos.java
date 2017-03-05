@@ -26,7 +26,7 @@ public final class MCUListarEventos
     private Log log = LogFactory.getLog(MCURegistrarUsuario.class);
 
 
-    public ActionForward solicitarListarVehiculos(
+    public ActionForward solicitarListaEventos(
                 ActionMapping mapping,
                 ActionForm form,
                 HttpServletRequest request,

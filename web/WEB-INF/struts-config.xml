@@ -112,7 +112,7 @@
                    type="edu.uag.iidis.scec.vista.FormaNuevoEvento">
         </form-bean>
         <form-bean name="formaListadoEventos"
-                   type="edu.uag.iidis.scec.vista.FormaListadoEvento">
+                   type="edu.uag.iidis.scec.vista.FormaListadoEventos">
         </form-bean>
     </form-beans>
 
@@ -203,6 +203,15 @@
                 scope="request"
                 validate="false">
             <forward name="exito" path="/WEB-INF/vista/pantallas/componenteRV/listarVehiculos.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+        <action path="/solicitarListaEventos"
+                type="edu.uag.iidis.scec.control.MCUListarEventos"
+                parameter="solicitarListaEventos"
+                name="formaListadoEventos"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/buscarPresentar.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
 
