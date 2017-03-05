@@ -70,6 +70,9 @@
         <form-bean name="formaNuevoVehiculo"
                    type="edu.uag.iidis.scec.vista.FormaNuevoVehiculo">
         </form-bean>
+        <form-bean name="formaListadoVehiculos"
+                   type="edu.uag.iidis.scec.vista.FormaListadoVehiculos">
+        </form-bean>
     </form-beans>
 
 
@@ -147,6 +150,16 @@
             <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=formaListadoEstados.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
+        <action path="/solicitarListarVehiculos"
+                type="edu.uag.iidis.scec.control.MCUListarVehiculos"
+                parameter="solicitarListarVehiculos"
+                name="formaListadoVehiculos"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/componenteRV/listarVehiculos.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+
 		
 		<action path="/ListarEstados"
                 type="edu.uag.iidis.scec.control.MCUListarEstados"

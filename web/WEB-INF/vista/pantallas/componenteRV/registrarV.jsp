@@ -29,7 +29,7 @@
                   <label for="curpRV">Tipo</label>
                 </div>
             </div> 
-  <!--          <div class="row">
+  <!--        <div class="row">
                 <div class="input-field col s6  l6 offset-l3">
                     <select>
                         <option value="" disabled selected>Elige una opcion</option>

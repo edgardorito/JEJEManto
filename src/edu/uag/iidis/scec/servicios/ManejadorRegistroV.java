@@ -17,13 +17,11 @@ public class ManejadorRegistroV {
     public ManejadorRegistroV() {
         dao = new VehiculoDAO();
     }
-
-
-  /*  public Collection listarEstados() {
+    public Collection listarVehiculos() {
         Collection resultado;
 
         if (log.isDebugEnabled()) {
-            log.debug(">guardarUsuario(usuario)");
+            log.debug(">listarVehiculos");
         }
 
         try {
@@ -38,6 +36,8 @@ public class ManejadorRegistroV {
             HibernateUtil.closeSession();
         }
     }
+
+  /*  
 	
 	public Collection listarEstadoPorNombre(String nombre) {
         Collection resultado;

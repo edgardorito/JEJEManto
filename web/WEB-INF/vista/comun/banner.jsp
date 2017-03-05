@@ -13,7 +13,7 @@
 			              	<ul>
 				                <li><a href="registrarVehiculo.do">Registrar vehiculo</a></li>
 				                <li><a href="#!">Buscar registro</a></li>
-				                <li><a href="#!">Mostrar registros</a></li>
+				                <li><a href="solicitarListarVehiculos.do">Mostrar registros</a></li>
 			             	</ul>
 			            </div>
 		          </li>
@@ -33,7 +33,7 @@
 			  <li class="divider"></li>
 			  <li><a href="#!">Buscar registro</a></li>
 			  <li class="divider"></li>
-			  <li><a href="#!">Mostrar registros</a></li>
+			  <li><a href="solicitarListarVehiculos.do">Mostrar registros</a></li>
 			</ul>
 	        <li><a href="Clima.do">Clima</a></li>
 	        <li><a href="">Calendario</a></li>
