@@ -87,6 +87,30 @@ public class EventoDAO {
         }
     }
 
+    public Collection buscarTodos()
+            throws ExcepcionInfraestructura {
+
+        Collection Eventos;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">buscarTodos()");
+        }
+
+        try {
+            Eventos = HibernateUtil.getSession()
+                                    .createCriteria(Evento.class)
+                                    .list();
+
+              log.debug(">buscarTodos() ---- list   " + Eventos.size());
+			log.debug(">buscarTodos() ---- contenido   " + Eventos);
+        } catch (HibernateException e) {
+            if (log.isWarnEnabled()) {
+                log.warn("<HibernateException");
+            }
+            throw new ExcepcionInfraestructura(e);
+        }
+        return Eventos;
+    }
 
 
 }

@@ -52,4 +52,25 @@ public class ManejadorEventos {
         }
         return resultado;
     }
+
+    public Collection listarEventos() {
+        Collection resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">listarEventos");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();
+            resultado = dao.buscarTodos();
+            HibernateUtil.commitTransaction();
+            return resultado;
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+            return null;
+        } finally {
+            HibernateUtil.closeSession();
+        }
+    }
+
 }

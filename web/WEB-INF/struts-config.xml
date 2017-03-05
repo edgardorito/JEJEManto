@@ -70,25 +70,28 @@
 	<form-beans>
         <form-bean name="formaNuevoVehiculo"
                    type="edu.uag.iidis.scec.vista.FormaNuevoVehiculo">
+       </form-bean>
+
+  </form-beans>
 
     <form-beans>
          <form-bean name="formaNuevoPerfil"
                    type="edu.uag.iidis.scec.vista.FormaNuevoPerfil">
         </form-bean>
-     
+
     </form-beans>
     <form-beans>
          <form-bean name="formaListadoPerfil"
                    type="edu.uag.iidis.scec.vista.FormaListadoPerfil">
         </form-bean>
-     
+
     </form-beans>
 
     <form-beans>
         <form-bean name="formaNuevoClima"
                    type="edu.uag.iidis.scec.vista.FormaNuevoClima">
         </form-bean>
-        
+
     </form-beans>
 
     <form-beans>
@@ -107,6 +110,9 @@
     <form-beans>
         <form-bean name="formaNuevoEvento"
                    type="edu.uag.iidis.scec.vista.FormaNuevoEvento">
+        </form-bean>
+        <form-bean name="formaListadoEventos"
+                   type="edu.uag.iidis.scec.vista.FormaListadoEvento">
         </form-bean>
     </form-beans>
 
@@ -190,7 +196,6 @@
             <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=formaListadoEstados.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
-<<<<<<< HEAD
         <action path="/solicitarListarVehiculos"
                 type="edu.uag.iidis.scec.control.MCUListarVehiculos"
                 parameter="solicitarListarVehiculos"
@@ -200,9 +205,6 @@
             <forward name="exito" path="/WEB-INF/vista/pantallas/componenteRV/listarVehiculos.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
-
-		
-=======
 
         <action path="/solicitarListarPerfil"
                 type="edu.uag.iidis.scec.control.MCUListarPerfil"
@@ -214,7 +216,7 @@
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
 
->>>>>>> e1979d6b333eea69b30c7cbc3f2c640436cb135a
+
 		<action path="/ListarEstados"
                 type="edu.uag.iidis.scec.control.MCUListarEstados"
                 parameter="buscarEstado"
@@ -355,9 +357,9 @@
                 scope="request"
                 validate="true"
               >
-          
+
             <forward name="exito" path="/WEB-INF/vista/pantallas/pantallaBienvenida.jsp"/>
-          
+
        </action>
 
        <!--cambios-->
@@ -469,5 +471,4 @@
                       value="/WEB-INF/validator-rules.xml,
                              /WEB-INF/validation.xml"/>
     </plug-in>
-
 </struts-config>

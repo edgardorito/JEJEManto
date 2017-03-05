@@ -10,17 +10,28 @@
 
     <body>
        <c:import url="/WEB-INF/vista/comun/banner.jsp" />
-       <div class="row">
-         <form class="col s12">
-           <div class="row">
-             <div class="col s12"></div>
-             <div class="input-field col s12">
-               <i class="material-icons prefix">search</i><br>
-               <input placeholder="Buscar evento" id="nombreEvento" type="text" class="col s12 validate">
-             </div>
-           </div>
-         </form>
-       </div>
+       <main>
+
+         <table>
+           <thead>
+             <tr>
+                 <th data-field="tipo">Nombre del evento</th>
+                 <th data-field="modelo">Fecha</th>
+             </tr>
+           </thead>
+
+           <tbody>
+           <c:forEach var="eventos" items="${formaListadoEventos.eventos}">
+              <tr>
+                 <td><c:out value="${eventos.nombre}"/></td>
+                 <td><c:out value="${eventos.fecha}"/></td>
+               </tr>
+           </c:forEach>
+
+
+           </tbody>
+         </table>
+       </main>
        <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
     </body>
 </html>

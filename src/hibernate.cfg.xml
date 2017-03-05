@@ -57,13 +57,10 @@
 
         <mapping resource="edu/uag/iidis/scec/modelo/Evento.hbm.xml"/>
 
-<<<<<<< HEAD
-=======
+
         <mapping resource="edu/uag/iidis/scec/modelo/Perfil.hbm.xml"/>
 
         <mapping resource="edu/uag/iidis/scec/modelo/Clima.hbm.xml"/>
-
->>>>>>> 9971bd5d641fe90e09e2d06dc200a7242f10681a
 
     </session-factory>
 
