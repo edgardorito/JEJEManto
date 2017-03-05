@@ -3,16 +3,16 @@ package edu.uag.iidis.scec.modelo;
 import java.io.Serializable;
 import java.util.*;
 
-class Evento  extends ClaseBase implements Serializable  {
+public class Evento  extends ClaseBase implements Serializable  {
 
-  private long id;
+  private long idEvento;
   private String nombre;
   private String fecha;
 
   public Evento (){}
 
-    public Evento(Long id){
-      this.id = id;
+    public Evento(Long idEvento){
+      this.idEvento = idEvento;
     }
 
     public Evento(String nombre, String fecha){
@@ -24,16 +24,16 @@ class Evento  extends ClaseBase implements Serializable  {
     * Regresa el id del rol.
     * @return Long
     */
-    public Long getId() {
-      return this.id;
+    public Long getIdEvento() {
+      return this.idEvento;
     }
 
     /**
     * Establece el id del rol.
     * @return void
     */
-    public void setId(Long id) {
-      this.id = id;
+    public void setIdEvento(Long idEvento) {
+      this.idEvento = idEvento;
     }
 
 

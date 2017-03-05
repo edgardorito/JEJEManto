@@ -79,6 +79,12 @@
         </form-bean>
     </form-beans>
 
+    <form-beans>
+        <form-bean name="formaNuevoEvento"
+                   type="edu.uag.iidis.scec.vista.FormaNuevoEvento">
+        </form-bean>
+    </form-beans>
+
 
     <!-- Definici�n de Global Forward -->
     <global-forwards>
@@ -307,6 +313,16 @@
                 scope="request"
                 validate="false">
             <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=formaNuevoRecomendacion.jsp"/>
+        </action>
+
+        <action path="/procesarRegistroEvento"
+                type="edu.uag.iidis.scec.control.MCURegistrarEvento"
+                parameter="procesarRegistroEvento"
+                name="formaNuevoEvento"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/registrarEvento.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio"/>
         </action>
 
         <action path="/ListarEstado"

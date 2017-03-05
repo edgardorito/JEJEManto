@@ -2,12 +2,12 @@
 
 <hibernate-mapping>
     <class name="edu.uag.iidis.scec.modelo.Evento"
-           table="Eventos"
+           table="evento"
            dynamic-update="false"
            dynamic-insert="false">
 
-        <id name="id"
-            column="id"
+        <id name="idEvento"
+            column="idEvento"
             type="java.lang.Long"
             unsaved-value="null" >
             <generator class="increment">
@@ -15,13 +15,13 @@
         </id>
 
         <property name="nombre"
-			column="Nombre"
+			column="nombre"
             type="java.lang.String"
             not-null="true"
             unique="true" />
 
         <property name="fecha"
-			column="Fecha"
+			column="fecha"
             type="java.lang.String" />
 
     </class>
