@@ -13,7 +13,12 @@
 	
     <body>
         <c:import url="/WEB-INF/vista/comun/banner.jsp" />
-        <main></main>
+        <main>
+            <center>
+                <h1>Bienvenido</h1>   
+            </center>
+            
+        </main>
         <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
                 
     </body>

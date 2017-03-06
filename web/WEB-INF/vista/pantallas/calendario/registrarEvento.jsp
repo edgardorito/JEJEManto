@@ -10,7 +10,7 @@
 
     <body>
        <c:import url="/WEB-INF/vista/comun/banner.jsp" />
-
+       <main>
        <div class="row">
          <form class="col s12" action="procesarRegistroEvento.do" method="post">
            <div class="row">
@@ -32,7 +32,7 @@
            </div>
          </form>
        </div>
-
+       </main>
        <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
     </body>
 </html>

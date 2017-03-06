@@ -18,19 +18,19 @@
         <main>
           <form id="forma" action="procesarRegistroV.do" method="post">
             <div class="row">
-                <div class="input-field col s6  l3 offset-l4">
+                <div class="input-field col s6  l3 offset-l5">
                   <input value="${formaNuevoVehiculo.curp}" id="curpRV" name="curp" type="text" class="validate">
                   <label for="curpRV">Curp</label>
                 </div>
             </div> 
             <div class="row">
-                <div class="input-field col s6  l3 offset-l4">
+                <div class="input-field col s6  l3 offset-l5">
                   <input value="${formaNuevoVehiculo.tipo}" id="tipoRV" name="tipo" type="text" class="validate">
                   <label for="tipoRV">Tipo</label>
                 </div>
             </div> 
   <!--        <div class="row">
-                <div class="input-field col s6  l3 offset-l4">
+                <div class="input-field col s6  l3 offset-l5">
                     <select>
                         <option value="" disabled selected>Elige una opcion</option>
                         <option value="Automovil">Automovil</option>
@@ -41,33 +41,36 @@
                 </div>
             </div>  -->
             <div class="row">
-                <div class="input-field col s6  l3 offset-l4">
+                <div class="input-field col s6  l3 offset-l5">
                   <input value="${formaNuevoVehiculo.modelo}" id="modeloRV"  name="modelo" type="text" class="validate">
                   <label for="modeloRV">Modelo</label>
                 </div>
             </div>   
              <div class="row">
-                <div class="input-field col s6  l3 offset-l4">
+                <div class="input-field col s6  l3 offset-l5">
                   <input value="${formaNuevoVehiculo.marca}" id="marcaRV" name="marca" type="text" class="validate">
                   <label for="marcaRV">Marca</label>
                 </div>
             </div> 
              <div class="row">
-                <div class="input-field col s6  l3 offset-l4">
+                <div class="input-field col s6  l3 offset-l5">
                   <input value="${formaNuevoVehiculo.placa}" id="placaRV" name="placa" type="text" class="validate">
                   <label for="colorRV">Placa</label>
                 </div>
             </div> 
              <div class="row">
-                <div class="input-field col s6  l3 offset-l4">
+                <div class="input-field col s6  l3 offset-l5">
                   <input value="${formaNuevoVehiculo.color}" id="colorRV" name="color" type="text" class="validate">
                   <label for="colorRV">Color</label>
                 </div>
             </div>   
             <div class="row">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Guardar
+            <center>
+               <button class="btn waves-effect waves-light" type="submit" name="action">Guardar
                 <i class="material-icons right">Guardar</i>
             </button>
+            </center>
+           
           <!--    <input type="submit" 
                            name="submit"
                            value="Guardar"/>-->

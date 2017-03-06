@@ -65,7 +65,8 @@
 				<li><a href="irInicio.do">Inicio</a></li>
 					<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Registro Vehicular </a></li>
 					<ul id="dropdown1" class="dropdown-content">
-						<li><a href="#!">Nuevo registro</a></li>
+						<li><a href="registrarVehiculo.do">Registrar vehiculo</a></li>
+				                
 						<li class="divider"></li>
 						
 						<li class="divider"></li>
