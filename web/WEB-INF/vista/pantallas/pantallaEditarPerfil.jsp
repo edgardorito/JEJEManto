@@ -15,6 +15,7 @@
     <body>
     <c:import url="/WEB-INF/vista/comun/banner.jsp" />
     <div class="row">
+    <main>
         <form  id="forma" class="col s12" action="procesarRegistroUsuario.dd" method="post">
           <div class="row">
           <div class="input-field col s12 m12 l6">
@@ -72,7 +73,7 @@
             
             </center>
         </form>
-        
+        </main>
       </div>
       <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
     </body>
