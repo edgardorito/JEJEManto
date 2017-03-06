@@ -72,18 +72,21 @@
                    type="edu.uag.iidis.scec.vista.FormaNuevoVehiculo">
         </form-bean>
     </form-beans>
+       </form-bean>
+
+  </form-beans>
 
     <form-beans>
          <form-bean name="formaNuevoPerfil"
                    type="edu.uag.iidis.scec.vista.FormaNuevoPerfil">
         </form-bean>
-     
+
     </form-beans>
     <form-beans>
          <form-bean name="formaListadoPerfil"
                    type="edu.uag.iidis.scec.vista.FormaListadoPerfil">
         </form-bean>
-     
+
     </form-beans>
 
     <form-beans>
@@ -109,10 +112,20 @@
         </form-bean>
     </form-beans>
 
+    <form-beans>
+        <form-bean name="formaNuevoEvento"
+                   type="edu.uag.iidis.scec.vista.FormaNuevoEvento">
+        </form-bean>
+        <form-bean name="formaListadoEventos"
+                   type="edu.uag.iidis.scec.vista.FormaListadoEventos">
+        </form-bean>
+    </form-beans>
+
 
     <!-- Definici�n de Global Forward -->
     <global-forwards>
         <forward name="irInicio" path="/irLogin.dd"/>
+        <forward name="irInicio" path="/irEditarPerfil.dd"/>
     </global-forwards>
 
     <!-- Definici�n de acciones -->
@@ -199,7 +212,6 @@
             <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=formaListadoEstados.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
-
         <action path="/solicitarListarVehiculos"
                 type="edu.uag.iidis.scec.control.MCUListarVehiculos"
                 parameter="solicitarListarVehiculos"
@@ -209,7 +221,15 @@
             <forward name="exito" path="/WEB-INF/vista/pantallas/componenteRV/listarVehiculos.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
-
+        <action path="/solicitarListaEventos"
+                type="edu.uag.iidis.scec.control.MCUListarEventos"
+                parameter="solicitarListaEventos"
+                name="formaListadoEventos"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/buscarPresentar.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
 
         <action path="/solicitarListarPerfil"
                 type="edu.uag.iidis.scec.control.MCUListarPerfil"
@@ -362,9 +382,9 @@
                 scope="request"
                 validate="true"
               >
-          
-            <forward name="exito" path="/WEB-INF/vista/pantallas/pantallaBienvenida.jsp"/>
-          
+
+            <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=pantallaLogin.jsp"/>
+
        </action>
 
        <!--cambios-->
@@ -397,6 +417,16 @@
                 scope="request"
                 validate="false">
             <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=formaNuevoRecomendacion.jsp"/>
+        </action>
+
+        <action path="/procesarRegistroEvento"
+                type="edu.uag.iidis.scec.control.MCURegistrarEvento"
+                parameter="procesarRegistroEvento"
+                name="formaNuevoEvento"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/registrarEvento.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio"/>
         </action>
 
         <action path="/ListarEstado"
@@ -466,5 +496,4 @@
                       value="/WEB-INF/validator-rules.xml,
                              /WEB-INF/validation.xml"/>
     </plug-in>
-
 </struts-config>

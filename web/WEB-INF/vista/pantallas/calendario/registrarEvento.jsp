@@ -12,23 +12,23 @@
        <c:import url="/WEB-INF/vista/comun/banner.jsp" />
 
        <div class="row">
-         <form class="col s12">
+         <form class="col s12" action="procesarRegistroEvento.do" method="post">
            <div class="row">
              <div class="col s12"></div>
              <div class="input-field col s12">
                <i class="material-icons prefix">account_circle</i><br>
-               <input placeholder="Nombre del evento" id="nombreEvento" type="text" class="col s12 validate">
+               <input placeholder="Nombre del evento" id="nombreEvento" type="text" class="col s12 validate"
+                 name="nombre" value="${formaNuevoEvento.nombre}">
              </div>
              <div class="col s12"></div>
              <div class="input-field col s12">
                <i class="material-icons prefix">alarm_on</i><br>
-               <input placeholder="Hora del evento" id="horaEvento" type="date" class="col s12 validate datepicker">
+               <!-- datepicker -->
+               <input placeholder="Fecha del evento" id="fechaEvento" type="date" class="col s12 validate datepicker"
+                 name="fecha" value="${formaNuevoEvento.fecha}">
              </div>
+             <input type="submit" name="submit" value="Registrar" class="btn waves-effect waves-light"/>
              <div class="col s12"></div>
-             <div class="input-field col s12">
-               <i class="material-icons prefix">schedule</i><br>
-               <input placeholder="Fecha del evento" id="fechaEvento" type="text" class="col s12 validate">
-             </div>
            </div>
          </form>
        </div>

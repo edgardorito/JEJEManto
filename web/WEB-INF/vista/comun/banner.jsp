@@ -1,13 +1,14 @@
 
 	<nav class="nav-extended">
 	    <div class="nav-wrapper">
-	      <a href="#!" class="brand-logo center">Administrador de roles</a>
+	      <a href="#!" class="brand-logo center">Administrador</a>
 	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
 	      <ul class="side-nav" id="mobile-demo">
 
 	        <li class="no-padding">
 	            <ul class="collapsible collapsible-accordion">
+	            	<li><a href="irInicio.do">Inicio</a></li>
 		    	     <li>
 		        	    <a class="collapsible-header">Registro Vehicular<i class="material-icons">arrow_drop_down</i></a>
 		            	<div class="collapsible-body">
@@ -45,7 +46,7 @@
 								 <div class="collapsible-body">
 									 <ul>
 										 <li><a href="registrarEvento.do">Registar evento</a></li>
-										 <li><a href="buscarPresentar.do">Buscar evento</a></li>
+										 <li><a href="solicitarListaEventos.do">Buscar evento</a></li>
 									 </ul>
 								 </div>
 							 </li>
@@ -53,7 +54,7 @@
 					 </li>
 
 
-					<li><a href="irEditarPerfil.do">Registrar perfil</a></li>
+					
 					<li><a href="solicitarListarPerfil.do">Perfiles</a></li>
 
 	      </ul>
@@ -61,6 +62,7 @@
 
 			<div class="nav-content">
 				<ul class="right hide-on-med-and-down">
+				<li><a href="irInicio.do">Inicio</a></li>
 					<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Registro Vehicular </a></li>
 					<ul id="dropdown1" class="dropdown-content">
 						<li><a href="#!">Nuevo registro</a></li>
@@ -75,10 +77,11 @@
 					<ul id="dropdownCal" class="dropdown-content">
 						<li><a href="registrarEvento.do">Registar evento</a></li>
 						<li class="divider"></li>
-						<li><a href="buscarPresentar.do">Buscar evento</a></li>
+						<li><a href="solicitarListaEventos.do">Buscar evento</a></li>
+						
 					</ul>
 
-					<li><a href="irEditarPerfil.do">Editar perfil</a></li>
+					
 				</ul>
 			</div>
 	 </nav>
