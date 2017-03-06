@@ -76,5 +76,40 @@ public final class MCUEditarPerfil
         }
     }
 
+     public ActionForward buscarCP(
+                ActionMapping mapping,
+                ActionForm form,
+                HttpServletRequest request,
+                HttpServletResponse response)
+            throws Exception {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">buscarCPs");
+        }
+
+    
+
+        FormaNuevoPerfil forma = (FormaNuevoPerfil)form;
+      
+        ManejadorPerfil mr = new ManejadorPerfil();
+        FormaListadoCP resultado = mr.getCPInfo(forma.getCp());
+
+        ActionMessages errores = new ActionMessages();
+        if (resultado != null) {
+            
+                forma.setEstado(resultado.getEstado());
+                forma.setCiudad(resultado.getCiudad());
+                System.out.println("exito");
+            return (mapping.findForward("exito"));
+        } else {
+            log.error("Ocurrió un error de infraestructura");
+            errores.add(ActionMessages.GLOBAL_MESSAGE,
+                        new ActionMessage("errors.infraestructura"));                
+            saveErrors(request, errores);
+            return ( mapping.findForward("fracaso") );
+        }
+
+    }
+
 }
 

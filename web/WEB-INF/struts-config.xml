@@ -72,9 +72,8 @@
                    type="edu.uag.iidis.scec.vista.FormaNuevoVehiculo">
         </form-bean>
     </form-beans>
-       </form-bean>
+       
 
-  </form-beans>
 
     <form-beans>
          <form-bean name="formaNuevoPerfil"
@@ -85,6 +84,9 @@
     <form-beans>
          <form-bean name="formaListadoPerfil"
                    type="edu.uag.iidis.scec.vista.FormaListadoPerfil">
+        </form-bean>
+         <form-bean name="formaListadoCP"
+                   type="edu.uag.iidis.scec.vista.FormaListadoCP">
         </form-bean>
 
     </form-beans>
@@ -126,6 +128,8 @@
     <global-forwards>
         <forward name="irInicio" path="/irLogin.dd"/>
         <forward name="irInicio" path="/irEditarPerfil.dd"/>
+        <forward name="buscarCps" path="/buscarCPs.dd"/>
+        
     </global-forwards>
 
     <!-- Definici�n de acciones -->
@@ -456,6 +460,15 @@
                 scope="request"
                 validate="false">
             <forward name="exito" path="/WEB-INF/vista/pantallas/BuscarLugar.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+        <action path="/buscarCPs"
+                type="edu.uag.iidis.scec.control.MCUEditarPerfil"
+                parameter="buscarCP"
+                name="formaNuevoPerfil"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/BuscarCp.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
 

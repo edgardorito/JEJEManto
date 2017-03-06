@@ -4,12 +4,12 @@ import java.util.Collection;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
+import edu.uag.iidis.scec.vista.*;
 import edu.uag.iidis.scec.modelo.Perfil;
 import edu.uag.iidis.scec.excepciones.*;
 import edu.uag.iidis.scec.persistencia.PerfilDAO;
 import edu.uag.iidis.scec.persistencia.hibernate.*;
-
+import net.webservicex.webserviceZIP.*;
 public class ManejadorPerfil {
     private Log log = LogFactory.getLog(ManejadorPerfil.class);
     private PerfilDAO dao;
@@ -37,6 +37,17 @@ public class ManejadorPerfil {
         } finally {
             HibernateUtil.closeSession();
         }
+    }
+    public FormaListadoCP getCPInfo(String cp){
+        FormaListadoCP a = new FormaListadoCP();
+        WSDemo aux = new WSDemo();
+        a.setCiudad(aux.geocodePro("XTQSTISOGEUDTOGN9120", "", "", "", cp).getGeoCity());
+        a.setEstado(aux.geocodePro("XTQSTISOGEUDTOGN9120", "", "", "", cp).getGeoState());
+        System.out.println("test");
+          System.out.println("country: "+aux.geocodePro("XTQSTISOGEUDTOGN9120", "", "", "", "33134").getGeoCity());
+        System.out.println("country: "+aux.geocodePro("XTQSTISOGEUDTOGN9120", "", "", "", cp).getGeoState());
+        System.out.println("country: "+aux.geocodePro("XTQSTISOGEUDTOGN9120", "", "", "", cp).getCounty().getCountyName());
+        return a;
     }
 	
 	public Collection listarPerfilPorUsuario(String usuario) {

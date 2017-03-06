@@ -13,6 +13,26 @@
     </head>
 	
     <body>
+     <script type="text/javascript">
+  
+    function buscarC () {
+        var valor = document.getElementById("icon_cp").value;
+        var xmlhttp=new XMLHttpRequest();
+                    
+        xmlhttp.onreadystatechange=function(){
+          if(xmlhttp.status==404){
+              document.getElementById("busquedaCP").innerHTML="Page not found";
+          }
+          if (xmlhttp.readyState==4 && xmlhttp.status==200){
+              document.getElementById("busquedaCP").innerHTML=xmlhttp.responseText;
+             document.getElementById("icon_country").value ="USA"; 
+          }
+        };
+        xmlhttp.open("GET","buscarCPs.dd?cp="+valor,true);
+        xmlhttp.send();
+  
+    }
+    </script>
     <c:import url="/WEB-INF/vista/comun/banner.jsp" />
     <main>
     <div class="row">
@@ -52,20 +72,22 @@
             <div class="input-field col s12 m12 l6">
               <i class="material-icons prefix">book</i>
               <input required style="float: left;" type="number" placeholder="C.P." id="icon_cp" class="validate" value="${formaNuevoPerfil.cp}" name="cp">
-              <a style="position: absolute; right: 5%;" href=""><i class="material-icons prefix">search</i></a>
+              <a onclick="buscarC()" style="position: absolute; right: 5%;"><i class="material-icons prefix">search</i></a>
             </div>
             <div class="input-field col s12 m12 l6">
               <i class="material-icons prefix">collections_bookmark</i>
               <input placeholder="Pais" disabled="disabled" id="icon_country" type="text" class="validate" value="${formaNuevoPerfil.pais}" name="pais">
             </div>
-            <div class="input-field col s12 m12 l6">
-              <i class="material-icons prefix">collections_bookmark</i>
-              <input placeholder="Ciudad" disabled="disabled" id="icon_city" type="text" class="validate" value="${formaNuevoPerfil.ciudad}" name="ciudad">
-            </div>
-             <div class="input-field col s12 m12 l6">
-              <i class="material-icons prefix">collections_bookmark</i>
-              <input placeholder="Estado" disabled="disabled" id="icon_country" type="text" class="validate" value="${formaNuevoPerfil.estado}" name="estado">
-            </div>
+           <div id="busquedaCP">
+              <div class="input-field col s12 m12 l6">
+                <i class="material-icons prefix">collections_bookmark</i>
+                <input placeholder="Ciudad" disabled="disabled" id="icon_city" type="text" class="validate" value="${formaNuevoPerfil.ciudad}" name="ciudad">
+              </div>
+               <div class="input-field col s12 m12 l6">
+                <i class="material-icons prefix">collections_bookmark</i>
+                <input placeholder="Estado" disabled="disabled" id="icon_country" type="text" class="validate" value="${formaNuevoPerfil.estado}" name="estado">
+              </div>
+           </div>
           </div>
           <center>
             <button class="btn waves-effect waves-light" type="submit" name="action">Guardar
