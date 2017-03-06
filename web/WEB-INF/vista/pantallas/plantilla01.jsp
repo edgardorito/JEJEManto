@@ -4,7 +4,7 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
 <html>
     <head>
-        <title>Administrador de Roles - UPCHIAPAS</title>
+        <title>Administrador - UPCHIAPAS</title>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 		<script type="text/javascript" src="js/Ajax.js"></script>
 

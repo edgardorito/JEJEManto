@@ -64,47 +64,4 @@ public final class MCUListarEventos
 
     }
 
-    public ActionForward buscarEstado(
-                ActionMapping mapping,
-                ActionForm form,
-                HttpServletRequest request,
-                HttpServletResponse response)
-            throws Exception {
-
-        if (log.isDebugEnabled()) {
-            log.debug(">solicitarListarEstados");
-        }
-
-        // Verifica si la acción fue cancelada por el usuario
-        if (isCancelled(request)) {
-            if (log.isDebugEnabled()) {
-                log.debug("<La acción fue cancelada");
-            }
-            return (mapping.findForward("cancelar"));
-        }
-
-        FormaListadoEstados forma = (FormaListadoEstados)form;
-
-        ManejadorEstados mr = new ManejadorEstados();
-        Collection resultado = mr.listarEstadoPorNombre(forma.getNombre());
-        log.debug("Resultado "+resultado);
-        ActionMessages errores = new ActionMessages();
-        if (resultado != null) {
-            if ( resultado.isEmpty() ) {
-                errores.add(ActionMessages.GLOBAL_MESSAGE,
-                    new ActionMessage("errors.registroVacio"));
-                saveErrors(request, errores);
-            } else {
-                forma.setEstados( resultado );
-            }
-            return (mapping.findForward("exito"));
-        } else {
-            log.error("Ocurrió un error de infraestructura");
-            errores.add(ActionMessages.GLOBAL_MESSAGE,
-                        new ActionMessage("errors.infraestructura"));
-            saveErrors(request, errores);
-            return ( mapping.findForward("fracaso") );
-        }
-
-    }
 }

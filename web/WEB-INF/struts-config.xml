@@ -70,6 +70,8 @@
 	<form-beans>
         <form-bean name="formaNuevoVehiculo"
                    type="edu.uag.iidis.scec.vista.FormaNuevoVehiculo">
+        </form-bean>
+    </form-beans>
        </form-bean>
 
   </form-beans>
@@ -91,7 +93,10 @@
         <form-bean name="formaNuevoClima"
                    type="edu.uag.iidis.scec.vista.FormaNuevoClima">
         </form-bean>
-
+         <form-bean name="formaListadoClima"
+                   type="edu.uag.iidis.scec.vista.FormaListadoClima">
+        </form-bean>
+        
     </form-beans>
 
     <form-beans>
@@ -177,6 +182,16 @@
                 scope="request"
                 validate="false">
             <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=formaListadoRoles.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+        
+         <action path="/solicitarListarClimas"
+                type="edu.uag.iidis.scec.control.MCUListarClimas"
+                parameter="solicitarListarClimas"
+                name="formaListadoClima"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/Clima/listarClimas.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
         <action path="/solicitarListarPaises"

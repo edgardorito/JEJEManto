@@ -4,7 +4,7 @@
     
     <br>
     <font size='5'><fmt:message key="formaLogin.titulo" /></font>
-
+    <main>
     <form id="forma" action="procesarLogin.dd" method="post">
         <table>
             <tr>
@@ -51,3 +51,4 @@
             </tr>
         </table>
     </form>
+    </main>

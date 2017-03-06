@@ -23,7 +23,7 @@ import org.apache.struts.actions.MappingDispatchAction;
 public final class MCUListarVehiculos
         extends MappingDispatchAction {
 
-    private Log log = LogFactory.getLog(MCURegistrarUsuario.class);
+    private Log log = LogFactory.getLog(MCUListarVehiculos.class);
 
 
     public ActionForward solicitarListarVehiculos(

@@ -41,6 +41,31 @@ public class ClimaDAO {
             throw new ExcepcionInfraestructura(e);
         }
     }
+
+    public Collection buscarTodos()
+            throws ExcepcionInfraestructura {
+
+        Collection climas;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">buscarTodos()");
+        }
+
+        try {
+            climas = HibernateUtil.getSession()
+                                    .createCriteria(Clima.class)
+                                    .list();
+                                    
+              log.debug(">buscarTodos() ---- list " + climas);                                 
+        } catch (HibernateException e) {
+            if (log.isWarnEnabled()) {
+                log.warn("<HibernateException");
+            }
+            throw new ExcepcionInfraestructura(e);
+        }
+        return climas;
+    }
+
 }
 
 /*
@@ -75,30 +100,7 @@ public class ClimaDAO {
     }
 
 
-    public Collection buscarTodos()
-            throws ExcepcionInfraestructura {
-
-        Collection estados;
-
-        if (log.isDebugEnabled()) {
-            log.debug(">buscarTodos()");
-        }
-
-        try {
-            estados = HibernateUtil.getSession()
-                                    .createCriteria(Estado.class)
-                                    .list();
-                                    
-              log.debug(">buscarTodos() ---- list " + estados);                                 
-        } catch (HibernateException e) {
-            if (log.isWarnEnabled()) {
-                log.warn("<HibernateException");
-            }
-            throw new ExcepcionInfraestructura(e);
-        }
-        return estados;
-    }
-
+    
 
     public Collection buscarPorEjemplo(Estado estado)
             throws ExcepcionInfraestructura {
