@@ -12,7 +12,7 @@
     <body>
         <c:import url="/WEB-INF/vista/comun/banner.jsp"/>
         <main>
-            
+            <div style="overflow-y: scroll; height: 490px;">
             <table>
                 <thead>
                     <tr>
@@ -44,6 +44,7 @@
                     </c:forEach>
                 </tbody>
             </table>
+            </div>
         </main>
         <c:import url="/WEB-INF/vista/comun/barraPie.jsp"/>
     </body>
