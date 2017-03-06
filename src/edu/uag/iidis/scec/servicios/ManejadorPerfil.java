@@ -41,6 +41,7 @@ public class ManejadorPerfil {
     public FormaListadoCP getCPInfo(String cp){
         FormaListadoCP a = new FormaListadoCP();
         WSDemo aux = new WSDemo();
+        //YOFXSHGYGYMBJAVN9466
         a.setCiudad(aux.geocodePro("XTQSTISOGEUDTOGN9120", "", "", "", cp).getGeoCity());
         a.setEstado(aux.geocodePro("XTQSTISOGEUDTOGN9120", "", "", "", cp).getGeoState());
         System.out.println("test");
