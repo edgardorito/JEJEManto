@@ -41,6 +41,8 @@ public final class MCUEditarPerfil
         FormaNuevoPerfil forma = (FormaNuevoPerfil)form;
         log.debug(">Javi");
         log.debug(">"+forma.getUsuario());
+        log.debug(">"+forma.getCiudad()+" -- "+forma.getPais()+" -- "+forma.getEstado());
+        log.debug("  ");
         Perfil perfil = new Perfil(forma.getUsuario(), forma.getContra(), forma.getNombre(),
                           forma.getApellido(), forma.getTelefono(), forma.getEmail(),
                           forma.getCp(), forma.getPais(), forma.getCiudad(), forma.getEstado());

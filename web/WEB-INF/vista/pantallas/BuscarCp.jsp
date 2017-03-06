@@ -4,9 +4,9 @@
 
 	<div class="input-field col s12 m12 l6">
         <i class="material-icons prefix">collections_bookmark</i>
-        <input placeholder="Ciudad" disabled="disabled" id="icon_city" type="text" class="validate" value="${formaNuevoPerfil.ciudad}" name="ciudad">
+        <input placeholder="Ciudad" disabled="disabled" id="ciudad" type="text" class="validate" value="${formaNuevoPerfil.ciudad}" name="ciudad">
     </div>
     <div class="input-field col s12 m12 l6">
         <i class="material-icons prefix">collections_bookmark</i>
-        <input placeholder="Estado" disabled="disabled" id="icon_country" type="text" class="validate" value="${formaNuevoPerfil.estado}" name="estado">
+        <input placeholder="Estado" disabled="disabled" id="estado" type="text" class="validate" value="${formaNuevoPerfil.estado}" name="estado">
     </div>
