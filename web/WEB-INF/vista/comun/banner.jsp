@@ -1,7 +1,7 @@
 
 	<nav class="nav-extended">
 	    <div class="nav-wrapper">
-	      <a href="#!" class="brand-logo center">Administrador de roles</a>
+	      <a href="#!" class="brand-logo center">Administrador</a>
 	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
 	      <ul class="side-nav" id="mobile-demo">
@@ -55,7 +55,6 @@
 
 					
 					<li><a href="solicitarListarPerfil.do">Perfiles</a></li>
-					<li><a href="irEditarPerfil.dd">Registrarse</a></li>
 
 	      </ul>
 	    </div>
@@ -79,7 +78,7 @@
 						<li><a href="solicitarListaEventos.do">Buscar evento</a></li>
 					</ul>
 
-					<li><a href="irEditarPerfil.dd">Registrarse</a></li>
+					
 				</ul>
 			</div>
 	 </nav>

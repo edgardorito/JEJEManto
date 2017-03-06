@@ -35,6 +35,7 @@
                            maxlength="100" 
                            value="${formaLogin.password}" />
                 </td>
+                
             </tr>
             
             <tr>
@@ -43,6 +44,9 @@
                            name="submit"
                            value="Login"/>
                      
+                </td>
+                <td>
+                  <button><a href="irEditarPerfil.dd">Registrarse</a></button>
                 </td>
             </tr>
         </table>
