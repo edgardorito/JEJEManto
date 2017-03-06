@@ -25,11 +25,18 @@
                     
                       <input value="${formaNuevoClima.ciudad}" name="ciudad" id="ciudad_buscador" type="text" class="validate">
                       <label for="ciudad">ciudad</label>
-                      <input type="submit">
+                      <!--<input type="submit">-->
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Agregar
+                        <i class="material-icons right">send</i>
+                      </button>
                     
                 </div>
               </div>
-              <a class="waves-effect waves-light btn-large"><i class="material-icons left">search</i>buscar</a>
+            </form>
+            <form action="solicitarListarClimas.do">
+               <button class="btn waves-effect waves-light" type="submit" name="action">Listar
+                 <i class="material-icons right">reorder</i>
+                </button>
             </form>
           </div>
 

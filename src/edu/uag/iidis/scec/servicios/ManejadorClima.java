@@ -19,11 +19,11 @@ public class ManejadorClima {
     }
 
 
-   /* public Collection listarEstados() {
+    public Collection listarClima() {
         Collection resultado;
 
         if (log.isDebugEnabled()) {
-            log.debug(">guardarUsuario(usuario)");
+            log.debug(">listarClima()");
         }
 
         try {
@@ -38,7 +38,7 @@ public class ManejadorClima {
             HibernateUtil.closeSession();
         }
     }
-	
+	/*
 	public Collection listarEstadoPorNombre(String nombre) {
         Collection resultado;
 
