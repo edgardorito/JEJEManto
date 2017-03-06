@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="input-field col s6  l6 offset-l3">
                   <input value="${formaNuevoVehiculo.tipo}" id="tipoRV" name="tipo" type="text" class="validate">
-                  <label for="curpRV">Tipo</label>
+                  <label for="tipoRV">Tipo</label>
                 </div>
             </div> 
   <!--        <div class="row">
@@ -65,9 +65,12 @@
                 </div>
             </div>   
             <div class="row">
-              <input type="submit" 
+            <button class="btn waves-effect waves-light" type="submit" name="action">Guardar
+                <i class="material-icons right">Guardar</i>
+            </button>
+          <!--    <input type="submit" 
                            name="submit"
-                           value="Guardar"/>
+                           value="Guardar"/>-->
             </div>
             </form>
         </main>

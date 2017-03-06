@@ -64,7 +64,7 @@ public final class MCUListarVehiculos
 
     }
     
-    public ActionForward buscarEstado(
+    public ActionForward BuscarVehiculo(
                 ActionMapping mapping,
                 ActionForm form,
                 HttpServletRequest request,
@@ -72,30 +72,24 @@ public final class MCUListarVehiculos
             throws Exception {
 
         if (log.isDebugEnabled()) {
-            log.debug(">solicitarListarEstados");
+            log.debug(">solicitarBuscarVehculo");
         }
 
-        // Verifica si la acción fue cancelada por el usuario
-        if (isCancelled(request)) {
-            if (log.isDebugEnabled()) {
-                log.debug("<La acción fue cancelada");
-            }
-            return (mapping.findForward("cancelar"));
-        }
+        FormaListadoVehiculos forma = (FormaListadoVehiculos)form;
 
-        FormaListadoEstados forma = (FormaListadoEstados)form;
-
-        ManejadorEstados mr = new ManejadorEstados();
-        Collection resultado = mr.listarEstadoPorNombre(forma.getNombre());
-        log.debug("Resultado "+resultado);
+        ManejadorRegistroV mr = new ManejadorRegistroV();
+        Collection resultado = mr.listarVehiculosPorCurp(forma.getCurp());
+        log.debug("Resultado Buscar "+resultado);
         ActionMessages errores = new ActionMessages();
         if (resultado != null) {
             if ( resultado.isEmpty() ) {
                 errores.add(ActionMessages.GLOBAL_MESSAGE,
                     new ActionMessage("errors.registroVacio"));
                 saveErrors(request, errores);
+               // System.out.println("vacio");
+                //return (mapping.findForward("vacio"));
             } else {
-                forma.setEstados( resultado );
+                forma.setVehiculos( resultado );
             }
             return (mapping.findForward("exito"));
         } else {

@@ -12,11 +12,38 @@
     </head>
 	
     <body>
+     <script type="text/javascript">
+ 
+ 	  $(document).ready(function() {
+    Materialize.updateTextFields();
+  });
+    </script>
         <c:import url="/WEB-INF/vista/comun/banner.jsp" />
         
-         
-        <main>
-        	
+       
+        <main >
+        	  <div id="tableV">
+        	<div class="input-field col s6">
+        	<form id="forma"  action="BuscarVehiculo.do" method="post">
+        		<div class="row">
+        			<div class="col s3">
+        				<input  value="${formaListadoVehiculos.curp}" id="curpB" name="curp" type="text" class="validate">
+	          			<label for="curpB">Introduzca curp</label>
+        			</div>
+        			<div class="col s2">
+        				<button class="btn waves-effect waves-light" type="submit" name="action">Buscar
+                <i class="material-icons right">send</i>
+        			</div>
+        		</div>
+        		
+	          
+            </button>
+            
+        	</form>
+	         
+	        </div>
+
+            
 	        <table>
 		        <thead>
 		          <tr>
@@ -44,6 +71,7 @@
 		         
 		        </tbody>
 		      </table>
+		       </div>
         </main>
         <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
                 
