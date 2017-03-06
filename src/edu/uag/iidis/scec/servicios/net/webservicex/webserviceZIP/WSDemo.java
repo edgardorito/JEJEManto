@@ -17,6 +17,8 @@ public class WSDemo {
         // TODO code application logic here
         
         System.out.println("country: "+geocodePro("DLXLYVSPNVZYPSNV2249", "", "", "", "33134").getGeoCity());
+        System.out.println("country: "+geocodePro("DLXLYVSPNVZYPSNV2249", "", "", "", "33134").getGeoState());
+        System.out.println("country: "+geocodePro("DLXLYVSPNVZYPSNV2249", "", "", "", "33134").getCounty().getCountyName());
     }
 
     private static AddressInfo geocodePro(java.lang.String key, java.lang.String street, java.lang.String city, java.lang.String state, java.lang.String zip) {
