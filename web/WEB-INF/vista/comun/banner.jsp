@@ -14,7 +14,7 @@
 		            	<div class="collapsible-body">
 			              	<ul>
 				                <li><a href="registrarVehiculo.do">Registrar vehiculo</a></li>
-				                <li><a href="#!">Buscar registro</a></li>
+				                
 				                <li><a href="solicitarListarVehiculos.do">Mostrar registros</a></li>
 			             	</ul>
 			            </div>
@@ -67,7 +67,7 @@
 					<ul id="dropdown1" class="dropdown-content">
 						<li><a href="#!">Nuevo registro</a></li>
 						<li class="divider"></li>
-						<li><a href="#!">Buscar registro</a></li>
+						
 						<li class="divider"></li>
 						<li><a href="solicitarListarVehiculos.do">Mostrar registros</a></li>
 					</ul>

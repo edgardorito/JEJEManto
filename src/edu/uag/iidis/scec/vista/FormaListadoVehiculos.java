@@ -26,6 +26,7 @@ public final class FormaListadoVehiculos
         this.vehiculos = vehiculos;
         if (vehiculos != null) {
           this.contador = vehiculos.size();
+          System.out.println("Cantidad: "+contador);
         } else
           this.contador = -1;
     }

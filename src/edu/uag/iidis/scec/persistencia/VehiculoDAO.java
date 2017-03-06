@@ -240,19 +240,19 @@ public class VehiculoDAO {
         }
     }
 
-	public Collection buscarVehiculo(String nombreVehiculo)
+	public Collection buscarVehiculos(String curp)
             throws ExcepcionInfraestructura {
 
         if (log.isDebugEnabled()) {
-            log.debug(">existeRol(nombreRol)");
+            log.debug(">buscarVehiculos(curp)");
         }
 
         try {
  
-            String hql = "from Vehiculo where nombre like '"+nombreVehiculo+"%'";
+            String hql = "from Vehiculo where curp like '"+curp+"%'";
             
              if (log.isDebugEnabled()) {
-                 log.debug(hql + nombreVehiculo);
+                 log.debug(hql + curp);
             }
         
             Query query = HibernateUtil.getSession()

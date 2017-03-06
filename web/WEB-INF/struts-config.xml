@@ -221,6 +221,16 @@
             <forward name="exito" path="/WEB-INF/vista/pantallas/componenteRV/listarVehiculos.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
+        <action path="/BuscarVehiculo"
+                type="edu.uag.iidis.scec.control.MCUListarVehiculos"
+                parameter="BuscarVehiculo"
+                name="formaListadoVehiculos"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/componenteRV/listarVehiculos.jsp"/>
+           
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action> 
         <action path="/solicitarListaEventos"
                 type="edu.uag.iidis.scec.control.MCUListarEventos"
                 parameter="solicitarListaEventos"

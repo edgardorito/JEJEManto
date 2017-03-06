@@ -37,9 +37,9 @@ public class ManejadorRegistroV {
         }
     }
 
-  /*  
+    
 	
-	public Collection listarEstadoPorNombre(String nombre) {
+	public Collection listarVehiculosPorCurp(String curp) {
         Collection resultado;
 
         if (log.isDebugEnabled()) {
@@ -48,8 +48,8 @@ public class ManejadorRegistroV {
 
         try {
             HibernateUtil.beginTransaction();
-            resultado = dao.buscaEstado(nombre);
-            log.debug("Consulta "+resultado);
+            resultado = dao.buscarVehiculos(curp);
+            log.debug("Consulta BV "+resultado);
 			HibernateUtil.commitTransaction();
             return resultado;         
         } catch (ExcepcionInfraestructura e) {
@@ -59,7 +59,7 @@ public class ManejadorRegistroV {
             HibernateUtil.closeSession();
         }
     }
-	
+	/*
 	
     public void eliminarEstado(Long id) {
         if (log.isDebugEnabled()) {
