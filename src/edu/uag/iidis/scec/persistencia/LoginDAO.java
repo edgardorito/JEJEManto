@@ -28,12 +28,12 @@ public class LoginDAO {
             throws ExcepcionInfraestructura {
 
         if (log.isDebugEnabled()) {
-            log.debug(">existeRol(nombreRol)");
+            log.debug(">buscarLogin(nombreUsuario,pass)");
         }
 
         try {
  
-            String hql = "from Usuario where credencial.nombreUsuario= '"+nombreLogin+"' and credencial.claveAcceso = '"+password+"'";
+            String hql = "from Perfil where usuario= '"+nombreLogin+"' and contra = '"+password+"'";
             
              if (log.isDebugEnabled()) {
                  log.debug(hql + nombreLogin);
