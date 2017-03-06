@@ -4,7 +4,7 @@
     
     <br>
     <font size='5'><fmt:message key="formaLogin.titulo" /></font>
-
+    <main>
     <form id="forma" action="procesarLogin.dd" method="post">
         <table>
             <tr>
@@ -35,6 +35,7 @@
                            maxlength="100" 
                            value="${formaLogin.password}" />
                 </td>
+                
             </tr>
             
             <tr>
@@ -44,6 +45,10 @@
                            value="Login"/>
                      
                 </td>
+                <td>
+                  <button><a href="irEditarPerfil.dd">Registrarse</a></button>
+                </td>
             </tr>
         </table>
     </form>
+    </main>

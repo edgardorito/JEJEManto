@@ -22,7 +22,7 @@
             <td>|</td>
             <td class="clsMenuBarItem"><a href="">Calendario</td>
             <td>|</td>
-            <td class="clsMenuBarItem"><a href="irEditarPerfil.do">Editar perfil</td>
+            <td class="clsMenuBarItem"><a href="irEditarPerfil.dd">Registrarse</a></td>
             <td width="100%"></td>  
         </tr>
     </table>

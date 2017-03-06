@@ -65,6 +65,8 @@
     <servlet-mapping>
         <servlet-name>action</servlet-name>
         <url-pattern>/irLogin.dd</url-pattern>
+        <url-pattern>/irEditarPerfil.dd</url-pattern>
+        <url-pattern>/procesarRegistroUsuario.dd</url-pattern>
         <url-pattern>/procesarLogin.dd</url-pattern>
         <url-pattern>/irLugares.dd</url-pattern>
         <url-pattern>/servicios.dd</url-pattern>
@@ -95,6 +97,7 @@
   
     <welcome-file-list>
         <welcome-file>irInicio.do</welcome-file>
+        <welcome-file>irEditarPerfil.do</welcome-file>
     </welcome-file-list>
 
 
