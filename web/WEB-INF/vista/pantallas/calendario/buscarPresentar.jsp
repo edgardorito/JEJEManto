@@ -11,7 +11,9 @@
     <body>
        <c:import url="/WEB-INF/vista/comun/banner.jsp" />
        <main>
-
+         <i class="material-icons prefix">search</i><br>
+         <input placeholder="Buscar fecha " id="nombreEvento" type="date" class="col s12 validate datepicker"
+         name="nombre" value="${formaNuevoEvento.nombre}">
          <table>
            <thead>
              <tr>
