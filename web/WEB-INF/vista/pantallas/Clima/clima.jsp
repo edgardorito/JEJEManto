@@ -21,10 +21,18 @@
             <form class="col s12" action="procesarRegistroClima.do" method="post">
               <div class="row">
                 <div class="input-field col s10">
+
                 <i class="material-icons prefix">location_on</i>
-                    
-                      <input value="${formaNuevoClima.ciudad}" name="ciudad" id="ciudad_buscador" type="text" class="validate">
-                      <label for="ciudad">ciudad</label>
+                     <input value="${formaNuevoClima.ciudad}" name="ciudad" id="ciudad_buscador" type="text" class="validate">
+                     <label for="latitud">ciudad</label>
+
+                <i class="material-icons prefix">location_on</i>
+                     <input value="${formaNuevoClima.latitud}" name="latitud" id="ciudad_latitud" type="text" class="validate">
+                     <label for="latitud">latitud</label>
+
+                <i class="material-icons prefix">location_on</i>
+                     <input value="${formaNuevoClima.longitud}" name="longitud" id="ciudad_longitud" type="text" class="validate">
+                     <label for="longitud">longitud</label>
                       <!--<input type="submit">-->
                       <button class="btn waves-effect waves-light" type="submit" name="action">Agregar
                         <i class="material-icons right">send</i>

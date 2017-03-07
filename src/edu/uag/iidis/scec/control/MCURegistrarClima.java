@@ -39,8 +39,8 @@ public final class MCURegistrarClima
 
         // Se obtienen los datos para procesar el registro
         FormaNuevoClima forma = (FormaNuevoClima)form;
-
-        Clima clima = new Clima(forma.getCiudad());
+        System.out.println("test: latitud " +forma.getLatitud());
+        Clima clima = new Clima(forma.getCiudad(),forma.getLatitud(),forma.getLongitud());
 
         ManejadorClima mr = new ManejadorClima();
         int resultado = mr.crearClima(clima);

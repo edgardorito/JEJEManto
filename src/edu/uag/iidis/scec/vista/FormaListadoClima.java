@@ -15,6 +15,8 @@ public final class FormaListadoClima
     private Collection climas;
     private int contador;
     private String ciudad;
+    private String latitud;
+    private String longitud;
 	
     public void setClimas(Collection climas) {
         this.climas = climas;
@@ -39,6 +41,22 @@ public final class FormaListadoClima
 
     public String getCiudad() {
         return (this.ciudad);
+    }
+
+    public void setLatitud(String latitud){
+        this.latitud = latitud;
+    }
+
+    public String getLatitud(){
+        return (this.latitud);
+    }
+
+    public void setLongitud(String longitud){
+        this.longitud = longitud;
+    }
+
+    public String getLongitud(){
+        return (this.longitud);
     }
 
 

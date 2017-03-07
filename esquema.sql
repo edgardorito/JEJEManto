@@ -62,3 +62,11 @@ CREATE TABLE `manto`.`editarperfil` (
   `estado` VARCHAR(45),
   PRIMARY KEY (`id`),
   unique (`usuario`));
+
+CREATE TABLE `manto`.`lat_lon` (
+  `idLoc` INT NOT NULL AUTO_INCREMENT,
+  `latitud` VARCHAR(45) NULL,
+  `longitud` VARCHAR(45) NULL,
+  UNIQUE INDEX `latitud_UNIQUE` (`latitud` ASC),
+  UNIQUE INDEX `longitud_UNIQUE` (`longitud` ASC));
+

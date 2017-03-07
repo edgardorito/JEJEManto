@@ -31,7 +31,7 @@
 								 <div class="collapsible-body">
 									 <ul>
 										 <li><a href="Clima.do">Clima</a></li>
-										 <li><a href="">Ciudades Favoritas</a></li>
+										 <li><a href="solicitarListarClimas.do">Ciudades Favoritas</a></li>
 									 </ul>
 								 </div>
 							 </li>

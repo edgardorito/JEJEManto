@@ -10,6 +10,8 @@ public class Clima extends ClaseBase
 
     private Long idClima;
     private String ciudad;
+    private String latitud;
+    private String longitud;
 
 
     public Clima() {
@@ -19,8 +21,10 @@ public class Clima extends ClaseBase
         this.idClima = id;
     }
 
-    public Clima(String ciudad){
+    public Clima(String ciudad, String latitud, String longitud){
         this.ciudad=ciudad;
+        this.latitud = latitud;
+        this.longitud = longitud;
     }
 
     public Long getIdClima() {
@@ -38,5 +42,21 @@ public class Clima extends ClaseBase
     public void setCiudad(String ciudad) {
         this.ciudad = ciudad;
     }
+
+    public String getLatitud(){
+        return this.latitud;
+    }
+
+    public void setLatitud(String latitud){
+        this.latitud = latitud;
+    }
+
+    public String getLongitud(){
+        return this.longitud;
+    }
+
+    public void setLongitud(String longitud){
+        this.longitud = longitud;
+    }    
 
 }
