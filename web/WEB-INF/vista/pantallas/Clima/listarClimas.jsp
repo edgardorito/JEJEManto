@@ -17,6 +17,8 @@
 		        <thead>
 		          <tr>
 		              <th data-field="ciudad">Ciudad</th>
+		              <th data-field="latitud">Latitud</th>
+		              <th data-field="longitud">Longitud</th>
 		            
 		          </tr>
 		        </thead>
@@ -25,7 +27,8 @@
 		        <c:forEach var="ciudad" items="${formaListadoClima.climas}">
 		        	 <tr>
 			            <td><c:out value="${ciudad.ciudad}"/></td>
-			    
+			    		<td><c:out value="${ciudad.latitud}"/></td>
+			    		<td><c:out value="${ciudad.longitud}"/></td>
 			          </tr>
 		        </c:forEach>
 		         

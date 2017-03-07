@@ -11,6 +11,8 @@ public final class FormaNuevoClima
         extends ValidatorForm {
 
     private String ciudad;
+    private String latitud;
+    private String longitud;
 
     public void setCiudad(String ciudad) {
         this.ciudad = ciudad;
@@ -18,6 +20,22 @@ public final class FormaNuevoClima
 
     public String getCiudad() {
         return (this.ciudad);
+    }
+
+    public void setLatitud(String latitud){
+        this.latitud = latitud;
+    }
+
+    public String getLatitud(){
+        return (this.latitud);
+    }
+
+    public void setLongitud(String longitud){
+        this.longitud = longitud;
+    }
+
+    public String getLongitud(){
+        return (this.longitud);
     }
 
 
