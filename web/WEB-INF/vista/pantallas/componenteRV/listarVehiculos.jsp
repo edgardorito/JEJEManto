@@ -30,6 +30,23 @@
         xmlhttp.send();
   
     }
+     function buscar () {
+       var curp = document.getElementById('curpB').value;
+        var xmlhttp=new XMLHttpRequest();
+                    
+        xmlhttp.onreadystatechange=function(){
+          if(xmlhttp.status==404){
+              document.getElementById("contenidoTabla").innerHTML="Page not found";
+          }
+          if (xmlhttp.readyState==4 && xmlhttp.status==200){
+              document.getElementById("contenidoTabla").innerHTML=xmlhttp.responseText;
+            
+          }
+        };
+        xmlhttp.open("GET","BuscarVehiculo.do?curp="+curp,true);
+        xmlhttp.send();
+  
+    }
 
  	  $(document).ready(function() {
     Materialize.updateTextFields();
@@ -41,22 +58,22 @@
         <main >
         	  <div id="tableV">
         	<div class="input-field col s6">
-        	<form id="forma"  action="BuscarVehiculo.do" method="post">
+        	
         		<div class="row">
         			<div class="col s3">
         				<input  value="${formaListadoVehiculos.curp}" id="curpB" name="curp" type="text" class="validate">
 	          			<label for="curpB">Introduzca curp</label>
         			</div>
         			<div class="col s2">
-        				<button class="btn waves-effect waves-light" type="submit" name="action">Buscar
-                <i class="material-icons right">send</i>
+        				<a class="btn waves-effect waves-light" onclick="buscar()">Buscar
+                <i class="material-icons right">send</i> </a>
         			</div>
         		</div>
         		
 	          
-            </button>
+           
             
-        	</form>
+        	
 	         
 	        </div>
 

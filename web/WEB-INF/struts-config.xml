@@ -241,7 +241,7 @@
                 name="formaListadoVehiculos"
                 scope="request"
                 validate="false">
-            <forward name="exito" path="/WEB-INF/vista/pantallas/componenteRV/listarVehiculos.jsp"/>
+            <forward name="exito" path="/WEB-INF/vista/pantallas/componenteRV/tablaContenidoV.jsp"/>
            
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action> 
