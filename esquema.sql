@@ -62,3 +62,10 @@ CREATE TABLE `manto`.`editarperfil` (
   `estado` VARCHAR(45),
   PRIMARY KEY (`id`),
   unique (`usuario`));
+
+CREATE TABLE `manto`.`evento` (
+  `idEvento` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(45) NOT NULL,
+  `fecha` DATETIME NOT NULL,
+  PRIMARY KEY (`idEvento`),
+  unique (`nombre`));

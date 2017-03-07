@@ -22,6 +22,8 @@ public final class FormaListadoEventos
         this.eventos = eventos;
         if (eventos != null) {
           this.contador = eventos.size();
+          System.out.println("Cantidad: "+contador);
+
         } else
           this.contador = -1;
     }

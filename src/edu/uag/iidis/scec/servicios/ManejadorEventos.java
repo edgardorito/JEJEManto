@@ -73,4 +73,25 @@ public class ManejadorEventos {
         }
     }
 
+    public Collection listarEventosPorFecha(String fecha) {
+        Collection resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">listarPorFecha(usuario)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();
+            resultado = dao.buscarEventos(fecha);
+            log.debug("Consulta BFecha "+resultado);
+            HibernateUtil.commitTransaction();
+            return resultado;         
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+            return null;
+        } finally {
+            HibernateUtil.closeSession();
+        }
+    }
+
 }
