@@ -59,6 +59,26 @@ public class ManejadorRegistroV {
             HibernateUtil.closeSession();
         }
     }
+    public Collection listarVehiculosPor(String atributo) {
+        Collection resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">listarVehiculosPor(atributo)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();
+            resultado = dao.ordenarVehiculosPor(atributo);
+            log.debug("listar Vehiculos por "+atributo+": "+resultado);
+            HibernateUtil.commitTransaction();
+            return resultado;         
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+            return null;
+        } finally {
+            HibernateUtil.closeSession();
+        }
+    }
 	/*
 	
     public void eliminarEstado(Long id) {

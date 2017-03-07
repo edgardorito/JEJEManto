@@ -20,6 +20,7 @@ public final class FormaListadoVehiculos
     private String placa;
     private String color;
     private String curp;
+    private String atributo;
 
     public void setVehiculos(Collection vehiculos) {
         System.out.println("entro");
@@ -48,6 +49,7 @@ public final class FormaListadoVehiculos
         placa=null;
         color=null;
         curp=null;
+        atributo = null;
     }
 
      public String getTipo(){
@@ -55,6 +57,13 @@ public final class FormaListadoVehiculos
     }
     public void setTipo(String tipo){
          this.tipo = tipo;
+    }
+
+     public String getAtributo(){
+        return(this.atributo);
+    }
+    public void setAtributo(String atributo){
+         this.atributo = atributo;
     }
 
     public String getModelo(){

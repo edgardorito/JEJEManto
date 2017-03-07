@@ -13,7 +13,24 @@
 	
     <body>
      <script type="text/javascript">
- 
+ 	  function ordenarPor (atributo) {
+       
+        var xmlhttp=new XMLHttpRequest();
+                    
+        xmlhttp.onreadystatechange=function(){
+          if(xmlhttp.status==404){
+              document.getElementById("contenidoTabla").innerHTML="Page not found";
+          }
+          if (xmlhttp.readyState==4 && xmlhttp.status==200){
+              document.getElementById("contenidoTabla").innerHTML=xmlhttp.responseText;
+            
+          }
+        };
+        xmlhttp.open("GET","ordenarVehiculosPor.do?atributo="+atributo,true);
+        xmlhttp.send();
+  
+    }
+
  	  $(document).ready(function() {
     Materialize.updateTextFields();
   });
@@ -47,16 +64,16 @@
 	        <table>
 		        <thead>
 		          <tr>
-		              <th data-field="tipo">tipo</th>
-		              <th data-field="modelo">modelo</th>
-		              <th data-field="marca">marca</th>
-		              <th data-field="placa">placa</th>
-		              <th data-field="color">color</th>
-		           	  <th data-field="curp">curp</th>
+		              <th onclick="ordenarPor('tipo')"  data-field="tipo">tipo</th>
+		              <th onclick="ordenarPor('modelo')"  data-field="modelo">modelo</th>
+		              <th onclick="ordenarPor('marca')"  data-field="marca">marca</th>
+		              <th onclick="ordenarPor('placa')"  data-field="placa">placa</th>
+		              <th onclick="ordenarPor('color')"  data-field="color">color</th>
+		           	  <th onclick="ordenarPor('curp')"  data-field="curp">curp</th>
 		          </tr>
 		        </thead>
 
-		        <tbody>
+		        <tbody id="contenidoTabla">
 		        <c:forEach var="vehiculo" items="${formaListadoVehiculos.vehiculos}">
 		        	 <tr>
 			            <td><c:out value="${vehiculo.tipo}"/></td>
