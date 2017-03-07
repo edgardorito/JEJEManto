@@ -129,6 +129,7 @@
         <forward name="irInicio" path="/irLogin.dd"/>
         <forward name="irInicio" path="/irEditarPerfil.dd"/>
         <forward name="buscarCps" path="/buscarCPs.dd"/>
+        <forward name="buscarUser" path="/buscarUser.dd"/>
         
     </global-forwards>
 
@@ -468,6 +469,16 @@
                 scope="request"
                 validate="false">
             <forward name="exito" path="/WEB-INF/vista/pantallas/BuscarCp.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+
+         <action path="/buscarUser"
+                type="edu.uag.iidis.scec.control.MCUListarPerfil"
+                parameter="buscarPerfil"
+                name="formaListadoPerfil"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/tablaPerfil.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
 

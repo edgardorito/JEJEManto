@@ -203,7 +203,7 @@ public class PerfilDAO {
         }
 
         try {
-            String hql = "from editarperfil where usuario like '"+usuario+"%'";
+            String hql = "from Perfil where usuario like '"+usuario+"%'";
             
              if (log.isDebugEnabled()) {
                  log.debug(hql + usuario);

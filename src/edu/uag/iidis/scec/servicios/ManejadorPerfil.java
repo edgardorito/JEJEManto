@@ -55,7 +55,7 @@ public class ManejadorPerfil {
         Collection resultado;
 
         if (log.isDebugEnabled()) {
-            log.debug(">guardarUsuario(usuario)");
+            log.debug(">BuscarUsuario(usuario)");
         }
 
         try {

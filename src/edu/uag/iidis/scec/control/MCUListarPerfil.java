@@ -70,7 +70,7 @@ public final class MCUListarPerfil
         }
 
     }
-	
+
 	public ActionForward buscarPerfil(
                 ActionMapping mapping,
                 ActionForm form,

@@ -10,9 +10,34 @@
         <c:import url="/WEB-INF/vista/comun/importaciones.jsp"/>
     </head>
     <body>
+    <script type="text/javascript">
+  
+    function buscarUsuario () {
+        var valor = document.getElementById("user").value;
+        var xmlhttp=new XMLHttpRequest();
+                    
+        xmlhttp.onreadystatechange=function(){
+          if(xmlhttp.status==404){
+              document.getElementById("contPerfil").innerHTML="Page not found";
+          }
+          if (xmlhttp.readyState==4 && xmlhttp.status==200){
+              document.getElementById("contPerfil").innerHTML=xmlhttp.responseText;
+          }
+        };
+        xmlhttp.open("GET","buscarUser.dd?usuario="+valor,true);
+        xmlhttp.send();
+  
+    }
+    </script>
         <c:import url="/WEB-INF/vista/comun/banner.jsp"/>
         <main>
-            <div style="overflow: scroll; height: 490px;">
+        <div style="overflow: scroll; height: 490px;">
+             <div class="input-field col s12 m12 l6">
+                  <input required style="float: left;" type="text" placeholder="Usuario" id="user" class="validate" name="user">
+                  <a onclick="buscarUsuario()" style="position: absolute; right: 5%;"><i class="material-icons prefix">search</i></a>
+            </div>
+
+           <div>
             <table>
                 <thead>
                     <tr>
@@ -28,7 +53,7 @@
                     </tr>
                 </thead>
 
-                <tbody>
+                <tbody id="contPerfil">
                     <c:forEach var="perfil" items="${formaListadoPerfil.perfiles}">
                         <tr>
                             <td><c:out value="${perfil.usuario}"/></td>
@@ -44,6 +69,7 @@
                     </c:forEach>
                 </tbody>
             </table>
+            </div>
             </div>
         </main>
         <c:import url="/WEB-INF/vista/comun/barraPie.jsp"/>
