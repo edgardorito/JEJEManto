@@ -155,6 +155,8 @@ public int actualizarPerfil(Perfil usuario) {
 
     }
 */
+
+
     public int crearPerfil(Perfil usuario) {
 
         int resultado;
@@ -217,5 +219,43 @@ if (log.isDebugEnabled()) {
         } finally {
             HibernateUtil.closeSession();
         }
+    }
+
+    public int eliminarPerfil(String usuario) {
+       int resultado=0;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">guardarPerfil(usuario)");
+        }
+
+        try {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">el usuario a insertar es: "+usuario);
+        }
+            HibernateUtil.beginTransaction();           
+       
+                dao.eliminarPerfil(usuario);
+
+               resultado = 0; // Exito. El ciudad se creo satisfactoriamente.
+            
+ if (log.isDebugEnabled()) {
+            log.debug(">test2");
+        }
+            HibernateUtil.commitTransaction();
+
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+
+            if (log.isWarnEnabled()) {
+                log.debug("EXCEPCION ----> "+e);
+                log.warn("<ExcepcionInfraestructura");
+            }
+            resultado = 2;    // Excepción. Falla en la infraestructura
+        } finally {
+            HibernateUtil.closeSession();
+        }
+        return resultado;
+
     }
 }
