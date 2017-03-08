@@ -84,7 +84,14 @@
 						<li><a href="solicitarListarVehiculos.do">Mostrar registros</a></li>
 					</ul>
 					
-					<li><a href="Clima.do">Clima</a></li>
+					<li><a class="dropdown-button" href="#!" data-activates="dropdownCal">Ciudad</a></li>
+					<ul id="dropdownCal" class="dropdown-content">
+						<li><a href="Clima.do">Agregar ciudad</a></li>
+						<li class="divider"></li>
+						<li><a href="solicitarListarClimas.do">Buscar ciudad</a></li>
+						
+					</ul>
+
 					<li><a class="dropdown-button" href="#!" data-activates="dropdownCal">Calendario</a></li>
 					<ul id="dropdownCal" class="dropdown-content">
 						<li><a href="registrarEvento.do">Registar evento</a></li>

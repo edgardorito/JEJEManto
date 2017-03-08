@@ -22,7 +22,6 @@
 		              document.getElementById("contenidoTabla").innerHTML="Page not found";
 		          }
 		          if (xmlhttp.readyState==4 && xmlhttp.status==200){
-		          	alert(xmlhttp.responseText);
 		              document.getElementById("contenidoTabla").innerHTML=xmlhttp.responseText;
 		            
 		          }
@@ -50,14 +49,39 @@
 		        xmlhttp.send();
 		  
 		    }
+
+		    function eliminar () {
+		       var ciudad = document.getElementById('ciudad').value;
+		        var xmlhttp=new XMLHttpRequest();
+		                    
+		        xmlhttp.onreadystatechange=function(){
+		          if(xmlhttp.status==404){
+		              document.getElementById("contenidoTabla").innerHTML="Page not found";
+		          }
+		          if (xmlhttp.readyState==4 && xmlhttp.status==200){
+		              document.getElementById("contenidoTabla").innerHTML=xmlhttp.responseText;
+		            
+		          }
+		        };
+		        xmlhttp.open("GET","EliminarClima.do?ciudad="+ciudad,true);
+		        xmlhttp.send();
+		  
+		    }
         </script>
          
         <main>
 
-        <input value="${FormaListadoClima.ciudad}" name="" id="ciudad" type="text" class="validate">
-        <button onclick="buscar()" class="btn waves-effect waves-light" type="submit" name="action">Buscar
-           <i class="material-icons right">send</i>
-        </button>
+        <div class="input-field col s8">
+	        <input value="${FormaListadoClima.ciudad}" name="" id="ciudad" type="text" class="validate">
+
+	        <button onclick="buscar()" class="btn waves-effect waves-light" type="submit" name="action">Buscar
+	           <i class="material-icons right">send</i>
+	        </button>
+
+	        <button onclick="eliminar()" class="btn waves-effect waves-light" type="submit" name="action">Eliminar
+	           <i class="material-icons right">send</i>
+	        </button>
+	    </div>
         	
 	        <table>
 		        <thead>

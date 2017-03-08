@@ -152,6 +152,49 @@ public class ClimaDAO {
         }
     }
 
+
+            public Collection eliminarClima(String ciudad)
+            throws ExcepcionInfraestructura {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">buscarClimas(ciudad)");
+        }
+
+        try {
+ 
+            String hql = "from Clima where ciudad like '"+ciudad+"%'";
+            
+             if (log.isDebugEnabled()) {
+                 log.debug(hql + ciudad);
+            }
+        
+            Query query = HibernateUtil.getSession()
+                                        .createQuery(hql);
+            if (log.isDebugEnabled()) {
+                 log.debug("<<<<<<<<< create query ok " );
+            }
+            if (log.isDebugEnabled()) {
+                 log.debug("<<<<<<<<< set Parameter ok antes del query list >>>>>");
+            }
+            List results = query.list();
+            int resultado = results.size();
+            if (log.isDebugEnabled()) {
+                 log.debug("<<<<<<<<< Result size " + resultado);
+            }
+            if (resultado == 0) {
+               return results;
+            }
+            
+            return results;
+
+        } catch (HibernateException ex) {
+            if (log.isWarnEnabled()) {
+                log.warn("<HibernateException *******************");
+            }
+            throw new ExcepcionInfraestructura(ex);
+        }
+    }
+
 }
 
 /*
