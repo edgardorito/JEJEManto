@@ -45,7 +45,7 @@
             xmlhttp.send();
 
           }
-          function eliminarE () {
+          function eliminarE (nombre) {
             var xmlhttp=new XMLHttpRequest();
 
             xmlhttp.onreadystatechange=function(){
@@ -61,6 +61,10 @@
             xmlhttp.send();
 
           }
+              
+          $(document).ready(function() {
+          Materialize.updateTextFields();
+        });
       </script>
        <c:import url="/WEB-INF/vista/comun/banner.jsp" />
        <main>
