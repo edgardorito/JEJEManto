@@ -308,4 +308,25 @@ public class PerfilDAO {
             throw new ExcepcionInfraestructura(e);
         }
     }
+
+    public void eliminarPerfil(String perfil)
+            throws ExcepcionInfraestructura {
+                
+          if (log.isDebugEnabled()) {
+            log.debug(">hazTransitorio(Perfil)");
+        }
+
+        try {
+            Perfil v =(Perfil) HibernateUtil.getSession().createQuery("from Perfil where usuario = :typeName")
+                   .setParameter("typeName", perfil)
+                   .uniqueResult();
+            HibernateUtil.getSession().delete(v);
+        } catch (HibernateException e) {
+            if (log.isWarnEnabled()) {
+                log.debug("EXCEPTION ---> ----> "+e);
+                log.warn("<HibernateException");
+            }
+            throw new ExcepcionInfraestructura(e);
+        }
+    }
 }
