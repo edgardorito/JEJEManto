@@ -42,46 +42,12 @@ public final class MCUEliminarVehiculo
         // Se obtienen los datos para procesar el registro
         FormaNuevoVehiculo forma = (FormaNuevoVehiculo)form;
  
-        String a = forma.getCurp();
-        String b =forma.getTipo();
-        String c = forma.getModelo();
-        String d = forma.getMarca();
-        String e = forma.getPlaca();
-        String f = forma.getColor();
-        Vehiculo vehiculo = new Vehiculo(
-                       a,b,c,d,e,f
-        );
-         
-
+        
+        System.out.println("PLACAS ----> "+forma.getPlaca());
         ManejadorRegistroV mr = new ManejadorRegistroV();
-        int resultado = mr.eliminarVehiculo(vehiculo);
+        int resultado = mr.eliminarVehiculo(forma.getPlaca());
 
-        ActionMessages errores = new ActionMessages();
-        switch (resultado) {
-            case 0:   
-                return (mapping.findForward("exito"));
-
-            case 1:
-                errores.add(ActionMessages.GLOBAL_MESSAGE,
-                            new ActionMessage("errors.No se pudo eliminar Vehiculo",
-                                               forma.getPlaca()));                
-                saveErrors(request, errores);
-                return (mapping.getInputForward());
-
-            case 3:
-                log.error("Ocurrió un error de infraestructura");
-                errores.add(ActionMessages.GLOBAL_MESSAGE,
-                            new ActionMessage("errors.infraestructura"));                
-                saveErrors(request, errores);
-                return (mapping.getInputForward());
-
-            default:
-                log.warn("ManejadorUsuario.crearUsuario regresó reultado inesperado");
-                errores.add(ActionMessages.GLOBAL_MESSAGE,
-                            new ActionMessage("errors.infraestructura"));                
-                saveErrors(request, errores);
-                return (mapping.getInputForward());
-        }
+         return (mapping.findForward("exito"));
     }
 
 

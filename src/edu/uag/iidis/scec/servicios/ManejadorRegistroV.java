@@ -138,7 +138,7 @@ public class ManejadorRegistroV {
         return resultado;
     }
 
-    public int eliminarVehiculo(Vehiculo vehiculo) {
+    public int eliminarVehiculo(String vehiculo) {
 
         int resultado;
 
@@ -152,7 +152,7 @@ public class ManejadorRegistroV {
            
 
                dao.hazTransitorio(vehiculo);
-
+               resultado = 0;
                 
 
             HibernateUtil.commitTransaction();

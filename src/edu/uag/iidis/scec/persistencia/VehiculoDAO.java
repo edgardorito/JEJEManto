@@ -123,7 +123,7 @@ public class VehiculoDAO {
     }
 
 
-    public void hazTransitorio(Vehiculo Vehiculo)
+    public void hazTransitorio(String vehiculo)
             throws ExcepcionInfraestructura {
 
         if (log.isDebugEnabled()) {
@@ -131,9 +131,13 @@ public class VehiculoDAO {
         }
 
         try {
-            HibernateUtil.getSession().delete(Vehiculo);
+            Vehiculo v =(Vehiculo) HibernateUtil.getSession().createQuery("from Vehiculo where placa = :typeName")
+                   .setParameter("typeName", vehiculo)
+                   .uniqueResult();
+            HibernateUtil.getSession().delete(v);
         } catch (HibernateException e) {
             if (log.isWarnEnabled()) {
+                log.debug("EXCEPTION ---> ----> "+e);
                 log.warn("<HibernateException");
             }
             throw new ExcepcionInfraestructura(e);

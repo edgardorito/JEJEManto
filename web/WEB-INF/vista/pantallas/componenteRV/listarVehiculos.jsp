@@ -30,6 +30,7 @@
         xmlhttp.send();
   
     }
+
      function buscar () {
        var curp = document.getElementById('curpB').value;
         var xmlhttp=new XMLHttpRequest();
@@ -47,7 +48,23 @@
         xmlhttp.send();
   
     }
-
+    function eliminarV(placas) {
+      
+        var xmlhttp=new XMLHttpRequest();
+                    
+        xmlhttp.onreadystatechange=function(){
+          if(xmlhttp.status==404){
+          
+           }
+          if (xmlhttp.readyState==4 && xmlhttp.status==200){
+              
+          }
+        };
+        alert("ye")
+        xmlhttp.open("GET","EliminarVehiculo.do?placa="+placas,true);
+        xmlhttp.send();
+  
+    }
  	  $(document).ready(function() {
     Materialize.updateTextFields();
   });
@@ -100,7 +117,7 @@
 			            <td><c:out value="${vehiculo.placa}"/></td>
 			            <td><c:out value="${vehiculo.color}"/></td>
 			            <td><c:out value="${vehiculo.curp}"/></td>
-                  <td><i onclick="delete('${vehiculo.placa}','${vehiculo.curp}')" class="large material-icons">delete</i></td>
+                  <td><i onclick="eliminarV('${vehiculo.placa}')" class="large material-icons">delete</i></td>
 			          </tr>
 		        </c:forEach>
 		         

@@ -201,6 +201,16 @@
             <forward name="exito" path="/WEB-INF/vista/pantallas/Clima/listarClimas.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
+        <action path="/EliminarVehiculo"
+                type="edu.uag.iidis.scec.control.MCUEliminarVehiculo"
+                parameter="eliminarVehiculo"
+                name="formaNuevoVehiculo"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/componenteRV/tablaContenidoV.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+        
         <action path="/solicitarListarPaises"
                 type="edu.uag.iidis.scec.control.MCUListarPaises"
                 parameter="solicitarListarPaises"
