@@ -88,7 +88,6 @@
          <form-bean name="formaListadoCP"
                    type="edu.uag.iidis.scec.vista.FormaListadoCP">
         </form-bean>
-
     </form-beans>
 
     <form-beans>
@@ -129,6 +128,7 @@
         <forward name="irInicio" path="/irLogin.dd"/>
         <forward name="irInicio" path="/irEditarPerfil.dd"/>
         <forward name="buscarCps" path="/buscarCPs.dd"/>
+        <forward name="buscarUser" path="/buscarUser.dd"/>
         
     </global-forwards>
 
@@ -138,6 +138,8 @@
                 forward="/WEB-INF/vista/pantallas/plantilla01.jsp?c=pantallaLogin.jsp" />
        <action path="/registrarVehiculo"
                 forward="/WEB-INF/vista/pantallas/componenteRV/registrarV.jsp" />
+        <action path="/Editar"
+                forward="/WEB-INF/vista/pantallas/componenteRV/editar.jsp" />
         <action path="/irEditarPerfil"
                 forward="/WEB-INF/vista/pantallas/pantallaEditarPerfil.jsp" />
         <action path="/Clima"
@@ -165,6 +167,7 @@
             <forward name="exito" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=pantallaLogin.jsp"/>
         </action>
+        
         <action path="/irInicio"
                 forward="/WEB-INF/vista/pantallas/pantallaInicio.jsp" />
         <action path="/irBienvenida"
@@ -245,7 +248,25 @@
             <forward name="exito" path="/WEB-INF/vista/pantallas/componenteRV/tablaContenidoV.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
-        
+
+        <action path="/ordenarPerfilesPor"
+                type="edu.uag.iidis.scec.control.MCUListarPerfil"
+                parameter="ordenarPerfilesPor"
+                name="formaListadoPerfil"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/tablaPerfil.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+        <action path="/editarPerfil"
+                type="edu.uag.iidis.scec.control.MCUListarPerfil"
+                parameter="editarPerfil"
+                name="formaListadoPerfil"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/edita.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
         <action path="/BuscarVehiculo"
                 type="edu.uag.iidis.scec.control.MCUListarVehiculos"
                 parameter="BuscarVehiculo"
@@ -254,6 +275,27 @@
                 validate="false">
             <forward name="exito" path="/WEB-INF/vista/pantallas/componenteRV/tablaContenidoV.jsp"/>
            
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action> 
+
+
+        <action path="/ordenarEventosPor"
+                type="edu.uag.iidis.scec.control.MCUListarEventos"
+                parameter="listarEventosPor"
+                name="formaListadoEventos"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/tablaContenidoCal.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+
+        <action path="/BuscarEvento"
+                type="edu.uag.iidis.scec.control.MCUListarEventos"
+                parameter="BuscarEvento"
+                name="formaListadoEventos"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/tablaContenidoCal.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action> 
         <action path="/solicitarListaEventos"
@@ -421,6 +463,19 @@
 
        </action>
 
+
+        <action path="/procesarEditarPerfil"
+                type="edu.uag.iidis.scec.control.MCUListarPerfil"
+                parameter="procesarEditarPerfil"
+                name="formaListadoPerfil"
+                scope="request"
+                validate="true"
+              >
+
+            <forward name="exito" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+
+       </action>
+
        <!--cambios-->
         <action path="/getImage"
                 type="edu.uag.iidis.scec.control.MCUListarLugares"
@@ -489,6 +544,16 @@
                 scope="request"
                 validate="false">
             <forward name="exito" path="/WEB-INF/vista/pantallas/BuscarCp.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+
+         <action path="/buscarUser"
+                type="edu.uag.iidis.scec.control.MCUListarPerfil"
+                parameter="buscarPerfil"
+                name="formaListadoPerfil"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/tablaPerfil.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
 

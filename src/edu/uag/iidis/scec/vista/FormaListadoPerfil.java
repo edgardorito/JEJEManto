@@ -29,6 +29,7 @@ public final class FormaListadoPerfil
     private String pais;
     private String ciudad;
     private String estado;
+    private String atributo;
 
     public void setPerfiles(Collection perfiles) {
         System.out.println("entro");
@@ -123,6 +124,14 @@ public final class FormaListadoPerfil
 
     public String getEstado() {
         return (this.estado);
+    }
+
+    public void setAtributo(String atributo){
+        this.atributo = atributo;
+    }
+
+    public String getAtributo(){
+        return (this.atributo);
     }
 
     public void reset(ActionMapping mapping,

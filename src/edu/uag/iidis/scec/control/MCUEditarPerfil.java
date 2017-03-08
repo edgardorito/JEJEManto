@@ -18,10 +18,10 @@ import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.MappingDispatchAction;
 
 
-
 public final class MCUEditarPerfil 
         extends MappingDispatchAction {
 
+   
     private Log log = LogFactory.getLog(MCUEditarPerfil.class);
 
     public ActionForward procesarRegistroUsuario(
@@ -34,15 +34,10 @@ public final class MCUEditarPerfil
         if (log.isDebugEnabled()) {
             log.debug(">procesarRegistroUsuario");
         }
-
-
         
         // Se obtienen los datos para procesar el registro
         FormaNuevoPerfil forma = (FormaNuevoPerfil)form;
-        log.debug(">Javi");
-        log.debug(">"+forma.getUsuario());
-        log.debug(">"+forma.getCiudad()+" -- "+forma.getPais()+" -- "+forma.getEstado());
-        log.debug("  ");
+    
         Perfil perfil = new Perfil(forma.getUsuario(), forma.getContra(), forma.getNombre(),
                           forma.getApellido(), forma.getTelefono(), forma.getEmail(),
                           forma.getCp(), forma.getPais(), forma.getCiudad(), forma.getEstado());
@@ -89,8 +84,6 @@ public final class MCUEditarPerfil
             log.debug(">buscarCPs");
         }
 
-    
-
         FormaNuevoPerfil forma = (FormaNuevoPerfil)form;
       
         ManejadorPerfil mr = new ManejadorPerfil();
@@ -110,7 +103,6 @@ public final class MCUEditarPerfil
             saveErrors(request, errores);
             return ( mapping.findForward("fracaso") );
         }
-
     }
 
 }

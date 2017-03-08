@@ -63,6 +63,14 @@ CREATE TABLE `manto`.`editarperfil` (
   PRIMARY KEY (`id`),
   unique (`usuario`));
 
+<<<<<<< HEAD
+CREATE TABLE `manto`.`evento` (
+  `idEvento` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(45) NOT NULL,
+  `fecha` DATETIME NOT NULL,
+  PRIMARY KEY (`idEvento`),
+  unique (`nombre`));
+=======
 CREATE TABLE `manto`.`lat_lon` (
   `idLoc` INT NOT NULL AUTO_INCREMENT,
   `latitud` VARCHAR(45) NULL,
@@ -70,3 +78,4 @@ CREATE TABLE `manto`.`lat_lon` (
   UNIQUE INDEX `latitud_UNIQUE` (`latitud` ASC),
   UNIQUE INDEX `longitud_UNIQUE` (`longitud` ASC));
 
+>>>>>>> f42f133dd0c0f3f8c1b88f0808208641eba95c1f
