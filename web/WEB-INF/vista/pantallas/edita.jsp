@@ -43,7 +43,7 @@
         var pais = document.getElementById("pais").value;
         var ciudad = document.getElementById("ciudad").value;
          var estado = document.getElementById("estado").value;
-         alert("ciudad: " +ciudad+"  pais: "+pais+" estado "+estado);
+       
         var xmlhttp=new XMLHttpRequest();
                     
         xmlhttp.onreadystatechange=function(){
@@ -51,7 +51,7 @@
               document.getElementById("busquedaCP").innerHTML="Page not found";
           }
           if (xmlhttp.readyState==4 && xmlhttp.status==200){
-              alert("Se ha insertado en la base de datos");
+              alert("Se han guardado los cambios");
                usuario = "";
                contrasena = "";
                nombre = "";
