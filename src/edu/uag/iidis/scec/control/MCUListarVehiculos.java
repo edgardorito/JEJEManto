@@ -78,7 +78,7 @@ public final class MCUListarVehiculos
         FormaListadoVehiculos forma = (FormaListadoVehiculos)form;
 
         ManejadorRegistroV mr = new ManejadorRegistroV();
-        Collection resultado = mr.listarVehiculosPor(forma.getAtributo());
+        Collection resultado = mr.listarVehiculosPor(forma.getAtributo(),forma.getCurp());
         log.debug("Resultado Buscar "+resultado);
         ActionMessages errores = new ActionMessages();
         if (resultado != null) {

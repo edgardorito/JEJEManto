@@ -8,8 +8,9 @@
                         <td><c:out value="${vehiculo.placa}"/></td>
                         <td><c:out value="${vehiculo.color}"/></td>
                         <td><c:out value="${vehiculo.curp}"/></td>
-                      </tr>
-                       <td><i onclick="eliminarV('${vehiculo.placa}')" class="small material-icons">delete</i></td>
+                        <td><i onclick="eliminarV('${vehiculo.placa}')" class="small material-icons">delete</i></td>
                        <td><i onclick="editarV('${vehiculo.placa}')" class="small material-icons">mode_edit</i></td>
+                      </tr>
+                       
                 </c:forEach>
                  

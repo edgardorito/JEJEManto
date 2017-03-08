@@ -14,7 +14,7 @@
     <body>
      <script type="text/javascript">
  	  function ordenarPor (atributo) {
-       
+       var curp = document.getElementById('divSecret').value;
         var xmlhttp=new XMLHttpRequest();
                     
         xmlhttp.onreadystatechange=function(){
@@ -26,7 +26,7 @@
             
           }
         };
-        xmlhttp.open("GET","ordenarVehiculosPor.do?atributo="+atributo,true);
+        xmlhttp.open("GET","ordenarVehiculosPor.do?atributo="+atributo+"&curp="+curp,true);
         xmlhttp.send();
   
     }
@@ -40,6 +40,7 @@
               document.getElementById("contenidoTabla").innerHTML="Page not found";
           }
           if (xmlhttp.readyState==4 && xmlhttp.status==200){
+            document.getElementById('divSecret').value = document.getElementById('curpB').value; 
               document.getElementById("contenidoTabla").innerHTML=xmlhttp.responseText;
             
           }
@@ -72,7 +73,9 @@
     </script>
         <c:import url="/WEB-INF/vista/comun/banner.jsp" />
         
-       
+        <input id="divSecret" style="display:none;"> 
+          
+        </input>
         <main >
         	  <div id="tableV">
         	<div class="input-field col s6">

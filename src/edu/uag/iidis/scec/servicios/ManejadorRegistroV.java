@@ -79,7 +79,7 @@ public class ManejadorRegistroV {
             HibernateUtil.closeSession();
         }
     }
-    public Collection listarVehiculosPor(String atributo) {
+    public Collection listarVehiculosPor(String atributo, String curp) {
         Collection resultado;
 
         if (log.isDebugEnabled()) {
@@ -88,7 +88,7 @@ public class ManejadorRegistroV {
 
         try {
             HibernateUtil.beginTransaction();
-            resultado = dao.ordenarVehiculosPor(atributo);
+            resultado = dao.ordenarVehiculosPor(atributo,curp);
             log.debug("listar Vehiculos por "+atributo+": "+resultado);
             HibernateUtil.commitTransaction();
             return resultado;         

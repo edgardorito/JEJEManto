@@ -348,7 +348,7 @@ public class VehiculoDAO {
         }
     }
 
-    public Collection ordenarVehiculosPor(String atributo)
+    public Collection ordenarVehiculosPor(String atributo, String curp)
             throws ExcepcionInfraestructura {
 
         if (log.isDebugEnabled()) {
@@ -356,8 +356,13 @@ public class VehiculoDAO {
         }
 
         try {
- 
-            String hql = "from Vehiculo ORDER BY "+atributo+"";
+            String hql = "";
+            if(curp.equals("")){
+                hql = "from Vehiculo ORDER BY "+atributo+"";
+            }else{
+                hql = "from Vehiculo where curp like '"+curp+"%' ORDER BY "+atributo+"";
+            }
+            
             
              if (log.isDebugEnabled()) {
                  log.debug(hql + atributo);
