@@ -312,26 +312,18 @@ public class PerfilDAO {
     public void eliminarPerfil(Perfil perfil)
             throws ExcepcionInfraestructura {
                 
-         if (log.isDebugEnabled()) {
-            log.debug(">hazPersistente(perfil)");
+          if (log.isDebugEnabled()) {
+            log.debug(">hazTransitorio(Perfil)");
         }
 
         try {
-            Perfil p =(Perfil) HibernateUtil.getSession().createQuery("from Perfil where usuario = :typeName")
+            Perfil v =(Perfil) HibernateUtil.getSession().createQuery("from Perfil where usuario = :typeName")
                    .setParameter("typeName", perfil.getUsuario())
                    .uniqueResult();
-            p.setContra(perfil.getContra());
-            p.setNombre(perfil.getNombre());
-            p.setApellido(perfil.getApellido());
-            p.setTelefono(perfil.getTelefono());
-            p.setEmail(perfil.getEmail());
-            p.setCp(perfil.getCp());
-            p.setPais(perfil.getPais());
-            p.setCiudad(perfil.getCiudad());
-            p.setEstado(perfil.getEstado());
-            HibernateUtil.getSession().saveOrUpdate(p);
+            HibernateUtil.getSession().delete(v);
         } catch (HibernateException e) {
             if (log.isWarnEnabled()) {
+                log.debug("EXCEPTION ---> ----> "+e);
                 log.warn("<HibernateException");
             }
             throw new ExcepcionInfraestructura(e);
