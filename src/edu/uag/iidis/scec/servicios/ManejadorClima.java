@@ -112,4 +112,46 @@ public class ManejadorClima {
         }
         return resultado;
     }    
+
+    public Collection listarClimaPor(String atributo) {
+        Collection resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">listarClimasPor(atributo)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();
+            resultado = dao.ordenarClimasPor(atributo);
+            log.debug("listar Climas por "+atributo+": "+resultado);
+            HibernateUtil.commitTransaction();
+            return resultado;         
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+            return null;
+        } finally {
+            HibernateUtil.closeSession();
+        }
+    }
+
+    public Collection buscarClimaPorCiudad(String ciudad) {
+        Collection resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">guardarUsuario(usuario)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();
+            resultado = dao.buscarClima(ciudad);
+            log.debug("Consulta BV "+resultado);
+            HibernateUtil.commitTransaction();
+            return resultado;         
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+            return null;
+        } finally {
+            HibernateUtil.closeSession();
+        }
+    }
 }

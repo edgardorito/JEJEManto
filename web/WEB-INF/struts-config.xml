@@ -198,6 +198,17 @@
             <forward name="exito" path="/WEB-INF/vista/pantallas/Clima/listarClimas.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
+        <!--Listar Climas-->
+        <action path="/ordenarClimaPor"
+                type="edu.uag.iidis.scec.control.MCUListarClimas"
+                parameter="listarClimasPor"
+                name="formaListadoClima"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/componenteRV/tablaContenidoV.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+
         <action path="/solicitarListarPaises"
                 type="edu.uag.iidis.scec.control.MCUListarPaises"
                 parameter="solicitarListarPaises"
