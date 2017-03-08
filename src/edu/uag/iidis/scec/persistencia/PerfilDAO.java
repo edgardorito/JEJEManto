@@ -79,6 +79,48 @@ public class PerfilDAO {
         return perfiles;
     }
 
+    public Collection ordenarPerfilesPor(String atributo)
+            throws ExcepcionInfraestructura {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">existePerfil(nombrePerfil)");
+        }
+
+        try {
+ 
+            String hql = "from Perfil ORDER BY "+atributo+"";
+            
+             if (log.isDebugEnabled()) {
+                 log.debug(hql + atributo);
+            }
+        
+            Query query = HibernateUtil.getSession()
+                                        .createQuery(hql);
+            if (log.isDebugEnabled()) {
+                 log.debug("<<<<<<<<< create query ok " );
+            }
+            if (log.isDebugEnabled()) {
+                 log.debug("<<<<<<<<< set Parameter ok antes del query list >>>>>");
+            }
+            List results = query.list();
+            int resultado = results.size();
+            if (log.isDebugEnabled()) {
+                 log.debug("<<<<<<<<< Result size " + resultado);
+            }
+            if (resultado == 0) {
+               return results;
+            }
+            
+            return results;
+
+        } catch (HibernateException ex) {
+            if (log.isWarnEnabled()) {
+                log.warn("<HibernateException *******************");
+            }
+            throw new ExcepcionInfraestructura(ex);
+        }
+    }
+
 /*
     public Collection buscarPorEjemplo(Estado estado)
             throws ExcepcionInfraestructura {
@@ -199,11 +241,11 @@ public class PerfilDAO {
             throws ExcepcionInfraestructura {
 				
 		if (log.isDebugEnabled()) {
-            log.debug(">existeUsuario(nombreUsuario)");
+            log.debug("> buscaPerfil(nombreUsuario)");
         }
 
         try {
-            String hql = "from editarperfil where usuario like '"+usuario+"%'";
+            String hql = "from Perfil where usuario like '"+usuario+"%'";
             
              if (log.isDebugEnabled()) {
                  log.debug(hql + usuario);
@@ -235,6 +277,35 @@ public class PerfilDAO {
                 log.warn("<HibernateException *******************");
             }
             throw new ExcepcionInfraestructura(ex);
+        }
+    }
+
+    public void actualizaPerfil(Perfil perfil)
+            throws ExcepcionInfraestructura {
+                
+         if (log.isDebugEnabled()) {
+            log.debug(">hazPersistente(perfil)");
+        }
+
+        try {
+            Perfil p =(Perfil) HibernateUtil.getSession().createQuery("from Perfil where usuario = :typeName")
+                   .setParameter("typeName", perfil.getUsuario())
+                   .uniqueResult();
+            p.setContra(perfil.getContra());
+            p.setNombre(perfil.getNombre());
+            p.setApellido(perfil.getApellido());
+            p.setTelefono(perfil.getTelefono());
+            p.setEmail(perfil.getEmail());
+            p.setCp(perfil.getCp());
+            p.setPais(perfil.getPais());
+            p.setCiudad(perfil.getCiudad());
+            p.setEstado(perfil.getEstado());
+            HibernateUtil.getSession().saveOrUpdate(p);
+        } catch (HibernateException e) {
+            if (log.isWarnEnabled()) {
+                log.warn("<HibernateException");
+            }
+            throw new ExcepcionInfraestructura(e);
         }
     }
 }

@@ -14,14 +14,18 @@ public final class FormaListadoEventos
 
     private Collection eventos;
     private int contador;
-	  private String nombre;
+	private String nombre;
     private String fecha;
+    private String atributo;
+
 
     public void setEventos(Collection eventos) {
         System.out.println("entro");
         this.eventos = eventos;
         if (eventos != null) {
           this.contador = eventos.size();
+          System.out.println("Cantidad: "+contador);
+
         } else
           this.contador = -1;
     }
@@ -35,6 +39,13 @@ public final class FormaListadoEventos
     }
     public void setContador(int contador){
          this.contador = contador;
+    }
+
+    public String getAtributo(){
+        return (this.atributo);
+    }
+    public void setAtributo(String atributo){
+         this.atributo = atributo;
     }
 
   public void reset(ActionMapping mapping,

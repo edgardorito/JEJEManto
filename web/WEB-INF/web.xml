@@ -67,7 +67,7 @@
         <url-pattern>/irLogin.dd</url-pattern>
         <url-pattern>/irEditarPerfil.dd</url-pattern>
          <url-pattern>/buscarCPs.dd</url-pattern>
-        
+         <url-pattern>/buscarUser.dd</url-pattern>
         <url-pattern>/procesarRegistroUsuario.dd</url-pattern>
         <url-pattern>/procesarLogin.dd</url-pattern>
         <url-pattern>/irLugares.dd</url-pattern>

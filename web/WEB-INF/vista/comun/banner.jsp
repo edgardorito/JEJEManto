@@ -31,7 +31,7 @@
 								 <div class="collapsible-body">
 									 <ul>
 										 <li><a href="Clima.do">Clima</a></li>
-										 <li><a href="">Ciudades Favoritas</a></li>
+										 <li><a href="solicitarListarClimas.do">Ciudades Favoritas</a></li>
 									 </ul>
 								 </div>
 							 </li>
@@ -56,6 +56,17 @@
 
 					
 					<li><a href="solicitarListarPerfil.do">Perfiles</a></li>
+					
+					 <li>
+		        	    <a class="collapsible-header">Configuracion<i class="material-icons">arrow_drop_down</i></a>
+		            	<div class="collapsible-body">
+			              	<ul>
+				                <li><a href="editarPerfil.do">Editar Perfil</a></li>
+				                <li><a href="">Eliminar Perfil</a></li>
+				                <li><a href="">Cerrar sesion</a></li>
+			             	</ul>
+			            </div>
+		          </li>
 
 	      </ul>
 	    </div>
@@ -72,7 +83,7 @@
 						<li class="divider"></li>
 						<li><a href="solicitarListarVehiculos.do">Mostrar registros</a></li>
 					</ul>
-					<li><a href="solicitarListarPerfil.do">Perfiles</a></li>
+					
 					<li><a href="Clima.do">Clima</a></li>
 					<li><a class="dropdown-button" href="#!" data-activates="dropdownCal">Calendario</a></li>
 					<ul id="dropdownCal" class="dropdown-content">
@@ -82,7 +93,18 @@
 						
 					</ul>
 
-					
+					<li><a href="solicitarListarPerfil.do">Perfiles</a></li>
+					<li><a class="dropdown-button" href="#!" data-activates="dropdown3">Configuracion </a></li>
+					<ul id="dropdown3" class="dropdown-content">
+						<li><a href="editarPerfil.do">Editar Perfil</a></li>
+						<li class="divider"></li>
+				        <li><a href="">Eliminar Perfil</a></li>
+				        <li class="divider"></li>
+				        <li><a href="">Cerrar sesion</a></li>
+						
+					</ul>
+
+
 				</ul>
 			</div>
 	 </nav>
