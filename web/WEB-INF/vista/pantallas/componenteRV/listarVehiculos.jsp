@@ -65,23 +65,7 @@
         xmlhttp.send();
   
     }
-     function editarV(placas) {
-      
-        var xmlhttp=new XMLHttpRequest();
-                    
-        xmlhttp.onreadystatechange=function(){
-          if(xmlhttp.status==404){
-          
-           }
-          if (xmlhttp.readyState==4 && xmlhttp.status==200){
-              //redireccionar
-          }
-        };
-       
-        xmlhttp.open("GET","BuscarVehiculo.do?placa="+placas,true);
-        xmlhttp.send();
-  
-    }
+    
  	  $(document).ready(function() {
     Materialize.updateTextFields();
   });
@@ -136,7 +120,7 @@
 			            <td><c:out value="${vehiculo.color}"/></td>
 			            <td><c:out value="${vehiculo.curp}"/></td>
                   <td><i onclick="eliminarV('${vehiculo.placa}')" class="small material-icons">delete</i></td>
-                  <td><i onclick="editarV('${vehiculo.placa}')" class="small material-icons">mode_edit</i></td>
+                  <td><a href="BuscarVehiculoPorPlaca.do?placa=${vehiculo.placa}"><i class="small material-icons">mode_edit</i></a></td>
 			          </tr>
 		        </c:forEach>
 		         
