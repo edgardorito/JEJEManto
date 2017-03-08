@@ -309,7 +309,7 @@ public class PerfilDAO {
         }
     }
 
-    public void eliminarPerfil(Perfil perfil)
+    public void eliminarPerfil(String perfil)
             throws ExcepcionInfraestructura {
                 
           if (log.isDebugEnabled()) {
@@ -318,7 +318,7 @@ public class PerfilDAO {
 
         try {
             Perfil v =(Perfil) HibernateUtil.getSession().createQuery("from Perfil where usuario = :typeName")
-                   .setParameter("typeName", perfil.getUsuario())
+                   .setParameter("typeName", perfil)
                    .uniqueResult();
             HibernateUtil.getSession().delete(v);
         } catch (HibernateException e) {

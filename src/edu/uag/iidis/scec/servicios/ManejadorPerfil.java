@@ -221,7 +221,7 @@ if (log.isDebugEnabled()) {
         }
     }
 
-    public int eliminarPerfil(Perfil usuario) {
+    public int eliminarPerfil(String usuario) {
        int resultado=0;
 
         if (log.isDebugEnabled()) {
@@ -231,7 +231,7 @@ if (log.isDebugEnabled()) {
         try {
 
         if (log.isDebugEnabled()) {
-            log.debug(">el usuario a insertar es: "+usuario.getUsuario());
+            log.debug(">el usuario a insertar es: "+usuario);
         }
             HibernateUtil.beginTransaction();           
        
