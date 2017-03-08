@@ -154,4 +154,25 @@ public class ManejadorClima {
             HibernateUtil.closeSession();
         }
     }
+
+    public Collection eliminarClimaPorCiudad(String ciudad) {
+        Collection resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">eliminarUsuario(usuario)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();
+            resultado = dao.eliminarClima(ciudad);
+            log.debug("Consulta BV "+resultado);
+            HibernateUtil.commitTransaction();
+            return resultado;         
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+            return null;
+        } finally {
+            HibernateUtil.closeSession();
+        }
+    }
 }
