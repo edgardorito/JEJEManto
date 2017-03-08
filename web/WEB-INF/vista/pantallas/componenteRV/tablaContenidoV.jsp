@@ -9,5 +9,6 @@
                         <td><c:out value="${vehiculo.color}"/></td>
                         <td><c:out value="${vehiculo.curp}"/></td>
                       </tr>
+                       <td><i onclick="eliminarV('${vehiculo.placa}')" class="small material-icons">delete</i></td>
                 </c:forEach>
                  

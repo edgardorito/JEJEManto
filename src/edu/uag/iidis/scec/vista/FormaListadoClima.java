@@ -17,6 +17,7 @@ public final class FormaListadoClima
     private String ciudad;
     private String latitud;
     private String longitud;
+    private String atributo;
 	
     public void setClimas(Collection climas) {
         this.climas = climas;
@@ -33,6 +34,14 @@ public final class FormaListadoClima
     public int getContador(){
         return (this.contador);
     }
+
+    public String getAtributo() {
+        return (this.atributo);
+    }
+  
+    public void setAtributo(String atributo){
+        this.atributo = atributo;
+    }    
 
 
     public void setCiudad(String ciudad) {

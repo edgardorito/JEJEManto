@@ -10,20 +10,66 @@
 	
     <body>
         <c:import url="/WEB-INF/vista/comun/banner.jsp" /> 
+
+        <script type="text/javascript">
+        	
+	        function ordenarPor (atributo) {
+	       
+		        var xmlhttp=new XMLHttpRequest();
+		                    
+		        xmlhttp.onreadystatechange=function(){
+		          if(xmlhttp.status==404){
+		              document.getElementById("contenidoTabla").innerHTML="Page not found";
+		          }
+		          if (xmlhttp.readyState==4 && xmlhttp.status==200){
+		          	alert(xmlhttp.responseText);
+		              document.getElementById("contenidoTabla").innerHTML=xmlhttp.responseText;
+		            
+		          }
+		        };
+		        xmlhttp.open("GET","ordenarClimaPor.do?atributo="+atributo,true);
+		        xmlhttp.send();
+	  
+	    	}
+
+
+	    	function buscar () {
+		       var ciudad = document.getElementById('ciudad').value;
+		        var xmlhttp=new XMLHttpRequest();
+		                    
+		        xmlhttp.onreadystatechange=function(){
+		          if(xmlhttp.status==404){
+		              document.getElementById("contenidoTabla").innerHTML="Page not found";
+		          }
+		          if (xmlhttp.readyState==4 && xmlhttp.status==200){
+		              document.getElementById("contenidoTabla").innerHTML=xmlhttp.responseText;
+		            
+		          }
+		        };
+		        xmlhttp.open("GET","BuscarClima.do?ciudad="+ciudad,true);
+		        xmlhttp.send();
+		  
+		    }
+        </script>
          
         <main>
+
+        <input value="${FormaListadoClima.ciudad}" name="" id="ciudad" type="text" class="validate">
+        <button onclick="buscar()" class="btn waves-effect waves-light" type="submit" name="action">Buscar
+           <i class="material-icons right">send</i>
+        </button>
         	
 	        <table>
 		        <thead>
 		          <tr>
-		              <th data-field="ciudad">Ciudad</th>
-		              <th data-field="latitud">Latitud</th>
-		              <th data-field="longitud">Longitud</th>
+		              <th onclick="ordenarPor('ciudad')" data-field="ciudad">Ciudad</th>
+		              <th onclick="ordenarPor('latitud')" data-field="latitud">Latitud</th>
+		              <th onclick="ordenarPor('longitud')" data-field="longitud">Longitud</th>
 		            
 		          </tr>
 		        </thead>
 
-		        <tbody>
+		        <tbody id="contenidoTabla">
 		        <c:forEach var="ciudad" items="${formaListadoClima.climas}">
 		        	 <tr>
 			            <td><c:out value="${ciudad.ciudad}"/></td>
@@ -31,10 +77,11 @@
 			    		<td><c:out value="${ciudad.longitud}"/></td>
 			          </tr>
 		        </c:forEach>
-		         
+		        
 		         
 		        </tbody>
-		      </table>
+		     </table>
+
         </main>
         <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
                 

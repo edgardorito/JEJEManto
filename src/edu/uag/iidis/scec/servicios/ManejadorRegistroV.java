@@ -136,5 +136,37 @@ public class ManejadorRegistroV {
             HibernateUtil.closeSession();
         }
         return resultado;
-    }    
+    }
+
+    public int eliminarVehiculo(String vehiculo) {
+
+        int resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">EliminarVehiculo(vehiculo)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();           
+            
+           
+
+               dao.hazTransitorio(vehiculo);
+               resultado = 0;
+                
+
+            HibernateUtil.commitTransaction();
+
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+
+            if (log.isWarnEnabled()) {
+                log.warn("<ExcepcionInfraestructura");
+            }
+            resultado = 2;    // Excepción. Falla en la infraestructura
+        } finally {
+            HibernateUtil.closeSession();
+        }
+        return resultado;
+    }        
 }
