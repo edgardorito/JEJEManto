@@ -87,6 +87,7 @@
 		              <th onclick="ordenarPor('placa')"  data-field="placa">placa</th>
 		              <th onclick="ordenarPor('color')"  data-field="color">color</th>
 		           	  <th onclick="ordenarPor('curp')"  data-field="curp">curp</th>
+                  <th data-field="curp">Eliminar</th>
 		          </tr>
 		        </thead>
 
@@ -99,6 +100,7 @@
 			            <td><c:out value="${vehiculo.placa}"/></td>
 			            <td><c:out value="${vehiculo.color}"/></td>
 			            <td><c:out value="${vehiculo.curp}"/></td>
+                  <td><i onclick="delete('${vehiculo.placa}','${vehiculo.curp}')" class="large material-icons">delete</i></td>
 			          </tr>
 		        </c:forEach>
 		         
