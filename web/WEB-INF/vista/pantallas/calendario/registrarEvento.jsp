@@ -12,25 +12,31 @@
        <c:import url="/WEB-INF/vista/comun/banner.jsp" />
        <main>
        <div class="row">
-         <form class="col s12" action="procesarRegistroEvento.do" method="post">
-           <div class="row">
-             <div class="col s12"></div>
-             <div class="input-field col s12">
-               <i class="material-icons prefix">account_circle</i><br>
-               <input placeholder="Nombre del evento" id="nombreEvento" type="text" class="col s12 validate"
-                 name="nombre" value="${formaNuevoEvento.nombre}">
-             </div>
-             <div class="col s12"></div>
-             <div class="input-field col s12">
-               <i class="material-icons prefix">alarm_on</i><br>
-               <!-- datepicker -->
-               <input placeholder="Fecha del evento" id="fechaEvento" type="date" class="col s12 validate datepicker"
-                 name="fecha" value="${formaNuevoEvento.fecha}">
-             </div>
-             <input type="submit" name="submit" value="Registrar" class="btn waves-effect waves-light"/>
-             <div class="col s12"></div>
-           </div>
-         </form>
+        <div class="col offset-s4 s4">
+           <form class="col s12" action="procesarRegistroEvento.do" method="post">
+             <div class="row">
+               <div class="input-field col s12 m12 l12">
+                 <i class="material-icons prefix">account_circle</i><br>
+                 <input placeholder="Nombre del evento" id="nombreEvento" type="text" class="validate"
+                   name="nombre" value="${formaNuevoEvento.nombre}">
+               </div>
+              </div>
+              <div class="row"></div>
+              <div class="row">
+                 <div class="input-field col s12 m12 l12">
+                   <i class="material-icons prefix">alarm_on</i><br>
+                   <input placeholder="Fecha del evento" id="fechaEvento" type="date" class="validate datepickers"
+                     name="fecha" value="${formaNuevoEvento.fecha}">
+                 </div>
+              </div>
+              <center>
+                  <button class="btn waves-effect waves-light" type="submit" name="submit">Registrar</button>
+
+              </center> 
+
+        </div>
+           </form>
+        </div>
        </div>
        </main>
        <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />

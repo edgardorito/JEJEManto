@@ -25,6 +25,43 @@ public final class MCUListarEventos
 
     private Log log = LogFactory.getLog(MCURegistrarUsuario.class);
 
+    public ActionForward listarEventosPor(
+                ActionMapping mapping,
+                ActionForm form,
+                HttpServletRequest request,
+                HttpServletResponse response)
+            throws Exception {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">listarEventosPor");
+        }
+
+        FormaListadoEventos forma = (FormaListadoEventos)form;
+
+        ManejadorEventos mr = new ManejadorEventos();
+        Collection resultado = mr.listarEventosPor(forma.getAtributo());
+        log.debug("Resultado Buscar "+resultado);
+        ActionMessages errores = new ActionMessages();
+        if (resultado != null) {
+            if ( resultado.isEmpty() ) {
+                errores.add(ActionMessages.GLOBAL_MESSAGE,
+                    new ActionMessage("errors.registroVacio"));
+                saveErrors(request, errores);
+               // System.out.println("vacio");
+                //return (mapping.findForward("vacio"));
+            } else {
+                forma.setEventos( resultado );
+            }
+            return (mapping.findForward("exito"));
+        } else {
+            log.error("Ocurrió un error de infraestructura");
+            errores.add(ActionMessages.GLOBAL_MESSAGE,
+                        new ActionMessage("errors.infraestructura"));                
+            saveErrors(request, errores);
+            return ( mapping.findForward("fracaso") );
+        }
+
+    }
 
     public ActionForward solicitarListaEventos(
                 ActionMapping mapping,
@@ -58,6 +95,44 @@ public final class MCUListarEventos
             log.error("Ocurrió un error de infraestructura");
             errores.add(ActionMessages.GLOBAL_MESSAGE,
                         new ActionMessage("errors.infraestructura"));
+            saveErrors(request, errores);
+            return ( mapping.findForward("fracaso") );
+        }
+
+    }
+
+        public ActionForward BuscarEvento(
+                ActionMapping mapping,
+                ActionForm form,
+                HttpServletRequest request,
+                HttpServletResponse response)
+            throws Exception {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">solicitarBuscarEvento");
+        }
+
+        FormaListadoEventos forma = (FormaListadoEventos)form;
+
+        ManejadorEventos mr = new ManejadorEventos();
+        Collection resultado = mr.listarEventosPorFecha(forma.getFecha());
+        log.debug("Resultado Buscar "+resultado);
+        ActionMessages errores = new ActionMessages();
+        if (resultado != null) {
+            if ( resultado.isEmpty() ) {
+                errores.add(ActionMessages.GLOBAL_MESSAGE,
+                    new ActionMessage("errors.registroVacio"));
+                saveErrors(request, errores);
+               // System.out.println("vacio");
+                //return (mapping.findForward("vacio"));
+            } else {
+                forma.setEventos( resultado );
+            }
+            return (mapping.findForward("exito"));
+        } else {
+            log.error("Ocurrió un error de infraestructura");
+            errores.add(ActionMessages.GLOBAL_MESSAGE,
+                        new ActionMessage("errors.infraestructura"));                
             saveErrors(request, errores);
             return ( mapping.findForward("fracaso") );
         }
