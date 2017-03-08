@@ -1,7 +1,7 @@
 
 	<nav class="nav-extended">
 	    <div class="nav-wrapper">
-	      <a href="#!" class="brand-logo center">Administrador</a>
+	      <a href="#!" class="brand-logo center" style="left:35%;">Bienvenido</a>
 	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
 	      <ul class="side-nav" id="mobile-demo">

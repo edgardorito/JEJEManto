@@ -9,6 +9,7 @@
       <div class="col offset-s4 s4">
           <form id="forma" action="procesarLogin.dd" method="post">
             <div class="row">
+            <br><br>
                <div class="input-field col s12 m12 l12">
               <i class="material-icons prefix">account_box</i>
               <input required placeholder="Usuario" id="usuario" type="text" class="validate"

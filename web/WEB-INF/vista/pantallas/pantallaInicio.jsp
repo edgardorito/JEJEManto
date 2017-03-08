@@ -14,8 +14,8 @@
     <body>
         <c:import url="/WEB-INF/vista/comun/banner.jsp" />
         <main>
-            <center>
-                <h1>Bienvenido</h1>   
+            <center><br><br><br><br>
+                <img src="images/logo.png"> 
             </center>
             
         </main>
