@@ -57,10 +57,10 @@
           
            }
           if (xmlhttp.readyState==4 && xmlhttp.status==200){
-              
+              ordenarPor('tipo');
           }
         };
-        alert("ye")
+       
         xmlhttp.open("GET","EliminarVehiculo.do?placa="+placas,true);
         xmlhttp.send();
   
@@ -117,7 +117,7 @@
 			            <td><c:out value="${vehiculo.placa}"/></td>
 			            <td><c:out value="${vehiculo.color}"/></td>
 			            <td><c:out value="${vehiculo.curp}"/></td>
-                  <td><i onclick="eliminarV('${vehiculo.placa}')" class="large material-icons">delete</i></td>
+                  <td><i onclick="eliminarV('${vehiculo.placa}')" class="small material-icons">delete</i></td>
 			          </tr>
 		        </c:forEach>
 		         
