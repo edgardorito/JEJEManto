@@ -38,7 +38,7 @@ public final class MCUListarPerfil
         HttpServletResponse res = (HttpServletResponse) response;
         HttpSession session = req.getSession();
         User user = (User) session.getAttribute("user"); 
-
+       
         if (log.isDebugEnabled()) {
             log.debug(">solicitarListarPerfil");
         }
@@ -53,6 +53,61 @@ public final class MCUListarPerfil
 
         
          System.out.println("USUARIO: " +user.getUsername());
+
+        FormaListadoPerfil forma = (FormaListadoPerfil)form;
+
+        ManejadorPerfil mr = new ManejadorPerfil();
+        Collection resultado = mr.listarPerfil();
+
+        ActionMessages errores = new ActionMessages();
+        if (resultado != null) {
+            if ( resultado.isEmpty() ) {
+                errores.add(ActionMessages.GLOBAL_MESSAGE,
+                    new ActionMessage("errors.registroVacio"));
+                saveErrors(request, errores);
+            } else {
+                System.out.println("eny");
+                forma.setPerfiles(resultado );
+            }
+            return (mapping.findForward("exito"));
+        } else {
+            log.error("Ocurrió un error de infraestructura");
+            errores.add(ActionMessages.GLOBAL_MESSAGE,
+                        new ActionMessage("errors.infraestructura"));                
+            saveErrors(request, errores);
+            return ( mapping.findForward("fracaso") );
+        }
+
+    }
+
+    public ActionForward cerrarSesion(
+                ActionMapping mapping,
+                ActionForm form,
+                HttpServletRequest request,
+                HttpServletResponse response)
+            throws Exception {
+
+        HttpServletRequest req = (HttpServletRequest) request; 
+        HttpServletResponse res = (HttpServletResponse) response;
+        HttpSession session = req.getSession();
+        User user = (User) session.getAttribute("user"); 
+        session = request.getSession(false);
+        if (session != null) {
+            System.out.println("SESIÓN CERRADA");
+            session.removeAttribute( "user" );
+        }
+
+        if (log.isDebugEnabled()) {
+            log.debug(">cerrarSesion");
+        }
+
+        // Verifica si la acción fue cancelada por el usuario
+        if (isCancelled(request)) {
+            if (log.isDebugEnabled()) {
+                log.debug("<La acción fue cancelada");
+            }
+            return (mapping.findForward("cancelar"));
+        }
 
         FormaListadoPerfil forma = (FormaListadoPerfil)form;
 

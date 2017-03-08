@@ -306,6 +306,15 @@
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
 
+        <action path="/cerrarSesion"
+                type="edu.uag.iidis.scec.control.MCUListarPerfil"
+                parameter="cerrarSesion"
+                name="formaListadoPerfil"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=pantallaLogin.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
 
 		<action path="/ListarEstados"
                 type="edu.uag.iidis.scec.control.MCUListarEstados"
@@ -352,6 +361,16 @@
                 validate="false">
             <forward name="exito" path="/solicitarListarRoles.do" redirect="true"/>
         </action>
+
+        <action path="/procesarEliminarPerfil"
+                type="edu.uag.iidis.scec.control.MCUEliminarPerfil"
+                parameter="procesarEliminarPerfil"
+                name="formaNuevoPerfil"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=pantallaLogin.jsp"/>
+        </action>
+
         <action path="/procesarEliminarEstado"
                 type="edu.uag.iidis.scec.control.MCUEliminarEstado"
                 parameter="procesarEliminarEstado"
