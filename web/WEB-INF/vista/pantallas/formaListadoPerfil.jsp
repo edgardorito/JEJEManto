@@ -53,13 +53,14 @@
     </script>
         <c:import url="/WEB-INF/vista/comun/banner.jsp"/>
         <main>
-        <div style="overflow: scroll; height: 490px;">
+        <div class ="row" style="overflow-y: scroll; height: 475px;">
+        <div class="col offset-s4 s6">
              <div class="input-field col s12 m12 l6">
                   <input required style="float: left;" type="text" placeholder="Usuario" id="user" class="validate" name="user">
                   <a onclick="buscarUsuario()" style="position: absolute; right: 5%;"><i class="material-icons prefix">search</i></a>
             </div>
-
-           <div>
+            </div>
+           <div >
             <table>
                 <thead>
                     <tr>

@@ -138,4 +138,31 @@ public final class MCUListarVehiculos
         }
 
     }
+    public ActionForward listarVehiculosPorPlacas(
+                ActionMapping mapping,
+                ActionForm form,
+                HttpServletRequest request,
+                HttpServletResponse response)
+            throws Exception {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">solicitarBuscarVehculo");
+        }
+
+        FormaNuevoVehiculo forma = (FormaNuevoVehiculo)form;
+
+        ManejadorRegistroV mr = new ManejadorRegistroV();
+        Vehiculo a = mr.listarVehiculosPorPlacas(forma.getPlaca());
+        
+        forma.setTipo(a.getTipo());
+        forma.setModelo(a.getModelo());
+        forma.setMarca(a.getMarca());
+        forma.setPlaca(a.getPlaca());
+        forma.setColor(a.getColor());
+        forma.setCurp(a.getCurp());
+     
+            return (mapping.findForward("exito"));
+        
+
+    }
 }

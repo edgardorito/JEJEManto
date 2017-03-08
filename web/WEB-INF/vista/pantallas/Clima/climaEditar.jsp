@@ -41,15 +41,17 @@
                 </div>
               </div>
             </form>
-            <!--
             <form action="solicitarListarClimas.do">
                <button class="btn waves-effect waves-light" type="submit" name="action">Listar
                  <i class="material-icons right">reorder</i>
                 </button>
             </form>
-                -->
           </div>
 
+          <!--Mostrar ciudades-->
+        
+
+        <!--Script para obtener datos de clima-->
         </main>
        <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
     </body>
