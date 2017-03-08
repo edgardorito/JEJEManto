@@ -247,6 +247,16 @@
         </action> 
 
 
+        <action path="/ordenarEventosPor"
+                type="edu.uag.iidis.scec.control.MCUListarEventos"
+                parameter="listarEventosPor"
+                name="formaListadoEventos"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/tablaContenidoCal.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+
         <action path="/BuscarEvento"
                 type="edu.uag.iidis.scec.control.MCUListarEventos"
                 parameter="BuscarEvento"

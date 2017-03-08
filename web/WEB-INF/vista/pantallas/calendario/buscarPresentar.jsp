@@ -27,6 +27,24 @@
             xmlhttp.send();
 
           }
+
+          function ordenarPor (atributo) {
+
+            var xmlhttp=new XMLHttpRequest();
+
+            xmlhttp.onreadystatechange=function(){
+              if(xmlhttp.status==404){
+                document.getElementById("contenidoTabla").innerHTML="Page not found";
+              }
+              if (xmlhttp.readyState==4 && xmlhttp.status==200){
+                document.getElementById("contenidoTabla").innerHTML=xmlhttp.responseText;
+
+              }
+            };
+            xmlhttp.open("GET","ordenarEventosPor.do?atributo="+atributo,true);
+            xmlhttp.send();
+
+          }
       </script>
        <c:import url="/WEB-INF/vista/comun/banner.jsp" />
        <main>
@@ -45,8 +63,8 @@
          <table>
            <thead>
              <tr>
-                 <th data-field="tipo">Nombre del evento</th>
-                 <th data-field="modelo">Fecha</th>
+                 <th  onclick="ordenarPor('nombre')" data-field="nombre">Nombre del evento</th>
+                 <th  onclick="ordenarPor('fecha)" data-field="fecha">Fecha</th>
              </tr>
            </thead>
 

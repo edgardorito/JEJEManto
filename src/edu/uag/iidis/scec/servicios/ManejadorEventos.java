@@ -94,4 +94,25 @@ public class ManejadorEventos {
         }
     }
 
+    public Collection listarEventosPor(String atributo) {
+        Collection resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">listarEventosPor(atributo)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();
+            resultado = dao.ordenarEventosPor(atributo);
+            log.debug("listar Vehiculos por "+atributo+": "+resultado);
+            HibernateUtil.commitTransaction();
+            return resultado;         
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+            return null;
+        } finally {
+            HibernateUtil.closeSession();
+        }
+    }
+
 }
