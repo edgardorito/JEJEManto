@@ -62,8 +62,8 @@
 		            	<div class="collapsible-body">
 			              	<ul>
 				                <li><a href="editarPerfil.do">Editar Perfil</a></li>
-				                <li><a href="">Eliminar Perfil</a></li>
-				                <li><a href="">Cerrar sesion</a></li>
+				                <li><a href="procesarEliminarPerfil.do">Eliminar Perfil</a></li>
+				                <li><a href="cerrarSesion.do">Cerrar sesion</a></li>
 			             	</ul>
 			            </div>
 		          </li>
@@ -105,9 +105,11 @@
 					<ul id="dropdown3" class="dropdown-content">
 						<li><a href="editarPerfil.do">Editar Perfil</a></li>
 						<li class="divider"></li>
-				        <li><a href="">Eliminar Perfil</a></li>
+						 <li class="divider"></li>
+				        <li><a href="procesarEliminarPerfil.do">Eliminar Perfil</a></li>
 				        <li class="divider"></li>
-				        <li><a href="">Cerrar sesion</a></li>
+				         <li class="divider"></li>
+				        <li><a href="cerrarSesion.do">Cerrar sesion</a></li>
 						
 					</ul>
 
