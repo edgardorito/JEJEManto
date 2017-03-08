@@ -40,7 +40,7 @@ public final class MCUListarEventos
 
         ManejadorEventos mr = new ManejadorEventos();
         Collection resultado = mr.listarEventosPor(forma.getAtributo());
-        log.debug("Resultado Buscar "+resultado);
+        log.debug("Resultado Ordernar "+resultado);
         ActionMessages errores = new ActionMessages();
         if (resultado != null) {
             if ( resultado.isEmpty() ) {

@@ -45,6 +45,25 @@
             xmlhttp.send();
 
           }
+          function eliminarE () {
+            var xmlhttp=new XMLHttpRequest();
+            
+            xmlhttp.onreadystatechange=function(){
+              if(xmlhttp.status==404){
+                
+              }
+              if (xmlhttp.readyState==4 && xmlhttp.status==200){
+                ordenarPor('nombre');
+              }
+            };
+            
+            xmlhttp.open("GET","EliminarVehiculo.do?nombre="+nombre,true);
+            xmlhttp.send();
+
+          }
+          $(document).ready(function() {
+            Materialize.updateTextFields();
+          });
       </script>
        <c:import url="/WEB-INF/vista/comun/banner.jsp" />
        <main>
@@ -60,7 +79,7 @@
               </div>
             </div>
           </div>
-         <table>
+         <table class="centered">
            <thead>
              <tr>
                  <th  onclick="ordenarPor('nombre')" data-field="nombre">Nombre del evento</th>
@@ -68,15 +87,17 @@
              </tr>
            </thead>
 
-           <tbody id="contenidoTabla">
+           <tbody id="contenidoTabla" >
            <c:forEach var="eventos" items="${formaListadoEventos.eventos}">
               <tr>
-                 <td><c:out value="${eventos.nombre}"/></td>
-                 <td><c:out value="${eventos.fecha}"/></td>
+                <td><c:out value="${eventos.nombre}"/></td>
+                <td><c:out value="${eventos.fecha}"/></td>
+                <td>
+                  <i onclick="editarE('${eventos.nombre}')" class="small material-icons">mode_edit</i>
+                  <i onclick="eliminarE('${eventos.nombre}')" class="small material-icons">delete</i>
+                </td>
                </tr>
            </c:forEach>
-
-
            </tbody>
          </table>
        </main>
