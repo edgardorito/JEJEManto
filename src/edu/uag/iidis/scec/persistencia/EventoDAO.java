@@ -43,6 +43,26 @@ public class EventoDAO {
         }
     }
 
+    public void hazTransitorio(String nombre)
+            throws ExcepcionInfraestructura {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">hazTransitorio(nombre)");
+        }
+
+        try {
+            Evento ev =(Evento) HibernateUtil.getSession().createQuery("from Evento where nombre = :name")
+                   .setParameter("name", nombre)
+                   .uniqueResult();
+            HibernateUtil.getSession().delete(ev);
+        } catch (HibernateException e) {
+            if (log.isWarnEnabled()) {
+                log.debug("EXCEPTION ---> ----> "+e);
+                log.warn("<HibernateException");
+            }
+            throw new ExcepcionInfraestructura(e);
+        }
+    }
 
     public Collection ordenarEventosPor(String atributo)
             throws ExcepcionInfraestructura {
@@ -144,8 +164,8 @@ public class EventoDAO {
                                     .createCriteria(Evento.class)
                                     .list();
 
-              log.debug(">buscarTodos() ---- list   " + Eventos.size());
-			log.debug(">buscarTodos() ---- contenido   " + Eventos);
+             // log.debug(">buscarTodos() ---- list   " + Eventos.size());
+			//log.debug(">buscarTodos() ---- contenido   " + Eventos);
         } catch (HibernateException e) {
             if (log.isWarnEnabled()) {
                 log.warn("<HibernateException");

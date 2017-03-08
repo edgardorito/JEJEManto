@@ -210,6 +210,8 @@
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
 
+
+
         <!--Listar Climas-->
         <action path="/ordenarClimaPor"
                 type="edu.uag.iidis.scec.control.MCUListarClimas"
@@ -334,6 +336,15 @@
                 validate="false">
             <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/buscarPresentar.jsp"/>
         </action>
+
+        <action path="/EliminarEvento"
+            type="edu.uag.iidis.scec.control.MCUEliminarEvento"
+            parameter="eliminarEvento"
+            name="formaNuevoEvento">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/tablaContenidoCal.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+
 
         <action path="/solicitarListarPerfil"
                 type="edu.uag.iidis.scec.control.MCUListarPerfil"
@@ -503,8 +514,7 @@
                 parameter="procesarRegistroUsuario"
                 name="formaNuevoPerfil"
                 scope="request"
-                validate="true"
-              >
+                validate="true">
 
             <forward name="exito" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=pantallaLogin.jsp"/>
 
@@ -516,8 +526,7 @@
                 parameter="procesarEditarPerfil"
                 name="formaListadoPerfil"
                 scope="request"
-                validate="true"
-              >
+                validate="true">
 
             <forward name="exito" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
 
@@ -562,7 +571,7 @@
                 scope="request"
                 validate="false">
             <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/registrarEvento.jsp"/>
-            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
 
         <action path="/ListarEstado"
