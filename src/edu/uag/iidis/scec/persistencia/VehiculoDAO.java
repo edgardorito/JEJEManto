@@ -327,6 +327,7 @@ public class VehiculoDAO {
             throw new ExcepcionInfraestructura(ex);
         }
     }
+    
     public Collection buscarEstado(String nombreVehiculo)
             throws ExcepcionInfraestructura {
 
