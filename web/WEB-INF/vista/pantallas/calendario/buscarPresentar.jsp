@@ -47,23 +47,20 @@
           }
           function eliminarE () {
             var xmlhttp=new XMLHttpRequest();
-            
+
             xmlhttp.onreadystatechange=function(){
               if(xmlhttp.status==404){
-                
+
               }
               if (xmlhttp.readyState==4 && xmlhttp.status==200){
                 ordenarPor('nombre');
               }
             };
-            
-            xmlhttp.open("GET","EliminarVehiculo.do?nombre="+nombre,true);
+
+            xmlhttp.open("GET","EliminarEvento.do?nombre="+nombre,true);
             xmlhttp.send();
 
           }
-          $(document).ready(function() {
-            Materialize.updateTextFields();
-          });
       </script>
        <c:import url="/WEB-INF/vista/comun/banner.jsp" />
        <main>
