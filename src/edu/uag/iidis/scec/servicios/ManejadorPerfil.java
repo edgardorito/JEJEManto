@@ -38,6 +38,66 @@ public class ManejadorPerfil {
             HibernateUtil.closeSession();
         }
     }
+
+
+     public Collection editarPerfil( String usuario) {
+        Collection resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug("> - editarPerfil(usuario)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();
+            resultado = dao.buscaPerfil(usuario);
+            HibernateUtil.commitTransaction();
+            return resultado;         
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+            return null;
+        } finally {
+            HibernateUtil.closeSession();
+        }
+    }
+
+public int actualizarPerfil(Perfil usuario) {
+
+        int resultado=0;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">guardarPerfil(usuario)");
+        }
+
+        try {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">el usuario a insertar es: "+usuario.getUsuario());
+        }
+            HibernateUtil.beginTransaction();           
+       
+                dao.actualizaPerfil(usuario);
+
+               resultado = 0; // Exito. El ciudad se creo satisfactoriamente.
+            
+ if (log.isDebugEnabled()) {
+            log.debug(">test2");
+        }
+            HibernateUtil.commitTransaction();
+
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+
+            if (log.isWarnEnabled()) {
+                log.debug("EXCEPCION ----> "+e);
+                log.warn("<ExcepcionInfraestructura");
+            }
+            resultado = 2;    // Excepción. Falla en la infraestructura
+        } finally {
+            HibernateUtil.closeSession();
+        }
+        return resultado;
+    }    
+
     public FormaListadoCP getCPInfo(String cp){
         FormaListadoCP a = new FormaListadoCP();
         WSDemo aux = new WSDemo();
@@ -137,4 +197,25 @@ if (log.isDebugEnabled()) {
         }
         return resultado;
     }    
+
+    public Collection ordenarPerfilesPor(String atributo) {
+        Collection resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">listarPerfilesPor(atributo)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();
+            resultado = dao.ordenarPerfilesPor(atributo);
+            log.debug("listar Perfiles por "+atributo+": "+resultado);
+            HibernateUtil.commitTransaction();
+            return resultado;         
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+            return null;
+        } finally {
+            HibernateUtil.closeSession();
+        }
+    }
 }
