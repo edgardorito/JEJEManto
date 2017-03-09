@@ -42,7 +42,7 @@
             </div>  -->
             <div class="row">
                 <div class="input-field col s6  l3 offset-l5">
-                  <input value="${formaNuevoVehiculo.modelo}" id="modeloRV"  name="modelo" type="text" class="validate">
+                  <input value="${formaNuevoVehiculo.modelo}" id="modeloRV"  name="modelo" type="number" class="validate">
                   <label for="modeloRV">Modelo</label>
                 </div>
             </div>   

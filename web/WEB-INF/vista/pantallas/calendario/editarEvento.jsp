@@ -40,8 +40,7 @@
              <div class="row">
                <div class="input-field col s12 m12 l12">
                  <i class="material-icons prefix">account_circle</i><br>
-                 <input placeholder="Nombre del evento" id="nombreEvento" type="text" class="validate disabled"
-                   name="nombre" value="${formaNuevoEvento.nombre}">
+                 <input placeholder="Nombre del evento" id="nombreEvento" type="text" class="validate" disabled="disabled" name="nombre" value="${formaNuevoEvento.nombre}">
                </div>
               </div>
               <div class="row"></div>
