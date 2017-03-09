@@ -49,6 +49,29 @@
         xmlhttp.send();
   
     }
+    function sugerencias() {
+      
+        var xmlhttp=new XMLHttpRequest();
+                    
+        xmlhttp.onreadystatechange=function(){
+          if(xmlhttp.status==404){
+              
+          }
+          if (xmlhttp.readyState==4 && xmlhttp.status==200){
+            
+            
+             var jsonResponse = JSON.parse(xmlhttp.responseText);
+             console.log(jsonResponse);
+              $('input.autocomplete').autocomplete({
+                  data: jsonResponse
+                   // The max amount of results that can be shown at once. Default: Infinity.
+                });
+            
+          }
+        };
+        xmlhttp.open("GET","solicitarListarVC.do",true);
+        xmlhttp.send();
+    }
     function eliminarV(placas) {
       
         var xmlhttp=new XMLHttpRequest();
@@ -82,8 +105,11 @@
         	
         		<div class="row">
         			<div class="col s3">
-        				<input  value="${formaListadoVehiculos.curp}" id="curpB" name="curp" type="text" class="validate">
-	          			<label for="curpB">Introduzca curp</label>
+                  <div class="input-field col s12">
+                    <input onclick="sugerencias()"  autocomplete="off" value="${formaListadoVehiculos.curp}" id="curpB" name="curp" type="text" class=" autocomplete validate">
+                    <label for="curpB">Introduzca curp</label>
+                  </div>
+        				
         			</div>
         			<div class="col s2">
         				<a class="btn waves-effect waves-light" onclick="buscar()">Buscar
