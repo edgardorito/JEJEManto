@@ -34,6 +34,7 @@
 
 	    	function buscar () {
 		       var ciudad = document.getElementById('ciudad').value;
+		       document.getElementById('ciudad').value = "";
 		        var xmlhttp=new XMLHttpRequest();
 		                    
 		        xmlhttp.onreadystatechange=function(){
@@ -52,6 +53,7 @@
 
 		    function eliminar () {
 		       var ciudad = document.getElementById('ciudad').value;
+		       document.getElementById('ciudad').value = "";
 		        var xmlhttp=new XMLHttpRequest();
 		                    
 		        xmlhttp.onreadystatechange=function(){
@@ -59,7 +61,7 @@
 		              document.getElementById("contenidoTabla").innerHTML="Page not found";
 		          }
 		          if (xmlhttp.readyState==4 && xmlhttp.status==200){
-		              document.getElementById("contenidoTabla").innerHTML=xmlhttp.responseText;
+		              //document.getElementById("contenidoTabla").innerHTML="El estado se elimino correctamente";
 		            
 		          }
 		        };
@@ -71,6 +73,44 @@
          
         <main>
 
+        <!--
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Telephone</label>
+        </div>
+      </div>
+    </form>
+  </div>
+        -->
+        <div class="row">
+        	<form class="col s12">
+        		<div class="row">
+        			<div class="input-field col s6">
+        				<input required value="${FormaListadoClima.ciudad}" name="" id="ciudad" type="text" class="validate">
+        			</div>
+        			<div class="input-field col s6">
+        				 <button onclick="buscar()" class="btn waves-effect waves-light" type="submit" name="action">Buscar
+				           <i class="material-icons right">search</i>
+				        </button>
+
+				        <button onclick="eliminar()" class="btn waves-effect waves-light" type="submit" name="action">Eliminar
+				           <i class="material-icons right">delete</i>
+				        </button>
+        			</div>
+        		</div>
+        	</form>
+        </div>
+
+        <!--
         <div class="input-field col s8">
 	        <input value="${FormaListadoClima.ciudad}" name="" id="ciudad" type="text" class="validate">
 
@@ -82,6 +122,7 @@
 	           <i class="material-icons right">send</i>
 	        </button>
 	    </div>
+	    -->
         	
 	        <table>
 		        <thead>

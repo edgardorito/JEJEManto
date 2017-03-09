@@ -42,6 +42,31 @@ public class ClimaDAO {
         }
     }
 
+    public void hazCambios(Clima clima)
+            throws ExcepcionInfraestructura {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">hazCambios(clima)");
+        }
+
+        try {
+            //System.out.println();
+
+            String hql = "UPDATE Clima set latitud = '"+clima.getLatitud()+"', longitud = '"+clima.getLongitud()+"' WHERE ciudad = '"+clima.getCiudad()+"'";
+            //Query query = session.createQuery(hql);
+            Query query = HibernateUtil.getSession().createQuery(hql);
+            int result = query.executeUpdate();
+            //HibernateUtil.getSession().update(clima);
+        } catch (HibernateException e) {
+            if (log.isWarnEnabled()) {
+                log.warn("<HibernateException");
+                 log.warn("<EXCEPTION:  "+e);
+            }
+
+            throw new ExcepcionInfraestructura(e);
+        }
+    }
+
     public Collection buscarTodos()
             throws ExcepcionInfraestructura {
 
@@ -153,45 +178,27 @@ public class ClimaDAO {
     }
 
 
-            public Collection eliminarClima(String ciudad)
+        public Collection eliminarClima(String ciudad)
             throws ExcepcionInfraestructura {
 
-        if (log.isDebugEnabled()) {
-            log.debug(">buscarClimas(ciudad)");
+                List r = null;
+          if (log.isDebugEnabled()) {
+            log.debug(">hazTransitorio(ciudad)");
         }
 
         try {
- 
-            String hql = "from Clima where ciudad like '"+ciudad+"%'";
+            Clima v =(Clima) HibernateUtil.getSession().createQuery("from Clima where ciudad = '"+ciudad+"'")
+                   .uniqueResult();
+            HibernateUtil.getSession().delete(v);
             
-             if (log.isDebugEnabled()) {
-                 log.debug(hql + ciudad);
-            }
-        
-            Query query = HibernateUtil.getSession()
-                                        .createQuery(hql);
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< create query ok " );
-            }
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< set Parameter ok antes del query list >>>>>");
-            }
-            List results = query.list();
-            int resultado = results.size();
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< Result size " + resultado);
-            }
-            if (resultado == 0) {
-               return results;
-            }
-            
-            return results;
-
-        } catch (HibernateException ex) {
+            return r;
+        } catch (HibernateException e) {
             if (log.isWarnEnabled()) {
-                log.warn("<HibernateException *******************");
+                log.debug("EXCEPTION ---> ----> "+e);
+                log.warn("<HibernateException");
             }
-            throw new ExcepcionInfraestructura(ex);
+            throw new ExcepcionInfraestructura(e);
+          
         }
     }
 

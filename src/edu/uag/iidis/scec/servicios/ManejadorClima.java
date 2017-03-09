@@ -111,7 +111,38 @@ public class ManejadorClima {
             HibernateUtil.closeSession();
         }
         return resultado;
-    }    
+    }
+
+    public int editarClima(Clima clima) {
+
+        int resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">guardarClima(clima)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();           
+
+               dao.hazCambios(clima);
+
+               resultado = 0; // Exito. El ciudad se creo satisfactoriamente.
+
+            HibernateUtil.commitTransaction();
+
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+
+            if (log.isWarnEnabled()) {
+                log.warn("<ExcepcionInfraestructura");
+            }
+            resultado = 2;    // Excepción. Falla en la infraestructura
+        } finally {
+            HibernateUtil.closeSession();
+        }
+        return resultado;
+    }  
+
 
     public Collection listarClimaPor(String atributo) {
         Collection resultado;
@@ -155,17 +186,18 @@ public class ManejadorClima {
         }
     }
 
-    public Collection eliminarClimaPorCiudad(String ciudad) {
+    /*public Collection eliminarClimaPorCiudad(String ciudad) {
         Collection resultado;
 
         if (log.isDebugEnabled()) {
-            log.debug(">eliminarUsuario(usuario)");
+            log.debug(">eliminarCiudad(ciudad)");
         }
 
         try {
             HibernateUtil.beginTransaction();
             resultado = dao.eliminarClima(ciudad);
             log.debug("Consulta BV "+resultado);
+            dao.eliminarClima(ciudad);
             HibernateUtil.commitTransaction();
             return resultado;         
         } catch (ExcepcionInfraestructura e) {
@@ -174,5 +206,43 @@ public class ManejadorClima {
         } finally {
             HibernateUtil.closeSession();
         }
+    }*/
+
+    public int eliminarClimaPorCiudad(String ciudad) {
+       int resultado=0;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">Intenta hacerlooooo");
+        }
+
+        try {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">Se eliminara: "+ciudad);
+        }
+            HibernateUtil.beginTransaction();           
+       
+                dao.eliminarClima(ciudad);
+
+               resultado = 0; // Exito. El ciudad se creo satisfactoriamente.
+            
+ if (log.isDebugEnabled()) {
+            log.debug(">test2");
+        }
+            HibernateUtil.commitTransaction();
+
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+
+            if (log.isWarnEnabled()) {
+                log.debug("EXCEPCION ----> "+e);
+                log.warn("<ExcepcionInfraestructura");
+            }
+            resultado = 2;    // Excepción. Falla en la infraestructura
+        } finally {
+            HibernateUtil.closeSession();
+        }
+        return resultado;
+
     }
 }
