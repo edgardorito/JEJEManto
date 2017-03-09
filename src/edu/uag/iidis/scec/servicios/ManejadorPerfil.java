@@ -102,12 +102,12 @@ public int actualizarPerfil(Perfil usuario) {
         FormaListadoCP a = new FormaListadoCP();
         WSDemo aux = new WSDemo();
         //YOFXSHGYGYMBJAVN9466
-        a.setCiudad(aux.geocodePro("XTQSTISOGEUDTOGN9120", "", "", "", cp).getGeoCity());
-        a.setEstado(aux.geocodePro("XTQSTISOGEUDTOGN9120", "", "", "", cp).getGeoState());
+        a.setCiudad(aux.geocodePro("YOFXSHGYGYMBJAVN9466", "", "", "", cp).getGeoCity());
+        a.setEstado(aux.geocodePro("YOFXSHGYGYMBJAVN9466", "", "", "", cp).getGeoState());
         System.out.println("test");
-          System.out.println("country: "+aux.geocodePro("XTQSTISOGEUDTOGN9120", "", "", "", "33134").getGeoCity());
-        System.out.println("country: "+aux.geocodePro("XTQSTISOGEUDTOGN9120", "", "", "", cp).getGeoState());
-        System.out.println("country: "+aux.geocodePro("XTQSTISOGEUDTOGN9120", "", "", "", cp).getCounty().getCountyName());
+          System.out.println("country: "+aux.geocodePro("YOFXSHGYGYMBJAVN9466", "", "", "", cp).getGeoCity());
+        System.out.println("country: "+aux.geocodePro("YOFXSHGYGYMBJAVN9466", "", "", "", cp).getGeoState());
+        System.out.println("country: "+aux.geocodePro("YOFXSHGYGYMBJAVN9466", "", "", "", cp).getCounty().getCountyName());
         return a;
     }
 	
