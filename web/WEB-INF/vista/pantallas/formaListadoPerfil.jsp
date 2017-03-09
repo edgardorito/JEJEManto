@@ -21,6 +21,7 @@
               document.getElementById("contPerfil").innerHTML="Page not found";
           }
           if (xmlhttp.readyState==4 && xmlhttp.status==200){
+            document.getElementById('divSecret').value = document.getElementById('user').value; 
               document.getElementById("contPerfil").innerHTML=xmlhttp.responseText;
           }
         };
@@ -30,7 +31,7 @@
     }
 
     function ordenarPor (atributo) {
-       
+       var usuario= document.getElementById('divSecret').value;
         var xmlhttp=new XMLHttpRequest();
                     
         xmlhttp.onreadystatechange=function(){
@@ -42,7 +43,7 @@
             
           }
         };
-        xmlhttp.open("GET","ordenarPerfilesPor.do?atributo="+atributo,true);
+        xmlhttp.open("GET","ordenarPerfilesPor.do?atributo="+atributo+"&usuario="+usuario,true);
         xmlhttp.send();
   
     }
@@ -52,6 +53,9 @@
   });
     </script>
         <c:import url="/WEB-INF/vista/comun/banner.jsp"/>
+        <input id="divSecret" style="display:none;"> 
+          
+        </input>
         <main>
         <div class ="row" style="overflow-y: scroll; height: 475px;">
         <div class="col offset-s4 s6">

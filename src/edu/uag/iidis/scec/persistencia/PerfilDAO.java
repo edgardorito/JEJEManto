@@ -79,7 +79,7 @@ public class PerfilDAO {
         return perfiles;
     }
 
-    public Collection ordenarPerfilesPor(String atributo)
+     public Collection ordenarPerfilesPor(String atributo, String usuario)
             throws ExcepcionInfraestructura {
 
         if (log.isDebugEnabled()) {
@@ -87,8 +87,13 @@ public class PerfilDAO {
         }
 
         try {
- 
-            String hql = "from Perfil ORDER BY "+atributo+"";
+            String hql = "";
+            if(usuario.equals("")){
+                hql = "from Perfil ORDER BY "+atributo+"";
+            }else{
+                hql = "from Perfil where usuario like '"+usuario+"%' ORDER BY "+atributo+"";
+            }
+            
             
              if (log.isDebugEnabled()) {
                  log.debug(hql + atributo);
