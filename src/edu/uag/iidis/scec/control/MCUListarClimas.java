@@ -156,27 +156,10 @@ public final class MCUListarClimas
         FormaListadoClima forma = (FormaListadoClima)form;
 
         ManejadorClima mr = new ManejadorClima();
-        Collection resultado = mr.eliminarClimaPorCiudad(forma.getCiudad());
-        log.debug("Resultado Buscar "+resultado);
-        ActionMessages errores = new ActionMessages();
-        if (resultado != null) {
-            if ( resultado.isEmpty() ) {
-                errores.add(ActionMessages.GLOBAL_MESSAGE,
-                    new ActionMessage("errors.registroVacio"));
-                saveErrors(request, errores);
-               // System.out.println("vacio");
-                //return (mapping.findForward("vacio"));
-            } else {
-                forma.setClimas( resultado );
-            }
-            return (mapping.findForward("exito"));
-        } else {
-            log.error("Ocurrió un error de infraestructura");
-            errores.add(ActionMessages.GLOBAL_MESSAGE,
-                        new ActionMessage("errors.infraestructura"));                
-            saveErrors(request, errores);
-            return ( mapping.findForward("fracaso") );
-        }
+        int resultado = mr.eliminarClimaPorCiudad(forma.getCiudad());
+        //log.debug("Resultado Buscar "+resultado);
+        //ActionMessages errores = new ActionMessages();
+        return (mapping.findForward("exito"));
 
     }
 }

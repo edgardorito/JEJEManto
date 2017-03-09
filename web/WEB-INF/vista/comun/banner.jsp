@@ -88,7 +88,9 @@
 					<ul id="dropdownCal" class="dropdown-content">
 						<li><a href="Clima.do">Agregar ciudad</a></li>
 						<li class="divider"></li>
-						<li><a href="solicitarListarClimas.do">Buscar ciudad</a></li>
+						<li><a href="solicitarListarClimas.do">Buscar/Eliminar ciudad</a></li>
+						<li class="divider"></li>
+						<li><a href="EditarClimas.do">Editar Ciudad</a></li>
 						
 					</ul>
 
