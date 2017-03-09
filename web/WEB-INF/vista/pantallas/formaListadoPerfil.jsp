@@ -30,6 +30,29 @@
   
     }
 
+     function sugerencias() {
+        var xmlhttp=new XMLHttpRequest();
+                    
+        xmlhttp.onreadystatechange=function(){
+          if(xmlhttp.status==404){
+              
+          }
+          if (xmlhttp.readyState==4 && xmlhttp.status==200){
+            
+            
+             var jsonResponse = JSON.parse(xmlhttp.responseText);
+             console.log(jsonResponse);
+              $('input.autocomplete').autocomplete({
+                  data: jsonResponse
+                   // The max amount of results that can be shown at once. Default: Infinity.
+                });
+            
+          }
+        };
+        xmlhttp.open("GET","solicitarListarP.do",true);
+        xmlhttp.send();
+    }
+
     function ordenarPor (atributo) {
        var usuario= document.getElementById('divSecret').value;
         var xmlhttp=new XMLHttpRequest();
@@ -51,6 +74,8 @@
       $(document).ready(function() {
     Materialize.updateTextFields();
   });
+
+
     </script>
         <c:import url="/WEB-INF/vista/comun/banner.jsp"/>
         <input id="divSecret" style="display:none;"> 
@@ -60,7 +85,7 @@
         <div class ="row" style="overflow-y: scroll; height: 475px;">
         <div class="col offset-s4 s6">
              <div class="input-field col s12 m12 l6">
-                  <input required style="float: left;" type="text" placeholder="Usuario" id="user" class="validate" name="user">
+                  <input onclick="sugerencias()"  autocomplete="off" value="${formaListadoPerfil.usuario}" class=" autocomplete validate" style="float: left;" type="text" placeholder="Usuario" id="user" name="usuario">
                   <a onclick="buscarUsuario()" style="position: absolute; right: 5%;"><i class="material-icons prefix">search</i></a>
             </div>
             </div>

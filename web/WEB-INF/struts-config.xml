@@ -249,6 +249,17 @@
             <forward name="exito" path="/WEB-INF/vista/pantallas/componenteRV/sugerenciasBuscarV.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
+
+         <action path="/solicitarListarP"
+                type="edu.uag.iidis.scec.control.MCUListarPerfil"
+                parameter="solicitarListarPerfil"
+                name="formaListadoPerfil"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/sugerenciaBuscaUsuario.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+
         <action path="/solicitarListarVehiculos"
                 type="edu.uag.iidis.scec.control.MCUListarVehiculos"
                 parameter="solicitarListarVehiculos"
