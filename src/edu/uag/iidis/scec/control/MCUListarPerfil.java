@@ -246,7 +246,7 @@ public ActionForward editarPerfil(
         FormaListadoPerfil forma = (FormaListadoPerfil)form;
 
         ManejadorPerfil mr = new ManejadorPerfil();
-        Collection resultado = mr.ordenarPerfilesPor(forma.getAtributo());
+        Collection resultado = mr.ordenarPerfilesPor(forma.getAtributo(), forma.getUsuario());
         log.debug("Resultado Buscar "+resultado);
         ActionMessages errores = new ActionMessages();
         if (resultado != null) {

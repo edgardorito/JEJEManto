@@ -200,7 +200,7 @@ if (log.isDebugEnabled()) {
         return resultado;
     }    
 
-    public Collection ordenarPerfilesPor(String atributo) {
+    public Collection ordenarPerfilesPor(String atributo, String usuario) {
         Collection resultado;
 
         if (log.isDebugEnabled()) {
@@ -209,7 +209,7 @@ if (log.isDebugEnabled()) {
 
         try {
             HibernateUtil.beginTransaction();
-            resultado = dao.ordenarPerfilesPor(atributo);
+            resultado = dao.ordenarPerfilesPor(atributo,usuario);
             log.debug("listar Perfiles por "+atributo+": "+resultado);
             HibernateUtil.commitTransaction();
             return resultado;         
