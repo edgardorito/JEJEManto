@@ -27,7 +27,7 @@
                   document.getElementById("contenidoTabla").innerHTML="Page not found";
               }
               if (xmlhttp.readyState==4 && xmlhttp.status==200){
-                  document.getElementById("contenidoTabla").innerHTML="El estado se elimino correctamente";
+                  document.getElementById("contenidoTabla").innerHTML="El estado se edito correctamente";
                 
               }
             };
@@ -73,12 +73,12 @@
           
           <table>
             <thead>
-              <tr>
+             <!-- <tr>
                   <th data-field="ciudad">Ciudad</th>
                   <th data-field="latitud">Latitud</th>
                   <th data-field="longitud">Longitud</th>
                 
-              </tr>
+              </tr>-->
             </thead>
 
             <tbody id="contenidoTabla">

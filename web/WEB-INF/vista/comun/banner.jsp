@@ -90,7 +90,7 @@
 						<li class="divider"></li>
 						<li><a href="solicitarListarClimas.do">Buscar/Eliminar ciudad</a></li>
 						<li class="divider"></li>
-						<li><a href="EditarClimas.do">Editar Ciudad</a></li>
+						<li><a href="procesarEditarClima.do">Editar Ciudad</a></li>
 						
 					</ul>
 
