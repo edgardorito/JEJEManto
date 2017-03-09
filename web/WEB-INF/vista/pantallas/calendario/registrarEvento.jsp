@@ -7,8 +7,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
          <c:import url="/WEB-INF/vista/comun/importaciones.jsp" />
     </head>
-
     <body>
+    <script type="text/javascript">
+                $(document).ready(function() {
+          Materialize.updateTextFields();
+        });
+    </script>
        <c:import url="/WEB-INF/vista/comun/banner.jsp" />
        <main>
        <div class="row">
@@ -25,12 +29,12 @@
               <div class="row">
                  <div class="input-field col s12 m12 l12">
                    <i class="material-icons prefix">alarm_on</i><br>
-                   <input placeholder="Fecha del evento" id="fechaEvento" type="date" class="validate datepickers"
+                   <input placeholder="Fecha del evento" id="fechaEvento" type="date" class="validate "
                      name="fecha" value="${formaNuevoEvento.fecha}">
                  </div>
               </div>
               <center>
-                  <button class="btn waves-effect waves-light" type="submit" name="submit">Registrar</button>
+                  <button class="btn waves-effect waves-light" type="submit" name="submit" >Registrar</button>
 
               </center> 
 

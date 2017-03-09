@@ -53,6 +53,39 @@ public class ManejadorEventos {
         return resultado;
     }
 
+        public int actualizarEvento(Evento evento) {
+
+        int resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">actualizarVehiculo(evento)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();           
+            
+           
+
+               dao.actualizarE(evento);
+
+               resultado = 0; // Exito. El ciudad se creo satisfactoriamente.
+           
+
+            HibernateUtil.commitTransaction();
+
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+
+            if (log.isWarnEnabled()) {
+                log.warn("<ExcepcionInfraestructura");
+            }
+            resultado = 2;    // Excepción. Falla en la infraestructura
+        } finally {
+            HibernateUtil.closeSession();
+        }
+        return resultado;
+    }
+
         public int eliminarEvento(String nombre) {
 
         int resultado;
@@ -109,12 +142,33 @@ public class ManejadorEventos {
         Collection resultado;
 
         if (log.isDebugEnabled()) {
-            log.debug(">listarPorFecha(usuario)");
+            log.debug(">guardarUsuario(usuario)");
         }
 
         try {
             HibernateUtil.beginTransaction();
             resultado = dao.buscarEventos(fecha);
+            log.debug("Consulta BV "+resultado);
+            HibernateUtil.commitTransaction();
+            return resultado;         
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+            return null;
+        } finally {
+            HibernateUtil.closeSession();
+        }
+    }
+
+    public Evento listarEventosPorF(String fecha) {
+        Evento resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">listarPorFecha(usuario)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();
+            resultado = dao.buscarEventoFecha(fecha);
             log.debug("Consulta BFecha "+resultado);
             HibernateUtil.commitTransaction();
             return resultado;         

@@ -5,7 +5,9 @@
                         <td><c:out value="${evento.nombre}"/></td>
                         <td><c:out value="${evento.fecha}"/></td>
                         <td>
-                        	<i onclick="editarE('${evento.nombre}')" class="small material-icons">mode_edit</i>
+                        	<a href="BuscarEventoPorFecha.do?nombre=${evento.nombre}">
+                  				<i  class="small material-icons">mode_edit</i>
+                   			</a>
                         	<i onclick="eliminarE('${evento.nombre}')" class="small material-icons">delete</i>
                         </td>
                       </tr>

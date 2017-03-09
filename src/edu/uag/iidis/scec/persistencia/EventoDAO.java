@@ -43,6 +43,29 @@ public class EventoDAO {
         }
     }
 
+    public void actualizarE(Evento evento)
+            throws ExcepcionInfraestructura {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">hazPersistente(evento)");
+        }
+
+        try {
+             Evento p =(Evento) HibernateUtil.getSession().createQuery("from Evento where nombre = :name")
+                   .setParameter("name", evento.getNombre())
+                   .uniqueResult();
+            p.setFecha(evento.getFecha());
+
+            HibernateUtil.getSession().update(p);      
+        }catch (HibernateException e) {
+            if (log.isWarnEnabled()) {
+              log.warn("<EXCEPTION:  "+e);
+                log.warn("<HibernateException" + evento.getNombre());
+            }
+            throw new ExcepcionInfraestructura(e);
+        }
+    }
+
     public void hazTransitorio(String nombre)
             throws ExcepcionInfraestructura {
 
@@ -174,7 +197,42 @@ public class EventoDAO {
         }
         return Eventos;
     }
+    public Evento buscarEventoFecha(String fecha)
+            throws ExcepcionInfraestructura {
 
+        if (log.isDebugEnabled()) {
+            log.debug(">buscarVehiculos(placa)");
+        }
+
+        try {
+ 
+            String hql = "from Evento where nombre like '"+fecha+"%'";
+            
+             if (log.isDebugEnabled()) {
+                 log.debug(hql + fecha);
+            }
+        
+            Evento results = (Evento)  HibernateUtil.getSession()
+                                        .createQuery(hql).uniqueResult();
+            if (log.isDebugEnabled()) {
+                 log.debug("<<<<<<<<< create query ok " );
+            }
+            if (log.isDebugEnabled()) {
+                 log.debug("<<<<<<<<< set Parameter ok antes del query list >>>>>");
+            }
+            
+          
+            
+            
+            return results;
+
+        } catch (HibernateException ex) {
+            if (log.isWarnEnabled()) {
+                log.warn("<HibernateException *******************");
+            }
+            throw new ExcepcionInfraestructura(ex);
+        }
+    }
 
     public Collection buscarEventos(String fecha)
             throws ExcepcionInfraestructura {
