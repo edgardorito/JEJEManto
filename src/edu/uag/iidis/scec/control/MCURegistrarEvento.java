@@ -83,4 +83,59 @@ public final class MCURegistrarEvento
         }
     }
 
+        public ActionForward actualizarEvento(
+                ActionMapping mapping,
+                ActionForm form,
+                HttpServletRequest request,
+                HttpServletResponse response)
+            throws Exception {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">procesarRegistroVehiculo");
+        }
+
+        
+        // Se obtienen los datos para procesar el registro
+        FormaNuevoEvento forma = (FormaNuevoEvento)form;
+ 
+        String a = forma.getFecha();
+
+        String b =forma.getNombre();
+        System.out.println("Nombre ----<>------ "+a);
+        Evento evento = new Evento(
+                       a,b
+        );
+         
+
+        ManejadorEventos mr = new ManejadorEventos();
+        int resultado = mr.actualizarEvento(evento);
+
+        ActionMessages errores = new ActionMessages();
+        switch (resultado) {
+            case 0:   
+                return (mapping.findForward("exito"));
+
+            case 1:
+                errores.add(ActionMessages.GLOBAL_MESSAGE,
+                            new ActionMessage("errors.fechaEventoYaExiste",
+                                               forma.getNombre()));                
+                saveErrors(request, errores);
+                return (mapping.getInputForward());
+
+            case 3:
+                log.error("Ocurrió un error de infraestructura");
+                errores.add(ActionMessages.GLOBAL_MESSAGE,
+                            new ActionMessage("errors.infraestructura"));                
+                saveErrors(request, errores);
+                return (mapping.getInputForward());
+
+            default:
+                log.warn("ManejadorUsuario.crearUsuario regresó reultado inesperado");
+                errores.add(ActionMessages.GLOBAL_MESSAGE,
+                            new ActionMessage("errors.infraestructura"));                
+                saveErrors(request, errores);
+                return (mapping.getInputForward());
+        }
+    }
+
 }

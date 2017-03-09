@@ -63,6 +63,32 @@ public final class MCUListarEventos
 
     }
 
+    public ActionForward listarEventosPorFecha(
+                ActionMapping mapping,
+                ActionForm form,
+                HttpServletRequest request,
+                HttpServletResponse response)
+            throws Exception {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">listarEventosPorFecha");
+        }
+
+        FormaNuevoEvento forma = (FormaNuevoEvento)form;
+
+        ManejadorEventos mr = new ManejadorEventos();
+        Evento a = mr.listarEventosPorF(forma.getNombre());
+        
+        forma.setNombre(a.getNombre());        
+        forma.setFecha(a.getFecha());
+
+
+     
+        return (mapping.findForward("exito"));
+        
+
+    }
+
     public ActionForward solicitarListaEventos(
                 ActionMapping mapping,
                 ActionForm form,

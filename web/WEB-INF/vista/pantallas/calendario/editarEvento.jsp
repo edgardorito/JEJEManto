@@ -9,6 +9,29 @@
     </head>
 
     <body>
+        <script type="text/javascript">
+      
+       
+         function save () {
+            var fecha = document.getElementById("nombreEvento").value;
+            var nombre = document.getElementById("fechaEvento").value;
+          //alert("placa");
+            var xmlhttp=new XMLHttpRequest();
+                        
+            xmlhttp.onreadystatechange=function(){
+              if(xmlhttp.status==404){
+                  document.getElementById("busqueda").innerHTML="Page not found";
+              }
+              if (xmlhttp.readyState==4 && xmlhttp.status==200){
+                  alert("Se ha actualizado el evento");
+              }
+            };
+            console.log("nombre: "+nombre);
+            xmlhttp.open("GET","actualizarEvento.do?nombre="+nombre+"&fecha="+fecha,true);
+            xmlhttp.send();
+      
+        }
+        </script>
        <c:import url="/WEB-INF/vista/comun/banner.jsp" />
        <main>
        <div class="row">
@@ -17,7 +40,7 @@
              <div class="row">
                <div class="input-field col s12 m12 l12">
                  <i class="material-icons prefix">account_circle</i><br>
-                 <input placeholder="Nombre del evento" id="nombreEvento" type="text" class="validate"
+                 <input placeholder="Nombre del evento" id="nombreEvento" type="text" class="validate disabled"
                    name="nombre" value="${formaNuevoEvento.nombre}">
                </div>
               </div>
@@ -30,7 +53,7 @@
                  </div>
               </div>
               <center>
-                  <button class="btn waves-effect waves-light" type="submit" name="submit">Registrar</button>
+                  <button onclick="save()" class="btn waves-effect waves-light" type="submit" name="submit">Actualizar</button>
               </center> 
 
         </div>

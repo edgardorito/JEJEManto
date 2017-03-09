@@ -11,7 +11,7 @@
     <body>
       <script type="text/javascript">
            function buscar () {
-             var fecha = document.getElementById('nombreB').value;
+             var fecha = document.getElementById('fechaB').value;
              var xmlhttp=new XMLHttpRequest();
 
              xmlhttp.onreadystatechange=function(){
@@ -66,12 +66,13 @@
           Materialize.updateTextFields();
         });
       </script>
-       <c:import url="/WEB-INF/vista/comun/banner.jsp" />
+      <c:import url="/WEB-INF/vista/comun/banner.jsp" />
        <main>
+        <div id="tableE">
         <div class="input-field col s6">
           <div class="row">
               <div class="col s3">
-                <input placeholder="Buscar fecha " id="nombreB" type="date" class="validate"
+                <input placeholder="Buscar fecha" id="fechaB" type="date" class="validate"
                   name="nombre" value="${formaListadoEventos.fecha}">
               </div>
               <div class="col s2">
@@ -84,7 +85,7 @@
            <thead>
              <tr>
                  <th  onclick="ordenarPor('nombre')" data-field="nombre">Nombre del evento</th>
-                 <th  onclick="ordenarPor('fecha)" data-field="fecha">Fecha</th>
+                 <th  onclick="ordenarPor('fecha')" data-field="fecha">Fecha</th>
              </tr>
            </thead>
 
@@ -94,13 +95,16 @@
                 <td><c:out value="${eventos.nombre}"/></td>
                 <td><c:out value="${eventos.fecha}"/></td>
                 <td>
-                  <i onclick="editarE('${eventos.nombre}')" class="small material-icons">mode_edit</i>
+                <a href="BuscarEventoPorFecha.do?nombre=${eventos.nombre}">
+                  <i  class="small material-icons">mode_edit</i>
+                </a>
                   <i onclick="eliminarE('${eventos.nombre}')" class="small material-icons">delete</i>
                 </td>
                </tr>
            </c:forEach>
            </tbody>
          </table>
+          </div>
        </main>
        <c:import url="/WEB-INF/vista/comun/barraPie.jsp" />
     </body>

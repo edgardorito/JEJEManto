@@ -328,6 +328,27 @@
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action> 
 
+        <action path="/BuscarEventoPorFecha"
+                type="edu.uag.iidis.scec.control.MCUListarEventos"
+                parameter="listarEventosPorFecha"
+                name="formaNuevoEvento"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/editarEvento.jsp"/>
+           
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action> 
+
+        <action path="/actualizarEvento"
+            type="edu.uag.iidis.scec.control.MCURegistrarEvento"
+            parameter="actualizarEvento"
+            name="formaNuevoEvento"
+            scope="request"
+            validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/editarEvento.jsp"/>
+
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action> 
 
         <action path="/ordenarEventosPor"
                 type="edu.uag.iidis.scec.control.MCUListarEventos"
@@ -335,7 +356,7 @@
                 name="formaListadoEventos"
                 scope="request"
                 validate="false">
-            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/tablaContenidoCal.jsp"/>
+            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/buscarPresentar.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
 
