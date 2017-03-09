@@ -170,7 +170,7 @@ public class ManejadorRegistroV {
             
            
 
-               dao.hazPersistente(vehiculo);
+               dao.hazPersistenteP(vehiculo);
 
                resultado = 0; // Exito. El ciudad se creo satisfactoriamente.
            
