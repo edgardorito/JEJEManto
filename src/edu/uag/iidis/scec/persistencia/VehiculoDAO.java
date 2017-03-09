@@ -121,6 +121,32 @@ public class VehiculoDAO {
             throw new ExcepcionInfraestructura(e);
         }
     }
+    public void hazPersistenteP(Vehiculo vehiculo)
+            throws ExcepcionInfraestructura {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">hazPersistente(Vehiculo)");
+        }
+
+        try {
+             Vehiculo p =(Vehiculo) HibernateUtil.getSession().createQuery("from Vehiculo where placa = :typeName")
+                   .setParameter("typeName", vehiculo.getPlaca())
+                   .uniqueResult();
+            p.setCurp(vehiculo.getCurp());
+
+            p.setTipo(vehiculo.getTipo());
+            p.setModelo(vehiculo.getModelo());
+            p.setMarca(vehiculo.getMarca());
+           
+            p.setColor(vehiculo.getColor());
+            HibernateUtil.getSession().saveOrUpdate(p);
+        } catch (HibernateException e) {
+            if (log.isWarnEnabled()) {
+                log.warn("<HibernateException");
+            }
+            throw new ExcepcionInfraestructura(e);
+        }
+    }
 
 
     public void hazTransitorio(String vehiculo)
@@ -272,7 +298,7 @@ public class VehiculoDAO {
             if (log.isDebugEnabled()) {
                  log.debug("<<<<<<<<< Result size " + resultado);
             }
-            if (resultado == 0) {
+           if (resultado == 0) {
                return results;
             }
             
@@ -285,8 +311,44 @@ public class VehiculoDAO {
             throw new ExcepcionInfraestructura(ex);
         }
     }
+    public Vehiculo buscarVehiculosPlaca(String placa)
+            throws ExcepcionInfraestructura {
 
-    public Collection ordenarVehiculosPor(String atributo)
+        if (log.isDebugEnabled()) {
+            log.debug(">buscarVehiculos(placa)");
+        }
+
+        try {
+ 
+            String hql = "from Vehiculo where placa like '"+placa+"%'";
+            
+             if (log.isDebugEnabled()) {
+                 log.debug(hql + placa);
+            }
+        
+            Vehiculo results = (Vehiculo)  HibernateUtil.getSession()
+                                        .createQuery(hql).uniqueResult();
+            if (log.isDebugEnabled()) {
+                 log.debug("<<<<<<<<< create query ok " );
+            }
+            if (log.isDebugEnabled()) {
+                 log.debug("<<<<<<<<< set Parameter ok antes del query list >>>>>");
+            }
+            
+          
+            
+            
+            return results;
+
+        } catch (HibernateException ex) {
+            if (log.isWarnEnabled()) {
+                log.warn("<HibernateException *******************");
+            }
+            throw new ExcepcionInfraestructura(ex);
+        }
+    }
+
+    public Collection ordenarVehiculosPor(String atributo, String curp)
             throws ExcepcionInfraestructura {
 
         if (log.isDebugEnabled()) {
@@ -294,8 +356,13 @@ public class VehiculoDAO {
         }
 
         try {
- 
-            String hql = "from Vehiculo ORDER BY "+atributo+"";
+            String hql = "";
+            if(curp.equals("")){
+                hql = "from Vehiculo ORDER BY "+atributo+"";
+            }else{
+                hql = "from Vehiculo where curp like '"+curp+"%' ORDER BY "+atributo+"";
+            }
+            
             
              if (log.isDebugEnabled()) {
                  log.debug(hql + atributo);

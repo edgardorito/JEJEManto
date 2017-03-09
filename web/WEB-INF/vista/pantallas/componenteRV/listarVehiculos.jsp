@@ -14,7 +14,7 @@
     <body>
      <script type="text/javascript">
  	  function ordenarPor (atributo) {
-       
+       var curp = document.getElementById('divSecret').value;
         var xmlhttp=new XMLHttpRequest();
                     
         xmlhttp.onreadystatechange=function(){
@@ -26,7 +26,7 @@
             
           }
         };
-        xmlhttp.open("GET","ordenarVehiculosPor.do?atributo="+atributo,true);
+        xmlhttp.open("GET","ordenarVehiculosPor.do?atributo="+atributo+"&curp="+curp,true);
         xmlhttp.send();
   
     }
@@ -40,6 +40,7 @@
               document.getElementById("contenidoTabla").innerHTML="Page not found";
           }
           if (xmlhttp.readyState==4 && xmlhttp.status==200){
+            document.getElementById('divSecret').value = document.getElementById('curpB').value; 
               document.getElementById("contenidoTabla").innerHTML=xmlhttp.responseText;
             
           }
@@ -47,6 +48,29 @@
         xmlhttp.open("GET","BuscarVehiculo.do?curp="+curp,true);
         xmlhttp.send();
   
+    }
+    function sugerencias() {
+      
+        var xmlhttp=new XMLHttpRequest();
+                    
+        xmlhttp.onreadystatechange=function(){
+          if(xmlhttp.status==404){
+              
+          }
+          if (xmlhttp.readyState==4 && xmlhttp.status==200){
+            
+            
+             var jsonResponse = JSON.parse(xmlhttp.responseText);
+             console.log(jsonResponse);
+              $('input.autocomplete').autocomplete({
+                  data: jsonResponse
+                   // The max amount of results that can be shown at once. Default: Infinity.
+                });
+            
+          }
+        };
+        xmlhttp.open("GET","solicitarListarVC.do",true);
+        xmlhttp.send();
     }
     function eliminarV(placas) {
       
@@ -65,21 +89,27 @@
         xmlhttp.send();
   
     }
+    
  	  $(document).ready(function() {
     Materialize.updateTextFields();
   });
     </script>
         <c:import url="/WEB-INF/vista/comun/banner.jsp" />
         
-       
+        <input id="divSecret" style="display:none;"> 
+          
+        </input>
         <main >
         	  <div id="tableV">
         	<div class="input-field col s6">
         	
         		<div class="row">
         			<div class="col s3">
-        				<input  value="${formaListadoVehiculos.curp}" id="curpB" name="curp" type="text" class="validate">
-	          			<label for="curpB">Introduzca curp</label>
+                  <div class="input-field col s12">
+                    <input onclick="sugerencias()"  autocomplete="off" value="${formaListadoVehiculos.curp}" id="curpB" name="curp" type="text" class=" autocomplete validate">
+                    <label for="curpB">Introduzca curp</label>
+                  </div>
+        				
         			</div>
         			<div class="col s2">
         				<a class="btn waves-effect waves-light" onclick="buscar()">Buscar
@@ -104,7 +134,8 @@
 		              <th onclick="ordenarPor('placa')"  data-field="placa">placa</th>
 		              <th onclick="ordenarPor('color')"  data-field="color">color</th>
 		           	  <th onclick="ordenarPor('curp')"  data-field="curp">curp</th>
-                  <th data-field="curp">Eliminar</th>
+                  <th data-field="eliminar">Eliminar</th>
+                   <th data-field="editar">Editar</th>
 		          </tr>
 		        </thead>
 
@@ -118,6 +149,7 @@
 			            <td><c:out value="${vehiculo.color}"/></td>
 			            <td><c:out value="${vehiculo.curp}"/></td>
                   <td><i onclick="eliminarV('${vehiculo.placa}')" class="small material-icons">delete</i></td>
+                  <td><a href="BuscarVehiculoPorPlaca.do?placa=${vehiculo.placa}"><i class="small material-icons">mode_edit</i></a></td>
 			          </tr>
 		        </c:forEach>
 		         

@@ -78,7 +78,7 @@ public final class MCUListarVehiculos
         FormaListadoVehiculos forma = (FormaListadoVehiculos)form;
 
         ManejadorRegistroV mr = new ManejadorRegistroV();
-        Collection resultado = mr.listarVehiculosPor(forma.getAtributo());
+        Collection resultado = mr.listarVehiculosPor(forma.getAtributo(),forma.getCurp());
         log.debug("Resultado Buscar "+resultado);
         ActionMessages errores = new ActionMessages();
         if (resultado != null) {
@@ -136,6 +136,33 @@ public final class MCUListarVehiculos
             saveErrors(request, errores);
             return ( mapping.findForward("fracaso") );
         }
+
+    }
+    public ActionForward listarVehiculosPorPlacas(
+                ActionMapping mapping,
+                ActionForm form,
+                HttpServletRequest request,
+                HttpServletResponse response)
+            throws Exception {
+
+        if (log.isDebugEnabled()) {
+            log.debug(">solicitarBuscarVehculo");
+        }
+
+        FormaNuevoVehiculo forma = (FormaNuevoVehiculo)form;
+
+        ManejadorRegistroV mr = new ManejadorRegistroV();
+        Vehiculo a = mr.listarVehiculosPorPlacas(forma.getPlaca());
+        
+        forma.setTipo(a.getTipo());
+        forma.setModelo(a.getModelo());
+        forma.setMarca(a.getMarca());
+        forma.setPlaca(a.getPlaca());
+        forma.setColor(a.getColor());
+        forma.setCurp(a.getCurp());
+     
+            return (mapping.findForward("exito"));
+        
 
     }
 }

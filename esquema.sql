@@ -25,7 +25,7 @@ create table Usuarios (
 );
 CREATE TABLE `manto`.`vehiculos` (
   `idVehiculo` INT NOT NULL,
-  `idUsuario` INT NOT NULL,
+  `curp` VARCHAR(45) NOT NULL,
   `tipo` VARCHAR(45) NOT NULL,
   `modelo` VARCHAR(45) NOT NULL,
   `marca` VARCHAR(45) NOT NULL,

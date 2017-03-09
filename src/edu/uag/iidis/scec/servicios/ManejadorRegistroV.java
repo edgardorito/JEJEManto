@@ -59,7 +59,27 @@ public class ManejadorRegistroV {
             HibernateUtil.closeSession();
         }
     }
-    public Collection listarVehiculosPor(String atributo) {
+    public Vehiculo listarVehiculosPorPlacas(String placa) {
+        Vehiculo resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">guardarUsuario(usuario)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();
+            resultado = dao.buscarVehiculosPlaca(placa);
+          
+            HibernateUtil.commitTransaction();
+            return resultado;         
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+            return null;
+        } finally {
+            HibernateUtil.closeSession();
+        }
+    }
+    public Collection listarVehiculosPor(String atributo, String curp) {
         Collection resultado;
 
         if (log.isDebugEnabled()) {
@@ -68,7 +88,7 @@ public class ManejadorRegistroV {
 
         try {
             HibernateUtil.beginTransaction();
-            resultado = dao.ordenarVehiculosPor(atributo);
+            resultado = dao.ordenarVehiculosPor(atributo,curp);
             log.debug("listar Vehiculos por "+atributo+": "+resultado);
             HibernateUtil.commitTransaction();
             return resultado;         
@@ -122,6 +142,38 @@ public class ManejadorRegistroV {
 
                resultado = 0; // Exito. El ciudad se creo satisfactoriamente.
             }
+
+            HibernateUtil.commitTransaction();
+
+        } catch (ExcepcionInfraestructura e) {
+            HibernateUtil.rollbackTransaction();
+
+            if (log.isWarnEnabled()) {
+                log.warn("<ExcepcionInfraestructura");
+            }
+            resultado = 2;    // Excepción. Falla en la infraestructura
+        } finally {
+            HibernateUtil.closeSession();
+        }
+        return resultado;
+    }
+    public int actualizarVehiculo(Vehiculo vehiculo) {
+
+        int resultado;
+
+        if (log.isDebugEnabled()) {
+            log.debug(">actualizarVehiculo(vehiculo)");
+        }
+
+        try {
+            HibernateUtil.beginTransaction();           
+            
+           
+
+               dao.hazPersistenteP(vehiculo);
+
+               resultado = 0; // Exito. El ciudad se creo satisfactoriamente.
+           
 
             HibernateUtil.commitTransaction();
 
