@@ -3,13 +3,10 @@ package edu.uag.iidis.scec.control;
 import edu.uag.iidis.scec.vista.*;
 import edu.uag.iidis.scec.modelo.*;
 import edu.uag.iidis.scec.servicios.*;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.apache.struts.action.ActionMessage;
 import org.apache.struts.action.ActionMessages;
 import org.apache.struts.action.ActionForm;
@@ -17,13 +14,23 @@ import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.MappingDispatchAction;
 
-
+/**
+ * Clase para procesar el registro de un usuario
+ * y buqueda del codigo postal
+ */
 public final class MCUEditarPerfil 
         extends MappingDispatchAction {
-
-   
+ 
     private Log log = LogFactory.getLog(MCUEditarPerfil.class);
-
+/**
+ * [procesarRegistroUsuario description]
+ * @param  mapping   [atributo tipo ActionMapping]
+ * @param  form      [atributo tipo ActionForm]
+ * @param  request   [atributo tipo HttpServletRequest]
+ * @param  response  [atributo tipo HttpServletResponse]
+ * @return ActionForward [redirecciona a la vista]
+ * @throws Exception 
+ */
     public ActionForward procesarRegistroUsuario(
                 ActionMapping mapping,
                 ActionForm form,
@@ -73,6 +80,15 @@ public final class MCUEditarPerfil
         }
     }
 
+/**
+ * Método que sirve para buscar el Codigo Postal
+ * @param  mapping   [atributo tipo ActionMapping]
+ * @param  form      [atributo tipo ActionForm]
+ * @param  request   [atributo tipo HttpServletRequest]
+ * @param  response  [atributo tipo HttpServletResponse]
+ * @return ActionForward [redirecciona a la vista]
+ * @throws Exception 
+ */
      public ActionForward buscarCP(
                 ActionMapping mapping,
                 ActionForm form,
