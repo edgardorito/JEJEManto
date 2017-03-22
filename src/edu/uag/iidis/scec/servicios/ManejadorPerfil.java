@@ -1,7 +1,6 @@
 package edu.uag.iidis.scec.servicios;
 
 import java.util.Collection;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import edu.uag.iidis.scec.vista.*;
@@ -10,15 +9,27 @@ import edu.uag.iidis.scec.excepciones.*;
 import edu.uag.iidis.scec.persistencia.PerfilDAO;
 import edu.uag.iidis.scec.persistencia.hibernate.*;
 import net.webservicex.webserviceZIP.*;
+
+/**
+ * Clase que sirve para realizar las acciones listar, editar, eliminar,
+ * insertar y ordenar del modulo perfil
+ */
 public class ManejadorPerfil {
     private Log log = LogFactory.getLog(ManejadorPerfil.class);
     private PerfilDAO dao;
 
+/**
+ * Constructor de la clase Manejador Perfil
+ * en el cual se instancia PerfilDAO
+ */
   public ManejadorPerfil() {
         dao = new PerfilDAO();
     }
  
-
+/**
+ * Método que sirve para listar todos los perfiles almacenados en la BD
+ * @return resultado si es exitoso, null si es fallido
+ */
     public Collection listarPerfil() {
         Collection resultado;
 
@@ -39,7 +50,12 @@ public class ManejadorPerfil {
         }
     }
 
-
+/**
+ * Método que nos sirve para actualizar los datos del usuario al momento
+ * de editar perfil
+ * @param  usuario nombre del usuario del que se actualizara la información
+ * @return resultado si es exitoso
+ */
      public Collection editarPerfil( String usuario) {
         Collection resultado;
 
@@ -60,6 +76,12 @@ public class ManejadorPerfil {
         }
     }
 
+/**
+ * Método que nos sirve para actualizar los datos del usuario al momento
+ * de editar perfil
+ * @param  usuario nombre del usuario del que se actualizara la información
+ * @return 0 si es exitoso, 2 si es fallido
+ */
 public int actualizarPerfil(Perfil usuario) {
 
         int resultado=0;
@@ -79,7 +101,7 @@ public int actualizarPerfil(Perfil usuario) {
 
                resultado = 0; // Exito. El ciudad se creo satisfactoriamente.
             
- if (log.isDebugEnabled()) {
+        if (log.isDebugEnabled()) {
             log.debug(">test2");
         }
             HibernateUtil.commitTransaction();
@@ -98,6 +120,11 @@ public int actualizarPerfil(Perfil usuario) {
         return resultado;
     }    
 
+/**
+ * Método que obtiene los datos según el Codigo postal ingresado del web service
+ * @param  cp codigo postal (de Estados Unidos) ingresado
+ * @return a [FormaListadoCP]
+ */
     public FormaListadoCP getCPInfo(String cp){
         FormaListadoCP a = new FormaListadoCP();
         WSDemo aux = new WSDemo();
@@ -110,7 +137,12 @@ public int actualizarPerfil(Perfil usuario) {
         System.out.println("country: "+aux.geocodePro("YOFXSHGYGYMBJAVN9466", "", "", "", cp).getCounty().getCountyName());
         return a;
     }
-	
+
+/**
+ * Método utilizado para listar los perfiles según la busqueda de un usuario
+ * @param  usuario nombre del usuario por el cual se quiere buscar
+ * @return resultado si es exitoso
+ */
 	public Collection listarPerfilPorUsuario(String usuario) {
         Collection resultado;
 
@@ -132,31 +164,12 @@ public int actualizarPerfil(Perfil usuario) {
         }
     }
 	
-	/*
-    public void eliminarEstado(Long id) {
-        if (log.isDebugEnabled()) {
-            log.debug(">eliminarEstado(estado)");
-        }
-        try {
-            HibernateUtil.beginTransaction();           
-            Estado estado = dao.buscarPorId(id, true);
-            if (estado != null) {
-              dao.hazTransitorio(estado);
-            }
-            HibernateUtil.commitTransaction();
-        } catch (ExcepcionInfraestructura e) {
-            HibernateUtil.rollbackTransaction();
-            if (log.isWarnEnabled()) {
-                log.warn("<ExcepcionInfraestructura");
-            }
-        } finally {
-            HibernateUtil.closeSession();
-        }
-
-    }
-*/
-
-
+/**
+ * Método usado para crear un nuevo perfil y guardar en la BD
+ * llamando la clase DAO
+ * @param  usuario nombre del usuario a crear
+ * @return 0 si es exitoso, 1 si el usuario ya existe, 2 si es fallido
+ */
     public int crearPerfil(Perfil usuario) {
 
         int resultado;
@@ -175,7 +188,7 @@ public int actualizarPerfil(Perfil usuario) {
             if (dao.existePerfil(usuario.getUsuario())) {
                resultado = 1; // Excepción. El nombre de ciudad ya existe
             } else {
-if (log.isDebugEnabled()) {
+        if (log.isDebugEnabled()) {
             log.debug(">test3");
         }
                dao.hazPersistente(usuario);
@@ -200,6 +213,13 @@ if (log.isDebugEnabled()) {
         return resultado;
     }    
 
+/**
+ * Método que sirve para poder ordenar las columnas al listar 
+ * o buscar un usuario en específico
+ * @param  atributo nombre del atributo (encabezado) por el cual se ordenaran
+ * @param  usuario  nombre del usuario buscado
+ * @return resultado perfiles ordenados
+ */
     public Collection ordenarPerfilesPor(String atributo, String usuario) {
         Collection resultado;
 
@@ -221,6 +241,11 @@ if (log.isDebugEnabled()) {
         }
     }
 
+/**
+ * Método para eliminar un perfil
+ * @param  usuario Nombre del usuario que se quiere eliminar
+ * @return  0 si la acción es exitosa, 2 si es fallida
+ */
     public int eliminarPerfil(String usuario) {
        int resultado=0;
 

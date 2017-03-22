@@ -3,58 +3,32 @@ package edu.uag.iidis.scec.persistencia;
 import org.hibernate.*;
 import org.hibernate.type.*;
 import org.hibernate.criterion.Example;
-//import org.hibernate.classic.*;
-
-
 import edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura;
 import edu.uag.iidis.scec.modelo.Perfil;
 import edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import java.util.Collection;
 import java.util.List;
 
-
+/**
+ * Clase para realizar acciones en la BD
+ */
 public class PerfilDAO {
 
     private Log log = LogFactory.getLog(PerfilDAO.class);
 
+/**
+ * Constructor de la clase
+ */
     public PerfilDAO() {
     }
 
-/*
-    public Perfil buscarPorId(Long id, boolean bloquear)
-            throws ExcepcionInfraestructura {
-
-        Perfil perfil = null;
-
-        if (log.isDebugEnabled()) {
-            log.debug(">buscarPorID(" + id + ", " + bloquear + ")");
-        }
-
-        try {
-            if (bloquear) {
-                perfil = (Perfil)HibernateUtil.getSession()
-                                                .load(Perfil.class, 
-                                                      id, 
-                                                      LockMode.UPGRADE);
-            } else {
-                perfil = (Perfil)HibernateUtil.getSession()
-                                                .load(Perfil.class,
-                                                      id);
-            }
-        } catch (HibernateException ex) {
-            if (log.isWarnEnabled()) {
-                log.warn("<HibernateException");
-            }
-
-            throw new ExcepcionInfraestructura(ex);
-        }
-        return estado;
-    }
-
-*/
+/**
+ * Método que nos sirve para obtener todos los perfiles de la BD
+ * @return perfiles [lista con los perfiles almacenados]
+ * @throws ExcepcionInfraestructura [excepción de infraestructura]
+ */
     public Collection buscarTodos()
             throws ExcepcionInfraestructura {
 
@@ -79,6 +53,14 @@ public class PerfilDAO {
         return perfiles;
     }
 
+/**
+ * Método que sirve para ordenar los datos de la BD según el atributo
+ * (encabezado) que se le indica y la busqueda iniciada
+ * @param  atributo                 [Nombre del encabezado por el cual se quiere ordenar]
+ * @param  usuario                  [Nombre del usuario que se busco]
+ * @return results                  [lista con los datos ordenados]
+ * @throws ExcepcionInfraestructura [Excepción de infraestructura]
+ */
      public Collection ordenarPerfilesPor(String atributo, String usuario)
             throws ExcepcionInfraestructura {
 
@@ -126,31 +108,11 @@ public class PerfilDAO {
         }
     }
 
-/*
-    public Collection buscarPorEjemplo(Estado estado)
-            throws ExcepcionInfraestructura {
-
-
-        Collection estados;
- 
-        if (log.isDebugEnabled()) {
-            log.debug(">buscarPorEjemplo()");
-        }
-
-        try {
-            Criteria criteria = HibernateUtil.getSession()
-                                             .createCriteria(Estado.class);
-            estados = criteria.add(Example.create(estado)).list();
-        } catch (HibernateException e) {
-            if (log.isWarnEnabled()) {
-                log.warn("<HibernateException");
-            }
-            throw new ExcepcionInfraestructura(e);
-        }
-        return estados;
-    }
-
-*/
+/**
+ * Método que sirve para guardar los datos en la base de datos
+ * @param  perfil                   [datos a guardar]
+ * @throws ExcepcionInfraestructura [Exepción de infraestructura]
+ */
     public void hazPersistente(Perfil perfil)
             throws ExcepcionInfraestructura {
 
@@ -168,7 +130,11 @@ public class PerfilDAO {
         }
     }
 
-
+/**
+ * Método para eliminar un perfil
+ * @param  perfil                   [perfil a eliminar]
+ * @throws ExcepcionInfraestructura [Excepción de infraestructura]
+ */
     public void hazTransitorio(Perfil perfil)
             throws ExcepcionInfraestructura {
 
@@ -184,8 +150,14 @@ public class PerfilDAO {
             }
             throw new ExcepcionInfraestructura(e);
         }
-    }/*
-*/
+    }
+
+/**
+ * Método que nos ayuda a saber si algun perfil ya existe, segun el usuario ingresado
+ * @param  usuario                  [atributo usuario]
+ * @return false si no existe, true si existe
+ * @throws ExcepcionInfraestructura [Excepción de infraestructura]
+ */
     public boolean existePerfil(String usuario)
             throws ExcepcionInfraestructura {
 
@@ -195,19 +167,6 @@ public class PerfilDAO {
 
         try {
             
-            
-//            String consultaCuentaRoles =
-//            "select count(*) from Ciudad r where r.nombre=?";
-//
- //           int resultado =
- //           ((Integer) HibernateUtil.getSession()
- //                          .find(consultaCuentaRoles, 
- //                                nombreRol,
- //                                StringType.INSTANCE)
- //                          .iterator()
- //                          .next()).intValue();
-// de acuerdo al nuevo formato
- 
             String hql = "select usuario from Perfil where usuario = :usuario";
            
              if (log.isDebugEnabled()) {
@@ -242,6 +201,12 @@ public class PerfilDAO {
         }
     }
 
+/**
+ * Método que nos sirve para buscar el perfil de un usuario especifico
+ * @param  usuario                  [nombre del usuario]
+ * @return results
+ * @throws ExcepcionInfraestructura [Excepción de infraestructura]
+ */
 	public Collection buscaPerfil(String usuario)
             throws ExcepcionInfraestructura {
 				
@@ -285,6 +250,11 @@ public class PerfilDAO {
         }
     }
 
+/**
+ * Método que sirve para actualizar los datos de un perfil al momento de editarlo
+ * @param  perfil                   [perfil del usuario]
+ * @throws ExcepcionInfraestructura [Excepción de infraestructura]
+ */
     public void actualizaPerfil(Perfil perfil)
             throws ExcepcionInfraestructura {
                 
@@ -314,6 +284,11 @@ public class PerfilDAO {
         }
     }
 
+/**
+ * Método que sirve para eliminar el perfil de la BD
+ * @param  perfil                   [nombre del usuario]
+ * @throws ExcepcionInfraestructura [Excepción de infraestructura]
+ */
     public void eliminarPerfil(String perfil)
             throws ExcepcionInfraestructura {
                 
