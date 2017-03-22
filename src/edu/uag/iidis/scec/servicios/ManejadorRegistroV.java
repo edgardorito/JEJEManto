@@ -10,13 +10,28 @@ import edu.uag.iidis.scec.excepciones.*;
 import edu.uag.iidis.scec.persistencia.VehiculoDAO;
 import edu.uag.iidis.scec.persistencia.hibernate.*;
 
+/**
+ * Esta clase se utiliza para registrar y actualizar un vehiculo
+ *
+ * @author Javier de Jesús Flores Herrera
+ * @version  0.3
+ * @fecha 2016-03-21
+ * 
+ */
 public class ManejadorRegistroV {
     private Log log = LogFactory.getLog(ManejadorEstados.class);
     private VehiculoDAO dao;
-
+    /**
+     *  Constructor ManejadorRegistroV
+     * 
+     */
     public ManejadorRegistroV() {
         dao = new VehiculoDAO();
     }
+    /**
+     *  Consigue la lista de vehiculos registrados en la base de datos.
+     * @return Collection con tipos de objetos Vehiculo
+     */
     public Collection listarVehiculos() {
         Collection resultado;
 
@@ -38,7 +53,11 @@ public class ManejadorRegistroV {
     }
 
     
-	
+	/**
+     * Consigue la lista de vehiculos registrados en la base de datos ordenados por la curp
+     * @param curp del usuario
+     * @return  Collection con tipos de objetos Vehiculo ordenados por el atributo 
+     */
 	public Collection listarVehiculosPorCurp(String curp) {
         Collection resultado;
 
@@ -59,6 +78,11 @@ public class ManejadorRegistroV {
             HibernateUtil.closeSession();
         }
     }
+    /**
+     * Consigue la lista de vehiculos registrados en la base de datos ordenados por las placas
+     * @param placa  del vehiculo 
+     * @return  Collection con tipos de objetos Vehiculo ordenados por la placa
+     */
     public Vehiculo listarVehiculosPorPlacas(String placa) {
         Vehiculo resultado;
 
@@ -79,6 +103,7 @@ public class ManejadorRegistroV {
             HibernateUtil.closeSession();
         }
     }
+
     public Collection listarVehiculosPor(String atributo, String curp) {
         Collection resultado;
 
@@ -99,30 +124,7 @@ public class ManejadorRegistroV {
             HibernateUtil.closeSession();
         }
     }
-	/*
 	
-    public void eliminarEstado(Long id) {
-        if (log.isDebugEnabled()) {
-            log.debug(">eliminarEstado(estado)");
-        }
-        try {
-            HibernateUtil.beginTransaction();           
-            Estado estado = dao.buscarPorId(id, true);
-            if (estado != null) {
-              dao.hazTransitorio(estado);
-            }
-            HibernateUtil.commitTransaction();
-        } catch (ExcepcionInfraestructura e) {
-            HibernateUtil.rollbackTransaction();
-            if (log.isWarnEnabled()) {
-                log.warn("<ExcepcionInfraestructura");
-            }
-        } finally {
-            HibernateUtil.closeSession();
-        }
-
-    }
-*/
     public int crearVehiculo(Vehiculo vehiculo) {
 
         int resultado;

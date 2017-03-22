@@ -18,7 +18,14 @@ import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.MappingDispatchAction;
 
-
+/**
+ * Esta clase se utiliza para registrar y actualizar un vehiculo
+ *
+ * @author Javier de Jesús Flores Herrera
+ * @version  0.3
+ * @fecha 2016-03-21
+ * 
+ */
 
 public final class MCURegistroV 
         extends MappingDispatchAction {
@@ -26,7 +33,14 @@ public final class MCURegistroV
     private Log log = LogFactory.getLog(MCURegistroV.class);
 
 
-    
+    /**
+     * @param mapping de tipo ActionMapping]
+     * @param forma con los datos a procesar
+     * @param peticion request de tipo HttpServletRequest
+     * @param peticion response de tipo HttpServletResponse
+     * @return respuesta de tipo HttpServletResponse
+     * @throws Exception
+     */
     public ActionForward registrarVehiculo(
                 ActionMapping mapping,
                 ActionForm form,
@@ -44,11 +58,11 @@ public final class MCURegistroV
  
         String a = forma.getCurp();
 
-                         String b =forma.getTipo();
-                        String c = forma.getModelo();
-                        String d = forma.getMarca();
-                        String e = forma.getPlaca();
-                        String f = forma.getColor();
+        String b =forma.getTipo();
+        String c = forma.getModelo();
+        String d = forma.getMarca();
+        String e = forma.getPlaca();
+        String f = forma.getColor();
         Vehiculo vehiculo = new Vehiculo(
                        a,b,c,d,e,f
         );
@@ -85,7 +99,14 @@ public final class MCURegistroV
         }
     }
 
-
+     /**
+     * @param mapping de tipo ActionMapping]
+     * @param forma con los datos a procesar
+     * @param peticion request de tipo HttpServletRequest
+     * @param peticion response de tipo HttpServletResponse
+     * @return respuesta de tipo HttpServletResponse
+     * @throws Exception 
+     */
     public ActionForward actualizarVehiculo(
                 ActionMapping mapping,
                 ActionForm form,
