@@ -103,7 +103,12 @@ public class ManejadorRegistroV {
             HibernateUtil.closeSession();
         }
     }
-
+    /**
+     * Consigue la lista de vehiculos registrados en la base de datos ordenados por el atributo especificado
+     * @param atributo  del vehiculo 
+     * @param  curp del usuario
+     * @return  Collection con tipos de objetos Vehiculo ordenados por el atributo especificado
+     */
     public Collection listarVehiculosPor(String atributo, String curp) {
         Collection resultado;
 
@@ -124,7 +129,11 @@ public class ManejadorRegistroV {
             HibernateUtil.closeSession();
         }
     }
-	
+	/**
+     * Registra un vehiculo en la base de datos
+     * @param  objeto con los datos del vehiculo
+     * @return  int resultado de la operacion
+     */
     public int crearVehiculo(Vehiculo vehiculo) {
 
         int resultado;
@@ -159,6 +168,11 @@ public class ManejadorRegistroV {
         }
         return resultado;
     }
+    /**
+     * Actualiza los datos de un vehiculo en la base de datos
+     * @param  Objeto con los datos del vehiculo
+     * @return int con el resultado de la operacion
+     */
     public int actualizarVehiculo(Vehiculo vehiculo) {
 
         int resultado;
@@ -191,7 +205,11 @@ public class ManejadorRegistroV {
         }
         return resultado;
     }
-
+    /**
+     * Elimina un vehiculo de la base de datos
+     * @param objeto con los datos del vehiculo
+     * @return  int con el resultado de la operacion
+     */
     public int eliminarVehiculo(String vehiculo) {
 
         int resultado;
