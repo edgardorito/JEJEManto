@@ -3,15 +3,12 @@ package edu.uag.iidis.scec.control;
 import edu.uag.iidis.scec.vista.*;
 import edu.uag.iidis.scec.modelo.*;
 import edu.uag.iidis.scec.servicios.*;
-
 import java.util.Collection;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.apache.struts.action.ActionMessage;
 import org.apache.struts.action.ActionMessages;
 import org.apache.struts.action.ActionForm;
@@ -19,14 +16,23 @@ import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.MappingDispatchAction;
 
-
-
+/**
+ * Clase que sirve para listar, ordenar, editar, cerrar sesión
+ */
 public final class MCUListarPerfil
         extends MappingDispatchAction {
 
     private Log log = LogFactory.getLog(MCUEditarPerfil.class);
 
-
+/**
+ * Método que nos sirve para poder listar los perfiles
+ * @param  mapping   [atributo tipo ActionMapping]
+ * @param  form      [atributo tipo ActionForm]
+ * @param  request   [atributo tipo HttpServletRequest]
+ * @param  response  [atributo tipo HttpServletResponse]
+ * @return ActionForward [redirecciona a la vista]
+ * @throws Exception 
+ */
     public ActionForward solicitarListarPerfil(
                 ActionMapping mapping,
                 ActionForm form,
@@ -80,6 +86,15 @@ public final class MCUListarPerfil
 
     }
 
+/**
+ * Método que nos sirve para cerrar la sesión del usuario
+ * @param  mapping   [atributo tipo ActionMapping]
+ * @param  form      [atributo tipo ActionForm]
+ * @param  request   [atributo tipo HttpServletRequest]
+ * @param  response  [atributo tipo HttpServletResponse]
+ * @return ActionForward [redirecciona a la vista]
+ * @throws Exception 
+ */
     public ActionForward cerrarSesion(
                 ActionMapping mapping,
                 ActionForm form,
@@ -95,6 +110,7 @@ public final class MCUListarPerfil
         if (session != null) {
             System.out.println("SESIÓN CERRADA");
             session.removeAttribute( "user" );
+            return (mapping.findForward("exito"));
         }
 
         if (log.isDebugEnabled()) {
@@ -108,33 +124,18 @@ public final class MCUListarPerfil
             }
             return (mapping.findForward("cancelar"));
         }
-
-        FormaListadoPerfil forma = (FormaListadoPerfil)form;
-
-        ManejadorPerfil mr = new ManejadorPerfil();
-        Collection resultado = mr.listarPerfil();
-
-        ActionMessages errores = new ActionMessages();
-        if (resultado != null) {
-            if ( resultado.isEmpty() ) {
-                errores.add(ActionMessages.GLOBAL_MESSAGE,
-                    new ActionMessage("errors.registroVacio"));
-                saveErrors(request, errores);
-            } else {
-                System.out.println("eny");
-                forma.setPerfiles(resultado );
-            }
-            return (mapping.findForward("exito"));
-        } else {
-            log.error("Ocurrió un error de infraestructura");
-            errores.add(ActionMessages.GLOBAL_MESSAGE,
-                        new ActionMessage("errors.infraestructura"));                
-            saveErrors(request, errores);
-            return ( mapping.findForward("fracaso") );
-        }
-
+        return null;
     }
 
+/**
+ * Método que nos sirve para poder editar perfil
+ * @param  mapping   [atributo tipo ActionMapping]
+ * @param  form      [atributo tipo ActionForm]
+ * @param  request   [atributo tipo HttpServletRequest]
+ * @param  response  [atributo tipo HttpServletResponse]
+ * @return ActionForward [redirecciona a la vista]
+ * @throws Exception 
+ */
 public ActionForward procesarEditarPerfil(
                 ActionMapping mapping,
                 ActionForm form,
@@ -184,7 +185,15 @@ public ActionForward procesarEditarPerfil(
         }
     }
 
-
+/**
+ * Método que nos sirve para poder editar perfil
+ * @param  mapping   [atributo tipo ActionMapping]
+ * @param  form      [atributo tipo ActionForm]
+ * @param  request   [atributo tipo HttpServletRequest]
+ * @param  response  [atributo tipo HttpServletResponse]
+ * @return ActionForward [redirecciona a la vista]
+ * @throws Exception 
+ */
 public ActionForward editarPerfil(
                 ActionMapping mapping,
                 ActionForm form,
@@ -201,10 +210,6 @@ public ActionForward editarPerfil(
         if (log.isDebugEnabled()) {
             log.debug(">solicitarEditarPerfil");
         }
-
-       
-
-        
          System.out.println("USUARIO: " +user.getUsername());
 
         FormaListadoPerfil forma = (FormaListadoPerfil)form;
@@ -232,6 +237,15 @@ public ActionForward editarPerfil(
         }
     }
 
+/**
+ * Método que nos sirve para ordenar los perfiles segun el atributo y/o usuario 
+ * @param  mapping   [atributo tipo ActionMapping]
+ * @param  form      [atributo tipo ActionForm]
+ * @param  request   [atributo tipo HttpServletRequest]
+ * @param  response  [atributo tipo HttpServletResponse]
+ * @return ActionForward [redirecciona a la vista]
+ * @throws Exception 
+ */
     public ActionForward ordenarPerfilesPor(
                 ActionMapping mapping,
                 ActionForm form,
@@ -270,6 +284,15 @@ public ActionForward editarPerfil(
 
     }
 
+/**
+ * Método que nos sirve para poder buscar el perfil segun el nombre de usuario ingresado
+ * @param  mapping   [atributo tipo ActionMapping]
+ * @param  form      [atributo tipo ActionForm]
+ * @param  request   [atributo tipo HttpServletRequest]
+ * @param  response  [atributo tipo HttpServletResponse]
+ * @return ActionForward [redirecciona a la vista]
+ * @throws Exception 
+ */
 	public ActionForward buscarPerfil(
                 ActionMapping mapping,
                 ActionForm form,

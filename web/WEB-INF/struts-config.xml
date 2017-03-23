@@ -167,7 +167,52 @@
             <forward name="exito" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/plantilla01.jsp?c=pantallaLogin.jsp"/>
         </action>
-        
+        <action path="/procesarEditarClima"
+                type="edu.uag.iidis.scec.control.MCURegistrarClima"
+                parameter="procesarEdicionClima"
+                name="formaNuevoClima"
+                scope="request"
+                validate="true">
+
+            <forward name="exito" path="/WEB-INF/vista/pantallas/Clima/climaEditar.jsp"/>
+
+       </action>
+
+ <action path="/ordenarClimaPor"
+                type="edu.uag.iidis.scec.control.MCUListarClimas"
+                parameter="listarClimasPor"
+                name="formaListadoClima">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/Clima/ListaCityW.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+
+        <action path="/BuscarClima"
+                type="edu.uag.iidis.scec.control.MCUListarClimas"
+                parameter="BuscarClima"
+                name="formaListadoClima">
+
+            <forward name="exito" path="/WEB-INF/vista/pantallas/Clima/ListaCityW.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+
+        <action path="/EliminarClima"
+                type="edu.uag.iidis.scec.control.MCUListarClimas"
+                parameter="EliminarClima"
+                name="formaListadoClima">
+
+            <forward name="exito" path="/WEB-INF/vista/pantallas/Clima/Clima.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
+
+ <action path="/solicitarListarClimas"
+                type="edu.uag.iidis.scec.control.MCUListarClimas"
+                parameter="solicitarListarClimas"
+                name="formaListadoClima"
+                scope="request"
+                validate="false">
+            <forward name="exito" path="/WEB-INF/vista/pantallas/Clima/listarClimas.jsp"/>
+            <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
+        </action>
         <action path="/irInicio"
                 forward="/WEB-INF/vista/pantallas/pantallaInicio.jsp" />
         <action path="/irBienvenida"
@@ -356,7 +401,7 @@
                 name="formaListadoEventos"
                 scope="request"
                 validate="false">
-            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/buscarPresentar.jsp"/>
+            <forward name="exito" path="/WEB-INF/vista/pantallas/calendario/tablaContenidoCal.jsp"/>
             <forward name="fracaso" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
 
@@ -492,7 +537,7 @@
                 name="formaNuevoClima"
                 scope="request"
                 validate="false">
-            <forward name="exito" path="/WEB-INF/vista/pantallas/pantallaBienvenida.jsp"/>
+            <forward name="exito" path="/WEB-INF/vista/pantallas/pantallaInicio.jsp"/>
         </action>
         <action path="/procesarRegistro"
                 type="edu.uag.iidis.scec.control.MCURegistrarUsuario"

@@ -19,11 +19,14 @@ import java.util.List;
 public class VehiculoDAO {
 
     private Log log = LogFactory.getLog(VehiculoDAO.class);
-
+    /**
+     *  Constructor de la clase VehiculoDao
+     * 
+     */
     public VehiculoDAO() {
     }
 
-
+/*
     public Vehiculo buscarPorId(Long idVehiculo, boolean bloquear)
             throws ExcepcionInfraestructura {
 
@@ -54,7 +57,13 @@ public class VehiculoDAO {
         return Vehiculo;
     }
 
-
+*/
+    /**
+     * busca todos los registros de vehiculos en la base de datos
+     * @return regresa un Collection de Vehiculos
+     * 
+     * @throws ExcepcionInfraestructura [description]
+     */
     public Collection buscarTodos()
             throws ExcepcionInfraestructura {
 
@@ -81,30 +90,12 @@ public class VehiculoDAO {
     }
 
 
-    public Collection buscarPorEjemplo(Vehiculo Vehiculo)
-            throws ExcepcionInfraestructura {
 
-
-        Collection Vehiculos;
- 
-        if (log.isDebugEnabled()) {
-            log.debug(">buscarPorEjemplo()");
-        }
-
-        try {
-            Criteria criteria = HibernateUtil.getSession()
-                                             .createCriteria(Vehiculo.class);
-            Vehiculos = criteria.add(Example.create(Vehiculo)).list();
-        } catch (HibernateException e) {
-            if (log.isWarnEnabled()) {
-                log.warn("<HibernateException");
-            }
-            throw new ExcepcionInfraestructura(e);
-        }
-        return Vehiculos;
-    }
-
-
+    /**
+     * Guarda un objeto vehiculo 
+     * @param  objeto con los datos dekl vehiculo
+     * @throws ExcepcionInfraestructura
+     */
     public void hazPersistente(Vehiculo Vehiculo)
             throws ExcepcionInfraestructura {
 
@@ -121,6 +112,11 @@ public class VehiculoDAO {
             throw new ExcepcionInfraestructura(e);
         }
     }
+    /**
+     * Actualiza los datos de un vehiculo registrado
+     * @param  objeto con los datos dekl vehiculo
+     * @throws ExcepcionInfraestructura 
+     */
     public void hazPersistenteP(Vehiculo vehiculo)
             throws ExcepcionInfraestructura {
 
@@ -148,7 +144,11 @@ public class VehiculoDAO {
         }
     }
 
-
+    /**
+     * Elimina un registro de un vehiculo basado en la placa
+     * @param  placa del vehiculo
+     * @throws ExcepcionInfraestructura 
+     */
     public void hazTransitorio(String vehiculo)
             throws ExcepcionInfraestructura {
 
@@ -169,7 +169,12 @@ public class VehiculoDAO {
             throw new ExcepcionInfraestructura(e);
         }
     }
-
+    /**
+     * Verifica si un vehiculo esta registrado
+     * @param  placa del vehiculo         
+     * @return regresa un boolean, es true cuando el vehiculo existe
+     * @throws ExcepcionInfraestructura 
+     */
     public boolean existeVehiculo(String placaVehiculo)
             throws ExcepcionInfraestructura {
 
@@ -180,17 +185,6 @@ public class VehiculoDAO {
         try {
             
             
-//            String consultaCuentaRoles =
-//            "select count(*) from Ciudad r where r.nombre=?";
-//
- //           int resultado =
- //           ((Integer) HibernateUtil.getSession()
- //                          .find(consultaCuentaRoles, 
- //                                nombreRol,
- //                                StringType.INSTANCE)
- //                          .iterator()
- //                          .next()).intValue();
-// de acuerdo al nuevo formato
  
             String hql = "select placa from Vehiculo where placa = :nombre";
             
@@ -227,49 +221,12 @@ public class VehiculoDAO {
         }
     }
 
-    //cambios
-    public Collection buscarImagen(String nombreVehiculo)
-            throws ExcepcionInfraestructura {
-
-        if (log.isDebugEnabled()) {
-            log.debug(">existeRol(nombreRol)");
-        }
-
-        try {
- 
-            String hql = "from Vehiculo where nombre = '"+nombreVehiculo+"'";
-            
-             if (log.isDebugEnabled()) {
-                 log.debug(hql + nombreVehiculo);
-            }
-        
-            Query query = HibernateUtil.getSession()
-                                        .createQuery(hql);
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< create query ok " );
-            }
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< set Parameter ok antes del query list >>>>>");
-            }
-            List results = query.list();
-            int resultado = results.size();
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< Result size " + resultado);
-            }
-            if (resultado == 0) {
-               return results;
-            }
-            
-            return results;
-
-        } catch (HibernateException ex) {
-            if (log.isWarnEnabled()) {
-                log.warn("<HibernateException *******************");
-            }
-            throw new ExcepcionInfraestructura(ex);
-        }
-    }
-
+    /**
+     * busca todos los registros de vehiculos en la base de datos
+     * @return regresa un Collection de Vehiculos
+     * 
+     * @throws ExcepcionInfraestructura [description]
+     */
 	public Collection buscarVehiculos(String curp)
             throws ExcepcionInfraestructura {
 
@@ -311,6 +268,12 @@ public class VehiculoDAO {
             throw new ExcepcionInfraestructura(ex);
         }
     }
+    /**
+     * busca en todos los registros de vehiculos un vehiculo por la placa
+     * @return regresa el vehiculo buscado
+     * 
+     * @throws ExcepcionInfraestructura [description]
+     */
     public Vehiculo buscarVehiculosPlaca(String placa)
             throws ExcepcionInfraestructura {
 
@@ -348,6 +311,13 @@ public class VehiculoDAO {
         }
     }
 
+    /**
+     * busca todos los registros de vehiculos en la base de datos por el atributo 
+     * @param atributo a buscar del vehiculo
+     * @param curp del usuario
+     * @return regresa un Collection de Vehiculos ordenatos por el atributo
+     * @throws ExcepcionInfraestructura 
+     */
     public Collection ordenarVehiculosPor(String atributo, String curp)
             throws ExcepcionInfraestructura {
 
@@ -395,45 +365,5 @@ public class VehiculoDAO {
         }
     }
     
-    public Collection buscarEstado(String nombreVehiculo)
-            throws ExcepcionInfraestructura {
-
-        if (log.isDebugEnabled()) {
-            log.debug(">existeRol(nombreRol)");
-        }
-
-        try {
- 
-            String hql = "from Vehiculo where nombre = '"+nombreVehiculo+"'";
-            
-             if (log.isDebugEnabled()) {
-                 log.debug(hql + nombreVehiculo);
-            }
-        
-            Query query = HibernateUtil.getSession()
-                                        .createQuery(hql);
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< create query ok " );
-            }
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< set Parameter ok antes del query list >>>>>");
-            }
-            List results = query.list();
-            int resultado = results.size();
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< Result size " + resultado);
-            }
-            if (resultado == 0) {
-               return results;
-            }
-            
-            return results;
-
-        } catch (HibernateException ex) {
-            if (log.isWarnEnabled()) {
-                log.warn("<HibernateException *******************");
-            }
-            throw new ExcepcionInfraestructura(ex);
-        }
-    }
+    
 }
