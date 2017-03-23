@@ -19,13 +19,28 @@ import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.MappingDispatchAction;
 
 
-
+/**
+ * Esta clase se utiliza listar vehiculos
+ *
+ * @author Javier de Jesús Flores Herrera
+ * @version  0.3
+ * @fecha 2016-03-21
+ * 
+ */
 public final class MCUListarVehiculos
         extends MappingDispatchAction {
 
     private Log log = LogFactory.getLog(MCUListarVehiculos.class);
 
-
+    /**
+     * solicita los registros de los vehiculos de la BD
+     * @param mapping de tipo ActionMapping]
+     * @param forma con los datos a procesar
+     * @param peticion request de tipo HttpServletRequest
+     * @param peticion response de tipo HttpServletResponse
+     * @return respuesta de tipo HttpServletResponse
+     * @throws Exception
+     */
     public ActionForward solicitarListarVehiculos(
                 ActionMapping mapping,
                 ActionForm form,
@@ -63,7 +78,15 @@ public final class MCUListarVehiculos
         }
 
     }
-    
+    /**
+     * solicita los registros de los vehiculos de la BD ordenador por un atributo
+     * @param mapping de tipo ActionMapping]
+     * @param forma con los datos a procesar
+     * @param peticion request de tipo HttpServletRequest
+     * @param peticion response de tipo HttpServletResponse
+     * @return respuesta de tipo HttpServletResponse
+     * @throws Exception
+     */
     public ActionForward listarVehiculosPor(
                 ActionMapping mapping,
                 ActionForm form,
@@ -101,6 +124,15 @@ public final class MCUListarVehiculos
         }
 
     }
+     /**
+     * solicita la busqueda de un vehiculo en la base de datos
+     * @param mapping de tipo ActionMapping]
+     * @param forma con los datos a procesar
+     * @param peticion request de tipo HttpServletRequest
+     * @param peticion response de tipo HttpServletResponse
+     * @return respuesta de tipo HttpServletResponse
+     * @throws Exception
+     */
     public ActionForward BuscarVehiculo(
                 ActionMapping mapping,
                 ActionForm form,
@@ -138,6 +170,15 @@ public final class MCUListarVehiculos
         }
 
     }
+     /**
+     * solicita los registros de los vehiculos de la BD ordenador por las placas
+     * @param mapping de tipo ActionMapping]
+     * @param forma con los datos a procesar
+     * @param peticion request de tipo HttpServletRequest
+     * @param peticion response de tipo HttpServletResponse
+     * @return respuesta de tipo HttpServletResponse
+     * @throws Exception
+     */
     public ActionForward listarVehiculosPorPlacas(
                 ActionMapping mapping,
                 ActionForm form,

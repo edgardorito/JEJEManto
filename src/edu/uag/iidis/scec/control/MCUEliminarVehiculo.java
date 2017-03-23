@@ -19,14 +19,29 @@ import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.MappingDispatchAction;
 
 
-
+/**
+ * Esta clase se utiliza para eliminar un vehiculo
+ *
+ * @author Javier de Jesús Flores Herrera
+ * @version  0.3
+ * @fecha 2016-03-21
+ * 
+ */
 public final class MCUEliminarVehiculo 
         extends MappingDispatchAction {
 
     private Log log = LogFactory.getLog(MCUEliminarVehiculo.class);
 
 
-    
+    /**
+     * 
+     * @param mapping de tipo ActionMapping]
+     * @param forma con los datos a procesar
+     * @param peticion request de tipo HttpServletRequest
+     * @param peticion response de tipo HttpServletResponse
+     * @return respuesta de tipo HttpServletResponse
+     * @throws Exception
+     */
     public ActionForward eliminarVehiculo(
                 ActionMapping mapping,
                 ActionForm form,
