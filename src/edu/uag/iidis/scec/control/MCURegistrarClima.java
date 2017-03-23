@@ -17,7 +17,14 @@ import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.MappingDispatchAction;
 
-
+/**
+* Esta clase se utiliza para listar, eliminar y buscar climas
+* 
+*
+* @author  Ernesto Sandoval Becerra
+* @version 0.3
+* @since   2016-03-21 
+*/
 
 public final class MCURegistrarClima 
         extends MappingDispatchAction {
@@ -32,6 +39,15 @@ public final class MCURegistrarClima
                 HttpServletRequest request,
                 HttpServletResponse response)
             throws Exception {
+
+         /**
+     * Este metodo es utilizado para registrar un nuevo objetoi tipo Clima dentro de la BD
+   * @param mapping de tipo ActionMapping
+   * @param form  de tipo ActionForm
+   * @param request de tipo HttpServletRequest
+   * @param response de tipo HttpServletResponse
+   * @return ActionForward Es el resultado de la solicitud
+   */
 
         if (log.isDebugEnabled()) {
             log.debug(">procesarRegistroClima");
@@ -80,6 +96,16 @@ public final class MCURegistrarClima
                 HttpServletRequest request,
                 HttpServletResponse response)
             throws Exception {
+
+
+         /**
+     * Este metodo es utilizado para editar un Clima en la BD
+   * @param mapping de tipo ActionMapping
+   * @param form  de tipo ActionForm
+   * @param request de tipo HttpServletRequest
+   * @param response de tipo HttpServletResponse
+   * @return ActionForward Es el resultado de la solicitud (la ciudad con atributos modificados)
+   */
 
         if (log.isDebugEnabled()) {
             log.debug(">procesarEdicionClima");

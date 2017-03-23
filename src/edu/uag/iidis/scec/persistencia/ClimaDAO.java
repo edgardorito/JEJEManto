@@ -15,6 +15,14 @@ import org.apache.commons.logging.LogFactory;
 import java.util.Collection;
 import java.util.List;
 
+/**
+* Esta clase se utiliza para el acceso y manipulación
+* de los datos de la BD Clima
+*
+* @author  Ernesto Sandoval Becerra
+* @version 0.3
+* @since   2016-03-21 
+*/
 
 public class ClimaDAO {
 
@@ -25,6 +33,12 @@ public class ClimaDAO {
 
     public void hazPersistente(Clima clima)
             throws ExcepcionInfraestructura {
+
+          /**
+     * Utilizamos este método para hacer persistente un nuevo objeto tipo Clima
+     * que llega como parámetro
+     * @param clima El objeto tipo clima que se desea almacenar en la BD
+   */
 
         if (log.isDebugEnabled()) {
             log.debug(">hazPersistente(clima)");
@@ -44,6 +58,11 @@ public class ClimaDAO {
 
     public void hazCambios(Clima clima)
             throws ExcepcionInfraestructura {
+         /**
+     * Utilizamos este método para hacer los update a la BD
+     * dado el objeto Clima que llega como parámetro
+     * @param clima El objeto tipo clima que se desea editar en la BD
+   */
 
         if (log.isDebugEnabled()) {
             log.debug(">hazCambios(clima)");
@@ -69,7 +88,10 @@ public class ClimaDAO {
 
     public Collection buscarTodos()
             throws ExcepcionInfraestructura {
-
+         /**
+     * Utilizamos este método para hacer solicitar todos los climas registrados en la BD
+     * @return una Collection con todos los objetos Clima localizados en la BD
+   */
         Collection climas;
 
         if (log.isDebugEnabled()) {
@@ -95,6 +117,13 @@ public class ClimaDAO {
         public Collection ordenarClimasPor(String atributo)
             throws ExcepcionInfraestructura {
 
+         /**
+     * Utilizamos este método para obtener todos los climas registrados en le BD
+     * pero ordenados por algun atributo
+     * 
+     * @param atributo El atributo por el cual se desea realizar el ordenamiento
+     * @return Un Collection de objetos de tipo Clima ordenados por atributo
+   */
         if (log.isDebugEnabled()) {
             log.debug(">existeRol(nombreRol)");
         }
@@ -137,6 +166,12 @@ public class ClimaDAO {
 
         public Collection buscarClima(String ciudad)
             throws ExcepcionInfraestructura {
+         /**
+     * Utilizamos este método para realizar la busqueda de una ciudad específica
+     * 
+     * @param ciudad El atributo por el cual se desea realizar la búsqueda
+     * @return Un Collection de objetos de tipo Clima que cumplen el resultado de la consulta
+   */
 
         if (log.isDebugEnabled()) {
             log.debug(">buscarClimas(ciudad)");
@@ -181,6 +216,13 @@ public class ClimaDAO {
         public Collection eliminarClima(String ciudad)
             throws ExcepcionInfraestructura {
 
+         /**
+     * Utilizamos este método para eliminar a alguna de las ciudades de la BD
+     * 
+     * @param ciudad El atributo por el cual se desea realizar eliminar
+     * @return Un Collection de objetos de tipo Clima actualizados (sin el objeto eliminado)
+   */
+
                 List r = null;
           if (log.isDebugEnabled()) {
             log.debug(">hazTransitorio(ciudad)");
@@ -204,197 +246,3 @@ public class ClimaDAO {
 
 }
 
-/*
-    public Estado buscarPorId(Long idEstado, boolean bloquear)
-            throws ExcepcionInfraestructura {
-
-        Estado estado = null;
-
-        if (log.isDebugEnabled()) {
-            log.debug(">buscarPorID(" + idEstado + ", " + bloquear + ")");
-        }
-
-        try {
-            if (bloquear) {
-                estado = (Estado)HibernateUtil.getSession()
-                                                .load(Estado.class, 
-                                                      idEstado, 
-                                                      LockMode.UPGRADE);
-            } else {
-                estado = (Estado)HibernateUtil.getSession()
-                                                .load(Estado.class,
-                                                      idEstado);
-            }
-        } catch (HibernateException ex) {
-            if (log.isWarnEnabled()) {
-                log.warn("<HibernateException");
-            }
-
-            throw new ExcepcionInfraestructura(ex);
-        }
-        return estado;
-    }
-
-
-    
-
-    public Collection buscarPorEjemplo(Estado estado)
-            throws ExcepcionInfraestructura {
-
-
-        Collection estados;
- 
-        if (log.isDebugEnabled()) {
-            log.debug(">buscarPorEjemplo()");
-        }
-
-        try {
-            Criteria criteria = HibernateUtil.getSession()
-                                             .createCriteria(Estado.class);
-            estados = criteria.add(Example.create(estado)).list();
-        } catch (HibernateException e) {
-            if (log.isWarnEnabled()) {
-                log.warn("<HibernateException");
-            }
-            throw new ExcepcionInfraestructura(e);
-        }
-        return estados;
-    }
-
-
-    public void hazPersistente(Estado estado)
-            throws ExcepcionInfraestructura {
-
-        if (log.isDebugEnabled()) {
-            log.debug(">hazPersistente(estado)");
-        }
-
-        try {
-            HibernateUtil.getSession().saveOrUpdate(estado);
-        } catch (HibernateException e) {
-            if (log.isWarnEnabled()) {
-                log.warn("<HibernateException");
-            }
-            throw new ExcepcionInfraestructura(e);
-        }
-    }
-
-
-    public void hazTransitorio(Estado estado)
-            throws ExcepcionInfraestructura {
-
-        if (log.isDebugEnabled()) {
-            log.debug(">hazTransitorio(estado)");
-        }
-
-        try {
-            HibernateUtil.getSession().delete(estado);
-        } catch (HibernateException e) {
-            if (log.isWarnEnabled()) {
-                log.warn("<HibernateException");
-            }
-            throw new ExcepcionInfraestructura(e);
-        }
-    }
-
-    public boolean existeClima(String nombreEstado)
-            throws ExcepcionInfraestructura {
-
-        if (log.isDebugEnabled()) {
-            log.debug(">existeRol(nombreRol)");
-        }
-
-        try {
-            
-            
-//            String consultaCuentaRoles =
-//            "select count(*) from Ciudad r where r.nombre=?";
-//
- //           int resultado =
- //           ((Integer) HibernateUtil.getSession()
- //                          .find(consultaCuentaRoles, 
- //                                nombreRol,
- //                                StringType.INSTANCE)
- //                          .iterator()
- //                          .next()).intValue();
-// de acuerdo al nuevo formato
- 
-            String hql = "select nombre from Estado where nombre = :nombre";
-            
-             if (log.isDebugEnabled()) {
-                 log.debug(hql + nombreEstado);
-            }
-        
-            Query query = HibernateUtil.getSession()
-                                        .createQuery(hql);
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< create query ok " );
-            }
-			query.setParameter("Nombre", nombreEstado);
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< set Parameter ok antes del query list >>>>>");
-            }
-            List results = query.list();
-            int resultado = results.size();
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< Result size " + resultado);
-            }
-            if (resultado == 0) {
-               return false;
-            }
-            
-            return true;
-
-        } catch (HibernateException ex) {
-            if (log.isWarnEnabled()) {
-                log.warn("<HibernateException *******************");
-            }
-            throw new ExcepcionInfraestructura(ex);
-        }
-    }
-	
-	public Collection buscaEstado(String nombreEstado)
-            throws ExcepcionInfraestructura {
-				
-		if (log.isDebugEnabled()) {
-            log.debug(">existeRol(nombreRol)");
-        }
-
-        try {
-            String hql = "from Estado where nombre like '"+nombreEstado+"%'";
-            
-             if (log.isDebugEnabled()) {
-                 log.debug(hql + nombreEstado);
-            }
-        
-            Query query = HibernateUtil.getSession()
-                                        .createQuery(hql);
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< create query ok " );
-            }
-
-            
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< set Parameter ok antes del query list >>>>>");
-            }
-            List results = query.list();
-            int resultado = results.size();
-            if (log.isDebugEnabled()) {
-                 log.debug("<<<<<<<<< Result size " + resultado);
-            }
-            if (resultado == 0) {
-               return results;
-            }
-            
-            return results;
-
-        } catch (HibernateException ex) {
-            if (log.isWarnEnabled()) {
-                log.warn("<HibernateException *******************");
-            }
-            throw new ExcepcionInfraestructura(ex);
-        }
-    }
-
-}
-*/
