@@ -392,11 +392,11 @@ location="${catalina.home}/lib/tomcat-util.jar" />
             description="Create Javadoc API documentation">
 
         <mkdir          dir="${docs.home}/api"/>
-        <!--<javadoc sourcepath="${src.home}"
+        <javadoc sourcepath="${src.home}"
                 destdir="${docs.home}/api"
                 packagenames="*">
             <classpath refid="compile.classpath"/>
-        </javadoc>-->
+        </javadoc>
 
     </target>
 
