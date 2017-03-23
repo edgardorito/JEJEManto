@@ -9,7 +9,12 @@ import edu.uag.iidis.scec.modelo.Evento;
 import edu.uag.iidis.scec.excepciones.*;
 import edu.uag.iidis.scec.persistencia.EventoDAO;
 import edu.uag.iidis.scec.persistencia.hibernate.*;
-
+/**
+* <h1>ManejadorEventos</h1>
+* Esta clase se encarga de acceder a los datos de la BD  
+* @author  Edgardo Rito Deheza
+* @version 0.3
+*/
 public class ManejadorEventos {
     private Log log = LogFactory.getLog(ManejadorEstados.class);
     private EventoDAO dao;
@@ -17,7 +22,11 @@ public class ManejadorEventos {
     public ManejadorEventos() {
         dao = new EventoDAO();
     }
-
+ /**
+   * Metodo que crea un evento mediante un objeto Evento.
+   * @param evento Recibe un objeto de la clase Evento
+   * @return int Regresa el resultado del evento que si ha sido creado
+  */
     public int crearEvento(Evento evento) {
 
         int resultado;
@@ -52,6 +61,11 @@ public class ManejadorEventos {
         }
         return resultado;
     }
+/**
+   * Metodo que actualiza un evento mediante un objeto Evento.
+   * @param evento Recibe un objeto de la clase Evento
+   * @return int Regresa el resultado del evento que si ha sido actulizado
+*/
 
         public int actualizarEvento(Evento evento) {
 
@@ -85,7 +99,11 @@ public class ManejadorEventos {
         }
         return resultado;
     }
-
+/**
+   * Metodo que elimina un evento mediante el nombre del evento.
+   * @param nombre Recibe un string con el nombre del evento
+   * @return int Regresa el resultado del evento que ha sido eliminado
+*/
         public int eliminarEvento(String nombre) {
 
         int resultado;
@@ -137,7 +155,11 @@ public class ManejadorEventos {
             HibernateUtil.closeSession();
         }
     }
-
+/**
+   * Metodo que lista todos los eventos por la fehca.
+   * @param fecha Recibe un string con la fecha.
+   * @return Collection Regresa toda la lista de eventos.
+*/
     public Collection listarEventosPorFecha(String fecha) {
         Collection resultado;
 
@@ -158,7 +180,11 @@ public class ManejadorEventos {
             HibernateUtil.closeSession();
         }
     }
-
+/**
+   * Metodo que lista todos los eventos por la fehca.
+   * @param fecha Recibe un string con la fecha.
+   * @return Evento Regresa un objeto evento.
+*/
     public Evento listarEventosPorF(String fecha) {
         Evento resultado;
 
@@ -179,7 +205,11 @@ public class ManejadorEventos {
             HibernateUtil.closeSession();
         }
     }
-
+/**
+   * Metodo que lista todos los eventos por la fehca.
+   * @param fecha atributo un string con el atributo a ordernar.
+   * @return Collection Regresa una lista con los eventos ordenados por el parametro
+*/
     public Collection listarEventosPor(String atributo) {
         Collection resultado;
 
