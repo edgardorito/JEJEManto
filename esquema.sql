@@ -1,15 +1,16 @@
 create database manto;
 
-CREATE TABLE `manto`.`vehiculos` (
-  `idVehiculo` INT NOT NULL,
+CREATE TABLE IF NOT EXISTS `manto`.`vehiculos` (
+  `idVehiculo` INT(11) NOT NULL AUTO_INCREMENT,
   `curp` VARCHAR(45) NOT NULL,
   `tipo` VARCHAR(45) NOT NULL,
   `modelo` VARCHAR(45) NOT NULL,
   `marca` VARCHAR(45) NOT NULL,
   `placa` VARCHAR(45) NOT NULL,
   `color` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`idVehiculo`)
-);
+  PRIMARY KEY (`idVehiculo`),
+  UNIQUE INDEX `placa_UNIQUE` (`placa` ASC)
+  )
 
 CREATE TABLE `manto`.`editarperfil` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -40,3 +41,7 @@ CREATE TABLE `manto`.`clima` (
   `longitud` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idClima`),
   UNIQUE INDEX `idClima_UNIQUE` (`idClima` ASC));
+
+INSERT INTO `manto`.`vehiculos` (`curp`, `tipo`, `modelo`, `marca`, `placa`, `color`) VALUES ('SHJO960414HTCLRV08', 'automovil', '2003', 'FORD', 'HOI89H', 'Gris');
+INSERT INTO `manto`.`vehiculos` (`curp`, `tipo`, `modelo`, `marca`, `placa`, `color`) VALUES ('KOLI876517MIOLKV01', 'automovil', '2000', 'DODGE', 'Y7U7IN', 'Verde');
+

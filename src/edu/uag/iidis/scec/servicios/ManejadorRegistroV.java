@@ -15,7 +15,6 @@ import edu.uag.iidis.scec.persistencia.hibernate.*;
  *
  * @author Javier de Jesús Flores Herrera
  * @version  0.3
- * @fecha 2016-03-21
  * 
  */
 public class ManejadorRegistroV {
@@ -170,7 +169,7 @@ public class ManejadorRegistroV {
     }
     /**
      * Actualiza los datos de un vehiculo en la base de datos
-     * @param  Objeto con los datos del vehiculo
+     * @param  objeto con los datos del vehiculo
      * @return int con el resultado de la operacion
      */
     public int actualizarVehiculo(Vehiculo vehiculo) {
