@@ -19,13 +19,23 @@ import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.MappingDispatchAction;
 
 
-
+/**
+ * Clase que sirve para eliminar un perfil
+ */
 public final class MCUEliminarPerfil 
         extends MappingDispatchAction {
 
     private Log log = LogFactory.getLog(MCUEditarPerfil.class);
 
-
+/**
+ * Método que nos sirve para poder eliminar un perfil
+ * @param  mapping   [atributo tipo ActionMapping]
+ * @param  form      [atributo tipo ActionForm]
+ * @param  request   [atributo tipo HttpServletRequest]
+ * @param  response  [atributo tipo HttpServletResponse]
+ * @return ActionForward [redirecciona a la vista]
+ * @throws Exception 
+ */
      public ActionForward procesarEliminarPerfil(
                 ActionMapping mapping,
                 ActionForm form,

@@ -19,12 +19,26 @@ import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.MappingDispatchAction;
 
 
-
+/**
+* <h1>MCUListarEventos</h1>
+* Esta clase se encarga de listar por fecha 
+* o por un atributo, ademas también 
+* se encarga de buscar
+* @author  Edgardo Rito Deheza
+* @version 0.3
+*/
 public final class MCUListarEventos
         extends MappingDispatchAction {
 
     private Log log = LogFactory.getLog(MCURegistrarUsuario.class);
-
+ /**
+   * Metodo que lista los eventos por atributo.
+   * @param mapping [Recibe un objeto de la clase ActionMapping]
+   * @param form  [Recibe un objeto de la clase ActionForm]
+   * @param request [Recibe un objeto de la clase HttpServletRequest]
+   * @param  response [Recibe un objeto de la clase HttpServletResponse]
+   * @return ActionForward [Regresa ub objeto de la clase ActionForward]
+  */
     public ActionForward listarEventosPor(
                 ActionMapping mapping,
                 ActionForm form,
@@ -62,7 +76,14 @@ public final class MCUListarEventos
         }
 
     }
-
+ /**
+   * Metodo que lista los eventos por fecha.
+   * @param mapping [Recibe un objeto de la clase ActionMapping]
+   * @param form  [Recibe un objeto de la clase ActionForm]
+   * @param request [Recibe un objeto de la clase HttpServletRequest]
+   * @param  response [Recibe un objeto de la clase HttpServletResponse]
+   * @return ActionForward [Regresa ub objeto de la clase ActionForward]
+  */
     public ActionForward listarEventosPorFecha(
                 ActionMapping mapping,
                 ActionForm form,
@@ -88,6 +109,14 @@ public final class MCUListarEventos
         
 
     }
+ /**
+   * Metodo que solicita los eventos.
+   * @param mapping [Recibe un objeto de la clase ActionMapping]
+   * @param form  [Recibe un objeto de la clase ActionForm]
+   * @param request [Recibe un objeto de la clase HttpServletRequest]
+   * @param  response [Recibe un objeto de la clase HttpServletResponse]
+   * @return ActionForward [Regresa ub objeto de la clase ActionForward]
+  */
 
     public ActionForward solicitarListaEventos(
                 ActionMapping mapping,
@@ -126,7 +155,14 @@ public final class MCUListarEventos
         }
 
     }
-
+ /**
+   * Metodo que busca un evento.
+   * @param mapping [Recibe un objeto de la clase ActionMapping]
+   * @param form  [Recibe un objeto de la clase ActionForm]
+   * @param request [Recibe un objeto de la clase HttpServletRequest]
+   * @param  response [Recibe un objeto de la clase HttpServletResponse]
+   * @return ActionForward [Regresa ub objeto de la clase ActionForward]
+  */
         public ActionForward BuscarEvento(
                 ActionMapping mapping,
                 ActionForm form,

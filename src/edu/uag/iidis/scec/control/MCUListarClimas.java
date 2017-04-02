@@ -18,7 +18,14 @@ import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.MappingDispatchAction;
 
-
+/**
+* Esta clase se utiliza para listar, eliminar y buscar climas
+* 
+*
+* @author  Ernesto Sandoval Becerra
+* @version 0.3
+* @since   2016-03-21 
+*/
 
 public final class MCUListarClimas
         extends MappingDispatchAction {
@@ -32,6 +39,17 @@ public final class MCUListarClimas
                 HttpServletRequest request,
                 HttpServletResponse response)
             throws Exception {
+
+    /**
+     * Este metodo es utilizado para listar una coleccion de objetos de tipo 
+     * Clima, los cuales seran recuperados de la BD utilizando un objeto de la clase
+     * ManejadorClima
+   * @param mapping de tipo ActionMapping
+   * @param form  de tipo ActionForm
+   * @param request de tipo HttpServletRequest
+   * @param response de tipo HttpServletResponse
+   * @return ActionForward Es el resultado de la consulta (la lista de ciudades ordenadas)
+   */
 
         if (log.isDebugEnabled()) {
             log.debug(">solicitarListarClimas");
@@ -72,6 +90,16 @@ public final class MCUListarClimas
                 HttpServletResponse response)
             throws Exception {
 
+        /**
+     * Este metodo es utilizado para listar una coleccion de objetos de tipo 
+     * Clima por el atributo indicado.
+   * @param mapping de tipo ActionMapping
+   * @param form  de tipo ActionForm
+   * @param request de tipo HttpServletRequest
+   * @param response de tipo HttpServletResponse
+   * @return ActionForward Es el resultado de la consulta (la lista de ciudades ordenadas por el atributo)
+   */
+
         if (log.isDebugEnabled()) {
             log.debug(">solicitarBuscarClima");
         }
@@ -87,8 +115,6 @@ public final class MCUListarClimas
                 errores.add(ActionMessages.GLOBAL_MESSAGE,
                     new ActionMessage("errors.registroVacio"));
                 saveErrors(request, errores);
-               // System.out.println("vacio");
-                //return (mapping.findForward("vacio"));
             } else {
                 forma.setClimas( resultado );
             }
@@ -109,6 +135,14 @@ public final class MCUListarClimas
                 HttpServletRequest request,
                 HttpServletResponse response)
             throws Exception {
+    /**
+   * Se utiliza este método para buscar un clima por el parámetro de nombre de ciudad
+   * @param mapping de tipo ActionMapping
+   * @param form  de tipo ActionForm
+   * @param request de tipo HttpServletRequest
+   * @param response de tipo HttpServletResponse
+   * @return ActionForward Es el resultado de la consulta (la ciudad a buscar)
+   */
 
         if (log.isDebugEnabled()) {
             log.debug(">solicitarBuscarClima");
@@ -149,6 +183,15 @@ public final class MCUListarClimas
                 HttpServletResponse response)
             throws Exception {
 
+    /**
+    * Este metodo es utilizado para eliminar una ciudad que se pasa como parametro
+   * @param mapping de tipo ActionMapping
+   * @param form  de tipo ActionForm
+   * @param request de tipo HttpServletRequest
+   * @param response de tipo HttpServletResponse
+   * @return ActionForward Es el resultado de la operació (la ciudad eliminada)
+   */
+
         if (log.isDebugEnabled()) {
             log.debug(">solicitarEliminarClima");
         }
@@ -157,8 +200,6 @@ public final class MCUListarClimas
 
         ManejadorClima mr = new ManejadorClima();
         int resultado = mr.eliminarClimaPorCiudad(forma.getCiudad());
-        //log.debug("Resultado Buscar "+resultado);
-        //ActionMessages errores = new ActionMessages();
         return (mapping.findForward("exito"));
 
     }

@@ -110,6 +110,7 @@ public final class MCUListarPerfil
         if (session != null) {
             System.out.println("SESIÓN CERRADA");
             session.removeAttribute( "user" );
+            return (mapping.findForward("exito"));
         }
 
         if (log.isDebugEnabled()) {
@@ -123,31 +124,7 @@ public final class MCUListarPerfil
             }
             return (mapping.findForward("cancelar"));
         }
-
-        FormaListadoPerfil forma = (FormaListadoPerfil)form;
-
-        ManejadorPerfil mr = new ManejadorPerfil();
-        Collection resultado = mr.listarPerfil();
-
-        ActionMessages errores = new ActionMessages();
-        if (resultado != null) {
-            if ( resultado.isEmpty() ) {
-                errores.add(ActionMessages.GLOBAL_MESSAGE,
-                    new ActionMessage("errors.registroVacio"));
-                saveErrors(request, errores);
-            } else {
-                System.out.println("eny");
-                forma.setPerfiles(resultado );
-            }
-            return (mapping.findForward("exito"));
-        } else {
-            log.error("Ocurrió un error de infraestructura");
-            errores.add(ActionMessages.GLOBAL_MESSAGE,
-                        new ActionMessage("errors.infraestructura"));                
-            saveErrors(request, errores);
-            return ( mapping.findForward("fracaso") );
-        }
-
+        return null;
     }
 
 /**
