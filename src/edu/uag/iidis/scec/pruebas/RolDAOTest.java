@@ -49,7 +49,7 @@ public class RolDAOTest extends TestCase {
 
     public static Test suite() {
 
-       TestSetup suite = new TestSetup(new TestSuite(RolDAOTest.class)) {
+        TestSetup suite = new TestSetup(new TestSuite(RolDAOTest.class)) {
 
             protected void setUp(  ) throws Exception {
                 // Se ejecuta al inicio de la suite de pruebas
@@ -66,7 +66,8 @@ public class RolDAOTest extends TestCase {
             }
         };
 
-        return suite;    }
+        return suite;    
+    }
 
     public static void main(String[] args) throws Exception {
         TestRunner.run( suite() );

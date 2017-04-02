@@ -611,7 +611,7 @@ location="${catalina.home}/lib/tomcat-util.jar" />
             </classpath>
             <formatter type="plain"/>
             <formatter type="xml"/>
-            <test name="edu.uag.iidis.scec.pruebas.AllTests" 
+            <test name="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" 
                   todir="${test.out.dir}" 
                   haltonfailure="no"/>
         </junit>
@@ -636,7 +636,7 @@ location="${catalina.home}/lib/tomcat-util.jar" />
     <target name="alltests" 
           description="Crea y persiste algunos datos">
 
-        <java classname="edu.uag.iidis.scec.pruebas.AllTests" fork="true">
+        <java classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" fork="true">
             <classpath>
                 <fileset dir="${lib.home}">
                     <include name="**/*.jar"/>
