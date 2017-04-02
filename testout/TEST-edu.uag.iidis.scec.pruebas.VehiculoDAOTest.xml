@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="UPChiapas-PC" name="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" skipped="0" tests="1" time="1.845" timestamp="2017-04-02T03:51:57">
+<testsuite errors="0" failures="0" hostname="UPChiapas-PC" name="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" skipped="0" tests="1" time="1.79" timestamp="2017-04-02T03:54:57">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -58,7 +58,7 @@
     <property name="java.vendor.url" value="http://java.oracle.com/" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp C:\Program Files\Java\jdk1.8.0_121\src.zip; junit" />
+    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp C:\Program Files\Java\jdk1.8.0_121\src.zip; testVehiculoDAO" />
     <property name="java.class.path" value="C:\apache-ant-1.9.9\lib\ant-launcher.jar;C:\Program Files\Java\jdk1.8.0_121\src.zip;C:\apache-ant-1.9.9\lib\ant-antlr.jar;C:\apache-ant-1.9.9\lib\ant-apache-bcel.jar;C:\apache-ant-1.9.9\lib\ant-apache-bsf.jar;C:\apache-ant-1.9.9\lib\ant-apache-log4j.jar;C:\apache-ant-1.9.9\lib\ant-apache-oro.jar;C:\apache-ant-1.9.9\lib\ant-apache-regexp.jar;C:\apache-ant-1.9.9\lib\ant-apache-resolver.jar;C:\apache-ant-1.9.9\lib\ant-apache-xalan2.jar;C:\apache-ant-1.9.9\lib\ant-commons-logging.jar;C:\apache-ant-1.9.9\lib\ant-commons-net.jar;C:\apache-ant-1.9.9\lib\ant-jai.jar;C:\apache-ant-1.9.9\lib\ant-javamail.jar;C:\apache-ant-1.9.9\lib\ant-jdepend.jar;C:\apache-ant-1.9.9\lib\ant-jmf.jar;C:\apache-ant-1.9.9\lib\ant-jsch.jar;C:\apache-ant-1.9.9\lib\ant-junit.jar;C:\apache-ant-1.9.9\lib\ant-junit4.jar;C:\apache-ant-1.9.9\lib\ant-launcher.jar;C:\apache-ant-1.9.9\lib\ant-netrexx.jar;C:\apache-ant-1.9.9\lib\ant-swing.jar;C:\apache-ant-1.9.9\lib\ant-testutil.jar;C:\apache-ant-1.9.9\lib\ant.jar;C:\Program Files\Java\jdk1.8.0_121\lib\tools.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.9 compiled on February 2 2017" />
     <property name="app.name" value="JEJE" />
@@ -87,22 +87,22 @@
     <property name="file.encoding" value="Cp1252" />
     <property name="sun.stderr.encoding" value="cp850" />
     <property name="java.specification.version" value="1.8" />
-    <property name="ant.project.invoked-targets" value="junit" />
+    <property name="ant.project.invoked-targets" value="testVehiculoDAO" />
   </properties>
-  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testCrearVehiculo" time="1.809" />
-  <system-out><![CDATA[[SCEC] 2017-04-01 21:51:57,397 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
-[SCEC] 2017-04-01 21:51:58,892 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-01 21:51:58,892 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-01 21:51:58,892 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-01 21:51:58,893 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-01 21:51:58,928 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-01 21:51:58,929 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
+  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testCrearVehiculo" time="1.757" />
+  <system-out><![CDATA[[SCEC] 2017-04-01 21:54:57,173 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
+[SCEC] 2017-04-01 21:54:58,597 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
+[SCEC] 2017-04-01 21:54:58,597 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-01 21:54:58,598 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
+[SCEC] 2017-04-01 21:54:58,598 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-01 21:54:58,639 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
+[SCEC] 2017-04-01 21:54:58,639 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
 Hibernate: select max(idVehiculo) from vehiculos
-[SCEC] 2017-04-01 21:51:59,094 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
-[SCEC] 2017-04-01 21:51:59,094 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-01 21:54:58,793 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
+[SCEC] 2017-04-01 21:54:58,794 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
 Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
-[SCEC] 2017-04-01 21:51:59,125 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-01 21:51:59,125 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-01 21:54:58,845 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
+[SCEC] 2017-04-01 21:54:58,845 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

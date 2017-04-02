@@ -633,17 +633,32 @@ location="${catalina.home}/lib/tomcat-util.jar" />
 
     </target>
 
-    <target name="alltests" 
-          description="Crea y persiste algunos datos">
+    <target name="testVehiculo" 
+          description="Ejecuta pruebas VehciuloDAO">
 
-        <java classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" fork="true">
+       <!-- <java classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" fork="true">
             <classpath>
                 <fileset dir="${lib.home}">
                     <include name="**/*.jar"/>
                 </fileset>
                 <pathelement path="${classes.home}"/>
             </classpath>
-       </java>
+       </java>-->
+        <mkdir dir="${test.out.dir}"/>
+ 
+       <junit printsummary="yes" fork="no" haltonfailure="yes">
+            <classpath>
+                <fileset dir="${lib.home}">
+                    <include name="**/*.jar"/>
+                </fileset>
+                <pathelement path="${classes.home}"/>
+            </classpath>
+            <formatter type="plain"/>
+            <formatter type="xml"/>
+            <test name="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" 
+                  todir="${test.out.dir}" 
+                  haltonfailure="no"/>
+        </junit>
   </target>
 
 </project>
