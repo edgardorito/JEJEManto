@@ -1,0 +1,252 @@
+Testsuite: edu.uag.iidis.scec.pruebas.PerfilDAOTest
+Tests run: 8, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 7.812 sec
+------------- Standard Output ---------------
+[SCEC] 2017-04-03 14:49:12,480 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
+[SCEC] 2017-04-03 14:49:17,684 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:17,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:17,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:17,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:17,824 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.hazPersistente(120) : >hazPersistente(perfil)
+[SCEC] 2017-04-03 14:49:17,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select max(id) from editarperfil
+[SCEC] 2017-04-03 14:49:18,496 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:18,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+Hibernate: insert into editarperfil (usuario, contra, nombre, apellido, telefono, email, cp, pais, ciudad, estado, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[SCEC] 2017-04-03 14:49:18,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:18,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.hazPersistente(120) : >hazPersistente(perfil)
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+Hibernate: insert into editarperfil (usuario, contra, nombre, apellido, telefono, email, cp, pais, ciudad, estado, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[SCEC] 2017-04-03 14:49:18,762  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
+[SCEC] 2017-04-03 14:49:18,777 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate entry 'joss' for key 'usuario'
+[SCEC] 2017-04-03 14:49:18,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(255) : -Deshaciendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:18,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
+[SCEC] 2017-04-03 14:49:18,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(276) : -Intentando deshacer la transacción para este thread.
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:18,809 ERROR edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(258) : <HibernateException
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.hazPersistente(120) : >hazPersistente(perfil)
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(68) : >existePerfil(nombrePerfil)
+[SCEC] 2017-04-03 14:49:18,840 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(81) : from Perfil ORDER BY usuariousuario
+[SCEC] 2017-04-03 14:49:18,840 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,340 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(87) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 14:49:19,340 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(90) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: insert into editarperfil (usuario, contra, nombre, apellido, telefono, email, cp, pais, ciudad, estado, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ order by perfil0_.usuario
+[SCEC] 2017-04-03 14:49:19,418 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(95) : <<<<<<<<< Result size 4
+[SCEC] 2017-04-03 14:49:19,418 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:19,418 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:19,481 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:19,481 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:19,481 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:19,496 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:19,496 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,496 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:19,496 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.actualizaPerfil(262) : >hazPersistente(perfil)
+[SCEC] 2017-04-03 14:49:19,496 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario=?
+[SCEC] 2017-04-03 14:49:19,543 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,543 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(214) : > buscaPerfil(nombreUsuario)
+[SCEC] 2017-04-03 14:49:19,543 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(221) : from Perfil where usuario like 'joss%'joss
+[SCEC] 2017-04-03 14:49:19,543 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,559 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(227) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 14:49:19,559 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(232) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: update editarperfil set usuario=?, contra=?, nombre=?, apellido=?, telefono=?, email=?, cp=?, pais=?, ciudad=?, estado=? where id=?
+Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario like 'joss%'
+[SCEC] 2017-04-03 14:49:19,574 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(237) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-03 14:49:19,574 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:19,574 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscarTodos(38) : >buscarTodos()
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select this_.id as id10_0_, this_.usuario as usuario10_0_, this_.contra as contra10_0_, this_.nombre as nombre10_0_, this_.apellido as apellido10_0_, this_.telefono as telefono10_0_, this_.email as email10_0_, this_.cp as cp10_0_, this_.pais as pais10_0_, this_.ciudad as ciudad10_0_, this_.estado as estado10_0_ from editarperfil this_
+[SCEC] 2017-04-03 14:49:19,684 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscarTodos(46) : >buscarTodos() ---- list [edu.uag.iidis.scec.modelo.Perfil@611f8234[
+  id=2
+  usuario=jul
+  contra=123
+  nombre=juliane
+  apellido=arreola
+  telefono=9865188291
+  email=jul@gmail.com
+  cp=29000
+  pais=México
+  ciudad=Tuxtla Gutiérrez
+  estado=Chiapas
+], edu.uag.iidis.scec.modelo.Perfil@7bb3a9fe[
+  id=11
+  usuario=juliane
+  contra=123
+  nombre=juliane
+  apellido=arreola
+  telefono=9865188291
+  email=jul@gmail.com
+  cp=29000
+  pais=México
+  ciudad=Tuxtla Gutiérrez
+  estado=Chiapas
+], edu.uag.iidis.scec.modelo.Perfil@7cbee484[
+  id=12
+  usuario=joss
+  contra=hola1234
+  nombre=Josseline
+  apellido=Arreola
+  telefono=9613040524
+  email=joss21@gmail.com
+  cp=29000
+  pais=MÃ©xico
+  ciudad=Tuxtla Gutierrez
+  estado=Chiapas
+], edu.uag.iidis.scec.modelo.Perfil@7f811d00[
+  id=14
+  usuario=armando
+  contra=123
+  nombre=armando
+  apellido=Arreola
+  telefono=9615048594
+  email=ar2@gmail.com
+  cp=29004
+  pais=MÃ©xico
+  ciudad=Tuxtla Gutierrez
+  estado=Chiapas
+]]
+[SCEC] 2017-04-03 14:49:19,684 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:19,684 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(165) : >existeUsuario(nombreUsuario)
+[SCEC] 2017-04-03 14:49:19,715 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(173) : select usuario from Perfil where usuario = :usuariojoss
+[SCEC] 2017-04-03 14:49:19,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,746 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(179) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 14:49:19,746 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(183) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select perfil0_.usuario as col_0_0_ from editarperfil perfil0_ where perfil0_.usuario=?
+[SCEC] 2017-04-03 14:49:19,746 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(188) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-03 14:49:19,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:19,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(165) : >existeUsuario(nombreUsuario)
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(173) : select usuario from Perfil where usuario = :usuariojoss1
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(179) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(183) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select perfil0_.usuario as col_0_0_ from editarperfil perfil0_ where perfil0_.usuario=?
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(188) : <<<<<<<<< Result size 0
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.eliminarPerfil(296) : >hazTransitorio(Perfil)
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario=?
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,793 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(214) : > buscaPerfil(nombreUsuario)
+[SCEC] 2017-04-03 14:49:19,793 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(221) : from Perfil where usuario like 'jul%'jul
+[SCEC] 2017-04-03 14:49:19,793 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,809 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(227) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 14:49:19,809 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(232) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: delete from editarperfil where id=?
+Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario like 'jul%'
+[SCEC] 2017-04-03 14:49:19,824 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(237) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-03 14:49:19,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:19,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:19,902 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:19,902 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+Mon Apr 03 14:49:15 CDT 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+------------- ---------------- ---------------
+
+Testcase: testCrearPerfilE took 6.484 sec
+Testcase: testCrearPerfilF took 0.109 sec
+	Caused an ERROR
+org.hibernate.exception.ConstraintViolationException: Duplicate entry 'joss' for key 'usuario'
+edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.ConstraintViolationException: Duplicate entry 'joss' for key 'usuario'
+	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:259)
+	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testCrearPerfilF(PerfilDAOTest.java:47)
+Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate entry 'joss' for key 'usuario'
+	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:104)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
+	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
+	at com.sun.proxy.$Proxy5.executeUpdate(Unknown Source)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:56)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2849)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3290)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:80)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:273)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:265)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:186)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:323)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:52)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1081)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:315)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:175)
+	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:250)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'joss' for key 'usuario'
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:935)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5098)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
+
+Testcase: testOrdenarPerfilesPor took 0.657 sec
+Testcase: testUpdatePerfil took 0.125 sec
+Testcase: testBuscarTodos took 0.093 sec
+Testcase: testExistePerfilE took 0.063 sec
+Testcase: testExistePerflF took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testExistePerflF(PerfilDAOTest.java:131)
+
+Testcase: testEliminarPerfil took 0.125 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testEliminarPerfil(PerfilDAOTest.java:152)
+

@@ -46,3 +46,4 @@ INSERT INTO `manto`.`vehiculos` (`curp`, `tipo`, `modelo`, `marca`, `placa`, `co
 INSERT INTO `manto`.`vehiculos` (`curp`, `tipo`, `modelo`, `marca`, `placa`, `color`) VALUES ('KOLI876517MIOLKV01', 'automovil', '2000', 'DODGE', 'Y7U7IN', 'Verde');
 
 INSERT INTO `manto`.`editarperfil` (`id`, `usuario`, `contra`, `nombre`, `apellido`, `telefono`, `email`, `cp`, `pais`, `ciudad`, `estado`) VALUES ('2', 'jul', '123', 'juliane', 'arreola', '9865188291', 'jul@gmail.com', '29000', 'México', 'Tuxtla Gutiérrez', 'Chiapas');
+INSERT INTO `manto`.`editarperfil` (`id`, `usuario`, `contra`, `nombre`, `apellido`, `telefono`, `email`, `cp`, `pais`, `ciudad`, `estado`) VALUES ('11', 'juliane', '123', 'juliane', 'arreola', '9865188291', 'jul@gmail.com', '29000', 'México', 'Tuxtla Gutiérrez', 'Chiapas');
