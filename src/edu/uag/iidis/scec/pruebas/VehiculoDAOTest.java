@@ -49,6 +49,7 @@ public class VehiculoDAOTest{
             assertTrue(vehiculo.getId() != null);
             assertTrue(vehiculo.getCurp().equals("FOHJ960414HMCLRV09"));
         } catch (Exception e) {
+            fail("El vehiculo ya se encuentra registrado");
             HibernateUtil.rollbackTransaction();
             throw e;
         } finally{
@@ -91,6 +92,7 @@ public class VehiculoDAOTest{
             assertTrue(vehiculoB.getColor().equals("Azul"));
 
         } catch (Exception e) {
+            fail("La placa ya esta registrada")
             HibernateUtil.rollbackTransaction();
             throw e;
         } finally{
@@ -142,17 +144,18 @@ public class VehiculoDAOTest{
     public void testExisteVehiculoF() throws Exception {
         
         VehiculoDAO dao = new VehiculoDAO();
-        Vehiculo vehiculo = new Vehiculo("ABHY991214JOYHRV09","automovil","1999","FORD","QWER82","Rojo");
+        //Vehiculo vehiculo = new Vehiculo("ABHY991214JOYHRV09","automovil","1999","FORD","QWER82","Rojo");
 
         HibernateUtil.beginTransaction();
         try {
-            dao.hazPersistente(vehiculo);
-            Boolean existe =  dao.existeVehiculo("QWER82");
+           // dao.hazPersistente(vehiculo);
+            Boolean existe =  dao.existeVehiculo("QWER89091");
             HibernateUtil.commitTransaction();
             
-            assertTrue(existe);
+            assertTrue("El vehiculo no se encuentra registrado",existe);
             
         } catch (Exception e) {
+            fail("El vehiculo no se encuentra registrado");
             HibernateUtil.rollbackTransaction();
             throw e;
         } finally{
@@ -180,7 +183,7 @@ public class VehiculoDAOTest{
         }
     }
     @Test
-    public void ordenarVehiculosPor() throws Exception {
+    public void ordenarVehiculosPorE() throws Exception {
         
         VehiculoDAO dao = new VehiculoDAO();
         Vehiculo vehiculo = new Vehiculo("Aaaa00000","automovil","1999","Peugeut","OIUP2U3","Blanco");
@@ -193,6 +196,27 @@ public class VehiculoDAOTest{
             assertTrue(aux.getCurp().equals("Aaaa00000"));
            
         } catch (Exception e) {
+            HibernateUtil.rollbackTransaction();
+            throw e;
+        } finally{
+            HibernateUtil.closeSession();
+        }
+    }
+     @Test
+    public void ordenarVehiculosPorF() throws Exception {
+        
+        VehiculoDAO dao = new VehiculoDAO();
+        //Vehiculo vehiculo = new Vehiculo("Aaaa00000","automovil","1999","Peugeut","OIUP2U3","Blanco");
+        HibernateUtil.beginTransaction();
+        try {
+//             dao.hazPersistente(vehiculo);
+            Collection resultado = dao.ordenarVehiculosPor("auto","");
+            HibernateUtil.commitTransaction();
+            Vehiculo aux = (Vehiculo)resultado.iterator().next();
+            assertTrue(aux.getCurp().equals("Aaaa00000"));
+           
+        } catch (Exception e) {
+            fail("No se pudo ordenar porque la columna no existe");
             HibernateUtil.rollbackTransaction();
             throw e;
         } finally{

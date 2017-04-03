@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="7" failures="0" hostname="UPChiapas-PC" name="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" skipped="0" tests="9" time="2.049" timestamp="2017-04-02T23:50:48">
+<testsuite errors="4" failures="3" hostname="UPChiapas-PC" name="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" skipped="0" tests="10" time="2.198" timestamp="2017-04-03T18:53:28">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -89,9 +89,9 @@
     <property name="java.specification.version" value="1.8" />
     <property name="ant.project.invoked-targets" value="junitreportVehiculo" />
   </properties>
-  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testCrearVehiculoE" time="1.744">
+  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testCrearVehiculoE" time="1.843">
     <error message="org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:275)
+	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:259)
 	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.testCrearVehiculoE(VehiculoDAOTest.java:26)
 Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;
 	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:104)
@@ -113,7 +113,7 @@ Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate key o
 	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:315)
 	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
 	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:175)
-	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:266)
+	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:250)
 Caused by: java.sql.SQLException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
 	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
@@ -124,61 +124,21 @@ Caused by: java.sql.SQLException: Duplicate key or integrity constraint violatio
 	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
 </error>
   </testcase>
-  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testCrearVehiculoF" time="0.008">
-    <error message="org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:275)
-	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.testCrearVehiculoF(VehiculoDAOTest.java:47)
-Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:104)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy5.executeUpdate(Unknown Source)
-	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:56)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2849)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3290)
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:80)
-	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:273)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:265)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:186)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:323)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:52)
-	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1081)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:315)
-	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
-	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:175)
-	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:266)
-Caused by: java.sql.SQLException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1741)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1588)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
+  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testCrearVehiculoF" time="0.007">
+    <failure message="El vehiculo ya se encuentra registrado" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: El vehiculo ya se encuentra registrado
+	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.testCrearVehiculoF(VehiculoDAOTest.java:52)
+</failure>
   </testcase>
-  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="test4ActualizarVehiculoF" time="0.124">
+  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="test4ActualizarVehiculoF" time="0.13">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistenteP(VehiculoDAO.java:131)
-	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.test4ActualizarVehiculoF(VehiculoDAOTest.java:86)
+	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.test4ActualizarVehiculoF(VehiculoDAOTest.java:87)
 </error>
   </testcase>
-  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testActualizarVehiculo" time="0.018" />
-  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testEliminarVehiculo" time="0.005">
-    <error message="attempt to create delete event with null entity" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: attempt to create delete event with null entity
-	at org.hibernate.event.spi.DeleteEvent.&lt;init&gt;(DeleteEvent.java:45)
-	at org.hibernate.internal.SessionImpl.delete(SessionImpl.java:801)
-	at edu.uag.iidis.scec.persistencia.VehiculoDAO.hazTransitorio(VehiculoDAO.java:163)
-	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.testEliminarVehiculo(VehiculoDAOTest.java:169)
-</error>
-  </testcase>
-  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testBuscarTodos" time="0.068" />
-  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="ordenarVehiculosPor" time="0.01">
+  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="ordenarVehiculosPorE" time="0.013">
     <error message="org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;OIUP2U3&apos; for key &apos;placa_UNIQUE&apos;&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;OIUP2U3&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(VehiculoDAO.java:364)
-	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.ordenarVehiculosPor(VehiculoDAOTest.java:190)
+	at edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(VehiculoDAO.java:365)
+	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.ordenarVehiculosPorE(VehiculoDAOTest.java:192)
 Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;OIUP2U3&apos; for key &apos;placa_UNIQUE&apos;&quot;
 	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:104)
 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
@@ -198,7 +158,7 @@ Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate key o
 	at org.hibernate.internal.SessionImpl.autoFlushIfRequired(SessionImpl.java:1053)
 	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1108)
 	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101)
-	at edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(VehiculoDAO.java:349)
+	at edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(VehiculoDAO.java:350)
 Caused by: java.sql.SQLException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;OIUP2U3&apos; for key &apos;placa_UNIQUE&apos;&quot;
 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
 	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
@@ -209,10 +169,18 @@ Caused by: java.sql.SQLException: Duplicate key or integrity constraint violatio
 	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
 </error>
   </testcase>
-  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testExisteVehiculoE" time="0.015">
+  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="ordenarVehiculosPorF" time="0.009">
+    <failure message="No se pudo ordenar porque la columna no existe" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: No se pudo ordenar porque la columna no existe
+	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.ordenarVehiculosPorF(VehiculoDAOTest.java:218)
+</failure>
+  </testcase>
+  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testActualizarVehiculo" time="0.021" />
+  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testEliminarVehiculo" time="0.07" />
+  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testBuscarTodos" time="0.025" />
+  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testExisteVehiculoE" time="0.039">
     <error message="org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;
 	at edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(VehiculoDAO.java:220)
-	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.testExisteVehiculoE(VehiculoDAOTest.java:129)
+	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.testExisteVehiculoE(VehiculoDAOTest.java:130)
 Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;
 	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:104)
 	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
@@ -243,239 +211,221 @@ Caused by: java.sql.SQLException: Duplicate key or integrity constraint violatio
 	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
 </error>
   </testcase>
-  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testExisteVehiculoF" time="0.014">
-    <error message="org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(VehiculoDAO.java:220)
-	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.testExisteVehiculoF(VehiculoDAOTest.java:150)
-Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:104)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy5.executeUpdate(Unknown Source)
-	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:56)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2849)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3290)
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:80)
-	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:273)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:265)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:186)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:323)
-	at org.hibernate.event.internal.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:59)
-	at org.hibernate.internal.SessionImpl.autoFlushIfRequired(SessionImpl.java:1053)
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1108)
-	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101)
-	at edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(VehiculoDAO.java:205)
-Caused by: java.sql.SQLException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1741)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1588)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
+  <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testExisteVehiculoF" time="0.008">
+    <failure message="El vehiculo no se encuentra registrado" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: El vehiculo no se encuentra registrado
+	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.testExisteVehiculoF(VehiculoDAOTest.java:157)
+</failure>
   </testcase>
-  <system-out><![CDATA[[SCEC] 2017-04-02 18:50:49,079 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
-[SCEC] 2017-04-02 18:50:50,511 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,511 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,511 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,511 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,545 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,546 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
+  <system-out><![CDATA[[SCEC] 2017-04-03 13:53:28,138 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
+[SCEC] 2017-04-03 13:53:29,714 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 13:53:29,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 13:53:29,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:29,716 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 13:53:29,751 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
+[SCEC] 2017-04-03 13:53:29,751 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
 Hibernate: select max(idVehiculo) from vehiculos
-[SCEC] 2017-04-02 18:50:50,683 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
-[SCEC] 2017-04-02 18:50:50,683 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 13:53:29,883 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 13:53:29,883 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
 Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
-[SCEC] 2017-04-02 18:50:50,714  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
-[SCEC] 2017-04-02 18:50:50,715 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'AHI98G' for key 'placa_UNIQUE'"
-[SCEC] 2017-04-02 18:50:50,716 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(271) : -Deshaciendo la transacción de este thread.
-[SCEC] 2017-04-02 18:50:50,716 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,716 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,719 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,720 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,721 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,722 ERROR edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(274) : <HibernateException
-[SCEC] 2017-04-02 18:50:50,723 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,723 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,723 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,723 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,732 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,732 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,732 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
-[SCEC] 2017-04-02 18:50:50,732 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 13:53:29,900  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
+[SCEC] 2017-04-03 13:53:29,900 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'AHI98G' for key 'placa_UNIQUE'"
+[SCEC] 2017-04-03 13:53:29,901 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(255) : -Deshaciendo la transacción de este thread.
+[SCEC] 2017-04-03 13:53:29,902 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
+[SCEC] 2017-04-03 13:53:29,902 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(276) : -Intentando deshacer la transacción para este thread.
+[SCEC] 2017-04-03 13:53:29,905 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
+[SCEC] 2017-04-03 13:53:29,906 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:29,907 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 13:53:29,909 ERROR edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(258) : <HibernateException
+[SCEC] 2017-04-03 13:53:29,909 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
+[SCEC] 2017-04-03 13:53:29,909 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
+[SCEC] 2017-04-03 13:53:29,910 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:29,910 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:29,918 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 13:53:29,918 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 13:53:29,918 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:29,918 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 13:53:29,919 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
+[SCEC] 2017-04-03 13:53:29,919 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:29,919 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 13:53:29,919 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
 Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
-[SCEC] 2017-04-02 18:50:50,734  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
-[SCEC] 2017-04-02 18:50:50,734 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'AHI98G' for key 'placa_UNIQUE'"
-[SCEC] 2017-04-02 18:50:50,734 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(271) : -Deshaciendo la transacción de este thread.
-[SCEC] 2017-04-02 18:50:50,734 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,734 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,736 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,736 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,736 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,736 ERROR edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(274) : <HibernateException
-[SCEC] 2017-04-02 18:50:50,737 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,737 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,737 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,737 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,739 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,739 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,739 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,740 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,740 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistenteP(124) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,740 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
+[SCEC] 2017-04-03 13:53:29,921  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
+[SCEC] 2017-04-03 13:53:29,921 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'AHI98G' for key 'placa_UNIQUE'"
+[SCEC] 2017-04-03 13:53:29,921 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(255) : -Deshaciendo la transacción de este thread.
+[SCEC] 2017-04-03 13:53:29,921 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
+[SCEC] 2017-04-03 13:53:29,921 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(276) : -Intentando deshacer la transacción para este thread.
+[SCEC] 2017-04-03 13:53:29,923 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
+[SCEC] 2017-04-03 13:53:29,923 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:29,923 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 13:53:29,924 ERROR edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(258) : <HibernateException
+[SCEC] 2017-04-03 13:53:29,924 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:29,926 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 13:53:29,926 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 13:53:29,926 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:29,926 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 13:53:29,926 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistenteP(124) : >hazPersistente(Vehiculo)
+[SCEC] 2017-04-03 13:53:29,926 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
 Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa=?
-[SCEC] 2017-04-02 18:50:50,860 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,862 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,863 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,863 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,864 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,864 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,864 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistenteP(124) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,864 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
+[SCEC] 2017-04-03 13:53:30,051 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
+[SCEC] 2017-04-03 13:53:30,051 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(276) : -Intentando deshacer la transacción para este thread.
+[SCEC] 2017-04-03 13:53:30,051 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
+[SCEC] 2017-04-03 13:53:30,052 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:30,052 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 13:53:30,052 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:30,055 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 13:53:30,055 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 13:53:30,056 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,056 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 13:53:30,056 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
+[SCEC] 2017-04-03 13:53:30,056 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,057 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(326) : >existeRol(nombreRol)
+[SCEC] 2017-04-03 13:53:30,057 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(339) : from Vehiculo ORDER BY curpcurp
+[SCEC] 2017-04-03 13:53:30,057 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,060 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(345) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 13:53:30,061 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(348) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
+[SCEC] 2017-04-03 13:53:30,062  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
+[SCEC] 2017-04-03 13:53:30,063 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'OIUP2U3' for key 'placa_UNIQUE'"
+[SCEC] 2017-04-03 13:53:30,063  WARN edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(363) : <HibernateException *******************
+[SCEC] 2017-04-03 13:53:30,063 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
+[SCEC] 2017-04-03 13:53:30,063 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(276) : -Intentando deshacer la transacción para este thread.
+[SCEC] 2017-04-03 13:53:30,065 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
+[SCEC] 2017-04-03 13:53:30,065 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:30,065 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 13:53:30,065 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:30,068 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 13:53:30,068 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 13:53:30,068 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,069 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 13:53:30,069 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(326) : >existeRol(nombreRol)
+[SCEC] 2017-04-03 13:53:30,069 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(339) : from Vehiculo ORDER BY autoauto
+[SCEC] 2017-04-03 13:53:30,070 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,074 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(345) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 13:53:30,074 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(348) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ order by auto
+[SCEC] 2017-04-03 13:53:30,075  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1054, SQLState: 42S22
+[SCEC] 2017-04-03 13:53:30,075 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : null,  message from server: "Unknown column 'auto' in 'order clause'"
+[SCEC] 2017-04-03 13:53:30,075  WARN edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(363) : <HibernateException *******************
+[SCEC] 2017-04-03 13:53:30,076 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:30,076 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 13:53:30,077 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 13:53:30,077 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistenteP(124) : >hazPersistente(Vehiculo)
+[SCEC] 2017-04-03 13:53:30,077 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,077 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
 Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa=?
-[SCEC] 2017-04-02 18:50:50,872 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,872 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(281) : >buscarVehiculos(placa)
-[SCEC] 2017-04-02 18:50:50,872 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(289) : from Vehiculo where placa like 'HOI89H%'HOI89H
-[SCEC] 2017-04-02 18:50:50,873 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
+[SCEC] 2017-04-03 13:53:30,088 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,089 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(282) : >buscarVehiculos(placa)
+[SCEC] 2017-04-03 13:53:30,089 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(290) : from Vehiculo where placa like 'HOI89H%'HOI89H
+[SCEC] 2017-04-03 13:53:30,089 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
 Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa like 'HOI89H%'
-[SCEC] 2017-04-02 18:50:50,879 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(295) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-02 18:50:50,880 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(298) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-[SCEC] 2017-04-02 18:50:50,880 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
-[SCEC] 2017-04-02 18:50:50,880 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
-[SCEC] 2017-04-02 18:50:50,881 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,881 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,881 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,882 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,882 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,882 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,882 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazTransitorio(156) : >hazTransitorio(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,882 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
+[SCEC] 2017-04-03 13:53:30,095 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(296) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 13:53:30,096 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(299) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+[SCEC] 2017-04-03 13:53:30,096 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 13:53:30,096 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 13:53:30,097 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:30,097 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 13:53:30,098 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 13:53:30,098 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 13:53:30,098 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,099 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 13:53:30,099 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazTransitorio(156) : >hazTransitorio(Vehiculo)
+[SCEC] 2017-04-03 13:53:30,099 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
 Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa=?
-[SCEC] 2017-04-02 18:50:50,883 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,884 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,884 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,885 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,885 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,885 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,885 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,886 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,886 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,886 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,887 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,887 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(73) : >buscarTodos()
-[SCEC] 2017-04-02 18:50:50,887 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
+[SCEC] 2017-04-03 13:53:30,102 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,158 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(282) : >buscarVehiculos(placa)
+[SCEC] 2017-04-03 13:53:30,159 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(290) : from Vehiculo where placa like 'Y7U7IN%'Y7U7IN
+[SCEC] 2017-04-03 13:53:30,159 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: delete from vehiculos where idVehiculo=?
+Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa like 'Y7U7IN%'
+[SCEC] 2017-04-03 13:53:30,165 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(296) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 13:53:30,165 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(299) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+[SCEC] 2017-04-03 13:53:30,166 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 13:53:30,166 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 13:53:30,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:30,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 13:53:30,169 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 13:53:30,169 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 13:53:30,169 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,169 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 13:53:30,170 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(73) : >buscarTodos()
+[SCEC] 2017-04-03 13:53:30,170 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
 Hibernate: select this_.idVehiculo as idVehiculo8_0_, this_.tipo as tipo8_0_, this_.modelo as modelo8_0_, this_.marca as marca8_0_, this_.placa as placa8_0_, this_.color as color8_0_, this_.curp as curp8_0_ from vehiculos this_
-[SCEC] 2017-04-02 18:50:50,946 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(81) : >buscarTodos() ---- list   4
-[SCEC] 2017-04-02 18:50:50,952 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(82) : >buscarTodos() ---- contenido   [edu.uag.iidis.scec.modelo.Vehiculo@5ac86ba5[
-  id=6
-  tipo=automovil
-  modelo=2015
-  marca=FORD
-  placa=HOI89H
-  color=Azul
-  curp=SHJO960414HTCLRV08
-], edu.uag.iidis.scec.modelo.Vehiculo@2c9399a4[
-  id=8
+[SCEC] 2017-04-03 13:53:30,185 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(81) : >buscarTodos() ---- list   4
+[SCEC] 2017-04-03 13:53:30,191 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(82) : >buscarTodos() ---- contenido   [edu.uag.iidis.scec.modelo.Vehiculo@5fcacc0[
+  id=20
   tipo=automovil
   modelo=2002
   marca=FORD
   placa=AHI98G
   color=ROJO
   curp=FOHJ960414HMCLRV09
-], edu.uag.iidis.scec.modelo.Vehiculo@9635fa[
-  id=10
+], edu.uag.iidis.scec.modelo.Vehiculo@6d1d4d7[
+  id=22
   tipo=automovil
   modelo=1999
   marca=Peugeut
   placa=OIUP2U3
   color=Blanco
   curp=Aaaa00000
-], edu.uag.iidis.scec.modelo.Vehiculo@53ab0286[
-  id=11
+], edu.uag.iidis.scec.modelo.Vehiculo@89ff02e[
+  id=23
   tipo=automovil
   modelo=1999
   marca=FORD
   placa=QWER82
   color=Rojo
   curp=ABHY991214JOYHRV09
+], edu.uag.iidis.scec.modelo.Vehiculo@6865c751[
+  id=24
+  tipo=automovil
+  modelo=2003
+  marca=FORD
+  placa=HOI89H
+  color=Gris
+  curp=SHJO960414HTCLRV08
 ]]
-[SCEC] 2017-04-02 18:50:50,953 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
-[SCEC] 2017-04-02 18:50:50,953 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
-[SCEC] 2017-04-02 18:50:50,953 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,954 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,954 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,954 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,954 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,954 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,955 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,955 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,955 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(325) : >existeRol(nombreRol)
-[SCEC] 2017-04-02 18:50:50,955 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(338) : from Vehiculo ORDER BY curpcurp
-[SCEC] 2017-04-02 18:50:50,955 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,958 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(344) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-02 18:50:50,959 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(347) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+[SCEC] 2017-04-03 13:53:30,191 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 13:53:30,191 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 13:53:30,192 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:30,192 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 13:53:30,193 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 13:53:30,193 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 13:53:30,194 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,194 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 13:53:30,194 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
+[SCEC] 2017-04-03 13:53:30,194 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,194 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(182) : >existeRol(nombreRol)
+[SCEC] 2017-04-03 13:53:30,195 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(192) : select placa from Vehiculo where placa = :nombreQWER82
+[SCEC] 2017-04-03 13:53:30,195 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,198 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(198) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 13:53:30,199 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(203) : <<<<<<<<< set Parameter ok antes del query list >>>>>
 Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
-[SCEC] 2017-04-02 18:50:50,960  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
-[SCEC] 2017-04-02 18:50:50,960 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'OIUP2U3' for key 'placa_UNIQUE'"
-[SCEC] 2017-04-02 18:50:50,960  WARN edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(362) : <HibernateException *******************
-[SCEC] 2017-04-02 18:50:50,961 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,961 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,962 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,962 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,962 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,963 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,965 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,965 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,965 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,965 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,965 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,966 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,966 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(182) : >existeRol(nombreRol)
-[SCEC] 2017-04-02 18:50:50,966 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(192) : select placa from Vehiculo where placa = :nombreQWER82
-[SCEC] 2017-04-02 18:50:50,966 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,970 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(198) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-02 18:50:50,970 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(203) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+[SCEC] 2017-04-03 13:53:30,228  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
+[SCEC] 2017-04-03 13:53:30,229 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'QWER82' for key 'placa_UNIQUE'"
+[SCEC] 2017-04-03 13:53:30,229  WARN edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(218) : <HibernateException *******************
+[SCEC] 2017-04-03 13:53:30,229 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
+[SCEC] 2017-04-03 13:53:30,229 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(276) : -Intentando deshacer la transacción para este thread.
+[SCEC] 2017-04-03 13:53:30,230 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
+[SCEC] 2017-04-03 13:53:30,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:30,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 13:53:30,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:30,232 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 13:53:30,233 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 13:53:30,233 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,233 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 13:53:30,233 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
+[SCEC] 2017-04-03 13:53:30,233 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,234 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(182) : >existeRol(nombreRol)
+[SCEC] 2017-04-03 13:53:30,234 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(192) : select placa from Vehiculo where placa = :nombreQWER82
+[SCEC] 2017-04-03 13:53:30,234 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 13:53:30,234 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(198) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 13:53:30,234 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(203) : <<<<<<<<< set Parameter ok antes del query list >>>>>
 Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
-[SCEC] 2017-04-02 18:50:50,973  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
-[SCEC] 2017-04-02 18:50:50,974 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'QWER82' for key 'placa_UNIQUE'"
-[SCEC] 2017-04-02 18:50:50,974  WARN edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(218) : <HibernateException *******************
-[SCEC] 2017-04-02 18:50:50,974 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,975 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,976 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,976 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,976 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,977 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,979 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,980 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,980 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,980 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,981 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,981 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,981 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(182) : >existeRol(nombreRol)
-[SCEC] 2017-04-02 18:50:50,981 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(192) : select placa from Vehiculo where placa = :nombreQWER82
-[SCEC] 2017-04-02 18:50:50,982 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,982 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(198) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-02 18:50:50,982 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(203) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
-[SCEC] 2017-04-02 18:50:50,987  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
-[SCEC] 2017-04-02 18:50:50,988 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'QWER82' for key 'placa_UNIQUE'"
-[SCEC] 2017-04-02 18:50:50,988  WARN edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(218) : <HibernateException *******************
-[SCEC] 2017-04-02 18:50:50,988 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,989 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,990 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,991 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,991 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,991 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
+[SCEC] 2017-04-03 13:53:30,238  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
+[SCEC] 2017-04-03 13:53:30,238 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'QWER82' for key 'placa_UNIQUE'"
+[SCEC] 2017-04-03 13:53:30,238  WARN edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(218) : <HibernateException *******************
+[SCEC] 2017-04-03 13:53:30,239 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 13:53:30,239 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
