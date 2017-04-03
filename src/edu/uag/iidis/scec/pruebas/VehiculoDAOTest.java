@@ -2,6 +2,8 @@ package edu.uag.iidis.scec.pruebas;
 
 
 import org.junit.*;
+import org.junit.FixMethodOrder;
+import org.junit.runners.MethodSorters;
 import static org.junit.Assert.*;
 import org.hibernate.cfg.Environment;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
@@ -12,7 +14,7 @@ import edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil;
 
 import java.util.*;
 
-
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class VehiculoDAOTest{
 
     @Test
@@ -58,7 +60,7 @@ public class VehiculoDAOTest{
     }
 
     @Test
-    public void testActualizarVehiculo() throws Exception {
+    public void testActualizarVehiculoE() throws Exception {
         VehiculoDAO dao = new VehiculoDAO();
         Vehiculo vehiculo = new Vehiculo("SHJO960414HTCLRV08","automovil","2015","FORD","HOI89H","Azul");
         HibernateUtil.beginTransaction();
@@ -92,7 +94,7 @@ public class VehiculoDAOTest{
             assertTrue(vehiculoB.getColor().equals("Azul"));
 
         } catch (Exception e) {
-            fail("La placa ya esta registrada")
+            fail("La placa ya esta registrada");
             HibernateUtil.rollbackTransaction();
             throw e;
         } finally{
@@ -101,7 +103,7 @@ public class VehiculoDAOTest{
     }
    
     @Test
-    public void testBuscarTodos() throws Exception {
+    public void testBuscarTodosE() throws Exception {
         
         VehiculoDAO dao = new VehiculoDAO();
         
@@ -120,19 +122,39 @@ public class VehiculoDAOTest{
         }
     }
     @Test
+    public void testBuscarTodosF() throws Exception {
+        
+        VehiculoDAO dao = new VehiculoDAO();
+        
+        HibernateUtil.beginTransaction();
+        try {
+            Collection resultado = dao.buscarTodos();
+            HibernateUtil.commitTransaction();
+
+            assertTrue(resultado != null);
+            assertTrue("Existen datos",resultado.isEmpty());
+        } catch (Exception e) {
+            HibernateUtil.rollbackTransaction();
+            throw e;
+        } finally{
+            HibernateUtil.closeSession();
+        }
+    }
+
+
+    @Test
     public void testExisteVehiculoE() throws Exception {
         
         VehiculoDAO dao = new VehiculoDAO();
-        Vehiculo vehiculo = new Vehiculo("ABHY991214JOYHRV09","automovil","1999","FORD","QWER82","Rojo");
-
+        
         HibernateUtil.beginTransaction();
         try {
-            dao.hazPersistente(vehiculo);
-            Boolean existe =  dao.existeVehiculo("QWER82");
+            //dao.hazPersistente(vehiculo);
+            Boolean existe =  dao.existeVehiculo("123abc");
             HibernateUtil.commitTransaction();
             
             assertTrue(existe);
-            
+    
         } catch (Exception e) {
             HibernateUtil.rollbackTransaction();
             throw e;
@@ -163,7 +185,7 @@ public class VehiculoDAOTest{
         }
     }
     @Test
-    public void testEliminarVehiculo() throws Exception {
+    public void testEliminarVehiculoE() throws Exception {
         
         VehiculoDAO dao = new VehiculoDAO();
         
@@ -183,7 +205,28 @@ public class VehiculoDAOTest{
         }
     }
     @Test
-    public void ordenarVehiculosPorE() throws Exception {
+    public void testEliminarVehiculoF() throws Exception {
+        
+        VehiculoDAO dao = new VehiculoDAO();
+        
+        HibernateUtil.beginTransaction();
+        try {
+             dao.hazTransitorio("ajuaolaja");
+            Vehiculo vehiculoB = dao.buscarVehiculosPlaca("ajuaolaja");
+            HibernateUtil.commitTransaction();
+
+            assertTrue(vehiculoB == null);
+           
+        } catch (Exception e) {
+             fail("No se encontro el dato a eliminar");
+            HibernateUtil.rollbackTransaction();
+            throw e;
+        } finally{
+            HibernateUtil.closeSession();
+        }
+    }
+    @Test
+    public void testOrdenarVehiculosPorE() throws Exception {
         
         VehiculoDAO dao = new VehiculoDAO();
         Vehiculo vehiculo = new Vehiculo("Aaaa00000","automovil","1999","Peugeut","OIUP2U3","Blanco");
@@ -203,7 +246,7 @@ public class VehiculoDAOTest{
         }
     }
      @Test
-    public void ordenarVehiculosPorF() throws Exception {
+    public void testOrdenarVehiculosPorF() throws Exception {
         
         VehiculoDAO dao = new VehiculoDAO();
         //Vehiculo vehiculo = new Vehiculo("Aaaa00000","automovil","1999","Peugeut","OIUP2U3","Blanco");
