@@ -44,9 +44,12 @@ CREATE TABLE IF NOT EXISTS `manto`.`clima` (
   UNIQUE INDEX `latitud_UNIQUE` (`latitud` ASC),
   UNIQUE INDEX `longitud_UNIQUE` (`longitud` ASC))
 
+
+--Pruebas Vehiculo--
 INSERT INTO `manto`.`vehiculos` (`curp`, `tipo`, `modelo`, `marca`, `placa`, `color`) VALUES ('SHJO960414HTCLRV08', 'automovil', '2003', 'FORD', 'HOI89H', 'Gris');
 INSERT INTO `manto`.`vehiculos` (`curp`, `tipo`, `modelo`, `marca`, `placa`, `color`) VALUES ('KOLI876517MIOLKV01', 'automovil', '2000', 'DODGE', 'Y7U7IN', 'Verde');
-
+INSERT INTO `manto`.`vehiculos` (`idVehiculo`, `curp`, `tipo`, `modelo`, `marca`, `placa`, `color`) VALUES ('1', 'JOUI876529HMCTB09', 'automovil', '2001', 'Dodge', '123abc', 'Amarillo');
+--Pruebas Perfil--
 INSERT INTO `manto`.`editarperfil` (`id`, `usuario`, `contra`, `nombre`, `apellido`, `telefono`, `email`, `cp`, `pais`, `ciudad`, `estado`) VALUES ('2', 'jul', '123', 'juliane', 'arreola', '9865188291', 'jul@gmail.com', '29000', 'México', 'Tuxtla Gutiérrez', 'Chiapas');
 INSERT INTO `manto`.`editarperfil` (`id`, `usuario`, `contra`, `nombre`, `apellido`, `telefono`, `email`, `cp`, `pais`, `ciudad`, `estado`) VALUES ('11', 'juliane', '123', 'juliane', 'arreola', '9865188291', 'jul@gmail.com', '29000', 'México', 'Tuxtla Gutiérrez', 'Chiapas');
 
