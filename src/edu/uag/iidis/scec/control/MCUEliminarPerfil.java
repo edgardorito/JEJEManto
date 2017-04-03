@@ -21,6 +21,8 @@ import org.apache.struts.actions.MappingDispatchAction;
 
 /**
  * Clase que sirve para eliminar un perfil
+ * @author  Josseline Juliane Arreola Cruz
+ * @version 0.3
  */
 public final class MCUEliminarPerfil 
         extends MappingDispatchAction {
@@ -34,7 +36,7 @@ public final class MCUEliminarPerfil
  * @param  request   [atributo tipo HttpServletRequest]
  * @param  response  [atributo tipo HttpServletResponse]
  * @return ActionForward [redirecciona a la vista]
- * @throws Exception 
+ * @throws Exception  [excepción]
  */
      public ActionForward procesarEliminarPerfil(
                 ActionMapping mapping,

@@ -96,32 +96,30 @@ public class Perfil extends ClaseBase
 
 /**
 * Regresa el id del perfil.
-* @return Long
+* @return this.id ide del usuario
 */
     public Long getId() {
         return this.id;
     }
 
 /**
-* Establece el id del perfil.
-* @return void
-*/
+ * Establece el id del perfil.
+ * @param id [id del usuario]
+ */
     public void setId(Long id) {
         this.id = id;
     }
 
 /**
  * Obtener el nombre de usuario
- * @return this.usuario
- * atributo usuario
+ * @return this.usuario atributo usuario
  */
     public String getUsuario() {
         return this.usuario;
     }
 
 /** Asignar usuario
- * @param usuario
- * atributo usuario
+ * @param usuario atributo usuario
  */
     public void setUsuario(String usuario) {
         this.usuario = usuario;
@@ -129,8 +127,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Obtener la contraseña
- * @return this.contra
- * atributo contra
+ * @return this.contra atributo contra
  */
     public String getContra() {
         return this.contra;
@@ -138,8 +135,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Asignar la contraseña
- * @param contra
- * atributo contra
+ * @param contra atributo contra
  */
     public void setContra(String contra) {
         this.contra = contra;
@@ -147,8 +143,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Obtener el nombre del usuario
- * @return this.nombre
- * atributo nombre
+ * @return this.nombre atributo nombre
  */
     public String getNombre() {
         return this.nombre;
@@ -156,8 +151,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Asignar nombre del usuario
- * @param nombre
- * atributo nombre
+ * @param nombre atributo nombre
  */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -165,8 +159,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Obtener el apellido del usuario
- * @return this.apellido
- * atributo apellido
+ * @return this.apellido atributo apellido
  */
     public String getApellido() {
         return this.apellido;
@@ -174,8 +167,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Asignar apelliodo del usuario
- * @param apellido
- * atributo apellido
+ * @param apellido atributo apellido
  */
     public void setApellido(String apellido) {
         this.apellido = apellido;
@@ -183,8 +175,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Obtener el numero telefonico del usuario
- * @return this.telefono
- * atributo telefono
+ * @return this.telefono atributo telefono
  */
     public String getTelefono() {
         return this.telefono;
@@ -192,8 +183,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Asignar numero telefonico del usuario
- * @param telefono
- * atributo telefono
+ * @param telefono atributo telefono
  */
     public void setTelefono(String telefono) {
         this.telefono = telefono;
@@ -201,8 +191,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Obtener el correo electronico del usuario
- * @return this.email
- * atributo email
+ * @return this.email atributo email
  */
     public String getEmail() {
         return this.email;
@@ -210,8 +199,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Asignar correo electronico del usuario
- * @param email
- * atributo email
+ * @param email atributo email
  */
     public void setEmail(String email) {
         this.email = email;
@@ -219,8 +207,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Obtener el Codigo postal del usuario
- * @return this.cp
- * atributo cp
+ * @return this.cp atributo cp
  */
     public String getCp() {
         return this.cp;
@@ -228,8 +215,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Asignar el Codigo postal del usuario
- * @param cp
- * atributo cp
+ * @param cp atributo cp
  */
     public void setCp(String cp) {
         this.cp = cp;
@@ -237,8 +223,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Obtener el pais del usuario
- * @return this.pais
- * atributo pais
+ * @return this.pais atributo pais
  */
     public String getPais() {
         return this.pais;
@@ -246,8 +231,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Asignar Pais del usuario
- * @param pais
- * atributo pais
+ * @param pais atributo pais
  */
     public void setPais(String pais) {
         this.pais = pais;
@@ -255,8 +239,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Obtener la ciudad del usuario
- * @return this.ciudad
- * atributo ciudad
+ * @return this.ciudad atributo ciudad
  */
     public String getCiudad() {
         return this.ciudad;
@@ -264,8 +247,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Asignar ciudad del usuario
- * @param ciudad
- * atributo ciudad
+ * @param ciudad atributo ciudad
  */
     public void setCiudad(String ciudad) {
         this.ciudad = ciudad;
@@ -282,8 +264,7 @@ public class Perfil extends ClaseBase
 
 /**
  * Asignar estado del usuario
- * @param estado
- * atributo estado
+ * @param estado atributo estado
  */
     public void setEstado(String estado) {
         this.estado = estado;

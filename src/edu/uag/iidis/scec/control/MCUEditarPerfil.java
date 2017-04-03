@@ -17,19 +17,21 @@ import org.apache.struts.actions.MappingDispatchAction;
 /**
  * Clase para procesar el registro de un usuario
  * y buqueda del codigo postal
- */
+* @author  Josseline Juliane Arreola Cruz
+* @version 0.3
+*/
 public final class MCUEditarPerfil 
         extends MappingDispatchAction {
  
     private Log log = LogFactory.getLog(MCUEditarPerfil.class);
 /**
- * [procesarRegistroUsuario description]
+ * Metodo que nos sirve para registrar un usuario
  * @param  mapping   [atributo tipo ActionMapping]
  * @param  form      [atributo tipo ActionForm]
  * @param  request   [atributo tipo HttpServletRequest]
  * @param  response  [atributo tipo HttpServletResponse]
  * @return ActionForward [redirecciona a la vista]
- * @throws Exception 
+ * @throws Exception [excepción]
  */
     public ActionForward procesarRegistroUsuario(
                 ActionMapping mapping,
@@ -87,7 +89,7 @@ public final class MCUEditarPerfil
  * @param  request   [atributo tipo HttpServletRequest]
  * @param  response  [atributo tipo HttpServletResponse]
  * @return ActionForward [redirecciona a la vista]
- * @throws Exception 
+ * @throws Exception  [excepción]
  */
      public ActionForward buscarCP(
                 ActionMapping mapping,

@@ -85,7 +85,7 @@ public class HibernateUtil {
     /**
      * Regresa el SessionFactory usado por esta clase estática.
      *
-     * @return SessionFactory
+     * @return SessionFactory usado por esta clase estática.
      */
     public static SessionFactory getSessionFactory() {
       /* El siguiente codigo se utiliza para JNDI
@@ -105,16 +105,13 @@ public class HibernateUtil {
     /**
      * Returns the original Hibernate configuration.
      *
-     * @return Configuration
+     * @return Configuration the original Hibernate configuration.
      */
     public static Configuration getConfiguration() {
         return configuration;
     }
 
-    /**
-     * Reconstruye SessionFactory con la misma configuración
-     *
-     */
+
      public static void rebuildSessionFactory()
             throws ExcepcionInfraestructura {
 
@@ -127,11 +124,7 @@ public class HibernateUtil {
         }
      }
 
-    /**
-     * Rebuild the SessionFactory with the given Hibernate Configuration.
-     *
-     * @param cfg
-     */
+
      public static void rebuildSessionFactory(Configuration cfg)
             throws ExcepcionInfraestructura {
 
@@ -147,11 +140,11 @@ public class HibernateUtil {
 
     /**
      * Recupera la sesión actual local al thread.
-     * <p/>
      * Si la sesión no está abierta, abre una nueva sesión 
      * para el thread que se ejecuta.
      *
-     * @return Session
+     * @return Session sesión actual local al thread.
+     * @throws ExcepcionInfraestructura [excepción]
      */
     public static Session getSession()
             throws ExcepcionInfraestructura {
@@ -194,9 +187,6 @@ public class HibernateUtil {
         return s;
     }
 
-    /**
-     * Cierra la sesión local thread.
-     */
     public static void closeSession()
             throws ExcepcionInfraestructura {
 
@@ -220,9 +210,6 @@ public class HibernateUtil {
     }
 
 
-    /**
-     * Inicia una nueva transacción de base de datos
-     */
     public static void beginTransaction()
             throws ExcepcionInfraestructura {
 
@@ -246,9 +233,6 @@ public class HibernateUtil {
     }
 
 
-    /**
-     * Compromete la transacción de base de datos.
-     */
     public static void commitTransaction()
             throws ExcepcionInfraestructura {
 
@@ -277,9 +261,6 @@ public class HibernateUtil {
     }
 
 
-    /**
-     * Deshace la transacción de base de datos
-     */
     public static void rollbackTransaction()
             throws ExcepcionInfraestructura {
 
@@ -307,11 +288,6 @@ public class HibernateUtil {
         }
     }
 
-    /**
-     * Reconnects a Hibernate Session to the current Thread.
-     *
-     * @param session The Hibernate Session to be reconnected.
-     */
     public static void reconnect(Session session)
        throws ExcepcionInfraestructura {
  //       try {
@@ -322,11 +298,7 @@ public class HibernateUtil {
   //      }
     }
 
-    /**
-     * Disconnect and return Session from current Thread.
-     *
-     * @return Session the disconnected Session
-     */
+
     public static Session disconnectSession()
         throws ExcepcionInfraestructura {
 
@@ -341,13 +313,6 @@ public class HibernateUtil {
         return session;
     }
 
-    /**
-     * Register a Hibernate interceptor with the current thread.
-     * <p>
-     * Every Session opened is opened with this interceptor after
-     * registration. Has no effect if the current Session of the
-     * thread is already open, effective on next close()/getSession().
-     */
     public static void registerInterceptor(Interceptor interceptor) {
         threadInterceptor.set(interceptor);
     }

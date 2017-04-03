@@ -22,8 +22,7 @@ import org.apache.struts.actions.MappingDispatchAction;
  * Esta clase se utiliza para registrar y actualizar un vehiculo
  *
  * @author Javier de Jesús Flores Herrera
- * @version  0.3
- * @fecha 2016-03-21
+ * @version  0.3, 2016-03-21
  * 
  */
 
@@ -35,11 +34,11 @@ public final class MCURegistroV
 
     /**
      * @param mapping de tipo ActionMapping]
-     * @param forma con los datos a procesar
-     * @param peticion request de tipo HttpServletRequest
-     * @param peticion response de tipo HttpServletResponse
+     * @param form forma con los datos a procesar
+     * @param request peticion request de tipo HttpServletRequest
+     * @param response peticion response de tipo HttpServletResponse
      * @return respuesta de tipo HttpServletResponse
-     * @throws Exception
+     * @throws Exception [excepción]
      */
     public ActionForward registrarVehiculo(
                 ActionMapping mapping,
@@ -101,11 +100,11 @@ public final class MCURegistroV
 
      /**
      * @param mapping de tipo ActionMapping]
-     * @param forma con los datos a procesar
-     * @param peticion request de tipo HttpServletRequest
-     * @param peticion response de tipo HttpServletResponse
+     * @param form forma con los datos a procesar
+     * @param request peticion request de tipo HttpServletRequest
+     * @param response peticion response de tipo HttpServletResponse
      * @return respuesta de tipo HttpServletResponse
-     * @throws Exception 
+     * @throws Exception [excepción]
      */
     public ActionForward actualizarVehiculo(
                 ActionMapping mapping,

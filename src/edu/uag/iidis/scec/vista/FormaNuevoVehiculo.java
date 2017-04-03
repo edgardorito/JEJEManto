@@ -44,49 +44,49 @@ public final class FormaNuevoVehiculo
 
     /**
      * Regresa el tipo del Vehiculo.
-     * @return Long
+     * @return this.tipo [tipo del vehiculo]
      */
      public String getTipo(){
         return(this.tipo);
     }
     /**
      * Establece el tipo del Vehiculo.
-     * @param tipo
+     * @param tipo [tipo del vehiculo]
      */
     public void setTipo(String tipo){
          this.tipo = tipo;
     }
     /**
      * Regresa el modelo del Vehiculo.
-     * @return Long
+     * @return String [modelo del vehiculo]
      */
     public String getModelo(){
         return (this.modelo);
     }
     /**
      * Establece el modelo del Vehiculo.
-     * @param modelo
+     * @param modelo [modelo del vehiculo]
      */
     public void setModelo(String modelo){
         this.modelo = modelo;
     }
     /**
      * Regresa la marca del Vehiculo.
-     * @return String
+     * @return String  [marca del vehiculo]
      */
      public String getMarca(){
         return(this.marca);
     }
     /**
      * Establece la marca del Vehiculo.
-     * @param marca
+     * @param marca [marca del vehiculo]
      */
     public void setMarca(String marca){
          this.marca = marca;
     }
     /**
      * Regresa la placa del Vehiculo.
-     * @return Long
+     * @return String  [placa del vehiculo]
      */
     public String getPlaca(){
         return (this.placa);
@@ -94,43 +94,44 @@ public final class FormaNuevoVehiculo
 
     /**
      * Establece la placa del Vehiculo.
-     * @param placa
+     * @param placa [placa del vehiculo]
      */
     public void setPlaca(String placa){
         this.placa = placa;
     }
     /**
      * Regresa el color del Vehiculo.
-     * @return Long
+     * @return String  [color del vehiculo]
      */
      public String getColor(){
         return(this.color);
     }
     /**
      * Establece el color del Vehiculo.
-     * @param color
+     * @param color [color del vehiculo]
      */
     public void setColor(String color){
          this.color = color;
     }
     /**
      * Regresa la curp del usuario.
+     * @return String [curp del usuario]
      */
     public String getCurp(){
         return (this.curp);
     }
-/**
+    /**
      * Establece la curp del usuario.
-     * @param curp
+     * @param curp [curp del usuario]
      */
     public void setCurp(String curp){
         this.curp = curp;
     }
     /**
      * 
-     * @param  mapping 
-     * @param  request
-     * @return ActionErrors
+     * @param mapping de tipo ActionMapping
+     * @param request de tipo HttpServletRequest
+     * @return ActionErrors errores
      */
     public ActionErrors validate(ActionMapping mapping,
                                  HttpServletRequest request) {

@@ -41,27 +41,16 @@ public class Recomendacion extends ClaseBase
 		this.calificacion=calificacion;
     }
 
-    /**
-     * Regresa el id del Recomendacion.
-     * @return Long
-     */
+
     public Long getId() {
         return this.id;
     }
 
-    /**
-     * Establece el id del Recomendacion.
-     * @return void
-     */
+
     public void setId(Long id) {
         this.id = id;
     }
 
-
-    /**
-     * Regresa el nombre del Recomendacion.
-     * @return String
-     */
     public String getNombre() {
         return this.nombre;
     }
@@ -81,10 +70,6 @@ public class Recomendacion extends ClaseBase
         return this.calificacion;
     }
 
-    /**
-     * Establece el nombre del Recomendacion.
-     * @return void
-     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -103,17 +88,7 @@ public class Recomendacion extends ClaseBase
 	public void setCalificacion(Long calificacion) {
         this.calificacion = calificacion;
     }
-    
-    /**
-     * Regresa la descripción del Recomendacion.
-     * @return String
-     */
-    
 
-    /**
-     * Establece la descripción del Recomendacion.
-     * @return void
-     */
     
 
 

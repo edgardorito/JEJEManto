@@ -23,67 +23,72 @@ public final class FormaNuevoClima
     private String ciudad;
     private String latitud;
     private String longitud;
-
+    /**
+    * Utilizamos este metodo para settear el atributo ciudad
+    * @param ciudad el atributo a settear
+    */
     public void setCiudad(String ciudad) {
-         /**
-     * Utilizamos este metodo para settear el atributo ciudad
-   * @param ciudad el atributo a settear
-   */
+         
         this.ciudad = ciudad;
     }
-
+    /**
+    * Utilizamos este metodo para obtener el atributo ciudad
+    *  @return ciudad atributo ciudad
+    */
     public String getCiudad() {
-         /**
-     * Utilizamos este metodo para obtener el atributo ciudad
-     *  @return ciudad atributo ciudad
-   */
+         
         return (this.ciudad);
     }
-
+    /**
+    * Utilizamos este metodo para settear el atributo latitud
+    * @param latitud el atributo a settear
+    */
     public void setLatitud(String latitud){
-         /**
-     * Utilizamos este metodo para settear el atributo latitud
-   * @param latitud el atributo a settear
-   */
+         
         this.latitud = latitud;
     }
-
+    /**
+    * Utilizamos este metodo para obtener el atributo latitud
+    *  @return latitud atributo latitud
+    */
     public String getLatitud(){
-          /**
-     * Utilizamos este metodo para obtener el atributo latitud
-     *  @return latitud atributo latitud
-   */
+          
         return (this.latitud);
     }
-
+    /**
+    * Utilizamos este metodo para settear el atributo longitud
+    * @param longitud el atributo a settear
+    */
     public void setLongitud(String longitud){
-        /**
-     * Utilizamos este metodo para settear el atributo longitud
-   * @param longitud el atributo a settear
-   */
+        
         this.longitud = longitud;
     }
-
+    /**
+    * Utilizamos este metodo para obtener el atributo longitud
+    *  @return longitud atributo longitud
+    */
     public String getLongitud(){
-          /**
-     * Utilizamos este metodo para obtener el atributo longitud
-     *  @return longitud atributo longitud
-   */
+          
         return (this.longitud);
     }
 
-
-    public void reset(ActionMapping mapping,
-                      HttpServletRequest request) {
-        /** 
+    /** 
      * Utilizamos este método para hacer nulo el atributo ciudad 
      * @param mapping de tipo ActionMapping
      * @param request de tipo HttpServletRequest
      */
+    public void reset(ActionMapping mapping,
+                      HttpServletRequest request) {
+        
         ciudad=null;
     }
 
-
+        /**
+         * Ejecuta las validaciones proporcionadas por Struts-Validator
+         * @param mapping de tipo ActionMapping
+         * @param request de tipo HttpServletRequest
+         * @return Validaciones no cubiertas por Struts-Validator
+         */
     public ActionErrors validate(ActionMapping mapping,
                                  HttpServletRequest request) {
         /**

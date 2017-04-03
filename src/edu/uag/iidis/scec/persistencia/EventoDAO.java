@@ -31,7 +31,7 @@ public class EventoDAO {
  /**
    * Metodo que guarda un objeto Evento en la BD.
    * @param evento Recibe un objeto de la clase Evento
-   * @return void 
+   * @throws ExcepcionInfraestructura excepción
   */
     public void hazPersistente(Evento evento)
             throws ExcepcionInfraestructura {
@@ -53,7 +53,7 @@ public class EventoDAO {
  /**
    * Metodo que actualiza un objeto Evento en la BD.
    * @param evento Recibe un objeto de la clase Evento
-   * @return void 
+   * @throws ExcepcionInfraestructura excepción
   */
     public void actualizarE(Evento evento)
             throws ExcepcionInfraestructura {
@@ -80,7 +80,7 @@ public class EventoDAO {
  /**
    * Metodo que elimina un registro Evento en la BD.
    * @param nombre Recibe un string con el del evento
-   * @return void 
+   * @throws ExcepcionInfraestructura excepción
   */
     public void hazTransitorio(String nombre)
             throws ExcepcionInfraestructura {
@@ -105,7 +105,8 @@ public class EventoDAO {
  /**
    * Metodo que ordena los registro por medio del parametro.
    * @param atributo Recibe un string con el nombre de la columna a ordernar
-   * @return Collection Lista ordenada
+   * @return results Lista ordenada
+   * @throws ExcepcionInfraestructura excepción
   */
     public Collection ordenarEventosPor(String atributo)
             throws ExcepcionInfraestructura {
@@ -151,7 +152,8 @@ public class EventoDAO {
  /**
    * Metodo que verifica si existe el evento mediante el nombre.
    * @param nombreEvento Recibe un string con el nombre del evento.
-   * @return boolean Si es true, existe el evento.
+   * @return true si existe el evento.
+   * @throws ExcepcionInfraestructura excepción
   */
     public boolean existeEvento(String nombreEvento)
             throws ExcepcionInfraestructura {
@@ -198,7 +200,8 @@ public class EventoDAO {
     }
  /**
    * Metodo que busca todos los eventos registrado.
-   * @return Collection Regresa una lista de eventos
+   * @return Eventos Regresa una lista de eventos
+   * @throws ExcepcionInfraestructura excepción
   */
     public Collection buscarTodos()
             throws ExcepcionInfraestructura {
@@ -226,7 +229,8 @@ public class EventoDAO {
      /**
    * Metodo que busca un evento por una fecha especifica.
    * @param fecha Recibe un string con la fecha del evento.
-   * @return Evento Regresa un objeto de la calse Evento.
+   * @return results Regresa un objeto de la calse Evento.
+   * @throws ExcepcionInfraestructura excepción
   */
     public Evento buscarEventoFecha(String fecha)
             throws ExcepcionInfraestructura {
@@ -267,7 +271,8 @@ public class EventoDAO {
  /**
    * Metodo que busca eventos mediante la fecha.
    * @param fecha Recibe un string con la fecha del evento.
-   * @return Collection Regresa una lista con todos los eventos con la fecha indicada.
+   * @return results Regresa una lista con todos los eventos con la fecha indicada.
+   * @throws ExcepcionInfraestructura excepción
   */
     public Collection buscarEventos(String fecha)
             throws ExcepcionInfraestructura {

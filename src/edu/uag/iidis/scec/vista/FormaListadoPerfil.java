@@ -88,8 +88,7 @@ public final class FormaListadoPerfil
 
 /**
  * Obtener lista de los perfiles almacenados
- * @return this.perfiles
- * atributo perfiles
+ * @return Collection atributo perfiles
  */
     public Collection getPerfiles() {
         return (this.perfiles);
@@ -97,8 +96,7 @@ public final class FormaListadoPerfil
   
   /**
    * Obtener el tamaño de la lista perfiles
-   * @return this.contador
-   * atributo contador
+   * @return int  atributo contador
    */
     public int getContador(){
         return (this.contador);
@@ -106,16 +104,16 @@ public final class FormaListadoPerfil
 
 /**
  * Obtener el nombre de usuario
- * @return this.usuario
- * atributo usuario
+ * @return String atributo usuario
  */
 	public String getUsuario(){
 		return (this.usuario);
 	}
 
-/** Asignar usuario
- * @param usuario
- * atributo usuario
+
+/**
+ * Asignar usuario
+ * @param usuario atributo usuario
  */
 	public void setUsuario(String usuario){
 		this.usuario=usuario;
@@ -123,8 +121,7 @@ public final class FormaListadoPerfil
 
 /**
  * Asignar contraseña
- * @param contra
- * atributo contra
+ * @param contra atributo contra
  */
     public void setContra(String contra) {
         this.contra = contra;
@@ -132,8 +129,7 @@ public final class FormaListadoPerfil
 
 /**
  * Obtener contraseña
- * @return this.contra
- * atributo contra
+ * @return String atributo contra
  */
     public String getContra() {
         return (this.contra);
@@ -141,8 +137,7 @@ public final class FormaListadoPerfil
 
 /**
  * Asignar nombre del usuario
- * @param nombre
- * atributo nombre
+ * @param nombre atributo nombre
  */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -150,8 +145,7 @@ public final class FormaListadoPerfil
 
 /**
  * Obtener el nombre del usuario
- * @return this.nombre
- * atributo nombre
+ * @return String atributo nombre
  */
     public String getNombre() {
         return (this.nombre);
@@ -159,8 +153,7 @@ public final class FormaListadoPerfil
 
 /**
  * Asignar apelliodo del usuario
- * @param apellido
- * atributo apellido
+ * @param apellido atributo apellido
  */
     public void setApellido(String apellido) {
         this.apellido = apellido;
@@ -168,8 +161,7 @@ public final class FormaListadoPerfil
 
 /**
  * Obtener el apellido del usuario
- * @return this.apellido
- * atributo apellido
+ * @return String atributo apellido
  */
     public String getApellido() {
         return (this.apellido);
@@ -177,8 +169,7 @@ public final class FormaListadoPerfil
 
 /**
  * Asignar numero telefonico del usuario
- * @param telefono
- * atributo telefono
+ * @param telefono atributo telefono
  */
     public void setTelefono(String telefono) {
         this.telefono = telefono;
@@ -186,8 +177,7 @@ public final class FormaListadoPerfil
 
 /**
  * Obtener el numero telefonico del usuario
- * @return this.telefono
- * atributo telefono
+ * @return String atributo telefono
  */
     public String getTelefono() {
         return (this.telefono);
@@ -195,8 +185,7 @@ public final class FormaListadoPerfil
 
 /**
  * Asignar correo electronico del usuario
- * @param email
- * atributo email
+ * @param email atributo email
  */
     public void setEmail(String email) {
         this.email = email;
@@ -204,8 +193,7 @@ public final class FormaListadoPerfil
 
 /**
  * Obtener el correo electronico del usuario
- * @return this.email
- * atributo email
+ * @return String atributo email
  */
     public String getEmail() {
         return (this.email);
@@ -213,8 +201,7 @@ public final class FormaListadoPerfil
     
 /**
  * Asignar el Codigo postal del usuario
- * @param cp
- * atributo cp
+ * @param cp atributo cp
  */
     public void setCp(String cp) {
         this.cp = cp;
@@ -222,8 +209,7 @@ public final class FormaListadoPerfil
 
 /**
  * Obtener el Codigo postal del usuario
- * @return this.cp
- * atributo cp
+ * @return String atributo cp
  */
     public String getCp() {
         return (this.cp);
@@ -231,8 +217,7 @@ public final class FormaListadoPerfil
 
 /**
  * Asignar Pais del usuario
- * @param pais
- * atributo pais
+ * @param pais atributo pais
  */
     public void setPais(String pais) {
         this.pais = pais;
@@ -240,8 +225,7 @@ public final class FormaListadoPerfil
 
 /**
  * Obtener el pais del usuario
- * @return this.pais
- * atributo pais
+ * @return String atributo pais
  */
     public String getPais() {
         return (this.pais);
@@ -249,8 +233,7 @@ public final class FormaListadoPerfil
 
 /**
  * Asignar ciudad del usuario
- * @param ciudad
- * atributo ciudad
+ * @param ciudad atributo ciudad
  */
     public void setCiudad(String ciudad) {
         this.ciudad = ciudad;
@@ -258,8 +241,7 @@ public final class FormaListadoPerfil
 
 /**
  * Obtener la ciudad del usuario
- * @return this.ciudad
- * atributo ciudad
+ * @return String atributo ciudad
  */
     public String getCiudad() {
         return (this.ciudad);
@@ -267,8 +249,7 @@ public final class FormaListadoPerfil
 
 /**
  * Asignar estado del usuario
- * @param estado
- * atributo estado
+ * @param estado atributo estado
  */
     public void setEstado(String estado) {
         this.estado = estado;
@@ -276,8 +257,7 @@ public final class FormaListadoPerfil
 
 /**
  * Obtener el estado del usuario
- * @return this.estado
- * atributo estado
+ * @return String atributo estado
  */
     public String getEstado() {
         return (this.estado);
@@ -285,8 +265,7 @@ public final class FormaListadoPerfil
 
 /**
  * Asignar el atributo por el cual se ordenara
- * @param  atributo
- * atributo atributo
+ * @param  atributo atributo atributo
  */
     public void setAtributo(String atributo){
         this.atributo = atributo;
@@ -294,8 +273,7 @@ public final class FormaListadoPerfil
 
 /**
  * Obtener el atributo por el cual se ordenara
- * @return this.atributo
- * atributo atributo
+ * @return String atributo atributo
  */
     public String getAtributo(){
         return (this.atributo);
