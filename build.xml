@@ -694,7 +694,6 @@ location="${catalina.home}/lib/tomcat-util.jar" />
         </junit>
   </target>
 
-<!--
     <target name="junitreporteClima" 
            depends="testClima" 
            description="Ejecuta pruebas y crea reporte">
@@ -728,7 +727,6 @@ location="${catalina.home}/lib/tomcat-util.jar" />
                   haltonfailure="no"/>
         </junit>
   </target>
--->
 
 
    <target name="junitreportPerfil" 

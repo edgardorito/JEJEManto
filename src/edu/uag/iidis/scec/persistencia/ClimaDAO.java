@@ -45,7 +45,7 @@ public class ClimaDAO {
         }
 
         try {
-            HibernateUtil.getSession().saveOrUpdate(clima);
+            HibernateUtil.getSession().save(clima);
         } catch (HibernateException e) {
             if (log.isWarnEnabled()) {
                 log.warn("<HibernateException");
