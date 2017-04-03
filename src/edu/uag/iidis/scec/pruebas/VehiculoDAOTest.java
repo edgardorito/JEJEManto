@@ -78,7 +78,7 @@ public class VehiculoDAOTest{
         }
     }
     @Test
-    public void test4ActualizarVehiculoF() throws Exception {
+    public void testActualizarVehiculoF() throws Exception {
         //Falla porque la placa no se puede actualizar
         VehiculoDAO dao = new VehiculoDAO();
         Vehiculo vehiculo = new Vehiculo("FOHJ960414HMCLRV09","automovil","2015","DODGE","AEH82J","Azul");
