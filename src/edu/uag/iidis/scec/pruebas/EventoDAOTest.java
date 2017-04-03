@@ -134,7 +134,6 @@ public class EventoDAOTest{
     @Test
     public void testEliminarEventoF() throws Exception {
         EventoDAO dao = new EventoDAO();
-        Evento evento = new Evento("Evento 5","2017-04-22");
         HibernateUtil.beginTransaction();
 
         try {
