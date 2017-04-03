@@ -171,7 +171,7 @@ public class VehiculoDAO {
     }
     /**
      * Verifica si un vehiculo esta registrado
-     * @param  placa del vehiculo         
+     * @param  String placaVehiculo del vehiculo         
      * @return regresa un boolean, es true cuando el vehiculo existe
      * @throws ExcepcionInfraestructura 
      */

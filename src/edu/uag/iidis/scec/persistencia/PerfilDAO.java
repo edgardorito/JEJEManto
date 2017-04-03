@@ -237,7 +237,7 @@ public class PerfilDAO {
                  log.debug("<<<<<<<<< Result size " + resultado);
             }
             if (resultado == 0) {
-               return results;
+               return null;
             }
             
             return results;

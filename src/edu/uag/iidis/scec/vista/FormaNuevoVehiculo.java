@@ -12,7 +12,7 @@ import org.apache.struts.validator.ValidatorForm;
  *
  * @author Javier de Jesús Flores Herrera
  * @version  0.3
- * @fecha 2016-03-21
+ * 
  * 
  */
 
@@ -51,7 +51,7 @@ public final class FormaNuevoVehiculo
     }
     /**
      * Establece el tipo del Vehiculo.
-     * @return Long
+     * @param tipo
      */
     public void setTipo(String tipo){
          this.tipo = tipo;
@@ -65,21 +65,21 @@ public final class FormaNuevoVehiculo
     }
     /**
      * Establece el modelo del Vehiculo.
-     * @return Long
+     * @param modelo
      */
     public void setModelo(String modelo){
         this.modelo = modelo;
     }
     /**
      * Regresa la marca del Vehiculo.
-     * @return Long
+     * @return String
      */
      public String getMarca(){
         return(this.marca);
     }
     /**
      * Establece la marca del Vehiculo.
-     * @return Long
+     * @param marca
      */
     public void setMarca(String marca){
          this.marca = marca;
@@ -94,7 +94,7 @@ public final class FormaNuevoVehiculo
 
     /**
      * Establece la placa del Vehiculo.
-     * @return Long
+     * @param placa
      */
     public void setPlaca(String placa){
         this.placa = placa;
@@ -108,21 +108,20 @@ public final class FormaNuevoVehiculo
     }
     /**
      * Establece el color del Vehiculo.
-     * @return Long
+     * @param color
      */
     public void setColor(String color){
          this.color = color;
     }
     /**
      * Regresa la curp del usuario.
-     * @return Long
      */
     public String getCurp(){
         return (this.curp);
     }
 /**
      * Establece la curp del usuario.
-     * @return Long
+     * @param curp
      */
     public void setCurp(String curp){
         this.curp = curp;
