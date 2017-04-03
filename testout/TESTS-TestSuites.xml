@@ -666,19 +666,7 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-<<<<<<< HEAD
-  <testsuite errors="0" failures="6" hostname="Josseline" id="1" name="PerfilDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="12" time="7.51" timestamp="2017-04-03T19:34:42">
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
   <testsuite errors="0" failures="1" hostname="ERIDE" id="1" name="EventoDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="2" time="0.142" timestamp="2017-04-02T21:19:27">
-=======
-  <testsuite errors="1" failures="1" hostname="UPChiapas-PC" id="1" name="PerfilDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="8" time="2.008" timestamp="2017-04-03T02:05:07">
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-  <testsuite errors="4" failures="1" hostname="Josseline" id="1" name="PerfilDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="8" time="7.547" timestamp="2017-04-03T04:16:45">
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
->>>>>>> 84e4b401d0acfb3afd506f251a3dc8343e3c423e
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -686,28 +674,14 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
 
           <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
           <property name="os.name" value="Windows 8.1" />
 
           <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_92\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_92\jre\classes" />
-=======
-          <property name="os.name" value="Windows 7" />
-
-          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes" />
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-          <property name="os.name" value="Windows 8.1" />
-
-          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_111\jre\classes" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
 
           <property name="sun.desktop" value="windows" />
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
           <property name="ant.home" value="C:\apache-ant-1.10.0" />
 
           <property name="java.runtime.version" value="1.8.0_92-b14" />
@@ -717,31 +691,11 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
           <property name="user.name" value="ERIDE21" />
 
           <property name="web.home" value="C:\Users\ERIDE21\Desktop\JEJEManto/web" />
-=======
-          <property name="ant.home" value="C:\apache-ant-1.9.9" />
-=======
-          <property name="ant.home" value="C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
-
-          <property name="java.runtime.version" value="1.8.0_111-b14" />
-
-          <property name="src.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/src" />
-
-          <property name="user.name" value="Josseline" />
-
-<<<<<<< HEAD
-          <property name="web.home" value="D:\UPChiapas\Documentos\JEJEManto/web" />
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-          <property name="web.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/web" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
 
           <property name="ant.file.type.USJ" value="file" />
 
           <property name="manager.password" value="root" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
           <property name="test.out.dir" value="C:\Users\ERIDE21\Desktop\JEJEManto/testout" />
 
           <property name="user.language" value="es" />
@@ -757,30 +711,6 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
           <property name="java.version" value="1.8.0_92" />
 
           <property name="lib.home" value="C:\Users\ERIDE21\Desktop\JEJEManto/build/WEB-INF/lib" />
-=======
-          <property name="test.out.dir" value="D:\UPChiapas\Documentos\JEJEManto/testout" />
-=======
-          <property name="test.out.dir" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/testout" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
-
-          <property name="user.language" value="es" />
-
-          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\bin" />
-
-          <property name="ant.project.default-target" value="build" />
-
-          <property name="docs.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/docs" />
-
-          <property name="ant.project.name" value="USJ" />
-
-          <property name="java.version" value="1.8.0_111" />
-
-<<<<<<< HEAD
-          <property name="lib.home" value="D:\UPChiapas\Documentos\JEJEManto/build/WEB-INF/lib" />
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-          <property name="lib.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/build/WEB-INF/lib" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
 
           <property name="user.timezone" value="" />
 
@@ -788,15 +718,7 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
 
           <property name="compile.optimize" value="true" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
           <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_92\jre\lib\endorsed" />
-=======
-          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed" />
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\endorsed" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
 
           <property name="sun.cpu.isalist" value="amd64" />
 
@@ -810,8 +732,6 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
 
           <property name="java.class.version" value="52.0" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
           <property name="build.home" value="C:\Users\ERIDE21\Desktop\JEJEManto/build" />
 
           <property name="manager.username" value="root" />
@@ -827,56 +747,16 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
           <property name="os.version" value="6.3" />
 
           <property name="classes.home" value="C:\Users\ERIDE21\Desktop\JEJEManto/build/WEB-INF/classes" />
-=======
-          <property name="build.home" value="D:\UPChiapas\Documentos\JEJEManto/build" />
-=======
-          <property name="build.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/build" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
-
-          <property name="manager.username" value="root" />
-
-          <property name="user.country" value="MX" />
-
-          <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_111\jre" />
-
-          <property name="java.vm.info" value="mixed mode" />
-
-          <property name="ant.file" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto\build.xml" />
-
-          <property name="os.version" value="6.3" />
-
-<<<<<<< HEAD
-          <property name="classes.home" value="D:\UPChiapas\Documentos\JEJEManto/build/WEB-INF/classes" />
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-          <property name="classes.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/build/WEB-INF/classes" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
 
           <property name="path.separator" value=";" />
 
           <property name="manager.url" value="http://127.0.0.1:8080/manager/text" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
           <property name="java.vm.version" value="25.92-b14" />
 
           <property name="user.variant" value="" />
 
           <property name="ant.library.dir" value="C:\apache-ant-1.10.0\lib" />
-=======
-          <property name="java.vm.version" value="25.121-b13" />
-
-          <property name="user.variant" value="" />
-
-          <property name="ant.library.dir" value="C:\apache-ant-1.9.9\lib" />
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-          <property name="java.vm.version" value="25.111-b14" />
-
-          <property name="user.variant" value="" />
-
-          <property name="ant.library.dir" value="C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
 
           <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
 
@@ -888,29 +768,13 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
 
           <property name="user.script" value="" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
           <property name="user.home" value="C:\Users\ERIDE21" />
-=======
-          <property name="user.home" value="C:\Users\UPChiapas" />
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-          <property name="user.home" value="C:\Users\Josseline" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
           <property name="app.path" value="/JEJEv0.3" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
           <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_92\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl\Win64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java;C:\apache-ant-1.10.0\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_92\bin;C:\Program Files\Java\jre1.8.0_92;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\runtime\win64;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\bin;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\polyspace\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\ERIDE21\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Apache Tomcat 8.0.27\bin;." />
-=======
-          <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\*;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\apache-ant-1.9.9\bin;%USERPROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\runtime\win64;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\bin;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\polyspace\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Apache Tomcat 8.0.27\bin;C:\Users\UPChiapas\AppData\Roaming\npm;." />
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-          <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_111\bin\;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\*;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\Xoreax\IncrediBuild;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\runtime\win64;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\bin;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\polyspace\bin;C:\Ruby22-x64\bin;C:\Ruby22\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\Bandizip\7z;C:\Apache Tomcat 8.0.27\bin;C:\Users\Josseline\AppData\Roaming\npm;." />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
 
           <property name="java.vendor.url" value="http://java.oracle.com/" />
 
@@ -918,27 +782,11 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
           <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp C:\Program Files\Java\jdk1.8.0_92\bin; junitreport" />
 
           <property name="java.class.path" value="C:\apache-ant-1.10.0\lib\ant-launcher.jar;C:\Program Files\Java\jdk1.8.0_92\bin\;C:\apache-ant-1.10.0\lib\ant-antlr.jar;C:\apache-ant-1.10.0\lib\ant-apache-bcel.jar;C:\apache-ant-1.10.0\lib\ant-apache-bsf.jar;C:\apache-ant-1.10.0\lib\ant-apache-log4j.jar;C:\apache-ant-1.10.0\lib\ant-apache-oro.jar;C:\apache-ant-1.10.0\lib\ant-apache-regexp.jar;C:\apache-ant-1.10.0\lib\ant-apache-resolver.jar;C:\apache-ant-1.10.0\lib\ant-apache-xalan2.jar;C:\apache-ant-1.10.0\lib\ant-commons-logging.jar;C:\apache-ant-1.10.0\lib\ant-commons-net.jar;C:\apache-ant-1.10.0\lib\ant-jai.jar;C:\apache-ant-1.10.0\lib\ant-javamail.jar;C:\apache-ant-1.10.0\lib\ant-jdepend.jar;C:\apache-ant-1.10.0\lib\ant-jmf.jar;C:\apache-ant-1.10.0\lib\ant-jsch.jar;C:\apache-ant-1.10.0\lib\ant-junit.jar;C:\apache-ant-1.10.0\lib\ant-junit4.jar;C:\apache-ant-1.10.0\lib\ant-launcher.jar;C:\apache-ant-1.10.0\lib\ant-netrexx.jar;C:\apache-ant-1.10.0\lib\ant-swing.jar;C:\apache-ant-1.10.0\lib\ant-testutil.jar;C:\apache-ant-1.10.0\lib\ant.jar;C:\Program Files\Java\jdk1.8.0_92\lib\tools.jar" />
 
           <property name="ant.version" value="Apache Ant(TM) version 1.10.0 compiled on December 27 2016" />
-=======
-          <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp C:\Program Files\Java\jdk1.8.0_121\src.zip; junitreportPerfil" />
-=======
-          <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher junitreportPerfil" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
-
-          <property name="java.class.path" value="C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-launcher.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-antlr.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-bcel.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-bsf.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-log4j.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-oro.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-regexp.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-resolver.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-xalan2.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-commons-logging.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-commons-net.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-jai.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-javamail.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-jdepend.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-jmf.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-jsch.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-junit.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-junit4.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-launcher.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-netrexx.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-swing.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-testutil.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant.jar;C:\Program Files\Java\jdk1.8.0_111\lib\tools.jar" />
-
-<<<<<<< HEAD
-          <property name="ant.version" value="Apache Ant(TM) version 1.9.9 compiled on February 2 2017" />
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-          <property name="ant.version" value="Apache Ant(TM) version 1.10.0 compiled on December 27 2016" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
 
           <property name="app.name" value="JEJE" />
 
@@ -952,8 +800,6 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
 
           <property name="sun.cpu.endian" value="little" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
           <property name="sun.os.patch.level" value="" />
 
           <property name="compile.debug" value="true" />
@@ -961,22 +807,6 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
           <property name="java.io.tmpdir" value="C:\Users\ERIDE21\AppData\Local\Temp\" />
 
           <property name="dist.home" value="C:\Users\ERIDE21\Desktop\JEJEManto/dist" />
-=======
-          <property name="sun.os.patch.level" value="Service Pack 1" />
-=======
-          <property name="sun.os.patch.level" value="" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
-
-          <property name="compile.debug" value="true" />
-
-          <property name="java.io.tmpdir" value="C:\Users\JOSSEL~1\AppData\Local\Temp\" />
-
-<<<<<<< HEAD
-          <property name="dist.home" value="D:\UPChiapas\Documentos\JEJEManto/dist" />
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-          <property name="dist.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/dist" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
 
           <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
 
@@ -984,27 +814,11 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
 
           <property name="os.arch" value="amd64" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
           <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_92\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
 
           <property name="user.dir" value="C:\Users\ERIDE21\Desktop\JEJEManto" />
 
           <property name="ant.file.USJ" value="C:\Users\ERIDE21\Desktop\JEJEManto\build.xml" />
-=======
-          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
-=======
-          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
-
-          <property name="user.dir" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto" />
-
-<<<<<<< HEAD
-          <property name="ant.file.USJ" value="D:\UPChiapas\Documentos\JEJEManto\build.xml" />
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-          <property name="ant.file.USJ" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto\build.xml" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
 
           <property name="line.separator" value="&#xd;&#xa;" />
 
@@ -1014,27 +828,11 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
 
           <property name="compile.deprecation" value="false" />
 
-<<<<<<< HEAD
-<<<<<<< HEAD
           <property name="basedir" value="C:\Users\ERIDE21\Desktop\JEJEManto" />
 
           <property name="ant.java.version" value="1.8" />
 
           <property name="ant.core.lib" value="C:\apache-ant-1.10.0\lib\ant.jar" />
-=======
-          <property name="basedir" value="D:\UPChiapas\Documentos\JEJEManto" />
-
-          <property name="ant.java.version" value="1.8" />
-
-          <property name="ant.core.lib" value="C:\apache-ant-1.9.9\lib\ant.jar" />
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-          <property name="basedir" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto" />
-
-          <property name="ant.java.version" value="1.8" />
-
-          <property name="ant.core.lib" value="C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant.jar" />
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
 
           <property name="file.encoding" value="Cp1252" />
 
@@ -1042,7 +840,6 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
 
           <property name="java.specification.version" value="1.8" />
 
-<<<<<<< HEAD
           <property name="ant.project.invoked-targets" value="junitreport" />
 
       </properties>
@@ -1052,73 +849,10 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
       <testcase classname="edu.uag.iidis.scec.pruebas.EventoDAOTest" name="testCrearEvento" time="0.13">
           <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
 	at edu.uag.iidis.scec.pruebas.EventoDAOTest.testCrearEvento(EventoDAOTest.java:32)
-=======
-          <property name="ant.project.invoked-targets" value="junitreportPerfil" />
-
-      </properties>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testBuscarTodosE" time="6.37" />
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testBuscarTodosF" time="0.031">
-          <failure message="Existen datos" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Existen datos
-	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testBuscarTodosF(PerfilDAOTest.java:138)
 </failure>
 
       </testcase>
 
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testCrearPerfilE" time="0.531" />
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testCrearPerfilF" time="0.172">
-          <failure message="Usuario ya existe" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Usuario ya existe
-	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testCrearPerfilF(PerfilDAOTest.java:56)
-</failure>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testEliminarPerfilE" time="0.11" />
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testEliminarPerfilF" time="0.015">
-          <failure message="No se encontro el dato a eliminar" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: No se encontro el dato a eliminar
-	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testEliminarPerfilF(PerfilDAOTest.java:225)
-</failure>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testExistePerfilE" time="0.0" />
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testExistePerflF" time="0.016">
-          <failure message="El perfil no existe" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: El perfil no existe
-	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testExistePerflF(PerfilDAOTest.java:177)
-</failure>
-
-      </testcase>
-
-<<<<<<< HEAD
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testOrdenarPerfilesPorE" time="0.078" />
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testOrdenarPerfilesPorF" time="0.016">
-          <failure message="Los datos no se pudieron ordenar" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Los datos no se pudieron ordenar
-	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testOrdenarPerfilesPorF(PerfilDAOTest.java:268)
-=======
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testExistePerflF" time="0.016">
-          <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
-	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testExistePerflF(PerfilDAOTest.java:131)
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
->>>>>>> 84e4b401d0acfb3afd506f251a3dc8343e3c423e
-</failure>
-
-      </testcase>
-
-<<<<<<< HEAD
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testUpdatePerfilE" time="0.046" />
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testUpdatePerfilF" time="0.016">
-          <failure message="No se pudieron actualizar los datos" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: No se pudieron actualizar los datos
-	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testUpdatePerfilF(PerfilDAOTest.java:99)
-</failure>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
       <system-out><![CDATA[[SCEC] 2017-04-02 16:19:27,766 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
 [SCEC] 2017-04-02 16:19:27,766 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
 [SCEC] 2017-04-02 16:19:27,766 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
@@ -1131,283 +865,448 @@ Hibernate: select max(idEvento) from evento
 Hibernate: insert into evento (nombre, fecha, idEvento) values (?, ?, ?)
 [SCEC] 2017-04-02 16:19:27,880 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
 [SCEC] 2017-04-02 16:19:27,880 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-=======
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testEliminarPerfil" time="0.03" />
-=======
-      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testEliminarPerfil" time="0.016">
-          <error message="attempt to create delete event with null entity" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: attempt to create delete event with null entity
-	at org.hibernate.event.spi.DeleteEvent.&lt;init&gt;(DeleteEvent.java:45)
-	at org.hibernate.internal.SessionImpl.delete(SessionImpl.java:801)
-	at edu.uag.iidis.scec.persistencia.PerfilDAO.eliminarPerfil(PerfilDAO.java:303)
-	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testEliminarPerfil(PerfilDAOTest.java:148)
-</error>
->>>>>>> 84e4b401d0acfb3afd506f251a3dc8343e3c423e
-
-      </testcase>
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
-
-      <system-out><![CDATA[[SCEC] 2017-04-03 14:34:42,607 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
-[SCEC] 2017-04-03 14:34:47,962 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
-[SCEC] 2017-04-03 14:34:47,962 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-03 14:34:47,962 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:47,962 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-03 14:34:48,087 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscarTodos(38) : >buscarTodos()
-[SCEC] 2017-04-03 14:34:48,087 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-Hibernate: select this_.id as id10_0_, this_.usuario as usuario10_0_, this_.contra as contra10_0_, this_.nombre as nombre10_0_, this_.apellido as apellido10_0_, this_.telefono as telefono10_0_, this_.email as email10_0_, this_.cp as cp10_0_, this_.pais as pais10_0_, this_.ciudad as ciudad10_0_, this_.estado as estado10_0_ from editarperfil this_
-[SCEC] 2017-04-03 14:34:48,712 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscarTodos(46) : >buscarTodos() ---- list [edu.uag.iidis.scec.modelo.Perfil@41e350f1[
-  id=2
-  usuario=jul
-  contra=123
-  nombre=juliane
-  apellido=arreola
-  telefono=9865188291
-  email=jul@gmail.com
-  cp=29000
-  pais=México
-  ciudad=Tuxtla Gutiérrez
-  estado=Chiapas
-], edu.uag.iidis.scec.modelo.Perfil@60d1a32f[
-  id=11
-  usuario=juliane
-  contra=123
-  nombre=juliane
-  apellido=arreola
-  telefono=9865188291
-  email=jul@gmail.com
-  cp=29000
-  pais=México
-  ciudad=Tuxtla Gutiérrez
-  estado=Chiapas
-]]
-[SCEC] 2017-04-03 14:34:48,712 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
-[SCEC] 2017-04-03 14:34:48,712 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
-[SCEC] 2017-04-03 14:34:48,727 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-03 14:34:48,727 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-03 14:34:48,743 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
-[SCEC] 2017-04-03 14:34:48,743 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-03 14:34:48,743 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:48,743 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-03 14:34:48,743 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscarTodos(38) : >buscarTodos()
-[SCEC] 2017-04-03 14:34:48,743 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-Hibernate: select this_.id as id10_0_, this_.usuario as usuario10_0_, this_.contra as contra10_0_, this_.nombre as nombre10_0_, this_.apellido as apellido10_0_, this_.telefono as telefono10_0_, this_.email as email10_0_, this_.cp as cp10_0_, this_.pais as pais10_0_, this_.ciudad as ciudad10_0_, this_.estado as estado10_0_ from editarperfil this_
-[SCEC] 2017-04-03 14:34:48,758 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscarTodos(46) : >buscarTodos() ---- list [edu.uag.iidis.scec.modelo.Perfil@12bfd80d[
-  id=2
-  usuario=jul
-  contra=123
-  nombre=juliane
-  apellido=arreola
-  telefono=9865188291
-  email=jul@gmail.com
-  cp=29000
-  pais=México
-  ciudad=Tuxtla Gutiérrez
-  estado=Chiapas
-], edu.uag.iidis.scec.modelo.Perfil@41925502[
-  id=11
-  usuario=juliane
-  contra=123
-  nombre=juliane
-  apellido=arreola
-  telefono=9865188291
-  email=jul@gmail.com
-  cp=29000
-  pais=México
-  ciudad=Tuxtla Gutiérrez
-  estado=Chiapas
-]]
-[SCEC] 2017-04-03 14:34:48,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
-[SCEC] 2017-04-03 14:34:48,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
-[SCEC] 2017-04-03 14:34:48,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-03 14:34:48,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-03 14:34:48,774 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
-[SCEC] 2017-04-03 14:34:48,774 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-03 14:34:48,774 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:48,774 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-03 14:34:48,774 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.hazPersistente(120) : >hazPersistente(perfil)
-[SCEC] 2017-04-03 14:34:48,774 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-Hibernate: select max(id) from editarperfil
-[SCEC] 2017-04-03 14:34:48,805 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(165) : >existeUsuario(nombreUsuario)
-[SCEC] 2017-04-03 14:34:48,805 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(173) : select usuario from Perfil where usuario = :usuariojoss
-[SCEC] 2017-04-03 14:34:48,805 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,165 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(179) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-03 14:34:49,180 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(183) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-Hibernate: insert into editarperfil (usuario, contra, nombre, apellido, telefono, email, cp, pais, ciudad, estado, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-Hibernate: select perfil0_.usuario as col_0_0_ from editarperfil perfil0_ where perfil0_.usuario=?
-[SCEC] 2017-04-03 14:34:49,258 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(188) : <<<<<<<<< Result size 1
-[SCEC] 2017-04-03 14:34:49,258 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
-[SCEC] 2017-04-03 14:34:49,258 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
-[SCEC] 2017-04-03 14:34:49,305 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-03 14:34:49,305 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-03 14:34:49,305 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
-[SCEC] 2017-04-03 14:34:49,305 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-03 14:34:49,305 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,305 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-03 14:34:49,305 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.hazPersistente(120) : >hazPersistente(perfil)
-[SCEC] 2017-04-03 14:34:49,305 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,305 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
-[SCEC] 2017-04-03 14:34:49,305 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
-Hibernate: insert into editarperfil (usuario, contra, nombre, apellido, telefono, email, cp, pais, ciudad, estado, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-[SCEC] 2017-04-03 14:34:49,368  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
-[SCEC] 2017-04-03 14:34:49,368 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate entry 'juliane' for key 'usuario'
-[SCEC] 2017-04-03 14:34:49,383 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(255) : -Deshaciendo la transacción de este thread.
-[SCEC] 2017-04-03 14:34:49,383 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
-[SCEC] 2017-04-03 14:34:49,383 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(276) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-03 14:34:49,477 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-03 14:34:49,477 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-03 14:34:49,477 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-03 14:34:49,477 ERROR edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(258) : <HibernateException
-[SCEC] 2017-04-03 14:34:49,477 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-03 14:34:49,477 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
-[SCEC] 2017-04-03 14:34:49,477 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-03 14:34:49,477 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,477 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-03 14:34:49,477 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.eliminarPerfil(296) : >hazTransitorio(Perfil)
-[SCEC] 2017-04-03 14:34:49,477 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario=?
-[SCEC] 2017-04-03 14:34:49,493 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,493 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(165) : >existeUsuario(nombreUsuario)
-[SCEC] 2017-04-03 14:34:49,493 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(173) : select usuario from Perfil where usuario = :usuariojul
-[SCEC] 2017-04-03 14:34:49,493 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,493 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(179) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-03 14:34:49,508 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(183) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-Hibernate: delete from editarperfil where id=?
-Hibernate: select perfil0_.usuario as col_0_0_ from editarperfil perfil0_ where perfil0_.usuario=?
-[SCEC] 2017-04-03 14:34:49,508 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(188) : <<<<<<<<< Result size 0
-[SCEC] 2017-04-03 14:34:49,508 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
-[SCEC] 2017-04-03 14:34:49,508 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
-[SCEC] 2017-04-03 14:34:49,587 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-03 14:34:49,587 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-03 14:34:49,587 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
-[SCEC] 2017-04-03 14:34:49,587 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-03 14:34:49,587 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,587 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-03 14:34:49,587 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.eliminarPerfil(296) : >hazTransitorio(Perfil)
-[SCEC] 2017-04-03 14:34:49,587 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario=?
-[SCEC] 2017-04-03 14:34:49,587 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,587 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-03 14:34:49,587 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(165) : >existeUsuario(nombreUsuario)
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(173) : select usuario from Perfil where usuario = :usuariojoss
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(179) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(183) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-Hibernate: select perfil0_.usuario as col_0_0_ from editarperfil perfil0_ where perfil0_.usuario=?
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(188) : <<<<<<<<< Result size 1
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(165) : >existeUsuario(nombreUsuario)
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(173) : select usuario from Perfil where usuario = :usuariojoss1
-[SCEC] 2017-04-03 14:34:49,602 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,618 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(179) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-03 14:34:49,618 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(183) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-Hibernate: select perfil0_.usuario as col_0_0_ from editarperfil perfil0_ where perfil0_.usuario=?
-[SCEC] 2017-04-03 14:34:49,618 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(188) : <<<<<<<<< Result size 0
-[SCEC] 2017-04-03 14:34:49,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
-[SCEC] 2017-04-03 14:34:49,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
-[SCEC] 2017-04-03 14:34:49,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-03 14:34:49,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-03 14:34:49,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
-[SCEC] 2017-04-03 14:34:49,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-03 14:34:49,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-03 14:34:49,618 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.hazPersistente(120) : >hazPersistente(perfil)
-[SCEC] 2017-04-03 14:34:49,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,633 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(68) : >existePerfil(nombrePerfil)
-[SCEC] 2017-04-03 14:34:49,633 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(81) : from Perfil ORDER BY usuariousuario
-[SCEC] 2017-04-03 14:34:49,633 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,633 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(87) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-03 14:34:49,633 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(90) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-Hibernate: insert into editarperfil (usuario, contra, nombre, apellido, telefono, email, cp, pais, ciudad, estado, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ order by perfil0_.usuario
-[SCEC] 2017-04-03 14:34:49,649 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(95) : <<<<<<<<< Result size 3
-[SCEC] 2017-04-03 14:34:49,649 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
-[SCEC] 2017-04-03 14:34:49,649 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
-[SCEC] 2017-04-03 14:34:49,696 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-03 14:34:49,696 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-03 14:34:49,696 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
-[SCEC] 2017-04-03 14:34:49,696 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-03 14:34:49,696 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,696 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-03 14:34:49,696 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(68) : >existePerfil(nombrePerfil)
-[SCEC] 2017-04-03 14:34:49,696 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(81) : from Perfil ORDER BY edadedad
-[SCEC] 2017-04-03 14:34:49,696 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,712 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(87) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-03 14:34:49,712 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(90) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ order by edad
-[SCEC] 2017-04-03 14:34:49,712  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1054, SQLState: 42S22
-[SCEC] 2017-04-03 14:34:49,712 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Unknown column 'edad' in 'order clause'
-[SCEC] 2017-04-03 14:34:49,712  WARN edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(105) : <HibernateException *******************
-[SCEC] 2017-04-03 14:34:49,712 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-03 14:34:49,712 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-03 14:34:49,712 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
-[SCEC] 2017-04-03 14:34:49,712 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.actualizaPerfil(262) : >hazPersistente(perfil)
-[SCEC] 2017-04-03 14:34:49,712 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,712 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
-Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario=?
-[SCEC] 2017-04-03 14:34:49,727 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,727 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(214) : > buscaPerfil(nombreUsuario)
-[SCEC] 2017-04-03 14:34:49,727 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(221) : from Perfil where usuario like 'joss%'joss
-[SCEC] 2017-04-03 14:34:49,727 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,743 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(227) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-03 14:34:49,743 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(232) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario like 'joss%'
-[SCEC] 2017-04-03 14:34:49,758 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(237) : <<<<<<<<< Result size 1
-[SCEC] 2017-04-03 14:34:49,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
-[SCEC] 2017-04-03 14:34:49,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
-[SCEC] 2017-04-03 14:34:49,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-03 14:34:49,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-03 14:34:49,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
-[SCEC] 2017-04-03 14:34:49,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-03 14:34:49,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-03 14:34:49,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-03 14:34:49,758 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.actualizaPerfil(262) : >hazPersistente(perfil)
-[SCEC] 2017-04-03 14:34:49,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario=?
-<<<<<<< HEAD
-[SCEC] 2017-04-03 14:34:49,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-03 14:34:49,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
-=======
-<<<<<<< HEAD
-[SCEC] 2017-04-02 21:05:09,243 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 21:05:09,246 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(214) : > buscaPerfil(nombreUsuario)
-[SCEC] 2017-04-02 21:05:09,246 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(221) : from Perfil where usuario like 'jul%'jul
-[SCEC] 2017-04-02 21:05:09,246 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 21:05:09,249 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(227) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-02 21:05:09,250 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(232) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-Hibernate: delete from editarperfil where id=?
-Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario like 'jul%'
-[SCEC] 2017-04-02 21:05:09,252 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(237) : <<<<<<<<< Result size 0
-[SCEC] 2017-04-02 21:05:09,252 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
-[SCEC] 2017-04-02 21:05:09,252 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
-[SCEC] 2017-04-02 21:05:09,269 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 21:05:09,270 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-=======
-[SCEC] 2017-04-02 23:16:52,593 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
-[SCEC] 2017-04-02 23:16:52,609 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
-[SCEC] 2017-04-02 23:16:52,609 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(276) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 23:16:52,609 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 23:16:52,609 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
-[SCEC] 2017-04-02 23:16:52,609 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 23:16:52,609 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
->>>>>>> 0705102ddd72b9af999ae3f3b5073ebc442cbf60
->>>>>>> 84e4b401d0acfb3afd506f251a3dc8343e3c423e
 ]]></system-out>
 
-      <system-err><![CDATA[Mon Apr 03 14:34:45 CDT 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="1" failures="2" hostname="Josseline" id="2" name="PerfilDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="8" time="7.812" timestamp="2017-04-03T19:49:12">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="os.name" value="Windows 8.1" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_111\jre\classes" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0" />
+
+          <property name="java.runtime.version" value="1.8.0_111-b14" />
+
+          <property name="src.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/src" />
+
+          <property name="user.name" value="Josseline" />
+
+          <property name="web.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/web" />
+
+          <property name="ant.file.type.USJ" value="file" />
+
+          <property name="manager.password" value="root" />
+
+          <property name="test.out.dir" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/testout" />
+
+          <property name="user.language" value="es" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\bin" />
+
+          <property name="ant.project.default-target" value="build" />
+
+          <property name="docs.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/docs" />
+
+          <property name="ant.project.name" value="USJ" />
+
+          <property name="java.version" value="1.8.0_111" />
+
+          <property name="lib.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/build/WEB-INF/lib" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="compile.optimize" value="true" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="amd64" />
+
+          <property name="sun.jnu.encoding" value="Cp1252" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="build.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/build" />
+
+          <property name="manager.username" value="root" />
+
+          <property name="user.country" value="MX" />
+
+          <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_111\jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto\build.xml" />
+
+          <property name="os.version" value="6.3" />
+
+          <property name="classes.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/build/WEB-INF/classes" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="manager.url" value="http://127.0.0.1:8080/manager/text" />
+
+          <property name="java.vm.version" value="25.111-b14" />
+
+          <property name="user.variant" value="" />
+
+          <property name="ant.library.dir" value="C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="sun.stdout.encoding" value="cp850" />
+
+          <property name="user.script" value="" />
+
+          <property name="user.home" value="C:\Users\Josseline" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="app.path" value="/JEJEv0.3" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_111\bin\;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\*;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\Xoreax\IncrediBuild;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\runtime\win64;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\bin;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\polyspace\bin;C:\Ruby22-x64\bin;C:\Ruby22\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\Bandizip\7z;C:\Apache Tomcat 8.0.27\bin;C:\Users\Josseline\AppData\Roaming\npm;." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher junitreportPerfil" />
+
+          <property name="java.class.path" value="C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-launcher.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-antlr.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-bcel.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-bsf.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-log4j.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-oro.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-regexp.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-resolver.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-apache-xalan2.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-commons-logging.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-commons-net.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-jai.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-javamail.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-jdepend.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-jmf.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-jsch.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-junit.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-junit4.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-launcher.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-netrexx.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-swing.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant-testutil.jar;C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant.jar;C:\Program Files\Java\jdk1.8.0_111\lib\tools.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.10.0 compiled on December 27 2016" />
+
+          <property name="app.name" value="JEJE" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="catalina.home" value="C:\Apache Tomcat 8.0.27" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="" />
+
+          <property name="compile.debug" value="true" />
+
+          <property name="java.io.tmpdir" value="C:\Users\JOSSEL~1\AppData\Local\Temp\" />
+
+          <property name="dist.home" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto/dist" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+
+          <property name="user.dir" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto" />
+
+          <property name="ant.file.USJ" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto\build.xml" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="app.version" value="0.3" />
+
+          <property name="compile.deprecation" value="false" />
+
+          <property name="basedir" value="C:\Users\Josseline\Documents\8voCuatri\Mantenimiento\2doCorte\JEJEManto" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="C:\apache-ant-1.10.0-bin (1)\apache-ant-1.10.0\lib\ant.jar" />
+
+          <property name="file.encoding" value="Cp1252" />
+
+          <property name="sun.stderr.encoding" value="cp850" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="ant.project.invoked-targets" value="junitreportPerfil" />
+
+      </properties>
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testCrearPerfilE" time="6.5" />
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testCrearPerfilF" time="0.109">
+          <error message="org.hibernate.exception.ConstraintViolationException: Duplicate entry &apos;joss&apos; for key &apos;usuario&apos;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.ConstraintViolationException: Duplicate entry &apos;joss&apos; for key &apos;usuario&apos;
+	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:259)
+	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testCrearPerfilF(PerfilDAOTest.java:47)
+Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate entry &apos;joss&apos; for key &apos;usuario&apos;
+	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:104)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
+	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
+	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
+	at com.sun.proxy.$Proxy5.executeUpdate(Unknown Source)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:56)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2849)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3290)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:80)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:273)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:265)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:186)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:323)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:52)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1081)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:315)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:175)
+	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:250)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;joss&apos; for key &apos;usuario&apos;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:935)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2677)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5098)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
+</error>
+
+      </testcase>
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testOrdenarPerfilesPor" time="0.657" />
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testUpdatePerfil" time="0.125" />
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testBuscarTodos" time="0.093" />
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testExistePerfilE" time="0.063" />
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testExistePerflF" time="0.015">
+          <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testExistePerflF(PerfilDAOTest.java:131)
+</failure>
+
+      </testcase>
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.PerfilDAOTest" name="testEliminarPerfil" time="0.125">
+          <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at edu.uag.iidis.scec.pruebas.PerfilDAOTest.testEliminarPerfil(PerfilDAOTest.java:152)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[[SCEC] 2017-04-03 14:49:12,480 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
+[SCEC] 2017-04-03 14:49:17,684 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:17,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:17,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:17,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:17,824 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.hazPersistente(120) : >hazPersistente(perfil)
+[SCEC] 2017-04-03 14:49:17,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select max(id) from editarperfil
+[SCEC] 2017-04-03 14:49:18,496 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:18,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+Hibernate: insert into editarperfil (usuario, contra, nombre, apellido, telefono, email, cp, pais, ciudad, estado, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[SCEC] 2017-04-03 14:49:18,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:18,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.hazPersistente(120) : >hazPersistente(perfil)
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:18,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+Hibernate: insert into editarperfil (usuario, contra, nombre, apellido, telefono, email, cp, pais, ciudad, estado, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[SCEC] 2017-04-03 14:49:18,762  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
+[SCEC] 2017-04-03 14:49:18,777 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate entry 'joss' for key 'usuario'
+[SCEC] 2017-04-03 14:49:18,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(255) : -Deshaciendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:18,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
+[SCEC] 2017-04-03 14:49:18,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(276) : -Intentando deshacer la transacción para este thread.
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:18,809 ERROR edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(258) : <HibernateException
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:18,809 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.hazPersistente(120) : >hazPersistente(perfil)
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:18,824 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(68) : >existePerfil(nombrePerfil)
+[SCEC] 2017-04-03 14:49:18,840 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(81) : from Perfil ORDER BY usuariousuario
+[SCEC] 2017-04-03 14:49:18,840 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,340 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(87) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 14:49:19,340 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(90) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: insert into editarperfil (usuario, contra, nombre, apellido, telefono, email, cp, pais, ciudad, estado, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ order by perfil0_.usuario
+[SCEC] 2017-04-03 14:49:19,418 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.ordenarPerfilesPor(95) : <<<<<<<<< Result size 4
+[SCEC] 2017-04-03 14:49:19,418 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:19,418 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:19,481 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:19,481 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:19,481 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:19,496 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:19,496 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,496 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:19,496 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.actualizaPerfil(262) : >hazPersistente(perfil)
+[SCEC] 2017-04-03 14:49:19,496 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario=?
+[SCEC] 2017-04-03 14:49:19,543 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,543 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(214) : > buscaPerfil(nombreUsuario)
+[SCEC] 2017-04-03 14:49:19,543 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(221) : from Perfil where usuario like 'joss%'joss
+[SCEC] 2017-04-03 14:49:19,543 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,559 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(227) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 14:49:19,559 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(232) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: update editarperfil set usuario=?, contra=?, nombre=?, apellido=?, telefono=?, email=?, cp=?, pais=?, ciudad=?, estado=? where id=?
+Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario like 'joss%'
+[SCEC] 2017-04-03 14:49:19,574 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(237) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-03 14:49:19,574 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:19,574 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscarTodos(38) : >buscarTodos()
+[SCEC] 2017-04-03 14:49:19,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select this_.id as id10_0_, this_.usuario as usuario10_0_, this_.contra as contra10_0_, this_.nombre as nombre10_0_, this_.apellido as apellido10_0_, this_.telefono as telefono10_0_, this_.email as email10_0_, this_.cp as cp10_0_, this_.pais as pais10_0_, this_.ciudad as ciudad10_0_, this_.estado as estado10_0_ from editarperfil this_
+[SCEC] 2017-04-03 14:49:19,684 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscarTodos(46) : >buscarTodos() ---- list [edu.uag.iidis.scec.modelo.Perfil@611f8234[
+  id=2
+  usuario=jul
+  contra=123
+  nombre=juliane
+  apellido=arreola
+  telefono=9865188291
+  email=jul@gmail.com
+  cp=29000
+  pais=México
+  ciudad=Tuxtla Gutiérrez
+  estado=Chiapas
+], edu.uag.iidis.scec.modelo.Perfil@7bb3a9fe[
+  id=11
+  usuario=juliane
+  contra=123
+  nombre=juliane
+  apellido=arreola
+  telefono=9865188291
+  email=jul@gmail.com
+  cp=29000
+  pais=México
+  ciudad=Tuxtla Gutiérrez
+  estado=Chiapas
+], edu.uag.iidis.scec.modelo.Perfil@7cbee484[
+  id=12
+  usuario=joss
+  contra=hola1234
+  nombre=Josseline
+  apellido=Arreola
+  telefono=9613040524
+  email=joss21@gmail.com
+  cp=29000
+  pais=MÃ©xico
+  ciudad=Tuxtla Gutierrez
+  estado=Chiapas
+], edu.uag.iidis.scec.modelo.Perfil@7f811d00[
+  id=14
+  usuario=armando
+  contra=123
+  nombre=armando
+  apellido=Arreola
+  telefono=9615048594
+  email=ar2@gmail.com
+  cp=29004
+  pais=MÃ©xico
+  ciudad=Tuxtla Gutierrez
+  estado=Chiapas
+]]
+[SCEC] 2017-04-03 14:49:19,684 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:19,684 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:19,699 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(165) : >existeUsuario(nombreUsuario)
+[SCEC] 2017-04-03 14:49:19,715 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(173) : select usuario from Perfil where usuario = :usuariojoss
+[SCEC] 2017-04-03 14:49:19,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,746 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(179) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 14:49:19,746 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(183) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select perfil0_.usuario as col_0_0_ from editarperfil perfil0_ where perfil0_.usuario=?
+[SCEC] 2017-04-03 14:49:19,746 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(188) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-03 14:49:19,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:19,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(165) : >existeUsuario(nombreUsuario)
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(173) : select usuario from Perfil where usuario = :usuariojoss1
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(179) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(183) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select perfil0_.usuario as col_0_0_ from editarperfil perfil0_ where perfil0_.usuario=?
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.existePerfil(188) : <<<<<<<<< Result size 0
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:19,762 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.eliminarPerfil(296) : >hazTransitorio(Perfil)
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario=?
+[SCEC] 2017-04-03 14:49:19,777 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,793 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(214) : > buscaPerfil(nombreUsuario)
+[SCEC] 2017-04-03 14:49:19,793 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(221) : from Perfil where usuario like 'jul%'jul
+[SCEC] 2017-04-03 14:49:19,793 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 14:49:19,809 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(227) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 14:49:19,809 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(232) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: delete from editarperfil where id=?
+Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_.contra as contra10_, perfil0_.nombre as nombre10_, perfil0_.apellido as apellido10_, perfil0_.telefono as telefono10_, perfil0_.email as email10_, perfil0_.cp as cp10_, perfil0_.pais as pais10_, perfil0_.ciudad as ciudad10_, perfil0_.estado as estado10_ from editarperfil perfil0_ where perfil0_.usuario like 'jul%'
+[SCEC] 2017-04-03 14:49:19,824 DEBUG edu.uag.iidis.scec.persistencia.PerfilDAO.buscaPerfil(237) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-03 14:49:19,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 14:49:19,824 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 14:49:19,902 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 14:49:19,902 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+]]></system-out>
+
+      <system-err><![CDATA[Mon Apr 03 14:49:15 CDT 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="1" failures="0" hostname="UPChiapas-PC" id="2" name="RolDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="1" time="1.7" timestamp="2017-03-30T14:57:21">
+  <testsuite errors="1" failures="0" hostname="UPChiapas-PC" id="3" name="RolDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="1" time="1.7" timestamp="2017-03-30T14:57:21">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1670,618 +1569,6 @@ Hibernate: select max(idRol) from Roles
 [SCEC] 2017-03-30 08:57:22,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
 [SCEC] 2017-03-30 08:57:22,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
 [SCEC] 2017-03-30 08:57:22,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-]]></system-out>
-
-      <system-err><![CDATA[]]></system-err>
-
-  </testsuite>
-<<<<<<< HEAD
-  <testsuite errors="0" failures="0" hostname="ERIDE" id="3" name="VehiculoDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="1" time="4.93" timestamp="2017-04-02T21:19:22">
-=======
-  <testsuite errors="7" failures="0" hostname="UPChiapas-PC" id="3" name="VehiculoDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="9" time="2.049" timestamp="2017-04-02T23:50:48">
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-      <properties>
-          <property name="java.vendor" value="Oracle Corporation" />
-
-          <property name="sun.java.launcher" value="SUN_STANDARD" />
-
-          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
-
-          <property name="os.name" value="Windows 8.1" />
-
-          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_92\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_92\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_92\jre\classes" />
-
-          <property name="sun.desktop" value="windows" />
-
-          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
-
-          <property name="ant.home" value="C:\apache-ant-1.10.0" />
-
-          <property name="java.runtime.version" value="1.8.0_92-b14" />
-
-          <property name="src.home" value="C:\Users\ERIDE21\Desktop\JEJEManto/src" />
-
-          <property name="user.name" value="ERIDE21" />
-
-          <property name="web.home" value="C:\Users\ERIDE21\Desktop\JEJEManto/web" />
-
-          <property name="ant.file.type.USJ" value="file" />
-
-          <property name="manager.password" value="root" />
-
-          <property name="test.out.dir" value="C:\Users\ERIDE21\Desktop\JEJEManto/testout" />
-
-          <property name="user.language" value="es" />
-
-          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_92\jre\bin" />
-
-          <property name="ant.project.default-target" value="build" />
-
-          <property name="docs.home" value="C:\Users\ERIDE21\Desktop\JEJEManto/docs" />
-
-          <property name="ant.project.name" value="USJ" />
-
-          <property name="java.version" value="1.8.0_92" />
-
-          <property name="lib.home" value="C:\Users\ERIDE21\Desktop\JEJEManto/build/WEB-INF/lib" />
-
-          <property name="user.timezone" value="" />
-
-          <property name="sun.arch.data.model" value="64" />
-
-          <property name="compile.optimize" value="true" />
-
-          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_92\jre\lib\endorsed" />
-
-          <property name="sun.cpu.isalist" value="amd64" />
-
-          <property name="sun.jnu.encoding" value="Cp1252" />
-
-          <property name="file.encoding.pkg" value="sun.io" />
-
-          <property name="file.separator" value="\" />
-
-          <property name="java.specification.name" value="Java Platform API Specification" />
-
-          <property name="java.class.version" value="52.0" />
-
-          <property name="build.home" value="C:\Users\ERIDE21\Desktop\JEJEManto/build" />
-
-          <property name="manager.username" value="root" />
-
-          <property name="user.country" value="MX" />
-
-          <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_92\jre" />
-
-          <property name="java.vm.info" value="mixed mode" />
-
-          <property name="ant.file" value="C:\Users\ERIDE21\Desktop\JEJEManto\build.xml" />
-
-          <property name="os.version" value="6.3" />
-
-          <property name="classes.home" value="C:\Users\ERIDE21\Desktop\JEJEManto/build/WEB-INF/classes" />
-
-          <property name="path.separator" value=";" />
-
-          <property name="manager.url" value="http://127.0.0.1:8080/manager/text" />
-
-          <property name="java.vm.version" value="25.92-b14" />
-
-          <property name="user.variant" value="" />
-
-          <property name="ant.library.dir" value="C:\apache-ant-1.10.0\lib" />
-
-          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
-
-          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
-
-          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
-
-          <property name="sun.stdout.encoding" value="cp850" />
-
-          <property name="user.script" value="" />
-
-          <property name="user.home" value="C:\Users\ERIDE21" />
-
-          <property name="java.specification.vendor" value="Oracle Corporation" />
-
-          <property name="app.path" value="/JEJEv0.3" />
-
-          <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_92\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl\Win64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java;C:\apache-ant-1.10.0\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_92\bin;C:\Program Files\Java\jre1.8.0_92;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\runtime\win64;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\bin;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\polyspace\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\ERIDE21\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Apache Tomcat 8.0.27\bin;." />
-
-          <property name="java.vendor.url" value="http://java.oracle.com/" />
-
-          <property name="java.vm.vendor" value="Oracle Corporation" />
-
-          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-
-<<<<<<< HEAD
-          <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp C:\Program Files\Java\jdk1.8.0_92\bin; junitreport" />
-=======
-          <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp C:\Program Files\Java\jdk1.8.0_121\src.zip; junitreportVehiculo" />
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
-
-          <property name="java.class.path" value="C:\apache-ant-1.10.0\lib\ant-launcher.jar;C:\Program Files\Java\jdk1.8.0_92\bin\;C:\apache-ant-1.10.0\lib\ant-antlr.jar;C:\apache-ant-1.10.0\lib\ant-apache-bcel.jar;C:\apache-ant-1.10.0\lib\ant-apache-bsf.jar;C:\apache-ant-1.10.0\lib\ant-apache-log4j.jar;C:\apache-ant-1.10.0\lib\ant-apache-oro.jar;C:\apache-ant-1.10.0\lib\ant-apache-regexp.jar;C:\apache-ant-1.10.0\lib\ant-apache-resolver.jar;C:\apache-ant-1.10.0\lib\ant-apache-xalan2.jar;C:\apache-ant-1.10.0\lib\ant-commons-logging.jar;C:\apache-ant-1.10.0\lib\ant-commons-net.jar;C:\apache-ant-1.10.0\lib\ant-jai.jar;C:\apache-ant-1.10.0\lib\ant-javamail.jar;C:\apache-ant-1.10.0\lib\ant-jdepend.jar;C:\apache-ant-1.10.0\lib\ant-jmf.jar;C:\apache-ant-1.10.0\lib\ant-jsch.jar;C:\apache-ant-1.10.0\lib\ant-junit.jar;C:\apache-ant-1.10.0\lib\ant-junit4.jar;C:\apache-ant-1.10.0\lib\ant-launcher.jar;C:\apache-ant-1.10.0\lib\ant-netrexx.jar;C:\apache-ant-1.10.0\lib\ant-swing.jar;C:\apache-ant-1.10.0\lib\ant-testutil.jar;C:\apache-ant-1.10.0\lib\ant.jar;C:\Program Files\Java\jdk1.8.0_92\lib\tools.jar" />
-
-          <property name="ant.version" value="Apache Ant(TM) version 1.10.0 compiled on December 27 2016" />
-
-          <property name="app.name" value="JEJE" />
-
-          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
-
-          <property name="ant.file.type" value="file" />
-
-          <property name="java.vm.specification.version" value="1.8" />
-
-          <property name="catalina.home" value="C:\Apache Tomcat 8.0.27" />
-
-          <property name="sun.cpu.endian" value="little" />
-
-          <property name="sun.os.patch.level" value="" />
-
-          <property name="compile.debug" value="true" />
-
-          <property name="java.io.tmpdir" value="C:\Users\ERIDE21\AppData\Local\Temp\" />
-
-          <property name="dist.home" value="C:\Users\ERIDE21\Desktop\JEJEManto/dist" />
-
-          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
-
-          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
-
-          <property name="os.arch" value="amd64" />
-
-          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_92\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
-
-          <property name="user.dir" value="C:\Users\ERIDE21\Desktop\JEJEManto" />
-
-          <property name="ant.file.USJ" value="C:\Users\ERIDE21\Desktop\JEJEManto\build.xml" />
-
-          <property name="line.separator" value="&#xd;&#xa;" />
-
-          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
-
-          <property name="app.version" value="0.3" />
-
-          <property name="compile.deprecation" value="false" />
-
-          <property name="basedir" value="C:\Users\ERIDE21\Desktop\JEJEManto" />
-
-          <property name="ant.java.version" value="1.8" />
-
-          <property name="ant.core.lib" value="C:\apache-ant-1.10.0\lib\ant.jar" />
-
-          <property name="file.encoding" value="Cp1252" />
-
-          <property name="sun.stderr.encoding" value="cp850" />
-
-          <property name="java.specification.version" value="1.8" />
-
-          <property name="ant.project.invoked-targets" value="junitreportVehiculo" />
-
-      </properties>
-
-<<<<<<< HEAD
-      <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testCrearVehiculo" time="4.838" />
-
-      <system-out><![CDATA[[SCEC] 2017-04-02 16:19:23,084 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
-[SCEC] 2017-04-02 16:19:26,787 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 16:19:26,791 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 16:19:26,791 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 16:19:26,791 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 16:19:26,911 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 16:19:26,911 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-Hibernate: select max(idVehiculo) from vehiculos
-[SCEC] 2017-04-02 16:19:27,456 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
-[SCEC] 2017-04-02 16:19:27,460 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
-Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
-[SCEC] 2017-04-02 16:19:27,654 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 16:19:27,654 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-=======
-      <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testCrearVehiculoE" time="1.744">
-          <error message="org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:275)
-	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.testCrearVehiculoE(VehiculoDAOTest.java:26)
-Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:104)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy5.executeUpdate(Unknown Source)
-	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:56)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2849)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3290)
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:80)
-	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:273)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:265)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:186)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:323)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:52)
-	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1081)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:315)
-	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
-	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:175)
-	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:266)
-Caused by: java.sql.SQLException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1741)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1588)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testCrearVehiculoF" time="0.008">
-          <error message="org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:275)
-	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.testCrearVehiculoF(VehiculoDAOTest.java:47)
-Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:104)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy5.executeUpdate(Unknown Source)
-	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:56)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2849)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3290)
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:80)
-	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:273)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:265)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:186)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:323)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:52)
-	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1081)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:315)
-	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
-	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:175)
-	at edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(HibernateUtil.java:266)
-Caused by: java.sql.SQLException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;AHI98G&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1741)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1588)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="test4ActualizarVehiculoF" time="0.124">
-          <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistenteP(VehiculoDAO.java:131)
-	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.test4ActualizarVehiculoF(VehiculoDAOTest.java:86)
-</error>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testActualizarVehiculo" time="0.018" />
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testEliminarVehiculo" time="0.005">
-          <error message="attempt to create delete event with null entity" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: attempt to create delete event with null entity
-	at org.hibernate.event.spi.DeleteEvent.&lt;init&gt;(DeleteEvent.java:45)
-	at org.hibernate.internal.SessionImpl.delete(SessionImpl.java:801)
-	at edu.uag.iidis.scec.persistencia.VehiculoDAO.hazTransitorio(VehiculoDAO.java:163)
-	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.testEliminarVehiculo(VehiculoDAOTest.java:169)
-</error>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testBuscarTodos" time="0.068" />
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="ordenarVehiculosPor" time="0.01">
-          <error message="org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;OIUP2U3&apos; for key &apos;placa_UNIQUE&apos;&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;OIUP2U3&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(VehiculoDAO.java:364)
-	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.ordenarVehiculosPor(VehiculoDAOTest.java:190)
-Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;OIUP2U3&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:104)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy5.executeUpdate(Unknown Source)
-	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:56)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2849)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3290)
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:80)
-	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:273)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:265)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:186)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:323)
-	at org.hibernate.event.internal.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:59)
-	at org.hibernate.internal.SessionImpl.autoFlushIfRequired(SessionImpl.java:1053)
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1108)
-	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101)
-	at edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(VehiculoDAO.java:349)
-Caused by: java.sql.SQLException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;OIUP2U3&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1741)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1588)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testExisteVehiculoE" time="0.015">
-          <error message="org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(VehiculoDAO.java:220)
-	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.testExisteVehiculoE(VehiculoDAOTest.java:129)
-Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:104)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy5.executeUpdate(Unknown Source)
-	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:56)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2849)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3290)
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:80)
-	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:273)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:265)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:186)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:323)
-	at org.hibernate.event.internal.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:59)
-	at org.hibernate.internal.SessionImpl.autoFlushIfRequired(SessionImpl.java:1053)
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1108)
-	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101)
-	at edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(VehiculoDAO.java:205)
-Caused by: java.sql.SQLException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1741)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1588)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" name="testExisteVehiculoF" time="0.014">
-          <error message="org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(VehiculoDAO.java:220)
-	at edu.uag.iidis.scec.pruebas.VehiculoDAOTest.testExisteVehiculoF(VehiculoDAOTest.java:150)
-Caused by: org.hibernate.exception.ConstraintViolationException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:104)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy5.executeUpdate(Unknown Source)
-	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:56)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2849)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3290)
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:80)
-	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:273)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:265)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:186)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:323)
-	at org.hibernate.event.internal.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:59)
-	at org.hibernate.internal.SessionImpl.autoFlushIfRequired(SessionImpl.java:1053)
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1108)
-	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101)
-	at edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(VehiculoDAO.java:205)
-Caused by: java.sql.SQLException: Duplicate key or integrity constraint violation,  message from server: &quot;Duplicate entry &apos;QWER82&apos; for key &apos;placa_UNIQUE&apos;&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1741)
-	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1588)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <system-out><![CDATA[[SCEC] 2017-04-02 18:50:49,079 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
-[SCEC] 2017-04-02 18:50:50,511 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,511 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,511 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,511 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,545 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,546 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-Hibernate: select max(idVehiculo) from vehiculos
-[SCEC] 2017-04-02 18:50:50,683 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
-[SCEC] 2017-04-02 18:50:50,683 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
-Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
-[SCEC] 2017-04-02 18:50:50,714  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
-[SCEC] 2017-04-02 18:50:50,715 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'AHI98G' for key 'placa_UNIQUE'"
-[SCEC] 2017-04-02 18:50:50,716 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(271) : -Deshaciendo la transacción de este thread.
-[SCEC] 2017-04-02 18:50:50,716 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,716 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,719 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,720 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,721 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,722 ERROR edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(274) : <HibernateException
-[SCEC] 2017-04-02 18:50:50,723 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,723 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,723 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,723 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,732 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,732 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,732 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
-[SCEC] 2017-04-02 18:50:50,732 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
-Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
-[SCEC] 2017-04-02 18:50:50,734  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
-[SCEC] 2017-04-02 18:50:50,734 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'AHI98G' for key 'placa_UNIQUE'"
-[SCEC] 2017-04-02 18:50:50,734 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(271) : -Deshaciendo la transacción de este thread.
-[SCEC] 2017-04-02 18:50:50,734 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,734 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,736 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,736 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,736 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,736 ERROR edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(274) : <HibernateException
-[SCEC] 2017-04-02 18:50:50,737 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,737 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,737 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,737 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,739 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,739 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,739 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,740 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,740 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistenteP(124) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,740 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa=?
-[SCEC] 2017-04-02 18:50:50,860 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,862 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,863 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,863 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,864 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,864 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,864 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistenteP(124) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,864 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa=?
-[SCEC] 2017-04-02 18:50:50,872 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,872 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(281) : >buscarVehiculos(placa)
-[SCEC] 2017-04-02 18:50:50,872 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(289) : from Vehiculo where placa like 'HOI89H%'HOI89H
-[SCEC] 2017-04-02 18:50:50,873 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa like 'HOI89H%'
-[SCEC] 2017-04-02 18:50:50,879 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(295) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-02 18:50:50,880 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(298) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-[SCEC] 2017-04-02 18:50:50,880 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
-[SCEC] 2017-04-02 18:50:50,880 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
-[SCEC] 2017-04-02 18:50:50,881 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,881 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,881 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,882 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,882 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,882 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,882 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazTransitorio(156) : >hazTransitorio(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,882 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa=?
-[SCEC] 2017-04-02 18:50:50,883 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,884 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,884 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,885 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,885 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,885 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,885 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,886 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,886 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,886 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,887 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,887 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(73) : >buscarTodos()
-[SCEC] 2017-04-02 18:50:50,887 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-Hibernate: select this_.idVehiculo as idVehiculo8_0_, this_.tipo as tipo8_0_, this_.modelo as modelo8_0_, this_.marca as marca8_0_, this_.placa as placa8_0_, this_.color as color8_0_, this_.curp as curp8_0_ from vehiculos this_
-[SCEC] 2017-04-02 18:50:50,946 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(81) : >buscarTodos() ---- list   4
-[SCEC] 2017-04-02 18:50:50,952 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(82) : >buscarTodos() ---- contenido   [edu.uag.iidis.scec.modelo.Vehiculo@5ac86ba5[
-  id=6
-  tipo=automovil
-  modelo=2015
-  marca=FORD
-  placa=HOI89H
-  color=Azul
-  curp=SHJO960414HTCLRV08
-], edu.uag.iidis.scec.modelo.Vehiculo@2c9399a4[
-  id=8
-  tipo=automovil
-  modelo=2002
-  marca=FORD
-  placa=AHI98G
-  color=ROJO
-  curp=FOHJ960414HMCLRV09
-], edu.uag.iidis.scec.modelo.Vehiculo@9635fa[
-  id=10
-  tipo=automovil
-  modelo=1999
-  marca=Peugeut
-  placa=OIUP2U3
-  color=Blanco
-  curp=Aaaa00000
-], edu.uag.iidis.scec.modelo.Vehiculo@53ab0286[
-  id=11
-  tipo=automovil
-  modelo=1999
-  marca=FORD
-  placa=QWER82
-  color=Rojo
-  curp=ABHY991214JOYHRV09
-]]
-[SCEC] 2017-04-02 18:50:50,953 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
-[SCEC] 2017-04-02 18:50:50,953 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
-[SCEC] 2017-04-02 18:50:50,953 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,954 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,954 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,954 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,954 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,954 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,955 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,955 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,955 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(325) : >existeRol(nombreRol)
-[SCEC] 2017-04-02 18:50:50,955 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(338) : from Vehiculo ORDER BY curpcurp
-[SCEC] 2017-04-02 18:50:50,955 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,958 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(344) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-02 18:50:50,959 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(347) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
-[SCEC] 2017-04-02 18:50:50,960  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
-[SCEC] 2017-04-02 18:50:50,960 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'OIUP2U3' for key 'placa_UNIQUE'"
-[SCEC] 2017-04-02 18:50:50,960  WARN edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(362) : <HibernateException *******************
-[SCEC] 2017-04-02 18:50:50,961 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,961 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,962 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,962 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,962 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,963 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,965 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,965 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,965 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,965 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,965 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,966 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,966 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(182) : >existeRol(nombreRol)
-[SCEC] 2017-04-02 18:50:50,966 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(192) : select placa from Vehiculo where placa = :nombreQWER82
-[SCEC] 2017-04-02 18:50:50,966 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,970 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(198) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-02 18:50:50,970 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(203) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
-[SCEC] 2017-04-02 18:50:50,973  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
-[SCEC] 2017-04-02 18:50:50,974 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'QWER82' for key 'placa_UNIQUE'"
-[SCEC] 2017-04-02 18:50:50,974  WARN edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(218) : <HibernateException *******************
-[SCEC] 2017-04-02 18:50:50,974 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,975 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,976 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,976 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,976 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,977 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,979 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 18:50:50,980 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 18:50:50,980 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,980 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 18:50:50,981 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
-[SCEC] 2017-04-02 18:50:50,981 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,981 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(182) : >existeRol(nombreRol)
-[SCEC] 2017-04-02 18:50:50,981 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(192) : select placa from Vehiculo where placa = :nombreQWER82
-[SCEC] 2017-04-02 18:50:50,982 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 18:50:50,982 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(198) : <<<<<<<<< create query ok 
-[SCEC] 2017-04-02 18:50:50,982 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(203) : <<<<<<<<< set Parameter ok antes del query list >>>>>
-Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
-[SCEC] 2017-04-02 18:50:50,987  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
-[SCEC] 2017-04-02 18:50:50,988 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'QWER82' for key 'placa_UNIQUE'"
-[SCEC] 2017-04-02 18:50:50,988  WARN edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(218) : <HibernateException *******************
-[SCEC] 2017-04-02 18:50:50,988 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-04-02 18:50:50,989 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-04-02 18:50:50,990 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-04-02 18:50:50,991 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 18:50:50,991 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-04-02 18:50:50,991 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
->>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
 ]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
