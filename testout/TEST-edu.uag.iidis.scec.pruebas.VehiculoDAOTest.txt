@@ -1,4 +1,24 @@
 Testsuite: edu.uag.iidis.scec.pruebas.VehiculoDAOTest
+<<<<<<< HEAD
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.93 sec
+------------- Standard Output ---------------
+[SCEC] 2017-04-02 16:19:23,084 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
+[SCEC] 2017-04-02 16:19:26,787 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
+[SCEC] 2017-04-02 16:19:26,791 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-02 16:19:26,791 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
+[SCEC] 2017-04-02 16:19:26,791 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-02 16:19:26,911 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : >hazPersistente(Vehiculo)
+[SCEC] 2017-04-02 16:19:26,911 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
+Hibernate: select max(idVehiculo) from vehiculos
+[SCEC] 2017-04-02 16:19:27,456 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
+[SCEC] 2017-04-02 16:19:27,460 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
+Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
+[SCEC] 2017-04-02 16:19:27,654 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
+[SCEC] 2017-04-02 16:19:27,654 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
+------------- ---------------- ---------------
+
+Testcase: testCrearVehiculo took 4.83 sec
+=======
 Tests run: 9, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 2,049 sec
 ------------- Standard Output ---------------
 [SCEC] 2017-04-02 18:50:49,079 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
@@ -397,3 +417,4 @@ Caused by: java.sql.SQLException: Duplicate key or integrity constraint violatio
 	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1588)
 	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
 
+>>>>>>> 43e17c3d83292f04fe3b4937ee7f12a705823dfe
