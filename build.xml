@@ -660,5 +660,46 @@ location="${catalina.home}/lib/tomcat-util.jar" />
                   haltonfailure="no"/>
         </junit>
   </target>
+   <target name="junitreportPerfil" 
+           depends="testPerfil" 
+           description="Ejecuta pruebas y crea reporte">
+
+        <junitreport todir="${test.out.dir}">
+            <fileset dir="${test.out.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" 
+                    todir="${test.out.dir}"/>
+        </junitreport>
+
+    </target>
+
+    <target name="testPerfil" 
+          description="Ejecuta pruebas PerfilDAO">
+
+       <!-- <java classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" fork="true">
+            <classpath>
+                <fileset dir="${lib.home}">
+                    <include name="**/*.jar"/>
+                </fileset>
+                <pathelement path="${classes.home}"/>
+            </classpath>
+       </java>-->
+        <mkdir dir="${test.out.dir}"/>
+ 
+       <junit printsummary="yes" fork="no" haltonfailure="yes">
+            <classpath>
+                <fileset dir="${lib.home}">
+                    <include name="**/*.jar"/>
+                </fileset>
+                <pathelement path="${classes.home}"/>
+            </classpath>
+            <formatter type="plain"/>
+            <formatter type="xml"/>
+            <test name="edu.uag.iidis.scec.pruebas.PerfilDAOTest" 
+                  todir="${test.out.dir}" 
+                  haltonfailure="no"/>
+        </junit>
+  </target>
 
 </project>
