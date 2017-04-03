@@ -101,7 +101,7 @@ public class EventoDAOTest{
     public void testEliminarEvento() throws Exception {
         EventoDAO dao = new EventoDAO();
         try {
-            Evento ev =(Evento) HibernateUtil.getSession().createQuery("from Evento where nombre = Evento 3")
+            Evento ev =(Evento) HibernateUtil.getSession().createQuery("from Evento where nombre = Evento 3");
 
             HibernateUtil.getSession().delete(ev); 
         } catch (Exception e) {
@@ -113,13 +113,12 @@ public class EventoDAOTest{
            
     }
 
-
     @Test
     public void testEliminarEventoF() throws Exception {
         EventoDAO dao = new EventoDAO();
         Evento evento = new Evento("Evento 5","2017-04-22");
         try {
-           Evento ev =(Evento) HibernateUtil.getSession().createQuery("from Evento where nombre = Evento 10")
+           Evento ev =(Evento) HibernateUtil.getSession().createQuery("from Evento where nombre = Evento 10");
 
             HibernateUtil.getSession().delete(ev); 
         } catch (Exception e) {
@@ -129,6 +128,89 @@ public class EventoDAOTest{
             HibernateUtil.closeSession();
         }
            
+    }
+
+    @Test
+    public void testBuscarTodos() throws Exception {
+        
+        EventoDAO dao = new EventoDAO();
+        
+        HibernateUtil.beginTransaction();
+        try {
+            Collection resultado = dao.buscarTodos();
+            HibernateUtil.commitTransaction();
+
+            assertTrue(resultado != null);
+            assertTrue(!resultado.isEmpty());
+        } catch (Exception e) {
+            HibernateUtil.rollbackTransaction();
+            throw e;
+        } finally{
+            HibernateUtil.closeSession();
+        }
+    }
+    @Test
+    public void testExisteEvento() throws Exception {
+        
+        EventoDAO dao = new EventoDAO();
+        Evento evento = new Evento("Evento 6","2017-04-25");
+
+        HibernateUtil.beginTransaction();
+        try {
+            dao.hazPersistente(evento);
+            Boolean existe =  dao.existeEvento("Evento 6");
+            HibernateUtil.commitTransaction();
+            
+            assertTrue(existe);
+            
+        } catch (Exception e) {
+            HibernateUtil.rollbackTransaction();
+            throw e;
+        } finally{
+            HibernateUtil.closeSession();
+        }
+    }
+    @Test
+    public void testExisteEventoF() throws Exception {
+        
+        EventoDAO dao = new EventoDAO();
+        Evento evento = new Evento("Evento 10","2017-04-25");
+
+        HibernateUtil.beginTransaction();
+        try {
+            dao.hazPersistente(evento);
+            Boolean existe =  dao.existeEvento("Evento 10");
+            HibernateUtil.commitTransaction();
+            
+            assertTrue(existe);
+            
+        } catch (Exception e) {
+            HibernateUtil.rollbackTransaction();
+            throw e;
+        } finally{
+            HibernateUtil.closeSession();
+        }
+    }
+
+    @Test
+    public void ordenarEventosPor() throws Exception {
+        
+        EventoDAO dao = new EventoDAO();
+        Evento evento = new Evento("Evento 7","2017-07-10");
+        HibernateUtil.beginTransaction();
+        try {
+             dao.hazPersistente(evento);
+            Collection resultado = dao.ordenarEventosPor("nombre");
+            HibernateUtil.commitTransaction();
+            Evento aux = (Evento)resultado.iterator().next();
+            assertTrue(aux.getNombre().equals("Evento 7"));
+           
+        } catch (Exception e) {
+            HibernateUtil.rollbackTransaction();
+            throw e;
+        } finally{
+            HibernateUtil.closeSession();
+        }
     }
 
 }
