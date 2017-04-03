@@ -1,672 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="8" failures="0" hostname="UPChiapas-PC" id="0" name="AllTests" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="9" time="1.763" timestamp="2017-03-30T14:50:54">
-      <properties>
-          <property name="java.vendor" value="Oracle Corporation" />
-
-          <property name="sun.java.launcher" value="SUN_STANDARD" />
-
-          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
-
-          <property name="os.name" value="Windows 7" />
-
-          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes" />
-
-          <property name="sun.desktop" value="windows" />
-
-          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
-
-          <property name="ant.home" value="C:\apache-ant-1.9.9" />
-
-          <property name="java.runtime.version" value="1.8.0_121-b13" />
-
-          <property name="src.home" value="D:\UPChiapas\Documentos\JEJEManto/src" />
-
-          <property name="user.name" value="UPChiapas" />
-
-          <property name="web.home" value="D:\UPChiapas\Documentos\JEJEManto/web" />
-
-          <property name="ant.file.type.USJ" value="file" />
-
-          <property name="manager.password" value="root" />
-
-          <property name="test.out.dir" value="D:\UPChiapas\Documentos\JEJEManto/testout" />
-
-          <property name="user.language" value="es" />
-
-          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin" />
-
-          <property name="ant.project.default-target" value="build" />
-
-          <property name="docs.home" value="D:\UPChiapas\Documentos\JEJEManto/docs" />
-
-          <property name="ant.project.name" value="USJ" />
-
-          <property name="java.version" value="1.8.0_121" />
-
-          <property name="lib.home" value="D:\UPChiapas\Documentos\JEJEManto/build/WEB-INF/lib" />
-
-          <property name="user.timezone" value="" />
-
-          <property name="sun.arch.data.model" value="64" />
-
-          <property name="compile.optimize" value="true" />
-
-          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed" />
-
-          <property name="sun.cpu.isalist" value="amd64" />
-
-          <property name="sun.jnu.encoding" value="Cp1252" />
-
-          <property name="file.encoding.pkg" value="sun.io" />
-
-          <property name="file.separator" value="\" />
-
-          <property name="java.specification.name" value="Java Platform API Specification" />
-
-          <property name="java.class.version" value="52.0" />
-
-          <property name="build.home" value="D:\UPChiapas\Documentos\JEJEManto/build" />
-
-          <property name="manager.username" value="root" />
-
-          <property name="user.country" value="ES" />
-
-          <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre" />
-
-          <property name="java.vm.info" value="mixed mode" />
-
-          <property name="ant.file" value="D:\UPChiapas\Documentos\JEJEManto\build.xml" />
-
-          <property name="os.version" value="6.1" />
-
-          <property name="classes.home" value="D:\UPChiapas\Documentos\JEJEManto/build/WEB-INF/classes" />
-
-          <property name="path.separator" value=";" />
-
-          <property name="manager.url" value="http://127.0.0.1:8080/manager/text" />
-
-          <property name="java.vm.version" value="25.121-b13" />
-
-          <property name="user.variant" value="" />
-
-          <property name="ant.library.dir" value="C:\apache-ant-1.9.9\lib" />
-
-          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
-
-          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
-
-          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
-
-          <property name="sun.stdout.encoding" value="cp850" />
-
-          <property name="user.script" value="" />
-
-          <property name="user.home" value="C:\Users\UPChiapas" />
-
-          <property name="java.specification.vendor" value="Oracle Corporation" />
-
-          <property name="app.path" value="/JEJEv0.3" />
-
-          <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\*;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\apache-ant-1.9.9\bin;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\runtime\win64;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\bin;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\polyspace\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Apache Tomcat 8.0.27\bin;C:\Users\UPChiapas\AppData\Roaming\npm;." />
-
-          <property name="java.vendor.url" value="http://java.oracle.com/" />
-
-          <property name="java.vm.vendor" value="Oracle Corporation" />
-
-          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-
-          <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp C:\Program Files\Java\jdk1.8.0_121\src.zip; junit" />
-
-          <property name="java.class.path" value="C:\apache-ant-1.9.9\lib\ant-launcher.jar;C:\Program Files\Java\jdk1.8.0_121\src.zip;C:\apache-ant-1.9.9\lib\ant-antlr.jar;C:\apache-ant-1.9.9\lib\ant-apache-bcel.jar;C:\apache-ant-1.9.9\lib\ant-apache-bsf.jar;C:\apache-ant-1.9.9\lib\ant-apache-log4j.jar;C:\apache-ant-1.9.9\lib\ant-apache-oro.jar;C:\apache-ant-1.9.9\lib\ant-apache-regexp.jar;C:\apache-ant-1.9.9\lib\ant-apache-resolver.jar;C:\apache-ant-1.9.9\lib\ant-apache-xalan2.jar;C:\apache-ant-1.9.9\lib\ant-commons-logging.jar;C:\apache-ant-1.9.9\lib\ant-commons-net.jar;C:\apache-ant-1.9.9\lib\ant-jai.jar;C:\apache-ant-1.9.9\lib\ant-javamail.jar;C:\apache-ant-1.9.9\lib\ant-jdepend.jar;C:\apache-ant-1.9.9\lib\ant-jmf.jar;C:\apache-ant-1.9.9\lib\ant-jsch.jar;C:\apache-ant-1.9.9\lib\ant-junit.jar;C:\apache-ant-1.9.9\lib\ant-junit4.jar;C:\apache-ant-1.9.9\lib\ant-launcher.jar;C:\apache-ant-1.9.9\lib\ant-netrexx.jar;C:\apache-ant-1.9.9\lib\ant-swing.jar;C:\apache-ant-1.9.9\lib\ant-testutil.jar;C:\apache-ant-1.9.9\lib\ant.jar;C:\Program Files\Java\jdk1.8.0_121\lib\tools.jar" />
-
-          <property name="ant.version" value="Apache Ant(TM) version 1.9.9 compiled on February 2 2017" />
-
-          <property name="app.name" value="JEJE" />
-
-          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
-
-          <property name="ant.file.type" value="file" />
-
-          <property name="java.vm.specification.version" value="1.8" />
-
-          <property name="catalina.home" value="C:\Apache Tomcat 8.0.27" />
-
-          <property name="sun.cpu.endian" value="little" />
-
-          <property name="sun.os.patch.level" value="Service Pack 1" />
-
-          <property name="compile.debug" value="true" />
-
-          <property name="java.io.tmpdir" value="C:\Users\UPCHIA~1\AppData\Local\Temp\" />
-
-          <property name="dist.home" value="D:\UPChiapas\Documentos\JEJEManto/dist" />
-
-          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
-
-          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
-
-          <property name="os.arch" value="amd64" />
-
-          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
-
-          <property name="user.dir" value="D:\UPChiapas\Documentos\JEJEManto" />
-
-          <property name="ant.file.USJ" value="D:\UPChiapas\Documentos\JEJEManto\build.xml" />
-
-          <property name="line.separator" value="&#xd;&#xa;" />
-
-          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
-
-          <property name="app.version" value="0.3" />
-
-          <property name="compile.deprecation" value="false" />
-
-          <property name="basedir" value="D:\UPChiapas\Documentos\JEJEManto" />
-
-          <property name="ant.java.version" value="1.8" />
-
-          <property name="ant.core.lib" value="C:\apache-ant-1.9.9\lib\ant.jar" />
-
-          <property name="file.encoding" value="Cp1252" />
-
-          <property name="sun.stderr.encoding" value="cp850" />
-
-          <property name="java.specification.version" value="1.8" />
-
-          <property name="ant.project.invoked-targets" value="junit" />
-
-      </properties>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.RolDAOTest" name="testCrearRol" time="0.156">
-          <error message="org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.roles&apos; doesn&apos;t exist&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.roles&apos; doesn&apos;t exist&quot;
-	at edu.uag.iidis.scec.persistencia.RolDAO.hazPersistente(RolDAO.java:118)
-	at edu.uag.iidis.scec.pruebas.RolDAOTest.testCrearRol(RolDAOTest.java:37)
-	at junit.extensions.TestDecorator.basicRun(TestDecorator.java:22)
-	at junit.extensions.TestSetup$1.protect(TestSetup.java:19)
-	at junit.extensions.TestSetup.run(TestSetup.java:23)
-Caused by: org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.roles&apos; doesn&apos;t exist&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:100)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy3.executeQuery(Unknown Source)
-	at org.hibernate.id.IncrementGenerator.initializePreviousValueHolder(IncrementGenerator.java:128)
-	at org.hibernate.id.IncrementGenerator.generate(IncrementGenerator.java:68)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:120)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:204)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:189)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.performSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:114)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:90)
-	at org.hibernate.internal.SessionImpl.fireSaveOrUpdate(SessionImpl.java:615)
-	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:608)
-	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:604)
-	at edu.uag.iidis.scec.persistencia.RolDAO.hazPersistente(RolDAO.java:113)
-Caused by: java.sql.SQLException: Base table or view not found,  message from server: &quot;Table &apos;manto.roles&apos; doesn&apos;t exist&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1555)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.UsuarioDAOTest" name="testCrearUsuario" time="0.0">
-          <error message="org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at edu.uag.iidis.scec.persistencia.UsuarioDAO.hazPersistente(UsuarioDAO.java:198)
-	at edu.uag.iidis.scec.pruebas.UsuarioDAOTest.testCrearUsuario(UsuarioDAOTest.java:41)
-	at junit.extensions.TestDecorator.basicRun(TestDecorator.java:22)
-	at junit.extensions.TestSetup$1.protect(TestSetup.java:19)
-	at junit.extensions.TestSetup.run(TestSetup.java:23)
-Caused by: org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:100)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy3.executeQuery(Unknown Source)
-	at org.hibernate.id.IncrementGenerator.initializePreviousValueHolder(IncrementGenerator.java:128)
-	at org.hibernate.id.IncrementGenerator.generate(IncrementGenerator.java:68)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:120)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:204)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:189)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.performSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:114)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:90)
-	at org.hibernate.internal.SessionImpl.fireSaveOrUpdate(SessionImpl.java:615)
-	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:608)
-	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:604)
-	at edu.uag.iidis.scec.persistencia.UsuarioDAO.hazPersistente(UsuarioDAO.java:192)
-Caused by: java.sql.SQLException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1555)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.UsuarioDAOTest" name="testBuscarTodos" time="0.016">
-          <error message="org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at edu.uag.iidis.scec.persistencia.UsuarioDAO.buscarTodos(UsuarioDAO.java:111)
-	at edu.uag.iidis.scec.pruebas.UsuarioDAOTest.testBuscarTodos(UsuarioDAOTest.java:116)
-	at junit.extensions.TestDecorator.basicRun(TestDecorator.java:22)
-	at junit.extensions.TestSetup$1.protect(TestSetup.java:19)
-	at junit.extensions.TestSetup.run(TestSetup.java:23)
-Caused by: org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:100)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy3.executeQuery(Unknown Source)
-	at org.hibernate.loader.Loader.getResultSet(Loader.java:1978)
-	at org.hibernate.loader.Loader.doQuery(Loader.java:829)
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:289)
-	at org.hibernate.loader.Loader.doList(Loader.java:2463)
-	at org.hibernate.loader.Loader.doList(Loader.java:2449)
-	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2279)
-	at org.hibernate.loader.Loader.list(Loader.java:2274)
-	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:122)
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1483)
-	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
-	at edu.uag.iidis.scec.persistencia.UsuarioDAO.buscarTodos(UsuarioDAO.java:106)
-Caused by: java.sql.SQLException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1555)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.UsuarioDAOTest" name="testAgregarRol" time="0.016">
-          <error message="Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;" type="org.hibernate.exception.SQLGrammarException">org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:100)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy3.executeQuery(Unknown Source)
-	at org.hibernate.loader.Loader.getResultSet(Loader.java:1978)
-	at org.hibernate.loader.Loader.doQuery(Loader.java:829)
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:289)
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:259)
-	at org.hibernate.loader.Loader.loadEntity(Loader.java:2058)
-	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:82)
-	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:72)
-	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3697)
-	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:439)
-	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:420)
-	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:204)
-	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:143)
-	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:954)
-	at org.hibernate.internal.SessionImpl.immediateLoad(SessionImpl.java:891)
-	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:158)
-	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:195)
-	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:185)
-	at edu.uag.iidis.scec.modelo.Usuario_$$_javassist_6.addRol(Usuario_$$_javassist_6.java)
-	at edu.uag.iidis.scec.pruebas.UsuarioDAOTest.testAgregarRol(UsuarioDAOTest.java:133)
-	at junit.extensions.TestDecorator.basicRun(TestDecorator.java:22)
-	at junit.extensions.TestSetup$1.protect(TestSetup.java:19)
-	at junit.extensions.TestSetup.run(TestSetup.java:23)
-Caused by: java.sql.SQLException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1555)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.UsuarioDAOTest" name="testVerificarRol" time="0.0">
-          <error message="Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;" type="org.hibernate.exception.SQLGrammarException">org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:100)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy3.executeQuery(Unknown Source)
-	at org.hibernate.loader.Loader.getResultSet(Loader.java:1978)
-	at org.hibernate.loader.Loader.doQuery(Loader.java:829)
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:289)
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:259)
-	at org.hibernate.loader.Loader.loadEntity(Loader.java:2058)
-	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:82)
-	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:72)
-	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3697)
-	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:439)
-	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:420)
-	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:204)
-	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:143)
-	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:954)
-	at org.hibernate.internal.SessionImpl.immediateLoad(SessionImpl.java:891)
-	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:158)
-	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:195)
-	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:185)
-	at edu.uag.iidis.scec.modelo.Usuario_$$_javassist_6.getRoles(Usuario_$$_javassist_6.java)
-	at edu.uag.iidis.scec.pruebas.UsuarioDAOTest.testVerificarRol(UsuarioDAOTest.java:151)
-	at junit.extensions.TestDecorator.basicRun(TestDecorator.java:22)
-	at junit.extensions.TestSetup$1.protect(TestSetup.java:19)
-	at junit.extensions.TestSetup.run(TestSetup.java:23)
-Caused by: java.sql.SQLException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1555)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.UsuarioDAOTest" name="testEliminarRol" time="0.015">
-          <error message="Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;" type="org.hibernate.exception.SQLGrammarException">org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:100)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy3.executeQuery(Unknown Source)
-	at org.hibernate.loader.Loader.getResultSet(Loader.java:1978)
-	at org.hibernate.loader.Loader.doQuery(Loader.java:829)
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:289)
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:259)
-	at org.hibernate.loader.Loader.loadEntity(Loader.java:2058)
-	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:82)
-	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:72)
-	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3697)
-	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:439)
-	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:420)
-	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:204)
-	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:143)
-	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:954)
-	at org.hibernate.internal.SessionImpl.immediateLoad(SessionImpl.java:891)
-	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:158)
-	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:195)
-	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:185)
-	at edu.uag.iidis.scec.modelo.Usuario_$$_javassist_6.removeRol(Usuario_$$_javassist_6.java)
-	at edu.uag.iidis.scec.pruebas.UsuarioDAOTest.testEliminarRol(UsuarioDAOTest.java:166)
-	at junit.extensions.TestDecorator.basicRun(TestDecorator.java:22)
-	at junit.extensions.TestSetup$1.protect(TestSetup.java:19)
-	at junit.extensions.TestSetup.run(TestSetup.java:23)
-Caused by: java.sql.SQLException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1555)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.UsuarioDAOTest" name="testCrearUsuarioInvalido" time="0.0" />
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.UsuarioDAOTest" name="testBuscarUsuarioPorId" time="0.0">
-          <error message="Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;" type="org.hibernate.exception.SQLGrammarException">org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:100)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy3.executeQuery(Unknown Source)
-	at org.hibernate.loader.Loader.getResultSet(Loader.java:1978)
-	at org.hibernate.loader.Loader.doQuery(Loader.java:829)
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:289)
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:259)
-	at org.hibernate.loader.Loader.loadEntity(Loader.java:2058)
-	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:82)
-	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:72)
-	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3697)
-	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:439)
-	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:420)
-	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:204)
-	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:143)
-	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:954)
-	at org.hibernate.internal.SessionImpl.immediateLoad(SessionImpl.java:891)
-	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:158)
-	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:195)
-	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:185)
-	at edu.uag.iidis.scec.modelo.Usuario_$$_javassist_6.getNombre(Usuario_$$_javassist_6.java)
-	at edu.uag.iidis.scec.pruebas.UsuarioDAOTest.testBuscarUsuarioPorId(UsuarioDAOTest.java:85)
-	at junit.extensions.TestDecorator.basicRun(TestDecorator.java:22)
-	at junit.extensions.TestSetup$1.protect(TestSetup.java:19)
-	at junit.extensions.TestSetup.run(TestSetup.java:23)
-Caused by: java.sql.SQLException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1555)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.UsuarioDAOTest" name="testBuscarPorEjemplo" time="0.016">
-          <error message="org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at edu.uag.iidis.scec.persistencia.UsuarioDAO.buscarPorEjemplo(UsuarioDAO.java:135)
-	at edu.uag.iidis.scec.pruebas.UsuarioDAOTest.testBuscarPorEjemplo(UsuarioDAOTest.java:102)
-	at junit.extensions.TestDecorator.basicRun(TestDecorator.java:22)
-	at junit.extensions.TestSetup$1.protect(TestSetup.java:19)
-	at junit.extensions.TestSetup.run(TestSetup.java:23)
-Caused by: org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:100)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy3.executeQuery(Unknown Source)
-	at org.hibernate.loader.Loader.getResultSet(Loader.java:1978)
-	at org.hibernate.loader.Loader.doQuery(Loader.java:829)
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:289)
-	at org.hibernate.loader.Loader.doList(Loader.java:2463)
-	at org.hibernate.loader.Loader.doList(Loader.java:2449)
-	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2279)
-	at org.hibernate.loader.Loader.list(Loader.java:2274)
-	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:122)
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1483)
-	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
-	at edu.uag.iidis.scec.persistencia.UsuarioDAO.buscarPorEjemplo(UsuarioDAO.java:130)
-Caused by: java.sql.SQLException: Base table or view not found,  message from server: &quot;Table &apos;manto.usuarios&apos; doesn&apos;t exist&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1555)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <system-out><![CDATA[[SCEC] 2017-03-30 08:50:54,599 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
-[SCEC] 2017-03-30 08:50:55,956 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: alter table UsuarioRol drop foreign key FK4CA33E1C7F566F0
-[SCEC] 2017-03-30 08:50:55,956 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Base table or view not found,  message from server: "Table 'manto.usuariorol' doesn't exist"
-[SCEC] 2017-03-30 08:50:55,956 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: alter table UsuarioRol drop foreign key FK4CA33E1BC6DE0AE
-[SCEC] 2017-03-30 08:50:55,956 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Base table or view not found,  message from server: "Table 'manto.usuariorol' doesn't exist"
-[SCEC] 2017-03-30 08:50:55,956 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Estados (id bigint not null, Nombre varchar(255) not null unique, Descripcion varchar(255), primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Lugares (id bigint not null, Nombre varchar(255) not null unique, Descripcion varchar(255), Poblacion bigint, Coordenadas varchar(255), Estado varchar(255), Imagen varchar(255), Pais varchar(255), Moneda varchar(255), primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 12"
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Pais (id bigint not null, Nombre varchar(255) not null unique, Descripcion varchar(255), primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Recomendaciones (id bigint not null, Nombre varchar(255) not null, Estado varchar(255), Usuario varchar(255), Fecha varchar(255), Comentario varchar(255), Calificacion bigint, primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 10"
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Roles (idRol bigint not null, nombre varchar(255) not null unique, descripcion varchar(255), primary key (idRol)) type=InnoDB
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table UsuarioRol (idUsuario bigint not null, idRol bigint not null) type=InnoDB
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 4"
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Usuarios (idUsuario bigint not null, nombrePrefijo varchar(255), nombreNombre varchar(255), nombreApellidoPaterno varchar(255), nombreApellidoMaterno varchar(255), nombrePosfijo varchar(255), nombreIniciales varchar(255), nombreUsuario varchar(255) not null unique, claveAcceso varchar(255) not null, primary key (idUsuario)) type=InnoDB
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 12"
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table ciudades (idciudad bigint not null, nombre varchar(255) not null unique, descripcion varchar(255), primary key (idciudad)) type=InnoDB
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table clima (idClima bigint not null, latitud varchar(255), longitud varchar(255), ciudad varchar(255) not null unique, primary key (idClima)) type=InnoDB
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 7"
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table editarperfil (id bigint not null, usuario varchar(255) not null unique, contra varchar(255) not null, nombre varchar(255) not null, apellido varchar(255) not null, telefono varchar(255) not null, email varchar(255) not null, cp varchar(255) not null, pais varchar(255), ciudad varchar(255), estado varchar(255), primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 14"
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table evento (idEvento bigint not null, nombre varchar(255) not null unique, fecha varchar(255), primary key (idEvento)) type=InnoDB
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table vehiculos (idVehiculo bigint not null, tipo varchar(255), modelo varchar(255), marca varchar(255), placa varchar(255), color varchar(255), curp varchar(255), primary key (idVehiculo)) type=InnoDB
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 10"
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: alter table UsuarioRol add index FK4CA33E1C7F566F0 (idRol), add constraint FK4CA33E1C7F566F0 foreign key (idRol) references Roles (idRol)
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Base table or view not found,  message from server: "Table 'manto.usuariorol' doesn't exist"
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: alter table UsuarioRol add index FK4CA33E1BC6DE0AE (idUsuario), add constraint FK4CA33E1BC6DE0AE foreign key (idUsuario) references Usuarios (idUsuario)
-[SCEC] 2017-03-30 08:50:55,972 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Base table or view not found,  message from server: "Table 'manto.usuariorol' doesn't exist"
-[SCEC] 2017-03-30 08:50:55,972 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-03-30 08:50:55,972 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-03-30 08:50:55,972 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-03-30 08:50:55,972 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-03-30 08:50:56,018 DEBUG edu.uag.iidis.scec.persistencia.RolDAO.hazPersistente(109) : >hazPersistente(rol)
-[SCEC] 2017-03-30 08:50:56,018 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-Hibernate: select max(idRol) from Roles
-[SCEC] 2017-03-30 08:50:56,112  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1146, SQLState: 42S02
-[SCEC] 2017-03-30 08:50:56,112 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Base table or view not found,  message from server: "Table 'manto.roles' doesn't exist"
-[SCEC] 2017-03-30 08:50:56,112  WARN edu.uag.iidis.scec.persistencia.RolDAO.hazPersistente(116) : <HibernateException
-[SCEC] 2017-03-30 08:50:56,112 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-03-30 08:50:56,112 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-03-30 08:50:56,112 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-03-30 08:50:56,112 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:50:56,112 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-03-30 08:50:56,128 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:50:56,143 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: alter table UsuarioRol drop foreign key FK4CA33E1C7F566F0
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Base table or view not found,  message from server: "Table 'manto.usuariorol' doesn't exist"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: alter table UsuarioRol drop foreign key FK4CA33E1BC6DE0AE
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Base table or view not found,  message from server: "Table 'manto.usuariorol' doesn't exist"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Estados (id bigint not null, Nombre varchar(255) not null unique, Descripcion varchar(255), primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Lugares (id bigint not null, Nombre varchar(255) not null unique, Descripcion varchar(255), Poblacion bigint, Coordenadas varchar(255), Estado varchar(255), Imagen varchar(255), Pais varchar(255), Moneda varchar(255), primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 12"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Pais (id bigint not null, Nombre varchar(255) not null unique, Descripcion varchar(255), primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Recomendaciones (id bigint not null, Nombre varchar(255) not null, Estado varchar(255), Usuario varchar(255), Fecha varchar(255), Comentario varchar(255), Calificacion bigint, primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 10"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Roles (idRol bigint not null, nombre varchar(255) not null unique, descripcion varchar(255), primary key (idRol)) type=InnoDB
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table UsuarioRol (idUsuario bigint not null, idRol bigint not null) type=InnoDB
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 4"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Usuarios (idUsuario bigint not null, nombrePrefijo varchar(255), nombreNombre varchar(255), nombreApellidoPaterno varchar(255), nombreApellidoMaterno varchar(255), nombrePosfijo varchar(255), nombreIniciales varchar(255), nombreUsuario varchar(255) not null unique, claveAcceso varchar(255) not null, primary key (idUsuario)) type=InnoDB
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 12"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table ciudades (idciudad bigint not null, nombre varchar(255) not null unique, descripcion varchar(255), primary key (idciudad)) type=InnoDB
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table clima (idClima bigint not null, latitud varchar(255), longitud varchar(255), ciudad varchar(255) not null unique, primary key (idClima)) type=InnoDB
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 7"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table editarperfil (id bigint not null, usuario varchar(255) not null unique, contra varchar(255) not null, nombre varchar(255) not null, apellido varchar(255) not null, telefono varchar(255) not null, email varchar(255) not null, cp varchar(255) not null, pais varchar(255), ciudad varchar(255), estado varchar(255), primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 14"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table evento (idEvento bigint not null, nombre varchar(255) not null unique, fecha varchar(255), primary key (idEvento)) type=InnoDB
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table vehiculos (idVehiculo bigint not null, tipo varchar(255), modelo varchar(255), marca varchar(255), placa varchar(255), color varchar(255), curp varchar(255), primary key (idVehiculo)) type=InnoDB
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 10"
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: alter table UsuarioRol add index FK4CA33E1C7F566F0 (idRol), add constraint FK4CA33E1C7F566F0 foreign key (idRol) references Roles (idRol)
-[SCEC] 2017-03-30 08:50:56,159 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Base table or view not found,  message from server: "Table 'manto.usuariorol' doesn't exist"
-[SCEC] 2017-03-30 08:50:56,174 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: alter table UsuarioRol add index FK4CA33E1BC6DE0AE (idUsuario), add constraint FK4CA33E1BC6DE0AE foreign key (idUsuario) references Usuarios (idUsuario)
-[SCEC] 2017-03-30 08:50:56,174 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Base table or view not found,  message from server: "Table 'manto.usuariorol' doesn't exist"
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.UsuarioDAO.hazPersistente(186) : >hazPersistente(usuario)
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-Hibernate: select max(idUsuario) from Usuarios
-[SCEC] 2017-03-30 08:50:56,174  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1146, SQLState: 42S02
-[SCEC] 2017-03-30 08:50:56,174 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Base table or view not found,  message from server: "Table 'manto.usuarios' doesn't exist"
-[SCEC] 2017-03-30 08:50:56,174  WARN edu.uag.iidis.scec.persistencia.UsuarioDAO.hazPersistente(196) : <HibernateException
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.UsuarioDAO.buscarTodos(100) : >buscarTodos()
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-03-30 08:50:56,174 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombrePr2_0_0_, this_.nombreNombre as nombreNo3_0_0_, this_.nombreApellidoPaterno as nombreAp4_0_0_, this_.nombreApellidoMaterno as nombreAp5_0_0_, this_.nombrePosfijo as nombrePo6_0_0_, this_.nombreIniciales as nombreIn7_0_0_, this_.nombreUsuario as nombreUs8_0_0_, this_.claveAcceso as claveAcc9_0_0_ from Usuarios this_
-[SCEC] 2017-03-30 08:50:56,190  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1146, SQLState: 42S02
-[SCEC] 2017-03-30 08:50:56,190 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Base table or view not found,  message from server: "Table 'manto.usuarios' doesn't exist"
-[SCEC] 2017-03-30 08:50:56,190  WARN edu.uag.iidis.scec.persistencia.UsuarioDAO.buscarTodos(109) : <HibernateException
-[SCEC] 2017-03-30 08:50:56,190 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:50:56,190 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-03-30 08:50:56,190 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-03-30 08:50:56,190 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-03-30 08:50:56,190 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-03-30 08:50:56,190 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-03-30 08:50:56,190 DEBUG edu.uag.iidis.scec.persistencia.UsuarioDAO.buscarPorId(33) : >buscarPorID(1, false)
-[SCEC] 2017-03-30 08:50:56,190 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-Hibernate: select usuario0_.idUsuario as idUsuario0_0_, usuario0_.nombrePrefijo as nombrePr2_0_0_, usuario0_.nombreNombre as nombreNo3_0_0_, usuario0_.nombreApellidoPaterno as nombreAp4_0_0_, usuario0_.nombreApellidoMaterno as nombreAp5_0_0_, usuario0_.nombrePosfijo as nombrePo6_0_0_, usuario0_.nombreIniciales as nombreIn7_0_0_, usuario0_.nombreUsuario as nombreUs8_0_0_, usuario0_.claveAcceso as claveAcc9_0_0_ from Usuarios usuario0_ where usuario0_.idUsuario=?
-[SCEC] 2017-03-30 08:50:56,206  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1146, SQLState: 42S02
-[SCEC] 2017-03-30 08:50:56,206 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Base table or view not found,  message from server: "Table 'manto.usuarios' doesn't exist"
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.UsuarioDAO.buscarPorId(33) : >buscarPorID(1, false)
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-Hibernate: select usuario0_.idUsuario as idUsuario0_0_, usuario0_.nombrePrefijo as nombrePr2_0_0_, usuario0_.nombreNombre as nombreNo3_0_0_, usuario0_.nombreApellidoPaterno as nombreAp4_0_0_, usuario0_.nombreApellidoMaterno as nombreAp5_0_0_, usuario0_.nombrePosfijo as nombrePo6_0_0_, usuario0_.nombreIniciales as nombreIn7_0_0_, usuario0_.nombreUsuario as nombreUs8_0_0_, usuario0_.claveAcceso as claveAcc9_0_0_ from Usuarios usuario0_ where usuario0_.idUsuario=?
-[SCEC] 2017-03-30 08:50:56,206  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1146, SQLState: 42S02
-[SCEC] 2017-03-30 08:50:56,206 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Base table or view not found,  message from server: "Table 'manto.usuarios' doesn't exist"
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.RolDAO.buscarPorId(33) : >buscarPorID(2, false)
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.UsuarioDAO.buscarPorId(33) : >buscarPorID(1, false)
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-Hibernate: select usuario0_.idUsuario as idUsuario0_0_, usuario0_.nombrePrefijo as nombrePr2_0_0_, usuario0_.nombreNombre as nombreNo3_0_0_, usuario0_.nombreApellidoPaterno as nombreAp4_0_0_, usuario0_.nombreApellidoMaterno as nombreAp5_0_0_, usuario0_.nombrePosfijo as nombrePo6_0_0_, usuario0_.nombreIniciales as nombreIn7_0_0_, usuario0_.nombreUsuario as nombreUs8_0_0_, usuario0_.claveAcceso as claveAcc9_0_0_ from Usuarios usuario0_ where usuario0_.idUsuario=?
-[SCEC] 2017-03-30 08:50:56,206  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1146, SQLState: 42S02
-[SCEC] 2017-03-30 08:50:56,206 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Base table or view not found,  message from server: "Table 'manto.usuarios' doesn't exist"
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:50:56,206 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.UsuarioDAO.hazPersistente(186) : >hazPersistente(usuario)
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-Hibernate: select max(idUsuario) from Usuarios
-[SCEC] 2017-03-30 08:50:56,221  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1146, SQLState: 42S02
-[SCEC] 2017-03-30 08:50:56,221 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Base table or view not found,  message from server: "Table 'manto.usuarios' doesn't exist"
-[SCEC] 2017-03-30 08:50:56,221  WARN edu.uag.iidis.scec.persistencia.UsuarioDAO.hazPersistente(196) : <HibernateException
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.UsuarioDAO.buscarPorId(33) : >buscarPorID(1, false)
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-Hibernate: select usuario0_.idUsuario as idUsuario0_0_, usuario0_.nombrePrefijo as nombrePr2_0_0_, usuario0_.nombreNombre as nombreNo3_0_0_, usuario0_.nombreApellidoPaterno as nombreAp4_0_0_, usuario0_.nombreApellidoMaterno as nombreAp5_0_0_, usuario0_.nombrePosfijo as nombrePo6_0_0_, usuario0_.nombreIniciales as nombreIn7_0_0_, usuario0_.nombreUsuario as nombreUs8_0_0_, usuario0_.claveAcceso as claveAcc9_0_0_ from Usuarios usuario0_ where usuario0_.idUsuario=?
-[SCEC] 2017-03-30 08:50:56,221  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1146, SQLState: 42S02
-[SCEC] 2017-03-30 08:50:56,221 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Base table or view not found,  message from server: "Table 'manto.usuarios' doesn't exist"
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.UsuarioDAO.buscarPorEjemplo(122) : >buscarPorEjemplo()
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-03-30 08:50:56,221 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombrePr2_0_0_, this_.nombreNombre as nombreNo3_0_0_, this_.nombreApellidoPaterno as nombreAp4_0_0_, this_.nombreApellidoMaterno as nombreAp5_0_0_, this_.nombrePosfijo as nombrePo6_0_0_, this_.nombreIniciales as nombreIn7_0_0_, this_.nombreUsuario as nombreUs8_0_0_, this_.claveAcceso as claveAcc9_0_0_ from Usuarios this_ where (this_.nombreUsuario=?)
-[SCEC] 2017-03-30 08:50:56,237  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1146, SQLState: 42S02
-[SCEC] 2017-03-30 08:50:56,237 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Base table or view not found,  message from server: "Table 'manto.usuarios' doesn't exist"
-[SCEC] 2017-03-30 08:50:56,237  WARN edu.uag.iidis.scec.persistencia.UsuarioDAO.buscarPorEjemplo(133) : <HibernateException
-[SCEC] 2017-03-30 08:50:56,237 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:50:56,237 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-]]></system-out>
-
-      <system-err><![CDATA[]]></system-err>
-
-  </testsuite>
-  <testsuite errors="0" failures="1" hostname="ERIDE" id="1" name="EventoDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="2" time="0.142" timestamp="2017-04-02T21:19:27">
+  <testsuite errors="0" failures="6" hostname="ERIDE" id="0" name="ClimaDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="12" time="3.969" timestamp="2017-04-03T23:33:00">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -774,7 +108,7 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
 
           <property name="app.path" value="/JEJEv0.3" />
 
-          <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_92\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl\Win64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java;C:\apache-ant-1.10.0\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_92\bin;C:\Program Files\Java\jre1.8.0_92;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\runtime\win64;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\bin;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\polyspace\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\ERIDE21\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Apache Tomcat 8.0.27\bin;." />
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_92\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl\Win64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java;C:\apache-ant-1.10.0\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_92\bin;C:\Program Files\Java\jre1.8.0_92;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\runtime\win64;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\bin;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\polyspace\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Apache Tomcat 8.0.27\bin;." />
 
           <property name="java.vendor.url" value="http://java.oracle.com/" />
 
@@ -782,7 +116,7 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp C:\Program Files\Java\jdk1.8.0_92\bin; junitreport" />
+          <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp C:\Program Files\Java\jdk1.8.0_92\bin; junitreporteClima" />
 
           <property name="java.class.path" value="C:\apache-ant-1.10.0\lib\ant-launcher.jar;C:\Program Files\Java\jdk1.8.0_92\bin\;C:\apache-ant-1.10.0\lib\ant-antlr.jar;C:\apache-ant-1.10.0\lib\ant-apache-bcel.jar;C:\apache-ant-1.10.0\lib\ant-apache-bsf.jar;C:\apache-ant-1.10.0\lib\ant-apache-log4j.jar;C:\apache-ant-1.10.0\lib\ant-apache-oro.jar;C:\apache-ant-1.10.0\lib\ant-apache-regexp.jar;C:\apache-ant-1.10.0\lib\ant-apache-resolver.jar;C:\apache-ant-1.10.0\lib\ant-apache-xalan2.jar;C:\apache-ant-1.10.0\lib\ant-commons-logging.jar;C:\apache-ant-1.10.0\lib\ant-commons-net.jar;C:\apache-ant-1.10.0\lib\ant-jai.jar;C:\apache-ant-1.10.0\lib\ant-javamail.jar;C:\apache-ant-1.10.0\lib\ant-jdepend.jar;C:\apache-ant-1.10.0\lib\ant-jmf.jar;C:\apache-ant-1.10.0\lib\ant-jsch.jar;C:\apache-ant-1.10.0\lib\ant-junit.jar;C:\apache-ant-1.10.0\lib\ant-junit4.jar;C:\apache-ant-1.10.0\lib\ant-launcher.jar;C:\apache-ant-1.10.0\lib\ant-netrexx.jar;C:\apache-ant-1.10.0\lib\ant-swing.jar;C:\apache-ant-1.10.0\lib\ant-testutil.jar;C:\apache-ant-1.10.0\lib\ant.jar;C:\Program Files\Java\jdk1.8.0_92\lib\tools.jar" />
 
@@ -840,37 +174,298 @@ Hibernate: select this_.idUsuario as idUsuario0_0_, this_.nombrePrefijo as nombr
 
           <property name="java.specification.version" value="1.8" />
 
-          <property name="ant.project.invoked-targets" value="junitreport" />
+          <property name="ant.project.invoked-targets" value="junitreporteClima" />
 
       </properties>
 
-      <testcase classname="edu.uag.iidis.scec.pruebas.EventoDAOTest" name="testActulizarEvento" time="0.0" />
+      <testcase classname="edu.uag.iidis.scec.pruebas.ClimaDAOTest" name="testActualizarClima" time="3.047" />
 
-      <testcase classname="edu.uag.iidis.scec.pruebas.EventoDAOTest" name="testCrearEvento" time="0.13">
-          <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
-	at edu.uag.iidis.scec.pruebas.EventoDAOTest.testCrearEvento(EventoDAOTest.java:32)
+      <testcase classname="edu.uag.iidis.scec.pruebas.ClimaDAOTest" name="testActualizarClimaF" time="0.016">
+          <failure message="No se pudieron actualizar la latitud y longitud" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: No se pudieron actualizar la latitud y longitud
+	at edu.uag.iidis.scec.pruebas.ClimaDAOTest.testActualizarClimaF(ClimaDAOTest.java:103)
 </failure>
 
       </testcase>
 
-      <system-out><![CDATA[[SCEC] 2017-04-02 16:19:27,766 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-04-02 16:19:27,766 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-04-02 16:19:27,766 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-04-02 16:19:27,770 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-04-02 16:19:27,770 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.hazPersistente(40) : >hazPersistente(evento)
-[SCEC] 2017-04-02 16:19:27,770 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-Hibernate: select max(idEvento) from evento
-[SCEC] 2017-04-02 16:19:27,774 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(256) : >commitTransaction()
-[SCEC] 2017-04-02 16:19:27,774 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(264) : -Comprometiendo la transacción de este thread.
-Hibernate: insert into evento (nombre, fecha, idEvento) values (?, ?, ?)
-[SCEC] 2017-04-02 16:19:27,880 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-04-02 16:19:27,880 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
+      <testcase classname="edu.uag.iidis.scec.pruebas.ClimaDAOTest" name="testBuscarTodos" time="0.047" />
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.ClimaDAOTest" name="testBuscarTodosF" time="0.0">
+          <failure message="Existen datos" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Existen datos
+	at edu.uag.iidis.scec.pruebas.ClimaDAOTest.testBuscarTodosF(ClimaDAOTest.java:186)
+</failure>
+
+      </testcase>
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.ClimaDAOTest" name="testCrearClima" time="0.281" />
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.ClimaDAOTest" name="testCrearClimaF" time="0.125">
+          <failure message="Clima ya existe" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Clima ya existe
+	at edu.uag.iidis.scec.pruebas.ClimaDAOTest.testCrearClimaF(ClimaDAOTest.java:54)
+</failure>
+
+      </testcase>
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.ClimaDAOTest" name="testEliminarClima" time="0.063" />
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.ClimaDAOTest" name="testEliminarClimaF" time="0.015">
+          <failure message="No se encontro el dato a eliminar" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: No se encontro el dato a eliminar
+	at edu.uag.iidis.scec.pruebas.ClimaDAOTest.testEliminarClimaF(ClimaDAOTest.java:146)
+</failure>
+
+      </testcase>
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.ClimaDAOTest" name="testExisteClima" time="0.016" />
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.ClimaDAOTest" name="testExisteClimaF" time="0.0">
+          <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at edu.uag.iidis.scec.pruebas.ClimaDAOTest.testExisteClimaF(ClimaDAOTest.java:227)
+</failure>
+
+      </testcase>
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.ClimaDAOTest" name="testordenarClimasPorCiudad" time="0.265" />
+
+      <testcase classname="edu.uag.iidis.scec.pruebas.ClimaDAOTest" name="testordenarClimasPorCiudadF" time="0.016">
+          <failure message="Los datos no se pudieron ordenar" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Los datos no se pudieron ordenar
+	at edu.uag.iidis.scec.pruebas.ClimaDAOTest.testordenarClimasPorCiudadF(ClimaDAOTest.java:274)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[[SCEC] 2017-04-03 18:33:00,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
+[SCEC] 2017-04-03 18:33:02,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:02,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:02,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:02,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:02,528 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.hazCambios(65) : >hazCambios(clima)
+[SCEC] 2017-04-03 18:33:02,528 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: update clima set latitud='01643434321', longitud='21212123123121212' where ciudad='Tuxtla'
+[SCEC] 2017-04-03 18:33:02,950 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(221) : >buscarClimas(ciudad)
+[SCEC] 2017-04-03 18:33:02,950 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(229) : from Clima where ciudad like 'Tuxtla%'Tuxtla
+[SCEC] 2017-04-03 18:33:02,950 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:02,981 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(235) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:02,981 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(238) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select clima0_.idClima as idClima11_, clima0_.latitud as latitud11_, clima0_.longitud as longitud11_, clima0_.ciudad as ciudad11_ from clima clima0_ where clima0_.ciudad like 'Tuxtla%'
+[SCEC] 2017-04-03 18:33:03,059 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(243) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-03 18:33:03,059 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,059 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,153 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,153 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.hazCambios(65) : >hazCambios(clima)
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: update clima set latitud='01652132132', longitud='695050302' where ciudad='Cintalapa'
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(221) : >buscarClimas(ciudad)
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(229) : from Clima where ciudad like 'Cintalapa%'Cintalapa
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(235) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(238) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select clima0_.idClima as idClima11_, clima0_.latitud as latitud11_, clima0_.longitud as longitud11_, clima0_.ciudad as ciudad11_ from clima clima0_ where clima0_.ciudad like 'Cintalapa%'
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(243) : <<<<<<<<< Result size 0
+[SCEC] 2017-04-03 18:33:03,184 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,184 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,184 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,184 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarTodos(95) : >buscarTodos()
+[SCEC] 2017-04-03 18:33:03,184 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,184 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+Hibernate: select this_.idClima as idClima11_0_, this_.latitud as latitud11_0_, this_.longitud as longitud11_0_, this_.ciudad as ciudad11_0_ from clima this_
+[SCEC] 2017-04-03 18:33:03,215 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarTodos(103) : >buscarTodos() ---- list [edu.uag.iidis.scec.modelo.Clima@297ea53a[
+  idClima=1
+  ciudad=Tuxtla
+  latitud=01643434321
+  longitud=21212123123121212
+], edu.uag.iidis.scec.modelo.Clima@acb0951[
+  idClima=2
+  ciudad=Matias Romero
+  latitud=0165165165
+  longitud=016516215165
+], edu.uag.iidis.scec.modelo.Clima@5bf22f18[
+  idClima=3
+  ciudad=Oaxaca
+  latitud=016516215165
+  longitud=0165162151365
+], edu.uag.iidis.scec.modelo.Clima@7a7471ce[
+  idClima=4
+  ciudad=Cancun
+  latitud=0165146845
+  longitud=68465489789
+]]
+[SCEC] 2017-04-03 18:33:03,215 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,215 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,215 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,215 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarTodos(95) : >buscarTodos()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select this_.idClima as idClima11_0_, this_.latitud as latitud11_0_, this_.longitud as longitud11_0_, this_.ciudad as ciudad11_0_ from clima this_
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarTodos(103) : >buscarTodos() ---- list [edu.uag.iidis.scec.modelo.Clima@76ba13c[
+  idClima=1
+  ciudad=Tuxtla
+  latitud=01643434321
+  longitud=21212123123121212
+], edu.uag.iidis.scec.modelo.Clima@7c351808[
+  idClima=2
+  ciudad=Matias Romero
+  latitud=0165165165
+  longitud=016516215165
+], edu.uag.iidis.scec.modelo.Clima@180e6ac4[
+  idClima=3
+  ciudad=Oaxaca
+  latitud=016516215165
+  longitud=0165162151365
+], edu.uag.iidis.scec.modelo.Clima@42b64ab8[
+  idClima=4
+  ciudad=Cancun
+  latitud=0165146845
+  longitud=68465489789
+]]
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.hazPersistente(41) : >hazPersistente(clima)
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select max(idClima) from clima
+[SCEC] 2017-04-03 18:33:03,325 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(172) : >existeUsuario(nombreUsuario)
+[SCEC] 2017-04-03 18:33:03,325 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(180) : select ciudad from Clima where ciudad = :nombreSan cristobal
+[SCEC] 2017-04-03 18:33:03,325 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,340 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(186) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:03,340 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(190) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: insert into clima (latitud, longitud, ciudad, idClima) values (?, ?, ?, ?)
+Hibernate: select clima0_.ciudad as col_0_0_ from clima clima0_ where clima0_.ciudad=?
+[SCEC] 2017-04-03 18:33:03,403 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(195) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-03 18:33:03,403 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,403 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.hazPersistente(41) : >hazPersistente(clima)
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+Hibernate: insert into clima (latitud, longitud, ciudad, idClima) values (?, ?, ?, ?)
+[SCEC] 2017-04-03 18:33:03,559  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
+[SCEC] 2017-04-03 18:33:03,559 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry '0165165165' for key 'latitud_UNIQUE'"
+[SCEC] 2017-04-03 18:33:03,559 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(255) : -Deshaciendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,575 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
+[SCEC] 2017-04-03 18:33:03,575 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(276) : -Intentando deshacer la transacción para este thread.
+[SCEC] 2017-04-03 18:33:03,621 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
+[SCEC] 2017-04-03 18:33:03,621 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,621 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,621 ERROR edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(258) : <HibernateException
+[SCEC] 2017-04-03 18:33:03,621 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.eliminarClima(272) : >hazTransitorio(ciudad)
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select clima0_.idClima as idClima11_, clima0_.latitud as latitud11_, clima0_.longitud as longitud11_, clima0_.ciudad as ciudad11_ from clima clima0_ where clima0_.ciudad='Cancun'
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(172) : >existeUsuario(nombreUsuario)
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(180) : select ciudad from Clima where ciudad = :nombreCancun
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(186) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(190) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: delete from clima where idClima=?
+Hibernate: select clima0_.ciudad as col_0_0_ from clima clima0_ where clima0_.ciudad=?
+[SCEC] 2017-04-03 18:33:03,653 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(195) : <<<<<<<<< Result size 0
+[SCEC] 2017-04-03 18:33:03,653 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,653 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,700 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,700 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,700 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.eliminarClima(272) : >hazTransitorio(ciudad)
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select clima0_.idClima as idClima11_, clima0_.latitud as latitud11_, clima0_.longitud as longitud11_, clima0_.ciudad as ciudad11_ from clima clima0_ where clima0_.ciudad='Monterrey'
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(172) : >existeUsuario(nombreUsuario)
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(180) : select ciudad from Clima where ciudad = :nombreMatias Romero
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(186) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(190) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select clima0_.ciudad as col_0_0_ from clima clima0_ where clima0_.ciudad=?
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(195) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(172) : >existeUsuario(nombreUsuario)
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(180) : select ciudad from Clima where ciudad = :nombreGuadalajara
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(186) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(190) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select clima0_.ciudad as col_0_0_ from clima clima0_ where clima0_.ciudad=?
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(195) : <<<<<<<<< Result size 0
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.hazPersistente(41) : >hazPersistente(clima)
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(125) : >existeRol(nombreRol)
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(133) : from Clima ORDER BY ciudadciudad
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(139) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(142) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: insert into clima (latitud, longitud, ciudad, idClima) values (?, ?, ?, ?)
+Hibernate: select clima0_.idClima as idClima11_, clima0_.latitud as latitud11_, clima0_.longitud as longitud11_, clima0_.ciudad as ciudad11_ from clima clima0_ order by clima0_.ciudad
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(147) : <<<<<<<<< Result size 5
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.hazPersistente(41) : >hazPersistente(clima)
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(125) : >existeRol(nombreRol)
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(133) : from Clima ORDER BY estadoestado
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:04,012 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(139) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:04,012 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(142) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: insert into clima (latitud, longitud, ciudad, idClima) values (?, ?, ?, ?)
+[SCEC] 2017-04-03 18:33:04,012  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
+[SCEC] 2017-04-03 18:33:04,012 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry '231242422' for key 'latitud_UNIQUE'"
+[SCEC] 2017-04-03 18:33:04,012  WARN edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(157) : <HibernateException *******************
+[SCEC] 2017-04-03 18:33:04,012 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:04,012 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
 ]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="1" failures="2" hostname="Josseline" id="2" name="PerfilDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="8" time="7.812" timestamp="2017-04-03T19:49:12">
+  <testsuite errors="1" failures="2" hostname="Josseline" id="1" name="PerfilDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="8" time="7.812" timestamp="2017-04-03T19:49:12">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -1304,274 +899,6 @@ Hibernate: select perfil0_.id as id10_, perfil0_.usuario as usuario10_, perfil0_
 
       <system-err><![CDATA[Mon Apr 03 14:49:15 CDT 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
 ]]></system-err>
-
-  </testsuite>
-  <testsuite errors="1" failures="0" hostname="UPChiapas-PC" id="3" name="RolDAOTest" package="edu.uag.iidis.scec.pruebas" skipped="0" tests="1" time="1.7" timestamp="2017-03-30T14:57:21">
-      <properties>
-          <property name="java.vendor" value="Oracle Corporation" />
-
-          <property name="sun.java.launcher" value="SUN_STANDARD" />
-
-          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
-
-          <property name="os.name" value="Windows 7" />
-
-          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes" />
-
-          <property name="sun.desktop" value="windows" />
-
-          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
-
-          <property name="ant.home" value="C:\apache-ant-1.9.9" />
-
-          <property name="java.runtime.version" value="1.8.0_121-b13" />
-
-          <property name="src.home" value="D:\UPChiapas\Documentos\JEJEManto/src" />
-
-          <property name="user.name" value="UPChiapas" />
-
-          <property name="web.home" value="D:\UPChiapas\Documentos\JEJEManto/web" />
-
-          <property name="ant.file.type.USJ" value="file" />
-
-          <property name="manager.password" value="root" />
-
-          <property name="test.out.dir" value="D:\UPChiapas\Documentos\JEJEManto/testout" />
-
-          <property name="user.language" value="es" />
-
-          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin" />
-
-          <property name="ant.project.default-target" value="build" />
-
-          <property name="docs.home" value="D:\UPChiapas\Documentos\JEJEManto/docs" />
-
-          <property name="ant.project.name" value="USJ" />
-
-          <property name="java.version" value="1.8.0_121" />
-
-          <property name="lib.home" value="D:\UPChiapas\Documentos\JEJEManto/build/WEB-INF/lib" />
-
-          <property name="user.timezone" value="" />
-
-          <property name="sun.arch.data.model" value="64" />
-
-          <property name="compile.optimize" value="true" />
-
-          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed" />
-
-          <property name="sun.cpu.isalist" value="amd64" />
-
-          <property name="sun.jnu.encoding" value="Cp1252" />
-
-          <property name="file.encoding.pkg" value="sun.io" />
-
-          <property name="file.separator" value="\" />
-
-          <property name="java.specification.name" value="Java Platform API Specification" />
-
-          <property name="java.class.version" value="52.0" />
-
-          <property name="build.home" value="D:\UPChiapas\Documentos\JEJEManto/build" />
-
-          <property name="manager.username" value="root" />
-
-          <property name="user.country" value="ES" />
-
-          <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre" />
-
-          <property name="java.vm.info" value="mixed mode" />
-
-          <property name="ant.file" value="D:\UPChiapas\Documentos\JEJEManto\build.xml" />
-
-          <property name="os.version" value="6.1" />
-
-          <property name="classes.home" value="D:\UPChiapas\Documentos\JEJEManto/build/WEB-INF/classes" />
-
-          <property name="path.separator" value=";" />
-
-          <property name="manager.url" value="http://127.0.0.1:8080/manager/text" />
-
-          <property name="java.vm.version" value="25.121-b13" />
-
-          <property name="user.variant" value="" />
-
-          <property name="ant.library.dir" value="C:\apache-ant-1.9.9\lib" />
-
-          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
-
-          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
-
-          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
-
-          <property name="sun.stdout.encoding" value="cp850" />
-
-          <property name="user.script" value="" />
-
-          <property name="user.home" value="C:\Users\UPChiapas" />
-
-          <property name="java.specification.vendor" value="Oracle Corporation" />
-
-          <property name="app.path" value="/JEJEv0.3" />
-
-          <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext\*;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\apache-ant-1.9.9\bin;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\runtime\win64;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\bin;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\polyspace\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Apache Tomcat 8.0.27\bin;C:\Users\UPChiapas\AppData\Roaming\npm;." />
-
-          <property name="java.vendor.url" value="http://java.oracle.com/" />
-
-          <property name="java.vm.vendor" value="Oracle Corporation" />
-
-          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-
-          <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp C:\Program Files\Java\jdk1.8.0_121\src.zip; junit" />
-
-          <property name="java.class.path" value="C:\apache-ant-1.9.9\lib\ant-launcher.jar;C:\Program Files\Java\jdk1.8.0_121\src.zip;C:\apache-ant-1.9.9\lib\ant-antlr.jar;C:\apache-ant-1.9.9\lib\ant-apache-bcel.jar;C:\apache-ant-1.9.9\lib\ant-apache-bsf.jar;C:\apache-ant-1.9.9\lib\ant-apache-log4j.jar;C:\apache-ant-1.9.9\lib\ant-apache-oro.jar;C:\apache-ant-1.9.9\lib\ant-apache-regexp.jar;C:\apache-ant-1.9.9\lib\ant-apache-resolver.jar;C:\apache-ant-1.9.9\lib\ant-apache-xalan2.jar;C:\apache-ant-1.9.9\lib\ant-commons-logging.jar;C:\apache-ant-1.9.9\lib\ant-commons-net.jar;C:\apache-ant-1.9.9\lib\ant-jai.jar;C:\apache-ant-1.9.9\lib\ant-javamail.jar;C:\apache-ant-1.9.9\lib\ant-jdepend.jar;C:\apache-ant-1.9.9\lib\ant-jmf.jar;C:\apache-ant-1.9.9\lib\ant-jsch.jar;C:\apache-ant-1.9.9\lib\ant-junit.jar;C:\apache-ant-1.9.9\lib\ant-junit4.jar;C:\apache-ant-1.9.9\lib\ant-launcher.jar;C:\apache-ant-1.9.9\lib\ant-netrexx.jar;C:\apache-ant-1.9.9\lib\ant-swing.jar;C:\apache-ant-1.9.9\lib\ant-testutil.jar;C:\apache-ant-1.9.9\lib\ant.jar;C:\Program Files\Java\jdk1.8.0_121\lib\tools.jar" />
-
-          <property name="ant.version" value="Apache Ant(TM) version 1.9.9 compiled on February 2 2017" />
-
-          <property name="app.name" value="JEJE" />
-
-          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
-
-          <property name="ant.file.type" value="file" />
-
-          <property name="java.vm.specification.version" value="1.8" />
-
-          <property name="catalina.home" value="C:\Apache Tomcat 8.0.27" />
-
-          <property name="sun.cpu.endian" value="little" />
-
-          <property name="sun.os.patch.level" value="Service Pack 1" />
-
-          <property name="compile.debug" value="true" />
-
-          <property name="java.io.tmpdir" value="C:\Users\UPCHIA~1\AppData\Local\Temp\" />
-
-          <property name="dist.home" value="D:\UPChiapas\Documentos\JEJEManto/dist" />
-
-          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
-
-          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
-
-          <property name="os.arch" value="amd64" />
-
-          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
-
-          <property name="user.dir" value="D:\UPChiapas\Documentos\JEJEManto" />
-
-          <property name="ant.file.USJ" value="D:\UPChiapas\Documentos\JEJEManto\build.xml" />
-
-          <property name="line.separator" value="&#xd;&#xa;" />
-
-          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
-
-          <property name="app.version" value="0.3" />
-
-          <property name="compile.deprecation" value="false" />
-
-          <property name="basedir" value="D:\UPChiapas\Documentos\JEJEManto" />
-
-          <property name="ant.java.version" value="1.8" />
-
-          <property name="ant.core.lib" value="C:\apache-ant-1.9.9\lib\ant.jar" />
-
-          <property name="file.encoding" value="Cp1252" />
-
-          <property name="sun.stderr.encoding" value="cp850" />
-
-          <property name="java.specification.version" value="1.8" />
-
-          <property name="ant.project.invoked-targets" value="junit" />
-
-      </properties>
-
-      <testcase classname="edu.uag.iidis.scec.pruebas.RolDAOTest" name="testCrearRol" time="0.156">
-          <error message="org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.roles&apos; doesn&apos;t exist&quot;" type="edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura">edu.uag.iidis.scec.excepciones.ExcepcionInfraestructura: org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.roles&apos; doesn&apos;t exist&quot;
-	at edu.uag.iidis.scec.persistencia.RolDAO.hazPersistente(RolDAO.java:118)
-	at edu.uag.iidis.scec.pruebas.RolDAOTest.testCrearRol(RolDAOTest.java:37)
-	at junit.extensions.TestDecorator.basicRun(TestDecorator.java:22)
-	at junit.extensions.TestSetup$1.protect(TestSetup.java:19)
-	at junit.extensions.TestSetup.run(TestSetup.java:23)
-Caused by: org.hibernate.exception.SQLGrammarException: Base table or view not found,  message from server: &quot;Table &apos;manto.roles&apos; doesn&apos;t exist&quot;
-	at org.hibernate.exception.internal.SQLStateConverter.convert(SQLStateConverter.java:100)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:110)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:129)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractProxyHandler.invoke(AbstractProxyHandler.java:81)
-	at com.sun.proxy.$Proxy3.executeQuery(Unknown Source)
-	at org.hibernate.id.IncrementGenerator.initializePreviousValueHolder(IncrementGenerator.java:128)
-	at org.hibernate.id.IncrementGenerator.generate(IncrementGenerator.java:68)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:120)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:204)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:189)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.performSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:114)
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:90)
-	at org.hibernate.internal.SessionImpl.fireSaveOrUpdate(SessionImpl.java:615)
-	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:608)
-	at org.hibernate.internal.SessionImpl.saveOrUpdate(SessionImpl.java:604)
-	at edu.uag.iidis.scec.persistencia.RolDAO.hazPersistente(RolDAO.java:113)
-Caused by: java.sql.SQLException: Base table or view not found,  message from server: &quot;Table &apos;manto.roles&apos; doesn&apos;t exist&quot;
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:1977)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1163)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1272)
-	at com.mysql.jdbc.Connection.execSQL(Connection.java:2236)
-	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1555)
-	at org.hibernate.engine.jdbc.internal.proxy.AbstractStatementProxyHandler.continueInvocation(AbstractStatementProxyHandler.java:122)
-</error>
-
-      </testcase>
-
-      <system-out><![CDATA[[SCEC] 2017-03-30 08:57:21,286 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
-[SCEC] 2017-03-30 08:57:22,690 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: alter table UsuarioRol drop foreign key FK4CA33E1C7F566F0
-[SCEC] 2017-03-30 08:57:22,690 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Base table or view not found,  message from server: "Table 'manto.usuariorol' doesn't exist"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: alter table UsuarioRol drop foreign key FK4CA33E1BC6DE0AE
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Base table or view not found,  message from server: "Table 'manto.usuariorol' doesn't exist"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Estados (id bigint not null, Nombre varchar(255) not null unique, Descripcion varchar(255), primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Lugares (id bigint not null, Nombre varchar(255) not null unique, Descripcion varchar(255), Poblacion bigint, Coordenadas varchar(255), Estado varchar(255), Imagen varchar(255), Pais varchar(255), Moneda varchar(255), primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 12"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Pais (id bigint not null, Nombre varchar(255) not null unique, Descripcion varchar(255), primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Recomendaciones (id bigint not null, Nombre varchar(255) not null, Estado varchar(255), Usuario varchar(255), Fecha varchar(255), Comentario varchar(255), Calificacion bigint, primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 10"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Roles (idRol bigint not null, nombre varchar(255) not null unique, descripcion varchar(255), primary key (idRol)) type=InnoDB
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table UsuarioRol (idUsuario bigint not null, idRol bigint not null) type=InnoDB
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 4"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table Usuarios (idUsuario bigint not null, nombrePrefijo varchar(255), nombreNombre varchar(255), nombreApellidoPaterno varchar(255), nombreApellidoMaterno varchar(255), nombrePosfijo varchar(255), nombreIniciales varchar(255), nombreUsuario varchar(255) not null unique, claveAcceso varchar(255) not null, primary key (idUsuario)) type=InnoDB
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 12"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table ciudades (idciudad bigint not null, nombre varchar(255) not null unique, descripcion varchar(255), primary key (idciudad)) type=InnoDB
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table clima (idClima bigint not null, latitud varchar(255), longitud varchar(255), ciudad varchar(255) not null unique, primary key (idClima)) type=InnoDB
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 7"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table editarperfil (id bigint not null, usuario varchar(255) not null unique, contra varchar(255) not null, nombre varchar(255) not null, apellido varchar(255) not null, telefono varchar(255) not null, email varchar(255) not null, cp varchar(255) not null, pais varchar(255), ciudad varchar(255), estado varchar(255), primary key (id)) type=InnoDB
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 14"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table evento (idEvento bigint not null, nombre varchar(255) not null unique, fecha varchar(255), primary key (idEvento)) type=InnoDB
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 6"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: create table vehiculos (idVehiculo bigint not null, tipo varchar(255), modelo varchar(255), marca varchar(255), placa varchar(255), color varchar(255), curp varchar(255), primary key (idVehiculo)) type=InnoDB
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Syntax error or access violation,  message from server: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=InnoDB' at line 10"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: alter table UsuarioRol add index FK4CA33E1C7F566F0 (idRol), add constraint FK4CA33E1C7F566F0 foreign key (idRol) references Roles (idRol)
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Base table or view not found,  message from server: "Table 'manto.usuariorol' doesn't exist"
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(426) : HHH000389: Unsuccessful: alter table UsuarioRol add index FK4CA33E1BC6DE0AE (idUsuario), add constraint FK4CA33E1BC6DE0AE foreign key (idUsuario) references Usuarios (idUsuario)
-[SCEC] 2017-03-30 08:57:22,705 ERROR org.hibernate.tool.hbm2ddl.SchemaExport.perform(427) : Base table or view not found,  message from server: "Table 'manto.usuariorol' doesn't exist"
-[SCEC] 2017-03-30 08:57:22,721 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(230) : >beginTransaction()
-[SCEC] 2017-03-30 08:57:22,721 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(237) : -Iniciando una nueva transacción de base de datos en este thread.
-[SCEC] 2017-03-30 08:57:22,721 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-[SCEC] 2017-03-30 08:57:22,721 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(167) : -Abriendo una nueva sesión para el thread.
-[SCEC] 2017-03-30 08:57:22,752 DEBUG edu.uag.iidis.scec.persistencia.RolDAO.hazPersistente(109) : >hazPersistente(rol)
-[SCEC] 2017-03-30 08:57:22,752 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : >getSession()
-Hibernate: select max(idRol) from Roles
-[SCEC] 2017-03-30 08:57:22,861  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1146, SQLState: 42S02
-[SCEC] 2017-03-30 08:57:22,861 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Base table or view not found,  message from server: "Table 'manto.roles' doesn't exist"
-[SCEC] 2017-03-30 08:57:22,861  WARN edu.uag.iidis.scec.persistencia.RolDAO.hazPersistente(116) : <HibernateException
-[SCEC] 2017-03-30 08:57:22,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(287) : >rollbackTransaction()
-[SCEC] 2017-03-30 08:57:22,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(295) : -Intentando deshacer la transacción para este thread.
-[SCEC] 2017-03-30 08:57:22,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(304) : -Intentando cerrar la sesión.
-[SCEC] 2017-03-30 08:57:22,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-[SCEC] 2017-03-30 08:57:22,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(212) : -Cerrando la sesión local al thread.
-[SCEC] 2017-03-30 08:57:22,861 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(204) : >closeSession()
-]]></system-out>
-
-      <system-err><![CDATA[]]></system-err>
 
   </testsuite>
 </testsuites>

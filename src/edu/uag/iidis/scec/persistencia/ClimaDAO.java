@@ -30,16 +30,13 @@ public class ClimaDAO {
 
     public ClimaDAO() {
     }
-
-    public void hazPersistente(Clima clima)
-            throws ExcepcionInfraestructura {
-
-          /**
+    /**
      * Utilizamos este método para hacer persistente un nuevo objeto tipo Clima
      * que llega como parámetro
      * @param clima El objeto tipo clima que se desea almacenar en la BD
    */
-
+    public void hazPersistente(Clima clima)
+            throws ExcepcionInfraestructura {
         if (log.isDebugEnabled()) {
             log.debug(">hazPersistente(clima)");
         }
@@ -55,14 +52,14 @@ public class ClimaDAO {
             throw new ExcepcionInfraestructura(e);
         }
     }
-
-    public void hazCambios(Clima clima)
-            throws ExcepcionInfraestructura {
-         /**
+    /**
      * Utilizamos este método para hacer los update a la BD
      * dado el objeto Clima que llega como parámetro
      * @param clima El objeto tipo clima que se desea editar en la BD
    */
+    public void hazCambios(Clima clima)
+            throws ExcepcionInfraestructura {
+
 
         if (log.isDebugEnabled()) {
             log.debug(">hazCambios(clima)");
@@ -85,13 +82,13 @@ public class ClimaDAO {
             throw new ExcepcionInfraestructura(e);
         }
     }
-
-    public Collection buscarTodos()
-            throws ExcepcionInfraestructura {
-         /**
+    /**
      * Utilizamos este método para hacer solicitar todos los climas registrados en la BD
      * @return una Collection con todos los objetos Clima localizados en la BD
    */
+    public Collection buscarTodos()
+            throws ExcepcionInfraestructura {
+
         Collection climas;
 
         if (log.isDebugEnabled()) {
@@ -113,17 +110,17 @@ public class ClimaDAO {
         return climas;
     }
 
-
-        public Collection ordenarClimasPor(String atributo)
-            throws ExcepcionInfraestructura {
-
-         /**
+    /**
      * Utilizamos este método para obtener todos los climas registrados en le BD
      * pero ordenados por algun atributo
      * 
      * @param atributo El atributo por el cual se desea realizar el ordenamiento
      * @return Un Collection de objetos de tipo Clima ordenados por atributo
    */
+    public Collection ordenarClimasPor(String atributo)
+            throws ExcepcionInfraestructura {
+
+
         if (log.isDebugEnabled()) {
             log.debug(">existeRol(nombreRol)");
         }
@@ -163,15 +160,62 @@ public class ClimaDAO {
         }
     }
 
-
-        public Collection buscarClima(String ciudad)
+    /**
+     * Método que nos ayuda a saber si algun clima ya existe, segun el clima ingresado
+     * @param  nombre Nombre del clima    
+     * @return false si no existe, true si existe
+     */
+    public boolean existeClima(String nombre)
             throws ExcepcionInfraestructura {
-         /**
+
+        if (log.isDebugEnabled()) {
+            log.debug(">existeUsuario(nombreUsuario)");
+        }
+
+        try {
+            
+            String hql = "select ciudad from Clima where ciudad = :nombre";
+           
+             if (log.isDebugEnabled()) {
+                 log.debug(hql + nombre);
+            }
+        
+            Query query = HibernateUtil.getSession()
+                                        .createQuery(hql);
+            if (log.isDebugEnabled()) {
+                 log.debug("<<<<<<<<< create query ok " );
+            }
+            query.setParameter("nombre", nombre);
+            if (log.isDebugEnabled()) {
+                 log.debug("<<<<<<<<< set Parameter ok antes del query list >>>>>");
+            }
+            List results = query.list();
+            int resultado = results.size();
+            if (log.isDebugEnabled()) {
+                 log.debug("<<<<<<<<< Result size " + resultado);
+            }
+            if (resultado == 0) {
+               return false;
+            }
+            
+            return true;
+
+        } catch (HibernateException ex) {
+            if (log.isWarnEnabled()) {
+                log.warn("<HibernateException *******************  "+ex);
+            }
+            throw new ExcepcionInfraestructura(ex);
+        }
+    }
+    /**
      * Utilizamos este método para realizar la busqueda de una ciudad específica
      * 
      * @param ciudad El atributo por el cual se desea realizar la búsqueda
      * @return Un Collection de objetos de tipo Clima que cumplen el resultado de la consulta
    */
+    public Collection buscarClima(String ciudad)
+            throws ExcepcionInfraestructura {
+
 
         if (log.isDebugEnabled()) {
             log.debug(">buscarClimas(ciudad)");
@@ -212,16 +256,16 @@ public class ClimaDAO {
         }
     }
 
-
-        public Collection eliminarClima(String ciudad)
-            throws ExcepcionInfraestructura {
-
-         /**
+    /**
      * Utilizamos este método para eliminar a alguna de las ciudades de la BD
      * 
      * @param ciudad El atributo por el cual se desea realizar eliminar
      * @return Un Collection de objetos de tipo Clima actualizados (sin el objeto eliminado)
    */
+    public Collection eliminarClima(String ciudad)
+            throws ExcepcionInfraestructura {
+
+
 
                 List r = null;
           if (log.isDebugEnabled()) {

@@ -1,0 +1,275 @@
+Testsuite: edu.uag.iidis.scec.pruebas.ClimaDAOTest
+Tests run: 12, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 3.969 sec
+------------- Standard Output ---------------
+[SCEC] 2017-04-03 18:33:00,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
+[SCEC] 2017-04-03 18:33:02,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:02,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:02,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:02,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:02,528 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.hazCambios(65) : >hazCambios(clima)
+[SCEC] 2017-04-03 18:33:02,528 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: update clima set latitud='01643434321', longitud='21212123123121212' where ciudad='Tuxtla'
+[SCEC] 2017-04-03 18:33:02,950 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(221) : >buscarClimas(ciudad)
+[SCEC] 2017-04-03 18:33:02,950 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(229) : from Clima where ciudad like 'Tuxtla%'Tuxtla
+[SCEC] 2017-04-03 18:33:02,950 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:02,981 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(235) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:02,981 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(238) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select clima0_.idClima as idClima11_, clima0_.latitud as latitud11_, clima0_.longitud as longitud11_, clima0_.ciudad as ciudad11_ from clima clima0_ where clima0_.ciudad like 'Tuxtla%'
+[SCEC] 2017-04-03 18:33:03,059 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(243) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-03 18:33:03,059 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,059 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,153 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,153 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.hazCambios(65) : >hazCambios(clima)
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: update clima set latitud='01652132132', longitud='695050302' where ciudad='Cintalapa'
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(221) : >buscarClimas(ciudad)
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(229) : from Clima where ciudad like 'Cintalapa%'Cintalapa
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(235) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(238) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select clima0_.idClima as idClima11_, clima0_.latitud as latitud11_, clima0_.longitud as longitud11_, clima0_.ciudad as ciudad11_ from clima clima0_ where clima0_.ciudad like 'Cintalapa%'
+[SCEC] 2017-04-03 18:33:03,168 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarClima(243) : <<<<<<<<< Result size 0
+[SCEC] 2017-04-03 18:33:03,184 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,184 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,184 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,184 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarTodos(95) : >buscarTodos()
+[SCEC] 2017-04-03 18:33:03,184 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,184 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+Hibernate: select this_.idClima as idClima11_0_, this_.latitud as latitud11_0_, this_.longitud as longitud11_0_, this_.ciudad as ciudad11_0_ from clima this_
+[SCEC] 2017-04-03 18:33:03,215 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarTodos(103) : >buscarTodos() ---- list [edu.uag.iidis.scec.modelo.Clima@297ea53a[
+  idClima=1
+  ciudad=Tuxtla
+  latitud=01643434321
+  longitud=21212123123121212
+], edu.uag.iidis.scec.modelo.Clima@acb0951[
+  idClima=2
+  ciudad=Matias Romero
+  latitud=0165165165
+  longitud=016516215165
+], edu.uag.iidis.scec.modelo.Clima@5bf22f18[
+  idClima=3
+  ciudad=Oaxaca
+  latitud=016516215165
+  longitud=0165162151365
+], edu.uag.iidis.scec.modelo.Clima@7a7471ce[
+  idClima=4
+  ciudad=Cancun
+  latitud=0165146845
+  longitud=68465489789
+]]
+[SCEC] 2017-04-03 18:33:03,215 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,215 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,215 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,215 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarTodos(95) : >buscarTodos()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select this_.idClima as idClima11_0_, this_.latitud as latitud11_0_, this_.longitud as longitud11_0_, this_.ciudad as ciudad11_0_ from clima this_
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.buscarTodos(103) : >buscarTodos() ---- list [edu.uag.iidis.scec.modelo.Clima@76ba13c[
+  idClima=1
+  ciudad=Tuxtla
+  latitud=01643434321
+  longitud=21212123123121212
+], edu.uag.iidis.scec.modelo.Clima@7c351808[
+  idClima=2
+  ciudad=Matias Romero
+  latitud=0165165165
+  longitud=016516215165
+], edu.uag.iidis.scec.modelo.Clima@180e6ac4[
+  idClima=3
+  ciudad=Oaxaca
+  latitud=016516215165
+  longitud=0165162151365
+], edu.uag.iidis.scec.modelo.Clima@42b64ab8[
+  idClima=4
+  ciudad=Cancun
+  latitud=0165146845
+  longitud=68465489789
+]]
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.hazPersistente(41) : >hazPersistente(clima)
+[SCEC] 2017-04-03 18:33:03,231 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select max(idClima) from clima
+[SCEC] 2017-04-03 18:33:03,325 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(172) : >existeUsuario(nombreUsuario)
+[SCEC] 2017-04-03 18:33:03,325 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(180) : select ciudad from Clima where ciudad = :nombreSan cristobal
+[SCEC] 2017-04-03 18:33:03,325 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,340 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(186) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:03,340 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(190) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: insert into clima (latitud, longitud, ciudad, idClima) values (?, ?, ?, ?)
+Hibernate: select clima0_.ciudad as col_0_0_ from clima clima0_ where clima0_.ciudad=?
+[SCEC] 2017-04-03 18:33:03,403 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(195) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-03 18:33:03,403 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,403 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.hazPersistente(41) : >hazPersistente(clima)
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,512 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+Hibernate: insert into clima (latitud, longitud, ciudad, idClima) values (?, ?, ?, ?)
+[SCEC] 2017-04-03 18:33:03,559  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
+[SCEC] 2017-04-03 18:33:03,559 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry '0165165165' for key 'latitud_UNIQUE'"
+[SCEC] 2017-04-03 18:33:03,559 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(255) : -Deshaciendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,575 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
+[SCEC] 2017-04-03 18:33:03,575 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(276) : -Intentando deshacer la transacción para este thread.
+[SCEC] 2017-04-03 18:33:03,621 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
+[SCEC] 2017-04-03 18:33:03,621 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,621 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,621 ERROR edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(258) : <HibernateException
+[SCEC] 2017-04-03 18:33:03,621 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.eliminarClima(272) : >hazTransitorio(ciudad)
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select clima0_.idClima as idClima11_, clima0_.latitud as latitud11_, clima0_.longitud as longitud11_, clima0_.ciudad as ciudad11_ from clima clima0_ where clima0_.ciudad='Cancun'
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(172) : >existeUsuario(nombreUsuario)
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(180) : select ciudad from Clima where ciudad = :nombreCancun
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(186) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:03,637 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(190) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: delete from clima where idClima=?
+Hibernate: select clima0_.ciudad as col_0_0_ from clima clima0_ where clima0_.ciudad=?
+[SCEC] 2017-04-03 18:33:03,653 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(195) : <<<<<<<<< Result size 0
+[SCEC] 2017-04-03 18:33:03,653 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,653 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,700 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,700 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,700 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.eliminarClima(272) : >hazTransitorio(ciudad)
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select clima0_.idClima as idClima11_, clima0_.latitud as latitud11_, clima0_.longitud as longitud11_, clima0_.ciudad as ciudad11_ from clima clima0_ where clima0_.ciudad='Monterrey'
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(172) : >existeUsuario(nombreUsuario)
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(180) : select ciudad from Clima where ciudad = :nombreMatias Romero
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(186) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(190) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select clima0_.ciudad as col_0_0_ from clima clima0_ where clima0_.ciudad=?
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(195) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,715 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(172) : >existeUsuario(nombreUsuario)
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(180) : select ciudad from Clima where ciudad = :nombreGuadalajara
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(186) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(190) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select clima0_.ciudad as col_0_0_ from clima clima0_ where clima0_.ciudad=?
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.existeClima(195) : <<<<<<<<< Result size 0
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.hazPersistente(41) : >hazPersistente(clima)
+[SCEC] 2017-04-03 18:33:03,731 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(125) : >existeRol(nombreRol)
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(133) : from Clima ORDER BY ciudadciudad
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(139) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(142) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: insert into clima (latitud, longitud, ciudad, idClima) values (?, ?, ?, ?)
+Hibernate: select clima0_.idClima as idClima11_, clima0_.latitud as latitud11_, clima0_.longitud as longitud11_, clima0_.ciudad as ciudad11_ from clima clima0_ order by clima0_.ciudad
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(147) : <<<<<<<<< Result size 5
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-03 18:33:03,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.hazPersistente(41) : >hazPersistente(clima)
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(125) : >existeRol(nombreRol)
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(133) : from Clima ORDER BY estadoestado
+[SCEC] 2017-04-03 18:33:03,996 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-03 18:33:04,012 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(139) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-03 18:33:04,012 DEBUG edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(142) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: insert into clima (latitud, longitud, ciudad, idClima) values (?, ?, ?, ?)
+[SCEC] 2017-04-03 18:33:04,012  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
+[SCEC] 2017-04-03 18:33:04,012 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry '231242422' for key 'latitud_UNIQUE'"
+[SCEC] 2017-04-03 18:33:04,012  WARN edu.uag.iidis.scec.persistencia.ClimaDAO.ordenarClimasPor(157) : <HibernateException *******************
+[SCEC] 2017-04-03 18:33:04,012 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-03 18:33:04,012 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+------------- ---------------- ---------------
+
+Testcase: testActualizarClima took 3.047 sec
+Testcase: testActualizarClimaF took 0.016 sec
+	FAILED
+No se pudieron actualizar la latitud y longitud
+junit.framework.AssertionFailedError: No se pudieron actualizar la latitud y longitud
+	at edu.uag.iidis.scec.pruebas.ClimaDAOTest.testActualizarClimaF(ClimaDAOTest.java:103)
+
+Testcase: testBuscarTodos took 0.031 sec
+Testcase: testBuscarTodosF took 0 sec
+	FAILED
+Existen datos
+junit.framework.AssertionFailedError: Existen datos
+	at edu.uag.iidis.scec.pruebas.ClimaDAOTest.testBuscarTodosF(ClimaDAOTest.java:186)
+
+Testcase: testCrearClima took 0.281 sec
+Testcase: testCrearClimaF took 0.125 sec
+	FAILED
+Clima ya existe
+junit.framework.AssertionFailedError: Clima ya existe
+	at edu.uag.iidis.scec.pruebas.ClimaDAOTest.testCrearClimaF(ClimaDAOTest.java:54)
+
+Testcase: testEliminarClima took 0.063 sec
+Testcase: testEliminarClimaF took 0.015 sec
+	FAILED
+No se encontro el dato a eliminar
+junit.framework.AssertionFailedError: No se encontro el dato a eliminar
+	at edu.uag.iidis.scec.pruebas.ClimaDAOTest.testEliminarClimaF(ClimaDAOTest.java:146)
+
+Testcase: testExisteClima took 0.016 sec
+Testcase: testExisteClimaF took 0 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at edu.uag.iidis.scec.pruebas.ClimaDAOTest.testExisteClimaF(ClimaDAOTest.java:227)
+
+Testcase: testordenarClimasPorCiudad took 0.265 sec
+Testcase: testordenarClimasPorCiudadF took 0.016 sec
+	FAILED
+Los datos no se pudieron ordenar
+junit.framework.AssertionFailedError: Los datos no se pudieron ordenar
+	at edu.uag.iidis.scec.pruebas.ClimaDAOTest.testordenarClimasPorCiudadF(ClimaDAOTest.java:274)
+
