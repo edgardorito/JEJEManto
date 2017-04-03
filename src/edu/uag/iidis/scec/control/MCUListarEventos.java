@@ -20,7 +20,7 @@ import org.apache.struts.actions.MappingDispatchAction;
 
 
 /**
-* <h1>MCUListarEventos</h1>
+* MCUListarEventos
 * Esta clase se encarga de listar por fecha 
 * o por un atributo, ademas también 
 * se encarga de buscar
@@ -38,6 +38,7 @@ public final class MCUListarEventos
    * @param request [Recibe un objeto de la clase HttpServletRequest]
    * @param  response [Recibe un objeto de la clase HttpServletResponse]
    * @return ActionForward [Regresa ub objeto de la clase ActionForward]
+   * @throws Exception [excepción]
   */
     public ActionForward listarEventosPor(
                 ActionMapping mapping,
@@ -83,6 +84,7 @@ public final class MCUListarEventos
    * @param request [Recibe un objeto de la clase HttpServletRequest]
    * @param  response [Recibe un objeto de la clase HttpServletResponse]
    * @return ActionForward [Regresa ub objeto de la clase ActionForward]
+   * @throws Exception [excepción]
   */
     public ActionForward listarEventosPorFecha(
                 ActionMapping mapping,
@@ -116,8 +118,8 @@ public final class MCUListarEventos
    * @param request [Recibe un objeto de la clase HttpServletRequest]
    * @param  response [Recibe un objeto de la clase HttpServletResponse]
    * @return ActionForward [Regresa ub objeto de la clase ActionForward]
+   * @throws Exception [excepción]
   */
-
     public ActionForward solicitarListaEventos(
                 ActionMapping mapping,
                 ActionForm form,
@@ -162,6 +164,7 @@ public final class MCUListarEventos
    * @param request [Recibe un objeto de la clase HttpServletRequest]
    * @param  response [Recibe un objeto de la clase HttpServletResponse]
    * @return ActionForward [Regresa ub objeto de la clase ActionForward]
+   * @throws Exception [excepción]
   */
         public ActionForward BuscarEvento(
                 ActionMapping mapping,

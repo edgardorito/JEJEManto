@@ -19,13 +19,6 @@ import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.MappingDispatchAction;
 
 
-/**
-* <h1>MCUEliminarEvento</h1>
-* Esta clase se encar de eliminar un evento.
-* 
-* @author  Edgardo Rito Deheza
-* @version 0.3
-*/
 public final class MCUEliminarEvento 
         extends MappingDispatchAction {
 
@@ -38,6 +31,7 @@ public final class MCUEliminarEvento
    * @param request [Recibe un objeto de la clase HttpServletRequest]
    * @param  response [Recibe un objeto de la clase HttpServletResponse]
    * @return ActionForward [Regresa ub objeto de la clase ActionForward]
+   * @throws Exception [excepción]
   */
     
     public ActionForward eliminarEvento(

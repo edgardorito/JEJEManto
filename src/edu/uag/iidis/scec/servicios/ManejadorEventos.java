@@ -25,7 +25,7 @@ public class ManejadorEventos {
  /**
    * Metodo que crea un evento mediante un objeto Evento.
    * @param evento Recibe un objeto de la clase Evento
-   * @return int Regresa el resultado del evento que si ha sido creado
+   * @return resultado Regresa el resultado del evento que si ha sido creado
   */
     public int crearEvento(Evento evento) {
 
@@ -64,7 +64,7 @@ public class ManejadorEventos {
 /**
    * Metodo que actualiza un evento mediante un objeto Evento.
    * @param evento Recibe un objeto de la clase Evento
-   * @return int Regresa el resultado del evento que si ha sido actulizado
+   * @return resultado Regresa el resultado del evento que si ha sido actulizado
 */
 
         public int actualizarEvento(Evento evento) {
@@ -102,7 +102,7 @@ public class ManejadorEventos {
 /**
    * Metodo que elimina un evento mediante el nombre del evento.
    * @param nombre Recibe un string con el nombre del evento
-   * @return int Regresa el resultado del evento que ha sido eliminado
+   * @return resultado Regresa el resultado del evento que ha sido eliminado
 */
         public int eliminarEvento(String nombre) {
 
@@ -158,7 +158,7 @@ public class ManejadorEventos {
 /**
    * Metodo que lista todos los eventos por la fehca.
    * @param fecha Recibe un string con la fecha.
-   * @return Collection Regresa toda la lista de eventos.
+   * @return resultado Regresa toda la lista de eventos.
 */
     public Collection listarEventosPorFecha(String fecha) {
         Collection resultado;
@@ -183,7 +183,7 @@ public class ManejadorEventos {
 /**
    * Metodo que lista todos los eventos por la fehca.
    * @param fecha Recibe un string con la fecha.
-   * @return Evento Regresa un objeto evento.
+   * @return resultado Regresa un objeto evento.
 */
     public Evento listarEventosPorF(String fecha) {
         Evento resultado;
@@ -207,8 +207,8 @@ public class ManejadorEventos {
     }
 /**
    * Metodo que lista todos los eventos por la fehca.
-   * @param fecha atributo un string con el atributo a ordernar.
-   * @return Collection Regresa una lista con los eventos ordenados por el parametro
+   * @param atributo  string con el atributo a ordernar.
+   * @return resultado Regresa una lista con los eventos ordenados por el parametro
 */
     public Collection listarEventosPor(String atributo) {
         Collection resultado;

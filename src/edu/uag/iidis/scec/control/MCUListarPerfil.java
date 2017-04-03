@@ -31,7 +31,7 @@ public final class MCUListarPerfil
  * @param  request   [atributo tipo HttpServletRequest]
  * @param  response  [atributo tipo HttpServletResponse]
  * @return ActionForward [redirecciona a la vista]
- * @throws Exception 
+ * @throws Exception  [excepción]
  */
     public ActionForward solicitarListarPerfil(
                 ActionMapping mapping,
@@ -93,7 +93,7 @@ public final class MCUListarPerfil
  * @param  request   [atributo tipo HttpServletRequest]
  * @param  response  [atributo tipo HttpServletResponse]
  * @return ActionForward [redirecciona a la vista]
- * @throws Exception 
+ * @throws Exception [excepción]
  */
     public ActionForward cerrarSesion(
                 ActionMapping mapping,
@@ -134,7 +134,7 @@ public final class MCUListarPerfil
  * @param  request   [atributo tipo HttpServletRequest]
  * @param  response  [atributo tipo HttpServletResponse]
  * @return ActionForward [redirecciona a la vista]
- * @throws Exception 
+ * @throws Exception [excepción]
  */
 public ActionForward procesarEditarPerfil(
                 ActionMapping mapping,
@@ -192,7 +192,7 @@ public ActionForward procesarEditarPerfil(
  * @param  request   [atributo tipo HttpServletRequest]
  * @param  response  [atributo tipo HttpServletResponse]
  * @return ActionForward [redirecciona a la vista]
- * @throws Exception 
+ * @throws Exception [excepción]
  */
 public ActionForward editarPerfil(
                 ActionMapping mapping,
@@ -244,7 +244,7 @@ public ActionForward editarPerfil(
  * @param  request   [atributo tipo HttpServletRequest]
  * @param  response  [atributo tipo HttpServletResponse]
  * @return ActionForward [redirecciona a la vista]
- * @throws Exception 
+ * @throws Exception [excepción]
  */
     public ActionForward ordenarPerfilesPor(
                 ActionMapping mapping,
@@ -291,7 +291,7 @@ public ActionForward editarPerfil(
  * @param  request   [atributo tipo HttpServletRequest]
  * @param  response  [atributo tipo HttpServletResponse]
  * @return ActionForward [redirecciona a la vista]
- * @throws Exception 
+ * @throws Exception [excepción]
  */
 	public ActionForward buscarPerfil(
                 ActionMapping mapping,

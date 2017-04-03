@@ -33,33 +33,23 @@ public class Usuario extends Persona {
 
     /**
      * Regresa el identificador del usuario.
-     * @return Long
+     * @return credencial del usuario
      */
     public Credencial getCredencial() {
         return credencial;
     }
 
-    /**
-     * Establece el identificador del usuario.
-     * @param id Identificador del usuario
-     */
     public void setCredencial(Credencial credencial) {
         this.credencial = credencial;
     }
 
-
-    /**
-     * Regresa los roles a los que pertenece el usuario.
-     * @return List
-     */
     public List getRoles() {
         return roles;
     }
 
-
     /**
      * Establece los roles del usuario
-     * @param roles
+     * @param roles del usuario
      */
     public void setRoles(List roles) {
         this.roles = roles;
@@ -68,7 +58,7 @@ public class Usuario extends Persona {
 
     /**
      * Agrega un rol para el usuario
-     * @param rol
+     * @param rol del usuario
      */
     public void addRol(Rol rol) {
         if (roles.indexOf(rol) < 0) {

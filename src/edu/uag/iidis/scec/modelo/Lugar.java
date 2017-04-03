@@ -44,27 +44,15 @@ public class Lugar extends ClaseBase
         this.moneda = moneda;
     }
 
-    /**
-     * Regresa el id del Lugar.
-     * @return Long
-     */
+ 
     public Long getId() {
         return this.id;
     }
 
-    /**
-     * Establece el id del Lugar.
-     * @return void
-     */
     public void setId(Long id) {
         this.id = id;
     }
 
-
-    /**
-     * Regresa el nombre del Lugar.
-     * @return String
-     */
     public String getNombre() {
         return this.nombre;
     }
@@ -89,10 +77,7 @@ public class Lugar extends ClaseBase
          public String getMoneda() {
         return this.moneda;
     }
-    /**
-     * Establece el nombre del Lugar.
-     * @return void
-     */
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -117,17 +102,7 @@ public class Lugar extends ClaseBase
     public void setMoneda(String moneda) {
         this.moneda = moneda;
     }
-    /**
-     * Regresa la descripción del Lugar.
-     * @return String
-     */
-    
 
-    /**
-     * Establece la descripción del Lugar.
-     * @return void
-     */
-    
 
 
 }

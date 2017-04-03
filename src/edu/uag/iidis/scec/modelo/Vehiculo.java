@@ -7,8 +7,7 @@ import java.util.*;
  * Esta clase se utiliza para registrar y actualizar un vehiculo
  *
  * @author Javier de Jesús Flores Herrera
- * @version  0.3
- * @fecha 2016-03-21
+ * @version  0.3, 2016-03-21
  * 
  */
 
@@ -25,7 +24,6 @@ public class Vehiculo extends ClaseBase
 
     /**
      * Constructor de la clase vehiculo
-    * @return void
      */
     public Vehiculo() {
     }
@@ -38,13 +36,12 @@ public class Vehiculo extends ClaseBase
     }
     /**
      * Constructor estableciendo todos los valores del vehiculo
-     * @param  curp   
+     * @param  curp del usuario
      * @param  tipo de automovil
      * @param  modelo del automovil
-     * @param  marca  
-     * @param  placa  
-     * @param  color  
-     * @return void      
+     * @param  marca  del automovil
+     * @param  placa  del automovil
+     * @param  color  del automovil
      */
     public Vehiculo( String curp,String tipo, String modelo,String marca,String placa,String color){
         this.tipo=tipo;
@@ -58,7 +55,7 @@ public class Vehiculo extends ClaseBase
 
     /**
      * Regresa el id del Vehiculo.
-     * @return Long
+     * @return this.id id del vehiculo
      */
     public Long getId() {
         return this.id;
@@ -66,7 +63,7 @@ public class Vehiculo extends ClaseBase
 
     /**
      * Establece el id del Vehiculo.
-     * @return void
+     * @param id del vehiculo
      */
     public void setId(Long id) {
         this.id = id;
@@ -75,42 +72,42 @@ public class Vehiculo extends ClaseBase
 
     /**
      * Regresa el tipo del vehiculo.
-     * @return String
+     * @return this.tipo del vehiculo
      */
     public String getTipo() {
         return this.tipo;
     }
      /**
      * Regresa el modelo del vehiculo.
-     * @return String
+     * @return this.modelo del vehiculo
      */
     public String getModelo() {
         return this.modelo;
     }
      /**
      * Regresa la marca del vehiculo.
-     * @return String
+     * @return this.marca del vehiculo
      */
     public String getMarca() {
         return this.marca;
     }
      /**
      * Regresa la placa del vehiculo.
-     * @return String
+     * @return this.placa del vehiculo
      */
     public String getPlaca() {
         return this.placa;
     }
      /**
      * Regresa el color de vehiculo.
-     * @return String
+     * @return this.color del vehiculo
      */
     public String getColor() {
         return this.color;
     }
      /**
      * Regresa el curp asociado al vehiculo.
-     * @return String
+     * @return this.curp del usuario
      */
      public String getCurp() {
         return this.curp;
@@ -118,42 +115,42 @@ public class Vehiculo extends ClaseBase
     
     /**
      * Establece el nombre del vehiculo.
-     * @return void
+     * @param tipo del vehiculo
      */
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
     /**
      * Establece el modelo del vehiculo.
-     * @return void
+     * @param modelo del vehiculo
      */
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
     /**
      * Establece la marca del vehiculo.
-     * @return void
+     * @param marca del vehiculo
      */
     public void setMarca(String marca) {
         this.marca = marca;
     }
     /**
      * Establece la placa del vehiculo.
-     * @return void
+     * @param placa del vehiculo
      */
     public void setPlaca(String placa) {
         this.placa = placa;
     }
     /**
      * Establece el color del vehiculo.
-     * @return void
+     * @param color del vehiculo
      */
     public void setColor(String color) {
         this.color = color;
     }
     /**
      * Establece la curo del usuario.
-     * @return void
+     * @param curp del usuario
      */
      public void setCurp(String curp) {
         this.curp = curp;

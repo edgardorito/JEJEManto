@@ -60,9 +60,9 @@ public class VehiculoDAO {
 */
     /**
      * busca todos los registros de vehiculos en la base de datos
-     * @return regresa un Collection de Vehiculos
+     * @return Vehiculos regresa un Collection de Vehiculos
      * 
-     * @throws ExcepcionInfraestructura [description]
+     * @throws ExcepcionInfraestructura [excepción]
      */
     public Collection buscarTodos()
             throws ExcepcionInfraestructura {
@@ -93,8 +93,8 @@ public class VehiculoDAO {
 
     /**
      * Guarda un objeto vehiculo 
-     * @param  objeto con los datos dekl vehiculo
-     * @throws ExcepcionInfraestructura
+     * @param  Vehiculo objeto con los datos del vehiculo
+     * @throws ExcepcionInfraestructura excepción
      */
     public void hazPersistente(Vehiculo Vehiculo)
             throws ExcepcionInfraestructura {
@@ -114,8 +114,8 @@ public class VehiculoDAO {
     }
     /**
      * Actualiza los datos de un vehiculo registrado
-     * @param  objeto con los datos dekl vehiculo
-     * @throws ExcepcionInfraestructura 
+     * @param  vehiculo objeto con los datos del vehiculo
+     * @throws ExcepcionInfraestructura  excepción
      */
     public void hazPersistenteP(Vehiculo vehiculo)
             throws ExcepcionInfraestructura {
@@ -146,8 +146,8 @@ public class VehiculoDAO {
 
     /**
      * Elimina un registro de un vehiculo basado en la placa
-     * @param  placa del vehiculo
-     * @throws ExcepcionInfraestructura 
+     * @param  vehiculo placa del vehiculo
+     * @throws ExcepcionInfraestructura excepción
      */
     public void hazTransitorio(String vehiculo)
             throws ExcepcionInfraestructura {
@@ -171,9 +171,9 @@ public class VehiculoDAO {
     }
     /**
      * Verifica si un vehiculo esta registrado
-     * @param  String placaVehiculo del vehiculo         
-     * @return regresa un boolean, es true cuando el vehiculo existe
-     * @throws ExcepcionInfraestructura 
+     * @param  placaVehiculo del vehiculo         
+     * @return true cuando el vehiculo existe 
+     * @throws ExcepcionInfraestructura  excepción
      */
     public boolean existeVehiculo(String placaVehiculo)
             throws ExcepcionInfraestructura {
@@ -223,9 +223,9 @@ public class VehiculoDAO {
 
     /**
      * busca todos los registros de vehiculos en la base de datos
-     * @return regresa un Collection de Vehiculos
-     * 
-     * @throws ExcepcionInfraestructura [description]
+     * @return results regresa un Collection de Vehiculos
+     * @param  curp del usuario
+     * @throws ExcepcionInfraestructura [excepción]
      */
 	public Collection buscarVehiculos(String curp)
             throws ExcepcionInfraestructura {
@@ -270,10 +270,11 @@ public class VehiculoDAO {
     }
     /**
      * busca en todos los registros de vehiculos un vehiculo por la placa
-     * @return regresa el vehiculo buscado
-     * 
-     * @throws ExcepcionInfraestructura [description]
+     * @return results regresa el vehiculo buscado
+     * @param  placa  del vehiculo
+     * @throws ExcepcionInfraestructura [excepción]
      */
+
     public Vehiculo buscarVehiculosPlaca(String placa)
             throws ExcepcionInfraestructura {
 
@@ -315,8 +316,8 @@ public class VehiculoDAO {
      * busca todos los registros de vehiculos en la base de datos por el atributo 
      * @param atributo a buscar del vehiculo
      * @param curp del usuario
-     * @return regresa un Collection de Vehiculos ordenatos por el atributo
-     * @throws ExcepcionInfraestructura 
+     * @return results regresa un Collection de Vehiculos ordenatos por el atributo
+     * @throws ExcepcionInfraestructura excepción
      */
     public Collection ordenarVehiculosPor(String atributo, String curp)
             throws ExcepcionInfraestructura {

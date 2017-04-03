@@ -130,8 +130,8 @@ public class ManejadorRegistroV {
     }
 	/**
      * Registra un vehiculo en la base de datos
-     * @param  objeto con los datos del vehiculo
-     * @return  int resultado de la operacion
+     * @param  vehiculo con los datos del vehiculo
+     * @return  resultado resultado de la operacion
      */
     public int crearVehiculo(Vehiculo vehiculo) {
 
@@ -169,8 +169,8 @@ public class ManejadorRegistroV {
     }
     /**
      * Actualiza los datos de un vehiculo en la base de datos
-     * @param  objeto con los datos del vehiculo
-     * @return int con el resultado de la operacion
+     * @param  vehiculo con los datos del vehiculo
+     * @return resultado  resultado de la operacion
      */
     public int actualizarVehiculo(Vehiculo vehiculo) {
 
@@ -206,8 +206,8 @@ public class ManejadorRegistroV {
     }
     /**
      * Elimina un vehiculo de la base de datos
-     * @param objeto con los datos del vehiculo
-     * @return  int con el resultado de la operacion
+     * @param vehiculo con los datos del vehiculo
+     * @return  resultado  resultado de la operacion
      */
     public int eliminarVehiculo(String vehiculo) {
 

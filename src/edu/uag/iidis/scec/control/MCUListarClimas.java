@@ -23,8 +23,7 @@ import org.apache.struts.actions.MappingDispatchAction;
 * 
 *
 * @author  Ernesto Sandoval Becerra
-* @version 0.3
-* @since   2016-03-21 
+* @version 0.3, 2016-03-21 
 */
 
 public final class MCUListarClimas
@@ -32,15 +31,7 @@ public final class MCUListarClimas
 
     private Log log = LogFactory.getLog(MCUListarClimas.class);
 
-
-    public ActionForward solicitarListarClimas(
-                ActionMapping mapping,
-                ActionForm form,
-                HttpServletRequest request,
-                HttpServletResponse response)
-            throws Exception {
-
-    /**
+/**
      * Este metodo es utilizado para listar una coleccion de objetos de tipo 
      * Clima, los cuales seran recuperados de la BD utilizando un objeto de la clase
      * ManejadorClima
@@ -49,7 +40,16 @@ public final class MCUListarClimas
    * @param request de tipo HttpServletRequest
    * @param response de tipo HttpServletResponse
    * @return ActionForward Es el resultado de la consulta (la lista de ciudades ordenadas)
+   * @throws Exception excepción
    */
+    public ActionForward solicitarListarClimas(
+                ActionMapping mapping,
+                ActionForm form,
+                HttpServletRequest request,
+                HttpServletResponse response)
+            throws Exception {
+
+    
 
         if (log.isDebugEnabled()) {
             log.debug(">solicitarListarClimas");
@@ -82,6 +82,16 @@ public final class MCUListarClimas
 
     }
 
+    /**
+    * Este metodo es utilizado para listar una coleccion de objetos de tipo 
+    * Clima por el atributo indicado.
+    * @param mapping de tipo ActionMapping
+    * @param form  de tipo ActionForm
+    * @param request de tipo HttpServletRequest
+    * @param response de tipo HttpServletResponse
+    * @return ActionForward Es el resultado de la consulta (la lista de ciudades ordenadas por el atributo)
+    * @throws Exception excepción
+    */
 
     public ActionForward listarClimasPor(
                 ActionMapping mapping,
@@ -90,15 +100,6 @@ public final class MCUListarClimas
                 HttpServletResponse response)
             throws Exception {
 
-        /**
-     * Este metodo es utilizado para listar una coleccion de objetos de tipo 
-     * Clima por el atributo indicado.
-   * @param mapping de tipo ActionMapping
-   * @param form  de tipo ActionForm
-   * @param request de tipo HttpServletRequest
-   * @param response de tipo HttpServletResponse
-   * @return ActionForward Es el resultado de la consulta (la lista de ciudades ordenadas por el atributo)
-   */
 
         if (log.isDebugEnabled()) {
             log.debug(">solicitarBuscarClima");
@@ -128,13 +129,6 @@ public final class MCUListarClimas
         }
 
     }
-
-        public ActionForward BuscarClima(
-                ActionMapping mapping,
-                ActionForm form,
-                HttpServletRequest request,
-                HttpServletResponse response)
-            throws Exception {
     /**
    * Se utiliza este método para buscar un clima por el parámetro de nombre de ciudad
    * @param mapping de tipo ActionMapping
@@ -142,7 +136,15 @@ public final class MCUListarClimas
    * @param request de tipo HttpServletRequest
    * @param response de tipo HttpServletResponse
    * @return ActionForward Es el resultado de la consulta (la ciudad a buscar)
+   * @throws Exception excepción
    */
+        public ActionForward BuscarClima(
+                ActionMapping mapping,
+                ActionForm form,
+                HttpServletRequest request,
+                HttpServletResponse response)
+            throws Exception {
+    
 
         if (log.isDebugEnabled()) {
             log.debug(">solicitarBuscarClima");
@@ -175,14 +177,6 @@ public final class MCUListarClimas
 
     }
   
-
-          public ActionForward EliminarClima(
-                ActionMapping mapping,
-                ActionForm form,
-                HttpServletRequest request,
-                HttpServletResponse response)
-            throws Exception {
-
     /**
     * Este metodo es utilizado para eliminar una ciudad que se pasa como parametro
    * @param mapping de tipo ActionMapping
@@ -190,7 +184,16 @@ public final class MCUListarClimas
    * @param request de tipo HttpServletRequest
    * @param response de tipo HttpServletResponse
    * @return ActionForward Es el resultado de la operació (la ciudad eliminada)
+   * @throws Exception excepción
    */
+          public ActionForward EliminarClima(
+                ActionMapping mapping,
+                ActionForm form,
+                HttpServletRequest request,
+                HttpServletResponse response)
+            throws Exception {
+
+
 
         if (log.isDebugEnabled()) {
             log.debug(">solicitarEliminarClima");

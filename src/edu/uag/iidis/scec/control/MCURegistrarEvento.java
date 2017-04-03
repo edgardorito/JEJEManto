@@ -18,7 +18,7 @@ import org.apache.struts.action.ActionMapping;
 import org.apache.struts.actions.MappingDispatchAction;
 
 /**
-* <h1>MCURegistrarEvento</h1>
+* MCURegistrarEvento
 * Esta clase se encar de registrar y actualizar un evento.
 * 
 * @author  Edgardo Rito Deheza
@@ -36,6 +36,7 @@ public final class MCURegistrarEvento
    * @param request [Recibe un objeto de la clase HttpServletRequest]
    * @param  response [Recibe un objeto de la clase HttpServletResponse]
    * @return ActionForward [Regresa ub objeto de la clase ActionForward]
+   * @throws Exception [excepción]
   */
 
     public ActionForward procesarRegistroEvento(
@@ -101,6 +102,7 @@ public final class MCURegistrarEvento
    * @param request [Recibe un objeto de la clase HttpServletRequest]
    * @param  response [Recibe un objeto de la clase HttpServletResponse]
    * @return ActionForward [Regresa ub objeto de la clase ActionForward]
+   * @throws Exception [excepción]
   */
         public ActionForward actualizarEvento(
                 ActionMapping mapping,

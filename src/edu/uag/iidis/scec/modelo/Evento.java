@@ -35,7 +35,7 @@ public class Evento  extends ClaseBase implements Serializable  {
 
     /**
     * Regresa el id del evento.
-    * @return Long
+    * @return this.idEvento id del evento
     */
     public Long getIdEvento() {
       return this.idEvento;
@@ -43,7 +43,7 @@ public class Evento  extends ClaseBase implements Serializable  {
 
     /**
     * Establece el id del evento.
-    * @return void
+    * @param idEvento id del evento
     */
     public void setIdEvento(Long idEvento) {
       this.idEvento = idEvento;
@@ -52,7 +52,7 @@ public class Evento  extends ClaseBase implements Serializable  {
 
     /**
     * Regresa el nombre del Evento
-    * @return String
+    * @return this.nombre del evento
     */
     public String getNombre() {
       return this.nombre;
@@ -60,7 +60,7 @@ public class Evento  extends ClaseBase implements Serializable  {
 
     /**
     * Establece el nombre del evento.
-    * @return void
+    * @param nombre del evento
     */
     public void setNombre(String nombre) {
       this.nombre = nombre;
@@ -69,7 +69,7 @@ public class Evento  extends ClaseBase implements Serializable  {
 
     /**
     * Regresa la fecha del evento.
-    * @return String
+    * @return this.fecha del evento
     */
     public String getFecha() {
       return this.fecha;
@@ -77,7 +77,7 @@ public class Evento  extends ClaseBase implements Serializable  {
 
     /**
     * Establece la fecha del evento.
-    * @return void
+    * @param  fecha del evnto
     */
     public void setFecha(String fecha) {
       this.fecha = fecha;
