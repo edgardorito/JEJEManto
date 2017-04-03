@@ -29,7 +29,7 @@ public class EventoDAOTest{
             HibernateUtil.commitTransaction();
 
             assertTrue(evento.getIdEvento() != null);
-            //assertTrue(evento.getNombre().equals("Evento 2"));
+            assertTrue(evento.getNombre().equals("Evento 4"));
         } catch (Exception e) {
             HibernateUtil.rollbackTransaction();
             throw e;
@@ -49,6 +49,7 @@ public class EventoDAOTest{
             dao.hazPersistente(evento);
             HibernateUtil.commitTransaction();
             assertTrue(evento.getIdEvento() != null);
+            assertTrue(evento.getNombre().equals("Evento 1"));
         } catch (Exception e) {
             HibernateUtil.rollbackTransaction();
             throw e;
@@ -61,13 +62,18 @@ public class EventoDAOTest{
     public void testActualizarEvento() throws Exception {
         EventoDAO dao = new EventoDAO();
         Evento evento = new Evento("Evento 1","2017-04-22");
+        HibernateUtil.beginTransaction();
+
         try {
            Evento p =(Evento) HibernateUtil.getSession().createQuery("from Evento where nombre = :name")
            .setParameter("name", evento.getNombre())
            .uniqueResult();
            p.setFecha(evento.getFecha());
 
-           HibernateUtil.getSession().update(p);   
+           HibernateUtil.getSession().update(p);
+            HibernateUtil.commitTransaction();
+            assertTrue(evento.getIdEvento() != null);
+            assertTrue(evento.getFecha().equals("2017-04-22"));   
         } catch (Exception e) {
             HibernateUtil.rollbackTransaction();
             throw e;
@@ -81,13 +87,19 @@ public class EventoDAOTest{
     public void testActualizarEventoF() throws Exception {
         EventoDAO dao = new EventoDAO();
         Evento evento = new Evento("Evento 5","2017-04-22");
+        HibernateUtil.beginTransaction();
+
         try {
            Evento p =(Evento) HibernateUtil.getSession().createQuery("from Evento where nombre = :name")
            .setParameter("name", evento.getNombre())
            .uniqueResult();
            p.setFecha(evento.getFecha());
 
-           HibernateUtil.getSession().update(p);   
+           HibernateUtil.getSession().update(p);
+            HibernateUtil.commitTransaction();   
+            assertTrue(evento.getIdEvento() != null);
+            assertTrue(evento.getFecha().equals("2017-04-22"));   
+
         } catch (Exception e) {
             HibernateUtil.rollbackTransaction();
             throw e;
@@ -100,10 +112,16 @@ public class EventoDAOTest{
     @Test
     public void testEliminarEvento() throws Exception {
         EventoDAO dao = new EventoDAO();
+        HibernateUtil.beginTransaction();
+
         try {
             Evento ev =(Evento) HibernateUtil.getSession().createQuery("from Evento where nombre = Evento 3");
 
             HibernateUtil.getSession().delete(ev); 
+            Evento evento = dao.buscarEventoFecha("2017-04-21");
+            HibernateUtil.commitTransaction();
+
+            assertTrue(evento == null);
         } catch (Exception e) {
             HibernateUtil.rollbackTransaction();
             throw e;
@@ -117,10 +135,16 @@ public class EventoDAOTest{
     public void testEliminarEventoF() throws Exception {
         EventoDAO dao = new EventoDAO();
         Evento evento = new Evento("Evento 5","2017-04-22");
+        HibernateUtil.beginTransaction();
+
         try {
            Evento ev =(Evento) HibernateUtil.getSession().createQuery("from Evento where nombre = Evento 10");
 
             HibernateUtil.getSession().delete(ev); 
+            Evento evento = dao.buscarEventoFecha("2017-04-22");
+            HibernateUtil.commitTransaction();
+
+            assertTrue(evento == null);
         } catch (Exception e) {
             HibernateUtil.rollbackTransaction();
             throw e;

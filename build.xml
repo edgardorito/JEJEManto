@@ -613,10 +613,7 @@ location="${catalina.home}/lib/tomcat-util.jar" />
             <formatter type="xml"/>
             <test name="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" 
                   todir="${test.out.dir}" 
-                  haltonfailure="no"/>
-            <test name="edu.uag.iidis.scec.pruebas.EventoDAOTest" 
-                  todir="${test.out.dir}" 
-                  haltonfailure="no"/>                  
+                  haltonfailure="no"/>                
         </junit>
 
     </target>
@@ -635,6 +632,7 @@ location="${catalina.home}/lib/tomcat-util.jar" />
         </junitreport>
 
     </target>
+
 
     <target name="testVehiculo" 
           description="Ejecuta pruebas VehciuloDAO">
@@ -662,6 +660,77 @@ location="${catalina.home}/lib/tomcat-util.jar" />
                   haltonfailure="no"/>
         </junit>
   </target>
+
+    <target name="junitreporteEvento" 
+           depends="testEvento" 
+           description="Ejecuta pruebas y crea reporte">
+
+        <junitreport todir="${test.out.dir}">
+            <fileset dir="${test.out.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" 
+                    todir="${test.out.dir}"/>
+        </junitreport>
+
+    </target>
+
+    <target name="testEvento" 
+          description="Ejecuta pruebas EventoDAO">
+        <mkdir dir="${test.out.dir}"/>
+ 
+       <junit printsummary="yes" fork="no" haltonfailure="yes">
+            <classpath>
+                <fileset dir="${lib.home}">
+                    <include name="**/*.jar"/>
+                </fileset>
+                <pathelement path="${classes.home}"/>
+            </classpath>
+            <formatter type="plain"/>
+            <formatter type="xml"/>
+            <test name="edu.uag.iidis.scec.pruebas.EventoDAOTest" 
+                  todir="${test.out.dir}" 
+                  haltonfailure="no"/>
+        </junit>
+  </target>
+
+<!--
+    <target name="junitreporteClima" 
+           depends="testClima" 
+           description="Ejecuta pruebas y crea reporte">
+
+        <junitreport todir="${test.out.dir}">
+            <fileset dir="${test.out.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" 
+                    todir="${test.out.dir}"/>
+        </junitreport>
+
+    </target>
+
+    <target name="testClima" 
+          description="Ejecuta pruebas ClimaDAO">
+
+        <mkdir dir="${test.out.dir}"/>
+ 
+       <junit printsummary="yes" fork="no" haltonfailure="yes">
+            <classpath>
+                <fileset dir="${lib.home}">
+                    <include name="**/*.jar"/>
+                </fileset>
+                <pathelement path="${classes.home}"/>
+            </classpath>
+            <formatter type="plain"/>
+            <formatter type="xml"/>
+            <test name="edu.uag.iidis.scec.pruebas.ClimaDAOTest" 
+                  todir="${test.out.dir}" 
+                  haltonfailure="no"/>
+        </junit>
+  </target>
+-->
+
+
    <target name="junitreportPerfil" 
            depends="testPerfil" 
            description="Ejecuta pruebas y crea reporte">
@@ -704,32 +773,7 @@ location="${catalina.home}/lib/tomcat-util.jar" />
         </junit>
   </target>
 
-    <target name="testEvento" 
-          description="Ejecuta pruebas EventoDAO">
-       <!-- <java classname="edu.uag.iidis.scec.pruebas.VehiculoDAOTest" fork="true">
-            <classpath>
-                <fileset dir="${lib.home}">
-                    <include name="**/*.jar"/>
-                </fileset>
-                <pathelement path="${classes.home}"/>
-            </classpath>
-       </java>-->
-        <mkdir dir="${test.out.dir}"/>
- 
-       <junit printsummary="yes" fork="no" haltonfailure="yes">
-            <classpath>
-                <fileset dir="${lib.home}">
-                    <include name="**/*.jar"/>
-                </fileset>
-                <pathelement path="${classes.home}"/>
-            </classpath>
-            <formatter type="plain"/>
-            <formatter type="xml"/>
-            <test name="edu.uag.iidis.scec.pruebas.EventoDAOTest" 
-                  todir="${test.out.dir}" 
-                  haltonfailure="no"/>
-        </junit>
-  </target>
+
 
 
 </project>
