@@ -224,9 +224,11 @@ public class ClimaDAOTest{
             Boolean existe =  dao.existeClima("Guadalajara");
             HibernateUtil.commitTransaction();
             
-            assertTrue(existe);
+            assertTrue("El clima no existe",existe);
             
         } catch (Exception e) {
+            fail("El clima no existe");
+
             HibernateUtil.rollbackTransaction();
            
         } finally{

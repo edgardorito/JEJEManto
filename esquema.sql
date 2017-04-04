@@ -53,10 +53,14 @@ INSERT INTO `manto`.`vehiculos` (`idVehiculo`, `curp`, `tipo`, `modelo`, `marca`
 INSERT INTO `manto`.`editarperfil` (`id`, `usuario`, `contra`, `nombre`, `apellido`, `telefono`, `email`, `cp`, `pais`, `ciudad`, `estado`) VALUES ('2', 'jul', '123', 'juliane', 'arreola', '9865188291', 'jul@gmail.com', '29000', 'México', 'Tuxtla Gutiérrez', 'Chiapas');
 INSERT INTO `manto`.`editarperfil` (`id`, `usuario`, `contra`, `nombre`, `apellido`, `telefono`, `email`, `cp`, `pais`, `ciudad`, `estado`) VALUES ('11', 'juliane', '123', 'juliane', 'arreola', '9865188291', 'jul@gmail.com', '29000', 'México', 'Tuxtla Gutiérrez', 'Chiapas');
 
-
-
-
+--Pruebas Clima--
 INSERT INTO `manto`.`clima` (`idClima`, `ciudad`, `latitud`, `longitud`) VALUES ('1', 'Tuxtla', '01651652121625', '131232321');
 INSERT INTO `manto`.`clima` (`idClima`, `ciudad`, `latitud`, `longitud`) VALUES ('2', 'Matias Romero', '0165165165', '016516215165');
 INSERT INTO `manto`.`clima` (`idClima`, `ciudad`, `latitud`, `longitud`) VALUES ('3', 'Oaxaca', '016516215165', '0165162151365');
 INSERT INTO `manto`.`clima` (`idClima`, `ciudad`, `latitud`, `longitud`) VALUES ('4', 'Cancun', '0165146845', '68465489789');
+
+--Pruebas Evento--
+INSERT INTO `manto`.`evento` (`idEvento`, `nombre`, `fecha`) VALUES ('1', 'Evento 1 ', '2017-04-22');
+INSERT INTO `manto`.`evento` (`idEvento`, `nombre`, `fecha`) VALUES ('2', 'Evento 2', '2017-04-25');
+INSERT INTO `manto`.`evento` (`idEvento`, `nombre`, `fecha`) VALUES ('3', 'Evento 3', '2017-04-30');
+INSERT INTO `manto`.`evento` (`idEvento`, `nombre`, `fecha`) VALUES ('4', 'Evento 4', '2017-08-02');
