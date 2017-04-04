@@ -1,0 +1,45 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">  
+
+<hibernate-mapping>
+    <class name="edu.uag.iidis.scec.modelo.Vehiculo"
+           table="vehiculos"
+           dynamic-update="false"
+           dynamic-insert="false">
+
+        <id name="id"
+            column="idVehiculo"
+            type="java.lang.Long"
+            unsaved-value="null" >
+            <generator class="increment">
+            </generator>
+        </id>
+
+        
+        <property name="tipo"
+            column="tipo"
+            type="java.lang.String" />
+            
+
+        <property name="modelo"
+			column="modelo"
+            type="java.lang.String" />
+			
+		<property name="marca"
+			column="marca"
+            type="java.lang.String" />
+			
+		<property name="placa"
+			column="placa"
+            type="java.lang.String"/>
+			
+		<property name="color"
+			column="color"
+            type="java.lang.String"/>
+
+        <property name="curp"
+            column="curp"
+            type="java.lang.String"/>
+             
+    </class>
+
+</hibernate-mapping>

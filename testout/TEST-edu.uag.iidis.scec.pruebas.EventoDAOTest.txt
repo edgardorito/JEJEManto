@@ -1,0 +1,229 @@
+Testsuite: edu.uag.iidis.scec.pruebas.EventoDAOTest
+Tests run: 12, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 4.663 sec
+------------- Standard Output ---------------
+[SCEC] 2017-04-04 15:27:17,133 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.<clinit>(69) : >creando sessionFactory
+[SCEC] 2017-04-04 15:27:19,811 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-04 15:27:19,811 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-04 15:27:19,811 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:19,811 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-04 15:27:19,921 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.actualizarE(62) : >hazPersistente(evento)
+[SCEC] 2017-04-04 15:27:19,921 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select evento0_.idEvento as idEvento9_, evento0_.nombre as nombre9_, evento0_.fecha as fecha9_ from evento evento0_ where evento0_.nombre=?
+[SCEC] 2017-04-04 15:27:20,577 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:20,577 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.buscarEventos(281) : >buscarEventos(fecha)
+[SCEC] 2017-04-04 15:27:20,577 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.buscarEventos(289) : from Evento where fecha like '2017-07-25%'2017-07-25
+[SCEC] 2017-04-04 15:27:20,577 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:20,577 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.buscarEventos(295) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-04 15:27:20,577 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.buscarEventos(298) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: update evento set nombre=?, fecha=? where idEvento=?
+Hibernate: select evento0_.idEvento as idEvento9_, evento0_.nombre as nombre9_, evento0_.fecha as fecha9_ from evento evento0_ where evento0_.fecha like '2017-07-25%'
+[SCEC] 2017-04-04 15:27:20,640 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.buscarEventos(303) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-04 15:27:20,640 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-04 15:27:20,640 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-04 15:27:20,718 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-04 15:27:20,718 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-04 15:27:20,733 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-04 15:27:20,733 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-04 15:27:20,733 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:20,733 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-04 15:27:20,733 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.actualizarE(62) : >hazPersistente(evento)
+[SCEC] 2017-04-04 15:27:20,733 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select evento0_.idEvento as idEvento9_, evento0_.nombre as nombre9_, evento0_.fecha as fecha9_ from evento evento0_ where evento0_.nombre=?
+[SCEC] 2017-04-04 15:27:20,749 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-04 15:27:20,749 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-04 15:27:20,765 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-04 15:27:20,765 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.buscarTodos(212) : >buscarTodos()
+[SCEC] 2017-04-04 15:27:20,765 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:20,765 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+Hibernate: select this_.idEvento as idEvento9_0_, this_.nombre as nombre9_0_, this_.fecha as fecha9_0_ from evento this_
+[SCEC] 2017-04-04 15:27:20,796 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-04 15:27:20,796 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-04 15:27:20,796 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-04 15:27:20,796 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-04 15:27:20,796 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-04 15:27:20,796 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-04 15:27:20,796 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:20,796 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-04 15:27:20,921 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.buscarTodos(212) : >buscarTodos()
+[SCEC] 2017-04-04 15:27:20,921 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select this_.idEvento as idEvento9_0_, this_.nombre as nombre9_0_, this_.fecha as fecha9_0_ from evento this_
+[SCEC] 2017-04-04 15:27:20,921 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-04 15:27:20,921 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-04 15:27:20,921 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-04 15:27:20,921 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-04 15:27:20,936 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-04 15:27:20,936 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-04 15:27:20,936 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:20,936 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-04 15:27:20,936 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.hazPersistente(40) : >hazPersistente(evento)
+[SCEC] 2017-04-04 15:27:20,936 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select max(idEvento) from evento
+[SCEC] 2017-04-04 15:27:20,952 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(162) : >existeEvento(nombreEvento)
+[SCEC] 2017-04-04 15:27:20,952 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(171) : select nombre from Evento where nombre = :nombreEvento 5
+[SCEC] 2017-04-04 15:27:20,952 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:20,968 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(177) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-04 15:27:20,968 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(181) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: insert into evento (nombre, fecha, idEvento) values (?, ?, ?)
+Hibernate: select evento0_.nombre as col_0_0_ from evento evento0_ where evento0_.nombre=?
+[SCEC] 2017-04-04 15:27:20,983 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(186) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-04 15:27:20,983 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-04 15:27:20,983 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-04 15:27:21,046 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-04 15:27:21,046 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-04 15:27:21,046 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-04 15:27:21,046 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-04 15:27:21,046 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,046 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-04 15:27:21,046 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.hazPersistente(40) : >hazPersistente(evento)
+[SCEC] 2017-04-04 15:27:21,046 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,046 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-04 15:27:21,046 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+Hibernate: insert into evento (nombre, fecha, idEvento) values (?, ?, ?)
+[SCEC] 2017-04-04 15:27:21,061  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
+[SCEC] 2017-04-04 15:27:21,061 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'Evento 1' for key 'nombre'"
+[SCEC] 2017-04-04 15:27:21,061 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(255) : -Deshaciendo la transacción de este thread.
+[SCEC] 2017-04-04 15:27:21,061 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : >rollbackTransaction()
+[SCEC] 2017-04-04 15:27:21,061 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(276) : -Intentando deshacer la transacción para este thread.
+[SCEC] 2017-04-04 15:27:21,171 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesión.
+[SCEC] 2017-04-04 15:27:21,171 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-04 15:27:21,171 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-04 15:27:21,171 ERROR edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(258) : <HibernateException
+[SCEC] 2017-04-04 15:27:21,171 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-04 15:27:21,171 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-04 15:27:21,171 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-04 15:27:21,171 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,171 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-04 15:27:21,171 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.hazTransitorio(89) : >hazTransitorio(nombre)
+[SCEC] 2017-04-04 15:27:21,171 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select evento0_.idEvento as idEvento9_, evento0_.nombre as nombre9_, evento0_.fecha as fecha9_ from evento evento0_ where evento0_.nombre=?
+[SCEC] 2017-04-04 15:27:21,186 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,186 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(162) : >existeEvento(nombreEvento)
+[SCEC] 2017-04-04 15:27:21,186 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(171) : select nombre from Evento where nombre = :nombreEvento 3
+[SCEC] 2017-04-04 15:27:21,186 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,186 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(177) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-04 15:27:21,186 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(181) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: delete from evento where idEvento=?
+Hibernate: select evento0_.nombre as col_0_0_ from evento evento0_ where evento0_.nombre=?
+[SCEC] 2017-04-04 15:27:21,218 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(186) : <<<<<<<<< Result size 0
+[SCEC] 2017-04-04 15:27:21,218 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-04 15:27:21,218 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.hazTransitorio(89) : >hazTransitorio(nombre)
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+Hibernate: select evento0_.idEvento as idEvento9_, evento0_.nombre as nombre9_, evento0_.fecha as fecha9_ from evento evento0_ where evento0_.nombre=?
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(162) : >existeEvento(nombreEvento)
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(171) : select nombre from Evento where nombre = :nombreEvento 1
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(177) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-04 15:27:21,296 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(181) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select evento0_.nombre as col_0_0_ from evento evento0_ where evento0_.nombre=?
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(186) : <<<<<<<<< Result size 1
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(162) : >existeEvento(nombreEvento)
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(171) : select nombre from Evento where nombre = :nombreEvento 15
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(177) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(181) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: select evento0_.nombre as col_0_0_ from evento evento0_ where evento0_.nombre=?
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.existeEvento(186) : <<<<<<<<< Result size 0
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-04 15:27:21,311 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-04 15:27:21,327 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-04 15:27:21,327 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,327 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-04 15:27:21,327 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.hazPersistente(40) : >hazPersistente(evento)
+[SCEC] 2017-04-04 15:27:21,327 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,327 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.ordenarEventosPor(115) : >existeRol(nombreRol)
+[SCEC] 2017-04-04 15:27:21,327 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.ordenarEventosPor(123) : from Evento ORDER BY fechafecha
+[SCEC] 2017-04-04 15:27:21,327 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,327 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.ordenarEventosPor(129) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-04 15:27:21,327 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.ordenarEventosPor(132) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: insert into evento (nombre, fecha, idEvento) values (?, ?, ?)
+Hibernate: select evento0_.idEvento as idEvento9_, evento0_.nombre as nombre9_, evento0_.fecha as fecha9_ from evento evento0_ order by evento0_.fecha
+[SCEC] 2017-04-04 15:27:21,358 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.ordenarEventosPor(137) : <<<<<<<<< Result size 5
+[SCEC] 2017-04-04 15:27:21,358 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : >commitTransaction()
+[SCEC] 2017-04-04 15:27:21,358 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacción de este thread.
+[SCEC] 2017-04-04 15:27:21,452 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-04 15:27:21,468 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+[SCEC] 2017-04-04 15:27:21,468 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : >beginTransaction()
+[SCEC] 2017-04-04 15:27:21,468 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacción de base de datos en este thread.
+[SCEC] 2017-04-04 15:27:21,468 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,468 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesión para el thread.
+[SCEC] 2017-04-04 15:27:21,468 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.hazPersistente(40) : >hazPersistente(evento)
+[SCEC] 2017-04-04 15:27:21,468 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,468 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.ordenarEventosPor(115) : >existeRol(nombreRol)
+[SCEC] 2017-04-04 15:27:21,468 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.ordenarEventosPor(123) : from Evento ORDER BY ciudadciudad
+[SCEC] 2017-04-04 15:27:21,468 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : >getSession()
+[SCEC] 2017-04-04 15:27:21,483 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.ordenarEventosPor(129) : <<<<<<<<< create query ok 
+[SCEC] 2017-04-04 15:27:21,483 DEBUG edu.uag.iidis.scec.persistencia.EventoDAO.ordenarEventosPor(132) : <<<<<<<<< set Parameter ok antes del query list >>>>>
+Hibernate: insert into evento (nombre, fecha, idEvento) values (?, ?, ?)
+Hibernate: select evento0_.idEvento as idEvento9_, evento0_.nombre as nombre9_, evento0_.fecha as fecha9_ from evento evento0_ order by ciudad
+[SCEC] 2017-04-04 15:27:21,483  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1054, SQLState: 42S22
+[SCEC] 2017-04-04 15:27:21,483 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : null,  message from server: "Unknown column 'ciudad' in 'order clause'"
+[SCEC] 2017-04-04 15:27:21,483  WARN edu.uag.iidis.scec.persistencia.EventoDAO.ordenarEventosPor(147) : <HibernateException *******************
+[SCEC] 2017-04-04 15:27:21,483 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : >closeSession()
+[SCEC] 2017-04-04 15:27:21,483 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesión local al thread.
+------------- ---------------- ---------------
+
+Testcase: testActualizarEvento took 3.741 sec
+Testcase: testActualizarEventoF took 0.016 sec
+	FAILED
+No se pudieron actualizar la fecha
+junit.framework.AssertionFailedError: No se pudieron actualizar la fecha
+	at edu.uag.iidis.scec.pruebas.EventoDAOTest.testActualizarEventoF(EventoDAOTest.java:96)
+
+Testcase: testBuscarTodos took 0.031 sec
+Testcase: testBuscarTodosF took 0.125 sec
+	FAILED
+La busqueda fallo
+junit.framework.AssertionFailedError: La busqueda fallo
+	at edu.uag.iidis.scec.pruebas.EventoDAOTest.testBuscarTodosF(EventoDAOTest.java:176)
+
+Testcase: testCrearEvento took 0.11 sec
+Testcase: testCrearEventoF took 0.125 sec
+	FAILED
+El evento ya existe
+junit.framework.AssertionFailedError: El evento ya existe
+	at edu.uag.iidis.scec.pruebas.EventoDAOTest.testCrearEventoF(EventoDAOTest.java:53)
+
+Testcase: testEliminarEvento took 0.125 sec
+Testcase: testEliminarEventoF took 0 sec
+	FAILED
+No se encontro el dato a eliminar
+junit.framework.AssertionFailedError: No se encontro el dato a eliminar
+	at edu.uag.iidis.scec.pruebas.EventoDAOTest.testEliminarEventoF(EventoDAOTest.java:136)
+
+Testcase: testExisteEvento took 0.015 sec
+Testcase: testExisteEventoF took 0 sec
+	FAILED
+El evento no existe
+junit.framework.AssertionFailedError: El evento no existe
+	at edu.uag.iidis.scec.pruebas.EventoDAOTest.testExisteEventoF(EventoDAOTest.java:214)
+
+Testcase: testordenarEventosPorFecha took 0.157 sec
+Testcase: testordenarEventosPorFechaF took 0.015 sec
+	FAILED
+Los datos no se pudieron ordenar
+junit.framework.AssertionFailedError: Los datos no se pudieron ordenar
+	at edu.uag.iidis.scec.pruebas.EventoDAOTest.testordenarEventosPorFechaF(EventoDAOTest.java:263)
+

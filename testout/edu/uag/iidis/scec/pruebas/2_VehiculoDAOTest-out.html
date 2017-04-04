@@ -1,0 +1,231 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Standard Output from VehiculoDAOTest</title>
+</head>
+<body>
+<pre>[SCEC] 2017-04-04 15:26:34,276 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.&lt;clinit&gt;(69) : &gt;creando sessionFactory
+[SCEC] 2017-04-04 15:26:37,148 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : &gt;beginTransaction()
+[SCEC] 2017-04-04 15:26:37,152 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacci&oacute;n de base de datos en este thread.
+[SCEC] 2017-04-04 15:26:37,152 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:37,152 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesi&oacute;n para el thread.
+[SCEC] 2017-04-04 15:26:37,252 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistenteP(124) : &gt;hazPersistente(Vehiculo)
+[SCEC] 2017-04-04 15:26:37,252 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa=?
+[SCEC] 2017-04-04 15:26:37,952 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:37,964 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(282) : &gt;buscarVehiculos(placa)
+[SCEC] 2017-04-04 15:26:37,964 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(290) : from Vehiculo where placa like 'HOI89H%'HOI89H
+[SCEC] 2017-04-04 15:26:37,964 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+Hibernate: update vehiculos set tipo=?, modelo=?, marca=?, placa=?, color=?, curp=? where idVehiculo=?
+Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa like 'HOI89H%'
+[SCEC] 2017-04-04 15:26:38,027 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(296) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; create query ok 
+[SCEC] 2017-04-04 15:26:38,031 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(299) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; set Parameter ok antes del query list &gt;&gt;&gt;&gt;&gt;
+[SCEC] 2017-04-04 15:26:38,031 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : &gt;commitTransaction()
+[SCEC] 2017-04-04 15:26:38,031 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacci&oacute;n de este thread.
+[SCEC] 2017-04-04 15:26:38,098 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : &gt;closeSession()
+[SCEC] 2017-04-04 15:26:38,102 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesi&oacute;n local al thread.
+[SCEC] 2017-04-04 15:26:38,122 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : &gt;beginTransaction()
+[SCEC] 2017-04-04 15:26:38,122 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacci&oacute;n de base de datos en este thread.
+[SCEC] 2017-04-04 15:26:38,122 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,122 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesi&oacute;n para el thread.
+[SCEC] 2017-04-04 15:26:38,122 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistenteP(124) : &gt;hazPersistente(Vehiculo)
+[SCEC] 2017-04-04 15:26:38,126 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa=?
+[SCEC] 2017-04-04 15:26:38,130 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : &gt;closeSession()
+[SCEC] 2017-04-04 15:26:38,130 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesi&oacute;n local al thread.
+[SCEC] 2017-04-04 15:26:38,146 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : &gt;beginTransaction()
+[SCEC] 2017-04-04 15:26:38,150 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(73) : &gt;buscarTodos()
+[SCEC] 2017-04-04 15:26:38,150 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,150 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesi&oacute;n para el thread.
+Hibernate: select this_.idVehiculo as idVehiculo8_0_, this_.tipo as tipo8_0_, this_.modelo as modelo8_0_, this_.marca as marca8_0_, this_.placa as placa8_0_, this_.color as color8_0_, this_.curp as curp8_0_ from vehiculos this_
+[SCEC] 2017-04-04 15:26:38,282 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(81) : &gt;buscarTodos() ---- list   3
+[SCEC] 2017-04-04 15:26:38,294 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(82) : &gt;buscarTodos() ---- contenido   [edu.uag.iidis.scec.modelo.Vehiculo@625e134e[
+  id=1
+  tipo=automovil
+  modelo=2001
+  marca=Dodge
+  placa=123abc
+  color=Amarillo
+  curp=JOUI876529HMCTB09
+], edu.uag.iidis.scec.modelo.Vehiculo@89c10b7[
+  id=3
+  tipo=automovil
+  modelo=2015
+  marca=FORD
+  placa=HOI89H
+  color=Azul
+  curp=SHJO960414HTCLRV08
+], edu.uag.iidis.scec.modelo.Vehiculo@4fe89c24[
+  id=4
+  tipo=automovil
+  modelo=2000
+  marca=DODGE
+  placa=Y7U7IN
+  color=Verde
+  curp=KOLI876517MIOLKV01
+]]
+[SCEC] 2017-04-04 15:26:38,294 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : &gt;commitTransaction()
+[SCEC] 2017-04-04 15:26:38,294 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacci&oacute;n de este thread.
+[SCEC] 2017-04-04 15:26:38,298 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : &gt;closeSession()
+[SCEC] 2017-04-04 15:26:38,298 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesi&oacute;n local al thread.
+[SCEC] 2017-04-04 15:26:38,298 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : &gt;beginTransaction()
+[SCEC] 2017-04-04 15:26:38,298 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacci&oacute;n de base de datos en este thread.
+[SCEC] 2017-04-04 15:26:38,298 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,298 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesi&oacute;n para el thread.
+[SCEC] 2017-04-04 15:26:38,298 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(73) : &gt;buscarTodos()
+[SCEC] 2017-04-04 15:26:38,302 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+Hibernate: select this_.idVehiculo as idVehiculo8_0_, this_.tipo as tipo8_0_, this_.modelo as modelo8_0_, this_.marca as marca8_0_, this_.placa as placa8_0_, this_.color as color8_0_, this_.curp as curp8_0_ from vehiculos this_
+[SCEC] 2017-04-04 15:26:38,306 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(81) : &gt;buscarTodos() ---- list   3
+[SCEC] 2017-04-04 15:26:38,306 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarTodos(82) : &gt;buscarTodos() ---- contenido   [edu.uag.iidis.scec.modelo.Vehiculo@78aea4b9[
+  id=1
+  tipo=automovil
+  modelo=2001
+  marca=Dodge
+  placa=123abc
+  color=Amarillo
+  curp=JOUI876529HMCTB09
+], edu.uag.iidis.scec.modelo.Vehiculo@2a65bb85[
+  id=3
+  tipo=automovil
+  modelo=2015
+  marca=FORD
+  placa=HOI89H
+  color=Azul
+  curp=SHJO960414HTCLRV08
+], edu.uag.iidis.scec.modelo.Vehiculo@4b85880b[
+  id=4
+  tipo=automovil
+  modelo=2000
+  marca=DODGE
+  placa=Y7U7IN
+  color=Verde
+  curp=KOLI876517MIOLKV01
+]]
+[SCEC] 2017-04-04 15:26:38,306 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : &gt;commitTransaction()
+[SCEC] 2017-04-04 15:26:38,306 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacci&oacute;n de este thread.
+[SCEC] 2017-04-04 15:26:38,306 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : &gt;closeSession()
+[SCEC] 2017-04-04 15:26:38,310 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesi&oacute;n local al thread.
+[SCEC] 2017-04-04 15:26:38,310 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : &gt;beginTransaction()
+[SCEC] 2017-04-04 15:26:38,310 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacci&oacute;n de base de datos en este thread.
+[SCEC] 2017-04-04 15:26:38,310 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,314 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesi&oacute;n para el thread.
+[SCEC] 2017-04-04 15:26:38,314 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : &gt;hazPersistente(Vehiculo)
+[SCEC] 2017-04-04 15:26:38,314 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+Hibernate: select max(idVehiculo) from vehiculos
+[SCEC] 2017-04-04 15:26:38,330 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : &gt;commitTransaction()
+[SCEC] 2017-04-04 15:26:38,330 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacci&oacute;n de este thread.
+Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
+[SCEC] 2017-04-04 15:26:38,430 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : &gt;closeSession()
+[SCEC] 2017-04-04 15:26:38,430 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesi&oacute;n local al thread.
+[SCEC] 2017-04-04 15:26:38,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : &gt;beginTransaction()
+[SCEC] 2017-04-04 15:26:38,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacci&oacute;n de base de datos en este thread.
+[SCEC] 2017-04-04 15:26:38,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesi&oacute;n para el thread.
+[SCEC] 2017-04-04 15:26:38,434 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : &gt;hazPersistente(Vehiculo)
+[SCEC] 2017-04-04 15:26:38,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,434 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : &gt;commitTransaction()
+[SCEC] 2017-04-04 15:26:38,438 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacci&oacute;n de este thread.
+Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
+[SCEC] 2017-04-04 15:26:38,546  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1062, SQLState: 23000
+[SCEC] 2017-04-04 15:26:38,546 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : Duplicate key or integrity constraint violation,  message from server: "Duplicate entry 'AHI98G' for key 'placa_UNIQUE'"
+[SCEC] 2017-04-04 15:26:38,546 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(255) : -Deshaciendo la transacci&oacute;n de este thread.
+[SCEC] 2017-04-04 15:26:38,550 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(268) : &gt;rollbackTransaction()
+[SCEC] 2017-04-04 15:26:38,550 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(276) : -Intentando deshacer la transacci&oacute;n para este thread.
+[SCEC] 2017-04-04 15:26:38,606 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.rollbackTransaction(285) : -Intentando cerrar la sesi&oacute;n.
+[SCEC] 2017-04-04 15:26:38,610 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : &gt;closeSession()
+[SCEC] 2017-04-04 15:26:38,610 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesi&oacute;n local al thread.
+[SCEC] 2017-04-04 15:26:38,610 ERROR edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(258) : &lt;HibernateException
+[SCEC] 2017-04-04 15:26:38,610 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : &gt;closeSession()
+[SCEC] 2017-04-04 15:26:38,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : &gt;beginTransaction()
+[SCEC] 2017-04-04 15:26:38,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacci&oacute;n de base de datos en este thread.
+[SCEC] 2017-04-04 15:26:38,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesi&oacute;n para el thread.
+[SCEC] 2017-04-04 15:26:38,618 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazTransitorio(156) : &gt;hazTransitorio(Vehiculo)
+[SCEC] 2017-04-04 15:26:38,618 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa=?
+[SCEC] 2017-04-04 15:26:38,626 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,634 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(282) : &gt;buscarVehiculos(placa)
+[SCEC] 2017-04-04 15:26:38,634 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(290) : from Vehiculo where placa like 'Y7U7IN%'Y7U7IN
+[SCEC] 2017-04-04 15:26:38,634 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+Hibernate: delete from vehiculos where idVehiculo=?
+Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa like 'Y7U7IN%'
+[SCEC] 2017-04-04 15:26:38,650 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(296) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; create query ok 
+[SCEC] 2017-04-04 15:26:38,650 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.buscarVehiculosPlaca(299) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; set Parameter ok antes del query list &gt;&gt;&gt;&gt;&gt;
+[SCEC] 2017-04-04 15:26:38,650 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : &gt;commitTransaction()
+[SCEC] 2017-04-04 15:26:38,650 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacci&oacute;n de este thread.
+[SCEC] 2017-04-04 15:26:38,709 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : &gt;closeSession()
+[SCEC] 2017-04-04 15:26:38,710 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesi&oacute;n local al thread.
+[SCEC] 2017-04-04 15:26:38,710 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : &gt;beginTransaction()
+[SCEC] 2017-04-04 15:26:38,710 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacci&oacute;n de base de datos en este thread.
+[SCEC] 2017-04-04 15:26:38,710 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,710 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesi&oacute;n para el thread.
+[SCEC] 2017-04-04 15:26:38,714 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazTransitorio(156) : &gt;hazTransitorio(Vehiculo)
+[SCEC] 2017-04-04 15:26:38,714 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ where vehiculo0_.placa=?
+[SCEC] 2017-04-04 15:26:38,714 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,718 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : &gt;closeSession()
+[SCEC] 2017-04-04 15:26:38,718 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesi&oacute;n local al thread.
+[SCEC] 2017-04-04 15:26:38,722 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : &gt;beginTransaction()
+[SCEC] 2017-04-04 15:26:38,722 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(182) : &gt;existeRol(nombreRol)
+[SCEC] 2017-04-04 15:26:38,722 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(192) : select placa from Vehiculo where placa = :nombre123abc
+[SCEC] 2017-04-04 15:26:38,722 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,722 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesi&oacute;n para el thread.
+[SCEC] 2017-04-04 15:26:38,738 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(198) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; create query ok 
+[SCEC] 2017-04-04 15:26:38,738 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(203) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; set Parameter ok antes del query list &gt;&gt;&gt;&gt;&gt;
+Hibernate: select vehiculo0_.placa as col_0_0_ from vehiculos vehiculo0_ where vehiculo0_.placa=?
+[SCEC] 2017-04-04 15:26:38,742 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(208) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; Result size 1
+[SCEC] 2017-04-04 15:26:38,742 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : &gt;commitTransaction()
+[SCEC] 2017-04-04 15:26:38,742 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacci&oacute;n de este thread.
+[SCEC] 2017-04-04 15:26:38,742 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : &gt;closeSession()
+[SCEC] 2017-04-04 15:26:38,742 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesi&oacute;n local al thread.
+[SCEC] 2017-04-04 15:26:38,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : &gt;beginTransaction()
+[SCEC] 2017-04-04 15:26:38,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacci&oacute;n de base de datos en este thread.
+[SCEC] 2017-04-04 15:26:38,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesi&oacute;n para el thread.
+[SCEC] 2017-04-04 15:26:38,746 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(182) : &gt;existeRol(nombreRol)
+[SCEC] 2017-04-04 15:26:38,746 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(192) : select placa from Vehiculo where placa = :nombreQWER89091
+[SCEC] 2017-04-04 15:26:38,746 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,750 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(198) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; create query ok 
+[SCEC] 2017-04-04 15:26:38,750 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(203) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; set Parameter ok antes del query list &gt;&gt;&gt;&gt;&gt;
+Hibernate: select vehiculo0_.placa as col_0_0_ from vehiculos vehiculo0_ where vehiculo0_.placa=?
+[SCEC] 2017-04-04 15:26:38,750 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.existeVehiculo(208) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; Result size 0
+[SCEC] 2017-04-04 15:26:38,750 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : &gt;commitTransaction()
+[SCEC] 2017-04-04 15:26:38,754 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacci&oacute;n de este thread.
+[SCEC] 2017-04-04 15:26:38,754 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : &gt;closeSession()
+[SCEC] 2017-04-04 15:26:38,754 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesi&oacute;n local al thread.
+[SCEC] 2017-04-04 15:26:38,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : &gt;beginTransaction()
+[SCEC] 2017-04-04 15:26:38,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacci&oacute;n de base de datos en este thread.
+[SCEC] 2017-04-04 15:26:38,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesi&oacute;n para el thread.
+[SCEC] 2017-04-04 15:26:38,758 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.hazPersistente(103) : &gt;hazPersistente(Vehiculo)
+[SCEC] 2017-04-04 15:26:38,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,758 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(326) : &gt;existeRol(nombreRol)
+[SCEC] 2017-04-04 15:26:38,758 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(339) : from Vehiculo ORDER BY curpcurp
+[SCEC] 2017-04-04 15:26:38,758 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,766 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(345) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; create query ok 
+[SCEC] 2017-04-04 15:26:38,766 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(348) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; set Parameter ok antes del query list &gt;&gt;&gt;&gt;&gt;
+Hibernate: insert into vehiculos (tipo, modelo, marca, placa, color, curp, idVehiculo) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ order by vehiculo0_.curp
+[SCEC] 2017-04-04 15:26:38,774 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(353) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; Result size 4
+[SCEC] 2017-04-04 15:26:38,774 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(240) : &gt;commitTransaction()
+[SCEC] 2017-04-04 15:26:38,774 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.commitTransaction(248) : -Comprometiendo la transacci&oacute;n de este thread.
+[SCEC] 2017-04-04 15:26:38,828 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : &gt;closeSession()
+[SCEC] 2017-04-04 15:26:38,832 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesi&oacute;n local al thread.
+[SCEC] 2017-04-04 15:26:38,832 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(217) : &gt;beginTransaction()
+[SCEC] 2017-04-04 15:26:38,832 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.beginTransaction(224) : -Iniciando una nueva transacci&oacute;n de base de datos en este thread.
+[SCEC] 2017-04-04 15:26:38,832 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,832 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(160) : -Abriendo una nueva sesi&oacute;n para el thread.
+[SCEC] 2017-04-04 15:26:38,832 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(326) : &gt;existeRol(nombreRol)
+[SCEC] 2017-04-04 15:26:38,832 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(339) : from Vehiculo ORDER BY autoauto
+[SCEC] 2017-04-04 15:26:38,836 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.getSession(153) : &gt;getSession()
+[SCEC] 2017-04-04 15:26:38,848 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(345) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; create query ok 
+[SCEC] 2017-04-04 15:26:38,848 DEBUG edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(348) : &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; set Parameter ok antes del query list &gt;&gt;&gt;&gt;&gt;
+Hibernate: select vehiculo0_.idVehiculo as idVehiculo8_, vehiculo0_.tipo as tipo8_, vehiculo0_.modelo as modelo8_, vehiculo0_.marca as marca8_, vehiculo0_.placa as placa8_, vehiculo0_.color as color8_, vehiculo0_.curp as curp8_ from vehiculos vehiculo0_ order by auto
+[SCEC] 2017-04-04 15:26:38,852  WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(143) : SQL Error: 1054, SQLState: 42S22
+[SCEC] 2017-04-04 15:26:38,852 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions(144) : null,  message from server: "Unknown column 'auto' in 'order clause'"
+[SCEC] 2017-04-04 15:26:38,852  WARN edu.uag.iidis.scec.persistencia.VehiculoDAO.ordenarVehiculosPor(363) : &lt;HibernateException *******************
+[SCEC] 2017-04-04 15:26:38,852 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(194) : &gt;closeSession()
+[SCEC] 2017-04-04 15:26:38,856 DEBUG edu.uag.iidis.scec.persistencia.hibernate.HibernateUtil.closeSession(202) : -Cerrando la sesi&oacute;n local al thread.
+</pre>
+</body>
+</html>
