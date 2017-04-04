@@ -135,7 +135,7 @@ public class PerfilDAOTest{
             HibernateUtil.commitTransaction();
 
             assertTrue(resultado != null);
-            assertTrue("Existen datos",resultado.isEmpty());
+            assertTrue("La busqueda fallo",resultado.isEmpty());
         } catch (Exception e) {
             HibernateUtil.rollbackTransaction();
         
